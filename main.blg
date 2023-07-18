@@ -1,0 +1,165 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: 01_Abstract/abstract.aux
+A level-1 auxiliary file: 02_Declaration/declaration.aux
+A level-1 auxiliary file: 03_Acknowlegments/acknowlegments.aux
+A level-1 auxiliary file: 03a_Intro_page/intro.aux
+A level-1 auxiliary file: 04_Introduction/introduction.aux
+A level-1 auxiliary file: 05_Astronomy/astronomy.aux
+A level-1 auxiliary file: 06_Interstellar_Medium/interstellar_medium.aux
+A level-1 auxiliary file: 07_Particle_Evolution/particle_evolution.aux
+A level-1 auxiliary file: 08_First_Paper/First_Paper.aux
+A level-1 auxiliary file: 09_Multizone/multizone.aux
+A level-1 auxiliary file: 10_Second_Paper/Second_Paper.aux
+A level-1 auxiliary file: 11_Future_Work/future_work.aux
+A level-1 auxiliary file: A1_Supernova_Remnants/snrs.aux
+A level-1 auxiliary file: A3_Diffusive_Shock_Acceleration/dsa.aux
+A level-1 auxiliary file: A2_Finite_Difference_Techniques/finite_difference.aux
+A level-1 auxiliary file: A4_Variance_diffusion/variance.aux
+A level-1 auxiliary file: A5_HESS_J1808_204/cluster.aux
+A level-1 auxiliary file: A6_misc/misc.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 36780 items from 5000.
+Database file #1: main-blx.bib
+Database file #2: Bibliography/mybiblio.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated str_pool (elt_size=1) to 195000 items from 130000.
+Biblatex version: 3.19
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Warning--you've exceeded 500, the entry-string-size, for entry 2018A&A...612A...1H
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry doi:10.1126/science.abg5137
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2018A&A...612A...2H
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2021Natur.594...33C
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2020A&A...644A.112H
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2010ApJS..187..460A
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2022arXiv221116020T
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2010PhLB..685..239A
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2013PhRvD..88d2004A
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2023arXiv230505372C
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2019scta.book.....C
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2021ChPhC..45b5002A
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2021EPJC...81..657A
+while executing--line 2699 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2022arXiv221116020T
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry doi:10.1126/science.abg5137
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2020A&A...644A.112H
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2018A&A...612A...1H
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2018A&A...612A...2H
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2023arXiv230505372C
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2021Natur.594...33C
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2019scta.book.....C
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2013PhRvD..88d2004A
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2010PhLB..685..239A
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2021EPJC...81..657A
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2021ChPhC..45b5002A
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Warning--you've exceeded 500, the entry-string-size, for entry 2010ApJS..187..460A
+while executing--line 2727 of file biblatex.bst
+*Please notify the bibstyle designer*
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 227 entries,
+            6399 wiz_defined-function locations,
+            3039 strings with 184062 characters,
+and the built_in function-call counts, 14286341 in all, are:
+= -- 1452567
+> -- 72650
+< -- 6199
++ -- 549255
+- -- 40237
+* -- 1078366
+:= -- 2026199
+add.period$ -- 0
+call.type$ -- 227
+change.case$ -- 3010
+chr.to.int$ -- 42
+cite$ -- 452
+duplicate$ -- 1456899
+empty$ -- 1086997
+format.name$ -- 82601
+if$ -- 2643428
+int.to.chr$ -- 0
+int.to.str$ -- 540
+missing$ -- 0
+newline$ -- 45675
+num.names$ -- 9714
+pop$ -- 203467
+preamble$ -- 1
+purify$ -- 16407
+quote$ -- 0
+skip$ -- 70190
+stack$ -- 0
+substring$ -- 3005246
+swap$ -- 125672
+text.length$ -- 12133
+text.prefix$ -- 230
+top$ -- 1
+type$ -- 7705
+warning$ -- 0
+while$ -- 244782
+width$ -- 0
+write$ -- 45449
+(There were 26 warnings)
