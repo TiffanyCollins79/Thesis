@@ -9,11 +9,13 @@ At Earth, the energy spectrum of cosmic rays have been measured up to $10^{20}~\
 	\label{fig:A3_shock_dynamics}
 \end{SCfigure}
 
-A cosmic ray travelling upstream of the shock at velocity $U_1$ and angle $\theta_1$ will `pass' through the shock and travel at velocity $U_2$ and angle $\theta_2$ downstream of the shock (see \autoref{fig:A3_shock_dynamics}). The magnetic fields upstream and downstream of the shock are $B_1$ and $B_2$ respectively.  If $\theta_1=\theta_{B1}$ and $\theta_2=\theta_{B2}$ (i.e. the cosmic ray velocity is parallel to the magnetic field) then the shock is parallel. Hence, the electric field in the reference frame of the shock is zero \citep{1983RPPh...46..973D}. The compression ratio is defined to be the mass density ratio of the shocked and unshocked material:
+A cosmic ray travelling upstream of the shock at velocity $U_1$ and angle $\theta_1$ will `pass' through the shock and travel at velocity $U_2$ and angle $\theta_2$ downstream of the shock (see \autoref{fig:A3_shock_dynamics}). The magnetic fields upstream and downstream of the shock are $B_1$ and $B_2$ respectively.
+%If $\theta_1=\theta_{B1}$ and $\theta_2=\theta_{B2}$ (i.e. the cosmic ray velocity is parallel to the magnetic field) then the shock is parallel. Hence, the electric field in the reference frame of the shock is zero \citep{1983RPPh...46..973D}.
+The compression ratio is defined to be the mass density ratio of the shocked and unshocked material:
 
 \begin{equation}
     \begin{aligned}
-        R&=\frac{\rho_2}{\rho_1}
+        r&=\frac{\rho_2}{\rho_1}\text{ ,}
     \end{aligned}
 \end{equation}
 \noindent where $\rho$ is the density. From conservation of mass:
@@ -21,7 +23,7 @@ A cosmic ray travelling upstream of the shock at velocity $U_1$ and angle $\thet
 \begin{equation}
     \begin{aligned}
         \rho_1U_{1x}&=\rho_2U_{2x}=A \\
-        \therefore U_{1x}&=RU_{2x}
+        \therefore U_{1x}&=RU_{2x}\text{ ,}
     \end{aligned} \label{eq:A3_velocity_ratios}
 \end{equation}
 \noindent where $A$ is a constant. From conservation of momentum:
@@ -29,21 +31,21 @@ A cosmic ray travelling upstream of the shock at velocity $U_1$ and angle $\thet
 \begin{subequations}
     \begin{alignat}{1}
         U_{1y}&=U_{2y} \\
-        AU_{1x}&=AU_{2x}+P
+        AU_{1x}&=AU_{2x}+P\text{ ,}
     \end{alignat}
 \end{subequations}
 \noindent with $P$ being the pressure downstream. From the conservation of energy:
 
 \begin{equation}
     \begin{aligned}
-        \frac{1}{2}AU_{1x}^2&=\frac{1}{2}U_{2x}^2+U_{2x}\qty(E+P)
+        \frac{1}{2}AU_{1x}^2&=\frac{1}{2}U_{2x}^2+U_{2x}\qty(E+P)\text{ ,}
     \end{aligned}
 \end{equation}
 \noindent it can be found that the compression ratio can be expressed in terms of the downstream internal energy $E$:
 
 \begin{equation}
     \begin{aligned}
-        r&=1+\frac{2E}{P}
+        r&=1+\frac{2E}{P}\text{ ,}
     \end{aligned}
 \end{equation}
 \noindent and $r$ takes values $4$ and $7$ for monatomic non-relativistic and relativistic gas respectively  \citep{1983RPPh...46..973D}.
@@ -60,7 +62,7 @@ Using the simple assumption that $\theta_1=\theta_2=\theta_{B1}=\theta_{B_2}$, i
 \begin{equation}
     \begin{aligned}
         U_2'&=U_1-U_2 =V_s- \frac{V_s}{R} \\
-        \therefore \frac{U_2'}{V_s}&=\frac{R-1}{R}
+        \therefore \frac{U_2'}{V_s}&=\frac{R-1}{R}\text{ ,}
     \end{aligned} \label{eq:down_upstream_v_ratio}
 \end{equation}
 \noindent For non-relativistic particles ${U_2'}/{V_s}=3/4$.
@@ -76,14 +78,14 @@ Now consider the scenario described in \autoref{fig:A3_shock_dynamics3}, where c
 
 \begin{equation}
     \begin{aligned}
-        E_1'&=\gamma_d\qty(E_1-\beta_d p_\parallel c)
+        E_1'&=\gamma_d\qty(E_1-\beta_d p_\parallel c)\text{ ,}
     \end{aligned}
 \end{equation}
 \noindent where $\beta_d=v_d/c$, $v_d$ is the velocity of the cosmic ray downstream, $\gamma_d$ is the Lorentz factor downstream and $p_\parallel=p\cos\theta$ is the momentum parallel to the direction of transformation. The energy and momentum of a cosmic ray is related by $E\approx pc$, therefore:
 
 \begin{equation}
     \begin{aligned}
-        E_1'&=\gamma_d E_1\qty(1-\beta_d \cos\theta_1)
+        E_1'&=\gamma_d E_1\qty(1-\beta_d \cos\theta_1)\text{ .}
     \end{aligned}
 \end{equation}
 
@@ -92,7 +94,7 @@ Now consider the scenario described in \autoref{fig:A3_shock_dynamics3}, where c
 \begin{equation}
     \begin{aligned}
         E_2&=\gamma_u E_2'\qty(1+\beta\cos\theta_2') \\
-        &=\gamma_d\gamma_u E_1 \qty(1-\beta \cos\theta_1)\qty(1+\beta\cos\theta_2')
+        &=\gamma_d\gamma_u E_1 \qty(1-\beta \cos\theta_1)\qty(1+\beta\cos\theta_2')\text{ ,}
     \end{aligned}
 \end{equation}
 
@@ -101,19 +103,17 @@ Now consider the scenario described in \autoref{fig:A3_shock_dynamics3}, where c
 \begin{equation}
     \begin{aligned}
     \frac{\Delta E}{E}&=\frac{E_2-E_1}{E_1} \\
-&=\frac{1-\beta\cos\theta_1+\beta\cos\theta_2'-\beta^2\cos\theta_2'\cos\theta_1}{1-\beta^2}-1
+&=\frac{1-\beta\cos\theta_1+\beta\cos\theta_2'-\beta^2\cos\theta_2'\cos\theta_1}{1-\beta^2}-1\text{ .}
     \end{aligned} 
 \end{equation}
-
 \noindent Therefore, the average fractional energy is:
 
 \begin{equation}
     \begin{aligned}
     \expectation{\frac{\Delta E}{E}}
-	&=\frac{1-\beta\expectation{\cos\theta_1}+\beta\expectation{\cos\theta_2'}-\beta^2\expectation{\cos\theta_1}\expectation{\cos\theta_2'}}{1-\beta_\text{cloud}^2}-1
+	&=\frac{1-\beta\expectation{\cos\theta_1}+\beta\expectation{\cos\theta_2'}-\beta^2\expectation{\cos\theta_1}\expectation{\cos\theta_2'}}{1-\beta_\text{cloud}^2}-1\text{ .}
     \end{aligned} 
 \end{equation}
-
 \noindent The average angle, $\expectation{\cos\theta}$, can be found via:
 
 \begin{equation}
@@ -126,23 +126,22 @@ Now consider the scenario described in \autoref{fig:A3_shock_dynamics3}, where c
 
 \begin{equation}
     \begin{aligned}
-        p\qty(\cos\theta_1)\propto R_{u\rightarrow d}\qty(\theta_1)&\approx-n_{CR}v\cos\theta_1\quad &\si{\per\meter\squared\per\second}
+        p\qty(\cos\theta_1)\propto R_{u\rightarrow d}\qty(\theta_1)&\approx-n_{CR}v\cos\theta_1\quad &[\si{\per\meter\squared\per\second}]\text{ ,}
     \end{aligned}
 \end{equation}
 \noindent and $\ang{90}<\theta_1<\ang{180}$ (see \autoref{fig:A3_shock_dynamics3}) Similarly, the rate of cosmic rays crossing per unit area from downstream to upstream is defined by:
 
 \begin{equation}
     \begin{aligned}
-p\qty(\cos\theta_2')\propto R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\cos\theta_2'\quad&\si{\per\meter\squared\per\second} 
+p\qty(\cos\theta_2')\propto R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\cos\theta_2'\quad&[\si{\per\meter\squared\per\second} ]\text{ ,}
     \end{aligned}
 \end{equation}
-
 \noindent with $\ang{0}<\theta_2'<\ang{90}$ (see \autoref{fig:A3_shock_dynamics3}). Therefore:
 
 \begin{equation}
     \begin{aligned}
     \expectation{\cos\theta_1}&=\frac{\int_{-1}^{0} \cos\theta_1^2\dd{\cos\theta_1}}{\int_{-1}^{0}\cos\theta_1 \dd{\cos\theta_1}}=-\frac{2}{3} \\
-    \expectation{\cos\theta_2'}&=\frac{\int_{0}^{1} {\cos\theta_2'}^2\dd{\cos\theta_2'}}{\int_{0}^{1}\cos\theta_2' \dd{\cos\theta_2'}}=\frac{2}{3}
+    \expectation{\cos\theta_2'}&=\frac{\int_{0}^{1} {\cos\theta_2'}^2\dd{\cos\theta_2'}}{\int_{0}^{1}\cos\theta_2' \dd{\cos\theta_2'}}=\frac{2}{3}\text{ .}
     \end{aligned} 
 \end{equation}
 \noindent Giving the average fractional energy gain:
@@ -150,7 +149,7 @@ p\qty(\cos\theta_2')\propto R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\co
 \begin{equation}
     \begin{aligned}
     \expectation{\frac{\Delta E}{E}}
-	&=\frac{\beta^2+\frac{4}{3}\beta+\frac{4}{9}\beta^2}{1-\beta_\text{cloud}^2}
+	&=\frac{\beta^2+\frac{4}{3}\beta+\frac{4}{9}\beta^2}{1-\beta_\text{cloud}^2}\text{ .}
     \end{aligned} 
 \end{equation}
 \noindent For a non-relativistic particle ($\beta\ll 1$) and $R=4$ (see \autoref{eq:down_upstream_v_ratio}):
@@ -160,7 +159,7 @@ p\qty(\cos\theta_2')\propto R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\co
     \expectation{\frac{\Delta E}{E}}
 	&\approx \frac{4}{3}\beta =\frac{4}{3}U_2'  \\
     &=\frac{4}{3}\qty(\frac{R-1}{R})\frac{V_s}{c} \\
-    &\approx \frac{V_s}{c}
+    &\approx \frac{V_s}{c}\text{ .}
     \end{aligned} 
 \end{equation}
 
