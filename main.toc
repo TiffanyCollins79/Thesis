@@ -101,13 +101,15 @@
 \contentsline {subsection}{\numberline {A.2.3}Snow-Plough Phase}{151}{subsection.A.2.3}%
 \contentsline {subsubsection}{Merging with the Interstellar Medium}{151}{subsubsection*.100}%
 \contentsline {chapter}{\numberline {B}Diffusive Shock Acceleration}{152}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Finite Difference Techniques applied to the Transport Equation}{156}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Diffusion}{156}{section.C.1}%
-\contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{157}{subsection.C.1.1}%
-\contentsline {section}{\numberline {C.2}Advection}{159}{section.C.2}%
-\contentsline {chapter}{\numberline {D}Variance of diffusion in $n$ dimensions}{161}{appendix.D}%
-\contentsline {section}{\numberline {D.1}1D Diffusion}{161}{section.D.1}%
-\contentsline {section}{\numberline {D.2}2D Diffusion}{162}{section.D.2}%
-\contentsline {section}{\numberline {D.3}3D Diffusion}{162}{section.D.3}%
-\contentsline {chapter}{\numberline {E}Spectral Energy Distribution towards Cl*\,1806-20}{164}{appendix.E}%
-\contentsline {chapter}{\numberline {F}Miscellaneous Tables}{165}{appendix.F}%
+\contentsline {section}{\numberline {B.1}Fermi's Original Theory}{152}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{152}{section.B.2}%
+\contentsline {chapter}{\numberline {C}Finite Difference Techniques applied to the Transport Equation}{157}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Diffusion}{157}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{158}{subsection.C.1.1}%
+\contentsline {section}{\numberline {C.2}Advection}{160}{section.C.2}%
+\contentsline {chapter}{\numberline {D}Variance of diffusion in $n$ dimensions}{162}{appendix.D}%
+\contentsline {section}{\numberline {D.1}1D Diffusion}{162}{section.D.1}%
+\contentsline {section}{\numberline {D.2}2D Diffusion}{163}{section.D.2}%
+\contentsline {section}{\numberline {D.3}3D Diffusion}{163}{section.D.3}%
+\contentsline {chapter}{\numberline {E}Spectral Energy Distribution towards Cl*\,1806-20}{165}{appendix.E}%
+\contentsline {chapter}{\numberline {F}Miscellaneous Tables}{166}{appendix.F}%
