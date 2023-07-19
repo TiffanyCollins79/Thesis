@@ -83,49 +83,45 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
 
 \section{Diffusive Shock Acceleration}
 
-Diffusive shock acceleration is a modified version of Fermi's original theory that considers acceleration at a shock front (e.g. SNR shock front.)
+Diffusive shock acceleration is a modified version of Fermi's original theory that considers acceleration at a shock front (e.g. SNR shock). The shock travels at velocity $v_s$ in the upsream reference frame with a ISM gas cloud downstream of the shock having velocity $v_c$. In the reference frame of the shock, the material upstream of the shock travels towards the shock at velocity $U_1=v_s$ and the downstream cloud now has velcoity $U_2=v_s-v_c$. The compression ratio is defined to be the mass density ratio of the shocked and unshocked material:
 \begin{SCfigure}[0.5][h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png}
 	\caption{A cosmic ray travels upstream of the shock at velocity $U_1$ (relative to the shock) at angle $\Theta_1$ and `passes` through the shock downstream. The cosmic ray now has velocity $U_2$ at angle $\Theta_2$. $B_1$ and $B_2$ are the magnetic fields upstream and downstream of the shock with angles $\theta_{B1}$ and $\theta_{B2}$ to the normal to the shock respectively.}
 	\label{fig:A3_shock_dynamics}
 \end{SCfigure}
-\par 
-A cosmic ray travelling upstream of the shock at velocity $U_1$ and angle $\theta_1$ will `pass' through the shock and travel at velocity $U_2$ and angle $\theta_2$ downstream of the shock (see \autoref{fig:A3_shock_dynamics}). The magnetic fields upstream and downstream of the shock are $B_1$ and $B_2$ respectively and $x$ and $y$ are the direction perpindicular and parallel to the shock respectively. The compression ratio is defined to be the mass density ratio of the shocked and unshocked material:
-
 \begin{equation}
     \begin{aligned}
         r&=\frac{\rho_2}{\rho_1}\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent where $\rho$ is the density. From conservation of mass:
+\noindent where $\rho_1$ and $rho_2$ are the densities upstream and downstream of the shock respectively. From conservation of mass:
 
 \begin{equation}
     \begin{aligned}
-        \rho_1U_{1x}&=\rho_2U_{2x}=A \\
-        \therefore U_{1x}&=rU_{2x}\text{ ,}
+        \rho_1U_{1}&=\rho_2U_2=A \\
+        \therefore U_{1}&=rU_{2}\text{ ,}
     \end{aligned} \label{eq:A3_velocity_ratios}
 \end{equation}
 \noindent where $A$ is a constant. From conservation of momentum:
 
 \begin{subequations}
     \begin{alignat}{1}
-        U_{1y}&=U_{2y} \\
-        AU_{1x}&=AU_{2x}+P\text{ ,}
+        AU_{1}&=AU_{2}+P_2\text{ ,}
     \end{alignat}
 \end{subequations}
-\noindent with $P$ being the pressure downstream. From the conservation of energy:
+\noindent with $P_2$ being the pressure downstream. From the conservation of energy:
 
 \begin{equation}
     \begin{aligned}
-        \frac{1}{2}AU_{1x}^2&=\frac{1}{2}U_{2x}^2+U_{2x}\qty(E+P)\text{ ,}
+        \frac{1}{2}AU_{1}^2&=\frac{1}{2}U_{2}^2+U_{2}\qty(E_2+P_2)\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent it can be found that the compression ratio can be expressed in terms of the downstream internal energy $E$:
+\noindent where $E_2$ is the downstream internal energy. The compression ratio can be expressed in terms of $E_2$:
 
 \begin{equation}
     \begin{aligned}
-        r&=1+\frac{2E}{P}\text{ ,}
+        r&=1+\frac{2E_2}{P_2}\text{ ,}
     \end{aligned}
 \end{equation}
 \noindent and $r$ takes values $4$ and $7$ for monatomic non-relativistic and relativistic gas respectively  \citep{1983RPPh...46..973D}.
