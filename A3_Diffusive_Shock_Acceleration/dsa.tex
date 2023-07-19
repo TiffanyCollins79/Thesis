@@ -6,7 +6,7 @@ At Earth, the energy spectrum of cosmic rays have been measured up to $10^{20}~\
 
 In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM gas cloud (travelling at velocity $v_c$ in the lab frame) at angle $\theta_1$ (see \autoref{fig:A3_DSA_fermi_orig_frames}) and exits the cloud with energy $E_2$ and angle $\theta_2$. Using Lorentz transformations, the original energy in the cloud frame (primed frame) is given by:
 
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics{A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png}
     \caption{In the lab frame (\textit{left}), a Cosmic ray with energy $E_1$ enters a ISM cloud (travelling at spped $v_c$) at angle $\theta_1$ and scatters off magnetic field tubulence and exits the cloud with energy $E_2$ and angle $\theta_2$. The same process is shown in the right, but in the reference frame of the cloud (labeled as primed).}
@@ -35,15 +35,7 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
     \end{aligned}
 \end{equation}
 \noindent Considering the average fractional energy gain ($\langle \Delta E/E \rangle$), the outcoing direction of the cosmic ray in the clouds reference frame is randomised, therefore $\langle \cos\theta_2'=0 \rangle$. To calculate the average original cosmic-ray angle, consider the ISM cloud traveling a distance $v_ct$ in a `sea' of cosmic rays travelling at speed $v_\text{CR}$ (see \autoref{fig:A3_fermi_origin_theta1}). In time $t$, all cosmic rays in length $l$ will enter the cloud. For relativistic cosmic rays ($v_\text{cr}>>v_c$):
-
-\begin{equation}
-    \begin{aligned}
-        L&=t\sqrt{v_\text{CR}^2+v_c^2-2v_\text{CR}v_c\cos\theta_1} \\
-        &\approx t\qty(v_\text{CR}-v_c\cos\theta_1) \text{ .}
-    \end{aligned}
-\end{equation}
-\noindent For a spherical cloud of radius $r$ having cross section $\sigma=\pi r^2$, the collision rate, $R$, is:
-\begin{wrapfigure}[9]{r}{0.34\textwidth}
+\begin{wrapfigure}[15]{r}{0.34\textwidth}
     \centering
     \includegraphics[width=0.33\textwidth]{A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png}
     \caption{A ISM cloud travelling at speed $v_c$ in a `sea' of cosmic rays. In time $t$, the cosmic rays in path $L$ with speed $v_\text{CR}$ will enter the cloud.}
@@ -51,18 +43,27 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
 \end{wrapfigure}
 \begin{equation}
     \begin{aligned}
+        L&=t\sqrt{v_\text{CR}^2+v_c^2-2v_\text{CR}v_c\cos\theta_1} \\
+        &\approx t\qty(v_\text{CR}-v_c\cos\theta_1) \text{ .}
+    \end{aligned}
+\end{equation}
+\noindent For a spherical cloud of radius $r$ having cross section $\sigma=\pi r^2$, the collision rate, $R$, is:
+
+\begin{equation}
+    \begin{aligned}
         R&=\frac{n_\text{CR}L\sigma}{t} \\
         &=n_\text{CR}\sigma\qty(v_\text{CR}-v_c\cos\theta_1) \text { ,}
     \end{aligned}
 \end{equation}
-\noindent where $n_\text{CR}$ is the cosmic-ray density. For an isotropic cosmic-ray distribution:
+\noindent where $n_\text{CR}$ is the cosmic-ray density. For an isotropic cosmic-ray distribution, $\dd{n_\text{CR}}/\dd{\cos\theta_1}=n_\text{CR}/2$ for $-1<\cos\theta_1<1$, the collision rate is described by:
 
 \begin{equation}
     \begin{aligned}
-        \dv{n_\text{CR}}{\cos\theta_1}&=\frac{n_\text{CR}}{2}\text{,}\quad -1<\cos\theta_1<1\text{ ,}
+        R&=\frac{n_\text{CR}L\sigma}{t} \\
+        &=\frac{n_\text{CR}\sigma}{2}\int_{-1}^1\dd{\cos\theta_1}\qty(v_\text{CR}-v_c\cos\theta_1) \text{ .}
     \end{aligned}
 \end{equation}
-\noindent where $-1<\cos\theta_1<1$ considers all angles of $\theta_1$.
+\noindent giving the probability distribution of collision at angle $\theta_1$ to be $p_\text{coll}\propto \qty(1-\beta_c)$ for relativistic cosmic rays ($v_c\rightarrow c$).
 
 \section{Diffusive Shock Acceleration}
 
