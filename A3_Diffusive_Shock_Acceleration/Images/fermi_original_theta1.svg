@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2.3729701in"
+   height="17in"
+   viewBox="0 0 60.273442 431.8"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="fermi_original_theta1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="in"
+     inkscape:zoom="1.7674523"
+     inkscape:cx="129.28213"
+     inkscape:cy="896.48813"
+     inkscape:window-width="1292"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     width="3.55945in" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Mend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1184" />
+    </marker>
+    <rect
+       x="236.47208"
+       y="486.77939"
+       width="231.77782"
+       height="89.703621"
+       id="rect4238" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1178" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect879"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1178-6" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect879-7"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-3-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1178-6-5" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect879-7-6"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <rect
+       x="236.47208"
+       y="486.77939"
+       width="231.77782"
+       height="89.703621"
+       id="rect4238-9" />
+    <rect
+       x="236.47208"
+       y="486.77939"
+       width="231.77782"
+       height="89.703621"
+       id="rect4238-2" />
+    <rect
+       x="236.47208"
+       y="486.77939"
+       width="231.77782"
+       height="89.703621"
+       id="rect4238-2-0" />
+  </defs>
+  <g
+     inkscape:label="Arrows"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 9.8065739,231.4556 c 16.5200681,0 33.0400421,0 49.5599271,0"
+       id="path877"
+       inkscape:path-effect="#path-effect879"
+       inkscape:original-d="m 9.8065739,231.4556 c 16.5200681,9e-5 33.0400421,9e-5 49.5599271,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 1.4878489,270.58015 C 20.780755,257.53862 40.073634,244.49711 59.366501,231.4556"
+       id="path877-5"
+       inkscape:path-effect="#path-effect879-7"
+       inkscape:original-d="M 1.4878489,270.58015 C 20.780824,257.53872 40.073705,244.49721 59.366501,231.4556"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-32.867842,123.33194)"
+       id="text4236-1"
+       style="line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect4238-9);fill:#000000;fill-opacity:1"><tspan
+         x="236.47266"
+         y="497.9513"
+         id="tspan32045"><tspan
+           style="font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math';baseline-shift:baseline"
+           id="tspan32039">v</tspan><tspan
+           style="font-size:65%;baseline-shift:sub"
+           id="tspan32041">CR</tspan><tspan
+           style="font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math';baseline-shift:baseline"
+           id="tspan32043">t</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:"
+       d="M 1.4878489,270.58015 C 4.2607436,257.5387 7.0336505,244.49719 9.8065739,231.4556"
+       id="path877-5-2"
+       inkscape:path-effect="#path-effect879-7-6"
+       inkscape:original-d="M 1.4878489,270.58015 C 4.2608493,257.53872 7.0337573,244.49721 9.8065739,231.4556"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-58.59419,113.77059)"
+       id="text4236-7"
+       style="line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect4238-2);fill:#000000;fill-opacity:1"><tspan
+         x="236.47266"
+         y="497.39648"
+         id="tspan32047">L</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-13.845633,103.43531)"
+       id="text4236-7-9"
+       style="line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect4238-2-0);fill:#000000;fill-opacity:1"><tspan
+         x="236.47266"
+         y="497.39648"
+         id="tspan32051">θ<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan32049">1</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Labels">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-33.144272,98.146647)"
+       id="text4236"
+       style="line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect4238);fill:#000000;fill-opacity:1"><tspan
+         x="236.47266"
+         y="497.9513"
+         id="tspan32059"><tspan
+           style="font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math';baseline-shift:baseline"
+           id="tspan32053">v</tspan><tspan
+           style="font-size:65%;baseline-shift:sub"
+           id="tspan32055">c</tspan><tspan
+           style="font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math';baseline-shift:baseline"
+           id="tspan32057">t</tspan></tspan></text>
+  </g>
+</svg>
