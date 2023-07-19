@@ -102,7 +102,7 @@
 \contentsline {subsubsection}{Merging with the Interstellar Medium}{151}{subsubsection*.100}%
 \contentsline {chapter}{\numberline {B}Diffusive Shock Acceleration}{152}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Fermi's Original Theory}{152}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{152}{section.B.2}%
+\contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{153}{section.B.2}%
 \contentsline {chapter}{\numberline {C}Finite Difference Techniques applied to the Transport Equation}{157}{appendix.C}%
 \contentsline {section}{\numberline {C.1}Diffusion}{157}{section.C.1}%
 \contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{158}{subsection.C.1.1}%

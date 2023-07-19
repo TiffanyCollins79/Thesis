@@ -16,9 +16,41 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
 \begin{equation}
     \begin{aligned}
         E_2&=\gamma_c E_2'\qty(1+\beta_c\cos\theta_2') \\
-        &=\gamma_c^2\qty(1+\beta_c\cos\theta_2')\qty(1-\beta_c\cos\theta_1)
+        &=\gamma_c^2E_1\qty(1+\beta_c\cos\theta_2')\qty(1-\beta_c\cos\theta_1) \text{ .}
     \end{aligned}
 \end{equation}
+\noindent The cosmic-ray fractional energy gain is then:
+
+\begin{equation}
+    \begin{aligned}
+        \frac{\Delta E}{E}&=\frac{E_2-E_1}{E_1} \\
+        &=\frac{1-\beta_c\cos\theta_1+\beta_c\cos\theta_1+\beta_c^2\cos\theta_1\cos\theta_2'}{E_1\qty(1-\beta_c^2)}-1\text{ .}
+    \end{aligned}
+\end{equation}
+\noindent Considering the average fractional energy gain ($\langle \Delta E/E \rangle$), the outcoing direction of the cosmic ray in the clouds reference frame is randomised, therefore $\langle \cos\theta_2'=0 \rangle$. To calculate the average original cosmic-ray angle, consider the ISM cloud traveling a distance $v_ct$ in a `sea' of cosmic rays travelling at speed $v_\text{CR}$ (see ---). In time $t$, all cosmic rays in length $l$ will enter the cloud. For relativistic cosmic rays ($v_\text{cr}>>v_c$):
+
+\begin{equation}
+    \begin{aligned}
+        L&=t\sqrt{v_\text{CR}^2+v_c^2-2v_\text{CR}v_c\cos\theta_1} \\
+        &\approx t\qty(v_\text{CR}-v_c\cos\theta_1) \text{ .}
+    \end{aligned}
+\end{equation}
+\noindent For a spherical cloud of radius $r$ having cross section $\sigma=\pi r^2$, the collision rate, $R$, is:
+
+\begin{equation}
+    \begin{aligned}
+        R&=\frac{n_\text{CR}L\sigma}{t} \\
+        &=n_\text{CR}\sigma\qty(v_\text{CR}-v_c\cos\theta_1) \text { ,}
+    \end{aligned}
+\end{equation}
+\noindent where $n_\text{CR}$ is the cosmic-ray density. For an isotropic cosmic-ray distribution:
+
+\begin{equation}
+    \begin{aligned}
+        \dv{n_\text{CR}}{\cos\theta_1}&=\frac{n_\text{CR}}{2}\text{,}\quad -1<\cos\theta_1<1\text{ ,}
+    \end{aligned}
+\end{equation}
+\noindent where $-1<\cos\theta_1<1$ considers all angles of $\theta_1$.
 
 \section{Diffusive Shock Acceleration}
 
