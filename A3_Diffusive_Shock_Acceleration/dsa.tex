@@ -153,16 +153,15 @@ In the frame of the shock, the material upstream of the shock travels towards th
 	\label{fig:A3_shock_dynamics3}
 \end{SCfigure}
 \par~\par 
-Now consider the scenario shown in \autoref{fig:A3_shock_dynamics3}, where a cosmic ray of energy $E_1$ and angle $\theta_1$ travels from upstream to downstream of the shock and scatters off a ISM cloud travelling at velocity $U_2'$. The cosmic ray, with energy $E_2$, travels back upstream with angle $\theta_2$. The rate that cosmic rays travel upstream to downstream ($u\rightarrow d$) and downstream to upstream ($d\rightarrow u$) is given by:
+Now consider the scenario shown in \autoref{fig:A3_shock_dynamics3}, where a cosmic ray of energy $E_1$, velocity $v$ and angle $\theta_1$ travels upstream to downstream of the shock and scatters off a ISM cloud travelling at velocity $U_2'$. The cosmic ray, with energy $E_2$, travels back upstream at angle $\theta_2$. The rate that cosmic rays travel upstream to downstream ($u\rightarrow d$) and downstream to upstream ($d\rightarrow u$) is given by:
 
 
 \begin{alignat}{2}
     R_{u\rightarrow d}\qty(\theta_1)&\approx-n_{CR}v\cos\theta_1,\quad &\ang{90}<\theta_1\ang{180} \\
-    R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\cos\theta_2'\quad&\ang{0}\&theta_2&\ang{90} \text{ ,}
+    R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\cos\theta_2'\quad&\ang{0}<\theta_2<\ang{90} \text{ ,}
 \end{alignat}
-
-
 \noindent giving the probability of crossings to be:
+
 \begin{equation}
     \begin{aligned}
         p_{u\rightarrow d}\qty(\theta_1)&\propto -\cos\theta_1 \\
@@ -183,18 +182,15 @@ Now consider the scenario shown in \autoref{fig:A3_shock_dynamics3}, where a cos
 \begin{equation}
     \begin{aligned}
     \expectation{\frac{\Delta E}{E}}
-	&=\frac{\beta^2+\frac{4}{3}\beta+\frac{4}{9}\beta^2}{1-\beta_\text{cloud}^2}\text{ .}
+	&=\frac{\beta^2+\frac{4}{3}\beta+\frac{4}{9}\beta^2}{1-\beta_\text{cloud}^2}\text{ ,}
     \end{aligned} 
 \end{equation}
-\noindent For a non-relativistic particle ($\beta\ll 1$) and $r=4$:
+\noindent where $\beta=U_2'/c$. For $\beta\ll 1$:
 
 \begin{equation}
     \begin{aligned}
     \expectation{\frac{\Delta E}{E}}
-	&\approx \frac{4}{3}\beta =\frac{4}{3}U_2'  \\
-    &=\frac{4}{3}\qty(\frac{R-1}{R})\frac{V_s}{c} \\
-    &\approx \frac{V_s}{c}\text{ .}
+	&\approx \frac{4}{3}\beta 
     \end{aligned} 
 \end{equation}
-
-Each time the cosmic ray travels back and across the shock, the cosmic ray has increased its energy by a factor $V_s/c$.
+\noindent Each time the cosmic ray travels back and across the shock, the cosmic ray has increased its energy by a factor $V_s/c$. An Diffusive shock acceleration is also known as first-order fermi acceleration as the average energy gain is first order with $\beta$. 
