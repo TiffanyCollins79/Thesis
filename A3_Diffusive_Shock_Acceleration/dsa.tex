@@ -35,12 +35,12 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
     \end{aligned}
 \end{equation}
 \noindent Considering the average fractional energy gain ($\langle \Delta E/E \rangle$), the outcoing direction of the cosmic ray in the clouds reference frame is randomised, therefore $\langle \cos\theta_2'=0 \rangle$. To calculate the average original cosmic-ray angle, consider the ISM cloud traveling a distance $v_ct$ in a `sea' of cosmic rays travelling at speed $v_\text{CR}$ (see \autoref{fig:A3_fermi_origin_theta1}). In time $t$, all cosmic rays in length $l$ will enter the cloud. For relativistic cosmic rays ($v_\text{cr}>>v_c$):
-\begin{wrapfigure}[15]{r}{0.34\textwidth}
+\begin{SCfigure}[1][h]
     \centering
-    \includegraphics[width=0.33\textwidth]{A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png}
+    \includegraphics[width=0.5\textwidth]{A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png}
     \caption{A ISM cloud travelling at speed $v_c$ in a `sea' of cosmic rays. In time $t$, the cosmic rays in path $L$ with speed $v_\text{CR}$ will enter the cloud.}
     \label{fig:A3_fermi_origin_theta1}
-\end{wrapfigure}
+\end{SCfigure}
 \begin{equation}
     \begin{aligned}
         L&=t\sqrt{v_\text{CR}^2+v_c^2-2v_\text{CR}v_c\cos\theta_1} \\
@@ -63,7 +63,13 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
         &=\frac{n_\text{CR}\sigma}{2}\int_{-1}^1\dd{\cos\theta_1}\qty(v_\text{CR}-v_c\cos\theta_1) \text{ .}
     \end{aligned}
 \end{equation}
-\noindent giving the probability distribution of collision at angle $\theta_1$ to be $p_\text{coll}\propto \qty(1-\beta_c)$ for relativistic cosmic rays ($v_c\rightarrow c$).
+\noindent giving the probability distribution of collision at angle $\theta_1$ to be $p_\text{coll}\propto \qty(1-\beta_c)$ for relativistic cosmic rays. The average value of $\cos\theta_1$ is then:
+
+\begin{equation}
+    \begin{aligned}
+        \langle \cos\theta_1\rangle &=\frac{\int_{-1}^1\dd{\cos\theta_1}p_\text{coll}\cos\theta_1}{\int_{-1}^1\dd{\cos\theta_1}p_\text{coll}}
+    \end{aligned}
+\end{equation} 
 
 \section{Diffusive Shock Acceleration}
 

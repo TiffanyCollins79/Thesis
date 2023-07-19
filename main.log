@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  19 JUL 2023 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  19 JUL 2023 13:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3060,52 +3060,48 @@ Overfull \hbox (33.33pt too wide) in paragraph at lines 11--12
 File: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png  used on input line 40.
-(pdftex.def)             Requested size: 150.23138pt x 109.87064pt.
+(pdftex.def)             Requested size: 227.62206pt x 166.47203pt.
 
-Underfull \hbox (badness 1365) in paragraph at lines 57--59
-\OT1/cmr/m/n/12 where $\OML/ntxmi/m/it/12 n[]$ \OT1/cmr/m/n/12 is the cosmic-ray den-sity. For an isotropic cosmic-ray dis-tri-bu-tion,
+Overfull \hbox (16.51945pt too wide) in paragraph at lines 57--59
+\OT1/cmr/m/n/12 where $\OML/ntxmi/m/it/12 n[]$ \OT1/cmr/m/n/12 is the cosmic-ray den-sity. For an isotropic cosmic-ray dis-tri-bu-tion, $[] \LMS/ntxsy/m/n/12 ù[] \U/ntxmia/m/it/12 =
  []
 
-<A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png, id=6087, 347.79938pt x 344.03531pt>
+[153 <./A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>]
+<A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png, id=6099, 347.79938pt x 344.03531pt>
 File: A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png>
-Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png  used on input line 72.
+Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png  used on input line 78.
 (pdftex.def)             Requested size: 318.6695pt x 315.23543pt.
 
-Underfull \hbox (badness 3849) in paragraph at lines 75--75
+Underfull \hbox (badness 3849) in paragraph at lines 81--81
 [][]\OT1/cmr/m/n/12 : |A cos-mic
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 75--75
+Underfull \hbox (badness 1867) in paragraph at lines 81--81
 \OT1/cmr/m/n/12 (rel-a-tive to the shock)
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[153 <./A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>]
-<A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png, id=6103, 500.62032pt x 130.23656pt>
+[154 <./A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png>]
+<A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png, id=6114, 500.62032pt x 130.23656pt>
 File: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png>
-Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png  used on input line 120.
+Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png  used on input line 126.
 (pdftex.def)             Requested size: 455.24413pt x 118.43596pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[154 <./A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png>]
-<A3_Diffusive_Shock_Acceleration/Images/dsa.png, id=6118, 312.41719pt x 224.33812pt>
+<A3_Diffusive_Shock_Acceleration/Images/dsa.png, id=6116, 312.41719pt x 224.33812pt>
 File: A3_Diffusive_Shock_Acceleration/Images/dsa.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/dsa.png>
-Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/dsa.png  used on input line 137.
+Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/dsa.png  used on input line 143.
 (pdftex.def)             Requested size: 295.9059pt x 212.48672pt.
 
-Underfull \hbox (badness 1221) in paragraph at lines 140--140
+Underfull \hbox (badness 1221) in paragraph at lines 146--146
 \OT1/cmr/m/n/12 frame of the ma-te-rial up-
  []
 
-[155 <./A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png> <./A3_Diffusive_Shock_Acceleration/Images/dsa.png>] [156]) [157]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[155 <./A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png>] [156 <./A3_Diffusive_Shock_Acceleration/Images/dsa.png>]) [157]
 \openout2 = `A2_Finite_Difference_Techniques/finite_difference.aux'.
 
  (./A2_Finite_Difference_Techniques/finite_difference.tex
@@ -3182,7 +3178,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.7> not available
 
 
 ]
-<A4_Variance_diffusion/Images/diffusion_3D.pdf, id=6248, 524.84656pt x 419.14986pt>
+<A4_Variance_diffusion/Images/diffusion_3D.pdf, id=6249, 524.84656pt x 419.14986pt>
 File: A4_Variance_diffusion/Images/diffusion_3D.pdf Graphic file (type pdf)
 <use A4_Variance_diffusion/Images/diffusion_3D.pdf>
 Package pdftex.def Info: A4_Variance_diffusion/Images/diffusion_3D.pdf  used on input line 117.
@@ -3280,18 +3276,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48779 strings out of 476025
- 1025313 string characters out of 5790017
- 2220747 words of memory out of 5000000
- 67368 multiletter control sequences out of 15000+600000
+ 48782 strings out of 476025
+ 1025347 string characters out of 5790017
+ 2220900 words of memory out of 5000000
+ 67370 multiletter control sequences out of 15000+600000
  572232 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,20n,131p,1992b,2704s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathabx-type1/mathb8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txbmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (188 pages, 33874225 bytes).
+Output written on main.pdf (188 pages, 33874809 bytes).
 PDF statistics:
- 6934 PDF objects out of 7423 (max. 8388607)
- 5118 compressed objects within 52 object streams
- 951 named destinations out of 1000 (max. 500000)
+ 6935 PDF objects out of 7423 (max. 8388607)
+ 5119 compressed objects within 52 object streams
+ 952 named destinations out of 1000 (max. 500000)
  1362 words of extra memory for PDF output out of 10000 (max. 10000000)
 
