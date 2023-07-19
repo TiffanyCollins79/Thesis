@@ -1,0 +1,115 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{i}{chapter*.2}%
+\contentsline {chapter}{Declaration of Originality}{ii}{chapter*.3}%
+\contentsline {chapter}{Acknowledgements}{iii}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Pulsar Wind Nebulae}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Pulsar Wind Nebulae}{4}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Neutron Stars/ Pulsars}{4}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Time Evolution of Pulsar Wind Nebulae}{8}{subsection.2.1.2}%
+\contentsline {subsubsection}{Stage 1: Expansion Phase ($<10~\si {\kilo \year }$)}{8}{subsubsection*.8}%
+\contentsline {subsubsection}{Stage 2: ($10-100~\si {\kilo \year }$)}{9}{subsubsection*.9}%
+\contentsline {subsubsection}{Stage 3: Formation of $\si {\tera \electronvolt }$ halos ($t\gtrsim 100~\si {\kilo \year }$)}{9}{subsubsection*.10}%
+\contentsline {subsubsection}{Time Evolution of the PWN Magnetic Field Structure}{9}{subsubsection*.11}%
+\contentsline {subsubsection}{Time Evolution of the Spectral Energy Distribution}{10}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {2.1.3}TeV Pulsar Wind Nebula}{12}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Mysteries of Pulsar Wind Nebulae}{13}{subsection.2.1.4}%
+\contentsline {subsubsection}{How are electrons transported within pulsar wind nebula?}{13}{subsubsection*.16}%
+\contentsline {subsubsection}{Can pulsar wind nebula accelerate particles up to $\si {\peta \electronvolt }$ energies?}{13}{subsubsection*.17}%
+\contentsline {subsubsection}{Is there a hadronic component to the pulsar wind nebula?}{14}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {2.1.5}HESS J1825-137 and HESS J1826-130}{14}{subsection.2.1.5}%
+\contentsline {subsubsection}{HESS\,J1826-130}{16}{subsubsection*.23}%
+\contentsline {section}{\numberline {2.2}Cosmic Rays}{18}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Acceleration of Charged Particles}{19}{subsection.2.2.1}%
+\contentsline {subsubsection}{Acceleration by pulsars}{19}{subsubsection*.29}%
+\contentsline {subsubsection}{Acceleration by the pulsar wind nebula termination shock}{20}{subsubsection*.30}%
+\contentsline {subsection}{\numberline {2.2.2}Propagation of charged particles}{21}{subsection.2.2.2}%
+\contentsline {subsubsection}{Diffusion of charged particles}{22}{subsubsection*.32}%
+\contentsline {subsubsection}{Local and Galactic Magnetic Fields}{23}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {2.2.3}Cosmic Ray Spectrum}{24}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}PeVatrons}{24}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Gamma-rays: messengers of cosmic rays}{26}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}A brief history}{26}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Hadronic Gamma-Ray Emission}{26}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Leptonic Gamma-Ray emission}{29}{subsection.2.3.3}%
+\contentsline {subsubsection}{Synchrotron Radiation}{29}{subsubsection*.38}%
+\contentsline {subsubsection}{Inverse-Compton emission}{31}{subsubsection*.41}%
+\contentsline {subsubsection}{Bremsstrahlung Emission}{34}{subsubsection*.44}%
+\contentsline {subsubsection}{Total Leptonic Radiative Processs}{34}{subsubsection*.45}%
+\contentsline {chapter}{\numberline {3}Gamma Ray Astronomy}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Air Showers}{37}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Gamma-ray Air Showers}{38}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Cosmic-ray Air Showers}{40}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Cherenkov Light and Cherenkov Telescopes}{42}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}TeV Gamma-ray Observatories}{44}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}The High Energy Stereoscopic System}{45}{subsection.3.2.1}%
+\contentsline {subsubsection}{The H.E.S.S. Galactic Plane Survey}{46}{subsubsection*.54}%
+\contentsline {subsection}{\numberline {3.2.2}\textit {Fermi}-LAT}{46}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}LHAASO}{47}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}HAWC}{48}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}The Cherenkov Telescope Array}{48}{subsection.3.2.5}%
+\contentsline {chapter}{\numberline {4}ISM towards \mbox {HESS\,J1825-137} and \mbox {HESS\,J1826-130}}{50}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Detecting the interstellar medium}{51}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Specific Intensity, Specific Flux and Bolometric flux}{51}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Radiative Transfer}{52}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Black Bodies}{53}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Spectral Line Excitation and Emission}{54}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Probing the interstellar medium}{55}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Molecular Tracers}{55}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Doppler Shift}{56}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Galactic Rotation Curve}{57}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Magnetic fields in molecular clouds}{59}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}H$\alpha $ emission}{59}{subsection.4.2.5}%
+\contentsline {subsubsection}{Method A}{60}{subsubsection*.65}%
+\contentsline {subsection}{\numberline {4.2.6}Nanten2 Observatory}{61}{subsection.4.2.6}%
+\contentsline {chapter}{\numberline {5}Time evolution of CR particles}{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Radiation losses}{63}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Impulsive source of cosmic rays}{65}{subsection.5.1.1}%
+\contentsline {subsubsection}{Hadronic Cosmic Ray Source}{66}{subsubsection*.69}%
+\contentsline {subsubsection}{Leptonic Cosmic Ray Source}{66}{subsubsection*.71}%
+\contentsline {subsection}{\numberline {5.1.2}Continuous source of cosmic rays}{68}{subsection.5.1.2}%
+\contentsline {subsubsection}{Hadronic Cosmic Ray Source}{68}{subsubsection*.73}%
+\contentsline {subsubsection}{Leptonic Cosmic Ray Source}{70}{subsubsection*.75}%
+\contentsline {section}{\numberline {5.2}Transport of Cosmic Rays}{72}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Propagation of Cosmic Rays}{72}{subsection.5.2.1}%
+\contentsline {subsubsection}{Hadronic Cosmic Ray Source}{72}{subsubsection*.77}%
+\contentsline {subsubsection}{Leptonic Cosmic Ray Source}{76}{subsubsection*.79}%
+\contentsline {section}{\numberline {5.3}Modelling the energy density distribution of cosmic rays}{78}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}{\tt Newsedprod}}{78}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Including particle escape in {\tt Newsedprod}}{82}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Investigation of magnetic field turbulence regimes}{84}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Applications of {\tt Newsedprod}}{84}{subsection.5.3.4}%
+\contentsline {chapter}{\numberline {6}Explaining the extended GeV gamma-ray emission adjacent to HESS\,J1825-137}{88}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Modelling the 3D environment around Pulsar Wind Nebulae}{105}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The Transport Equation}{105}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Particle Transport literature review}{106}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Numerical Solution of the Transport Equation}{107}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}{\tt Multizone}}{108}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Analytical Solution: Diffusion-only}{110}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}Diffusion and Radiative Energy Losses: Analytical and Numerical Solution Comparison}{112}{subsection.7.1.5}%
+\contentsline {section}{\numberline {7.2}Advection}{114}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Numerical Solution}{116}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Analytical Solution}{116}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Summary and Application}{120}{section.7.3}%
+\contentsline {chapter}{\numberline {8}A 3D Diffusive and Advective Model of Electron Transport Applied to the Pulsar Wind Nebula HESS J1825-137}{122}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and Future Work}{146}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Supernova Remnants}{149}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The supernova}{149}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Stages of a Supernova Remnant}{150}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Free Expansion Phase}{150}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Sedov-Taylor Phase}{150}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Snow-Plough Phase}{151}{subsection.A.2.3}%
+\contentsline {subsubsection}{Merging with the Interstellar Medium}{151}{subsubsection*.100}%
+\contentsline {chapter}{\numberline {B}Diffusive Shock Acceleration}{152}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Fermi's Original Theory}{152}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{154}{section.B.2}%
+\contentsline {chapter}{\numberline {C}Finite Difference Techniques applied to the Transport Equation}{157}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Diffusion}{157}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{158}{subsection.C.1.1}%
+\contentsline {section}{\numberline {C.2}Advection}{160}{section.C.2}%
+\contentsline {chapter}{\numberline {D}Variance of diffusion in $n$ dimensions}{162}{appendix.D}%
+\contentsline {section}{\numberline {D.1}1D Diffusion}{162}{section.D.1}%
+\contentsline {section}{\numberline {D.2}2D Diffusion}{163}{section.D.2}%
+\contentsline {section}{\numberline {D.3}3D Diffusion}{163}{section.D.3}%
+\contentsline {chapter}{\numberline {E}Spectral Energy Distribution towards Cl*\,1806-20}{165}{appendix.E}%
+\contentsline {chapter}{\numberline {F}Miscellaneous Tables}{166}{appendix.F}%
