@@ -31,13 +31,13 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
 \begin{equation}
     \begin{aligned}
         \frac{\Delta E}{E}&=\frac{E_2-E_1}{E_1} \\
-        &=\frac{1-\beta_c\cos\theta_1+\beta_c\cos\theta_1+\beta_c^2\cos\theta_1\cos\theta_2'}{E_1\qty(1-\beta_c^2)}-1\text{ .}
-    \end{aligned}
+        &=\frac{1-\beta_c\cos\theta_1+\beta_c\cos\theta_1+\beta_c^2\cos\theta_1\cos\theta_2'}{\qty(1-\beta_c^2)}-1\text{ .}
+    \end{aligned} \label{eq:A3_DSA_fermi_orig_frac_energy}
 \end{equation}
 \noindent Considering the average fractional energy gain ($\langle \Delta E/E \rangle$), the outcoing direction of the cosmic ray in the clouds reference frame is randomised, therefore $\langle \cos\theta_2'=0 \rangle$. To calculate the average original cosmic-ray angle, consider the ISM cloud traveling a distance $v_ct$ in a `sea' of cosmic rays travelling at speed $v_\text{CR}$ (see \autoref{fig:A3_fermi_origin_theta1}). In time $t$, all cosmic rays in length $l$ will enter the cloud. For relativistic cosmic rays ($v_\text{cr}>>v_c$):
-\begin{SCfigure}[1][h]
+\begin{SCfigure}[2.3][h]
     \centering
-    \includegraphics[width=0.5\textwidth]{A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png}
+    \includegraphics[width=0.3\textwidth]{A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png}
     \caption{A ISM cloud travelling at speed $v_c$ in a `sea' of cosmic rays. In time $t$, the cosmic rays in path $L$ with speed $v_\text{CR}$ will enter the cloud.}
     \label{fig:A3_fermi_origin_theta1}
 \end{SCfigure}
@@ -67,22 +67,31 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
 
 \begin{equation}
     \begin{aligned}
-        \langle \cos\theta_1\rangle &=\frac{\int_{-1}^1\dd{\cos\theta_1}p_\text{coll}\cos\theta_1}{\int_{-1}^1\dd{\cos\theta_1}p_\text{coll}}
-    \end{aligned}
+        \langle \cos\theta_1\rangle &=\frac{\int_{-1}^1\dd{\cos\theta_1}p_\text{coll}\cos\theta_1}{\int_{-1}^1\dd{\cos\theta_1}p_\text{coll}} \\
+        &=-\frac{\beta}{3} \text{ .}
+    \end{aligned} \label{eq:A3_DSA_fermi_orig_av_theta1}
 \end{equation} 
+\noindent Combining \autoref{eq:A3_DSA_fermi_orig_frac_energy}, \autoref{eq:A3_DSA_fermi_orig_av_theta1} and that $\langle \cos\theta_1 \rangle=0$:
+
+\begin{equation}
+    \begin{aligned}
+        \langle \frac{\Delta E}{E} \rangle&=\frac{1-\beta_c\langle\cos\theta_1\rangle+\beta_c\cos\langle\theta_1\rangle+\beta_c^2\langle\cos\theta_1\rangle\langle\cos\theta_2'\rangle}{\qty(1-\beta_c^2)} \\
+        &= \frac{4}{3}\beta_c^2 \text{ .}
+    \end{aligned}
+\end{equation}
+\noindent The average fractional energy gain is positive and second-order in $\beta_c$ (fermi's original theory is also known as second-order Fermi acceleration). ISM gas clouds have velocity $\approx 15~\kmpersec$, resulting in a small fractional energy gain that cannot explain the highest energy cosmic rays observed at Earth. \citep{1949PhRv...75.1169F}. 
 
 \section{Diffusive Shock Acceleration}
 
+Diffusive shock acceleration is a modified version of Fermi's original theory that considers acceleration at a shock front (e.g. SNR shock front.)
 \begin{SCfigure}[0.5][h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{A3_Diffusive_Shock_Acceleration/Images/shock_dynamics.png}
 	\caption{A cosmic ray travels upstream of the shock at velocity $U_1$ (relative to the shock) at angle $\Theta_1$ and `passes` through the shock downstream. The cosmic ray now has velocity $U_2$ at angle $\Theta_2$. $B_1$ and $B_2$ are the magnetic fields upstream and downstream of the shock with angles $\theta_{B1}$ and $\theta_{B2}$ to the normal to the shock respectively.}
 	\label{fig:A3_shock_dynamics}
 \end{SCfigure}
-
-A cosmic ray travelling upstream of the shock at velocity $U_1$ and angle $\theta_1$ will `pass' through the shock and travel at velocity $U_2$ and angle $\theta_2$ downstream of the shock (see \autoref{fig:A3_shock_dynamics}). The magnetic fields upstream and downstream of the shock are $B_1$ and $B_2$ respectively.  $x$ and $y$ is defined to be the direction perpindicular and parallel to the shock respectively.
-%If $\theta_1=\theta_{B1}$ and $\theta_2=\theta_{B2}$ (i.e. the cosmic ray velocity is parallel to the magnetic field) then the shock is parallel. Hence, the electric field in the reference frame of the shock is zero \citep{1983RPPh...46..973D}.
-The compression ratio is defined to be the mass density ratio of the shocked and unshocked material:
+\par 
+A cosmic ray travelling upstream of the shock at velocity $U_1$ and angle $\theta_1$ will `pass' through the shock and travel at velocity $U_2$ and angle $\theta_2$ downstream of the shock (see \autoref{fig:A3_shock_dynamics}). The magnetic fields upstream and downstream of the shock are $B_1$ and $B_2$ respectively and $x$ and $y$ are the direction perpindicular and parallel to the shock respectively. The compression ratio is defined to be the mass density ratio of the shocked and unshocked material:
 
 \begin{equation}
     \begin{aligned}
@@ -124,7 +133,7 @@ The compression ratio is defined to be the mass density ratio of the shocked and
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png}
-	\caption{In the reference frame of the shock, a cosmic ray travelling upstream of the shock (with velocity $U_1$) to downstream of the shock (now travelling at velocity $U_2)$. $B_1$ and $B_2$ are the magnetic fields upstream and downstream of the shock with angles $\theta_{B1}$ and $\theta_{B2}$ to the normal to the shock respectively.}
+	\caption{In the reference frame of the shock (\textit{left}), a cosmic ray travels upstream of the shock (with velocity $U_{1x}$ perpindicular to the shock) to downstream of the shock (now with perpindicular velocity velocity $U_{2x})$. The same process is shown in the right, but in the upstream reference frame where the shock has velcoity $v_s$.}
 	\label{fig:A3_shock_dynamics2}
 \end{figure}
 
@@ -137,85 +146,39 @@ In the frame of the shock, the material upstream of the shock travels towards th
     \end{aligned} \label{eq:down_upstream_v_ratio}
 \end{equation}
 \noindent For non-relativistic particles ${U_{2x}'}/{V_s}=3/4$.
-\par~\par 
 \begin{SCfigure}[0.5][h]
 	\centering
 	\includegraphics[width=0.65\textwidth]{A3_Diffusive_Shock_Acceleration/Images/dsa.png}
 	\caption{In the reference frame of the material upstream of the shock, a cosmic ray of energy $E_1$ travels upstream to downstream with no change of energy. The cosmic ray scatters off magnetic field tubulence in a  cloud downstream of the shock and passes back upstream of the shock . This process can repeat or the cosmic ray can escape the system.}
 	\label{fig:A3_shock_dynamics3}
 \end{SCfigure}
+\par~\par 
+Now consider the scenario shown in \autoref{fig:A3_shock_dynamics3}, where a cosmic ray of energy $E_1$ and angle $\theta_1$ travels from upstream to downstream of the shock and scatters off a ISM cloud travelling at velocity $U_2'$. The cosmic ray, with energy $E_2$, travels back upstream with angle $\theta_2$. The rate that cosmic rays travel upstream to downstream ($u\rightarrow d$) and downstream to upstream ($d\rightarrow u$) is given by:
 
-Now consider the scenario described in \autoref{fig:A3_shock_dynamics3}, where cosmic ray of energy $E_1$ and velocity $v$ crosses upstream to downstream at angle $\theta_1$ (in the upstream reference frame). Lorentz transformations gives the energy of the cosmic ray in the shock reference frame:
 
+\begin{alignat}{2}
+    R_{u\rightarrow d}\qty(\theta_1)&\approx-n_{CR}v\cos\theta_1,\quad &\ang{90}<\theta_1\ang{180} \\
+    R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\cos\theta_2'\quad&\ang{0}\&theta_2&\ang{90} \text{ ,}
+\end{alignat}
+
+
+\noindent giving the probability of crossings to be:
 \begin{equation}
     \begin{aligned}
-        E_1'&=\gamma_d\qty(E_1-\beta_d p_1\cos\theta_1 c)\text{ ,}
+        p_{u\rightarrow d}\qty(\theta_1)&\propto -\cos\theta_1 \\
+        p_{d\rightarrow u}\qty(\theta_1)&\propto \cos\theta_2  \text{ .}
     \end{aligned}
 \end{equation}
-\noindent where $\beta_d=v_d/c$, $v_d$ is the velocity of the cosmic ray downstream, $\gamma_d$ is the Lorentz factor downstream and $p$ is the momentum. The energy and momentum of a cosmic ray is related by $E\approx pc$, therefore:
-
-\begin{equation}
-    \begin{aligned}
-        E_1'&=\gamma_d E_1\qty(1-\beta_d \cos\theta_1)\text{ .}
-    \end{aligned}
-\end{equation}
-
-\noindent The cosmic ray then scatters of a downstream cloud and in the reference frame of the cloud $E_2'=E_1'$. The cosmic ray then travels back upstream of the shock with energy:
-
-\begin{equation}
-    \begin{aligned}
-        E_2&=\gamma_u E_2'\qty(1+\beta\cos\theta_2') \\
-        &=\gamma_d\gamma_u E_1 \qty(1-\beta \cos\theta_1)\qty(1+\beta\cos\theta_2')\text{ ,}
-    \end{aligned}
-\end{equation}
-
-\noindent where $\beta_u=v_u/c$, $v_u$ is the velocity of the cosmic ray upstream and $\gamma_u$ is the Lorentz factor upstream. Assuming the same velocity upstream and downstream ($\beta=\beta_d=\beta_u$ and $\gamma=\gamma_d=\gamma_u$), the fractional energy gain for one back and forth crossing is then:
-
-\begin{equation}
-    \begin{aligned}
-    \frac{\Delta E}{E}&=\frac{E_2-E_1}{E_1} \\
-&=\frac{1-\beta\cos\theta_1+\beta\cos\theta_2'-\beta^2\cos\theta_2'\cos\theta_1}{1-\beta^2}-1\text{ .}
-    \end{aligned} 
-\end{equation}
-\noindent Therefore, the average fractional energy is:
-
-\begin{equation}
-    \begin{aligned}
-    \expectation{\frac{\Delta E}{E}}
-	&=\frac{1-\beta\expectation{\cos\theta_1}+\beta\expectation{\cos\theta_2'}-\beta^2\expectation{\cos\theta_1}\expectation{\cos\theta_2'}}{1-\beta_\text{cloud}^2}-1\text{ .}
-    \end{aligned} 
-\end{equation}
-\noindent The average angle, $\expectation{\cos\theta}$, can be found via:
-
-\begin{equation}
-    \begin{aligned}
-        \expectation{\cos\theta}&=\frac{\int p\qty(\cos\theta)\cos\theta\sin\theta \dd{\theta}}{\int_\pi^{\pi/2}p\qty(\cos\theta)\sin\theta \dd{\theta}} \\
-        &=\frac{\int p\qty(\cos\theta)\cos\theta\dd{\cos\theta}}{p\qty(\cos\theta) \dd{\cos\theta}}
-    \end{aligned}
-\end{equation}
-\noindent where $p\qty(\cos\theta)$ is the probability of a cosmic ray having angle $\theta$. The probability of a cosmic ray travelling upstream to downstream is proportional to the rate of particles per unit area travelling upstream to downstream:
-
-\begin{equation}
-    \begin{aligned}
-        p\qty(\cos\theta_1)\propto R_{u\rightarrow d}\qty(\theta_1)&\approx-n_{CR}v\cos\theta_1\quad &[\si{\per\meter\squared\per\second}]\text{ ,}
-    \end{aligned}
-\end{equation}
-\noindent and $\ang{90}<\theta_1<\ang{180}$ (see \autoref{fig:A3_shock_dynamics3}) Similarly, the rate of cosmic rays crossing per unit area from downstream to upstream is defined by:
-
-\begin{equation}
-    \begin{aligned}
-p\qty(\cos\theta_2')\propto R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\cos\theta_2'\quad&[\si{\per\meter\squared\per\second} ]\text{ ,}
-    \end{aligned}
-\end{equation}
-\noindent with $\ang{0}<\theta_2'<\ang{90}$ (see \autoref{fig:A3_shock_dynamics3}). Therefore:
+\noindent Therefore, the average values of $\cos\theta_1$ and $\cos\theta_2$ are:
 
 \begin{equation}
     \begin{aligned}
     \expectation{\cos\theta_1}&=\frac{\int_{-1}^{0} \cos\theta_1^2\dd{\cos\theta_1}}{\int_{-1}^{0}\cos\theta_1 \dd{\cos\theta_1}}=-\frac{2}{3} \\
     \expectation{\cos\theta_2'}&=\frac{\int_{0}^{1} {\cos\theta_2'}^2\dd{\cos\theta_2'}}{\int_{0}^{1}\cos\theta_2' \dd{\cos\theta_2'}}=\frac{2}{3}\text{ .}
-    \end{aligned} 
+    \end{aligned} \label{eq:A3_DSA_fermi_second_angle}
 \end{equation}
-\noindent Giving the average fractional energy gain:
+
+\noindent Combining \autoref{eq:A3_DSA_fermi_orig_frac_energy} and \autoref{eq:A3_DSA_fermi_second_angle} gives the average fractional energy gain:
 
 \begin{equation}
     \begin{aligned}
@@ -223,7 +186,7 @@ p\qty(\cos\theta_2')\propto R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\co
 	&=\frac{\beta^2+\frac{4}{3}\beta+\frac{4}{9}\beta^2}{1-\beta_\text{cloud}^2}\text{ .}
     \end{aligned} 
 \end{equation}
-\noindent For a non-relativistic particle ($\beta\ll 1$) and $R=4$ (see \autoref{eq:down_upstream_v_ratio}):
+\noindent For a non-relativistic particle ($\beta\ll 1$) and $r=4$:
 
 \begin{equation}
     \begin{aligned}
