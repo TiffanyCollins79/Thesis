@@ -1,6 +1,6 @@
 \chapter{Finite Difference Techniques applied to the Transport Equation} \label{sec:A2_finite_difference}
 
-Finite difference techniques are utilised to solve differential equations numerically by approximating derivatives by finite differences. Often, these differential equations cannot be solved analytically unless in certain scenarios. For example, the transport equation (see \autoref{eq:chapter_9_full_numerical_diffusion_equation}) can only be solved for a impulsive source of cosmic rays. This section will describe the basics of finite difference techniques and the application to the transport equation.
+Often, these differential equations cannot be solved analytically unless in certain scenarios. For example, the transport equation (see \autoref{eq:chapter_9_full_numerical_diffusion_equation}) can only be solved for a impulsive source of cosmic rays. Finite difference techniques are utilised to solve differential equations numerically by approximating derivatives by finite differences. This section will describe the basics of finite difference techniques and the application to the transport equation.
 
 \section{Diffusion} \label{sec:A2_diffusion}
 
@@ -11,7 +11,7 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
     \pdv{n\qty(\boldsymbol{r},\gamma,t)}{t}&=\nabla \qty(\overline{\overline{D}}\cdot\nabla n\qty(\boldsymbol{r},\gamma,t))\text{ .} 
     \end{aligned} \label{eq:A2_finite_difference_diffusion}
 \end{equation}
-\noindent A region of interstellar gas can be split into a 3D grid of voxels. Assuming that diffusion is isotropic ($\overline{\overline{D}}=D$), \autoref{eq:A2_finite_difference_diffusion} at position $x$, $y$, $z$ and time $t$ becomes:
+\noindent A region of interstellar gas can be split into a 3D grid of voxels. Each voxel has width $\Delta x$, $\Delta y$ and $\Delta z$zs. Assuming that diffusion is isotropic ($\overline{\overline{D}}=D$), \autoref{eq:A2_finite_difference_diffusion} at position $x$, $y$, $z$ and time $t$ becomes:
 
 \begin{equation}
     \begin{aligned}
@@ -19,7 +19,7 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
     &= \sum_{i} \pdv{D}{i}\pdv{n}{i}+ D_i\pdv[2]{n}{i}\text{ ,} 
     \end{aligned} \label{eq:A2_finite_difference_diffusion_expanded}
 \end{equation}
-\noindent where $i$ considers the three Cartesian axes $x$, $y$ and $z$. Assuming that diffusion is spatially independent ($\pdv{D}{i}=0$). Taking the Taylor series expansion of $n$ around point i becomes:
+\noindent where $i$ represents the three cartesian axes $x$, $y$ and $z$. Assuming that diffusion is spatially independent, $\pdv{D}{i}=0$, the Taylor series expansion of $n$ around point i becomes:
 
 \begin{subequations}
     \begin{alignat}{1}
@@ -27,7 +27,7 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
     n_{i-\Delta i} &=n_{i}-\Delta i \pdv{n}{i}\bigg|_{i-\Delta i} + \frac{\Delta i^2}{2}\pdv[2]{n}{i}\bigg|_{i-\Delta i}- \frac{\Delta i^3}{3!}\pdv[3]{n}{i}\bigg|_{i-\Delta i} +\cdot\cdot\cdot\text{ .}   \label{eq:A2_taylor_series_neg}
     \end{alignat} \label{eq:A2_taylor_series}
 \end{subequations} 
-\noindent Assuming $\delta i\ll 1$, \autoref{eq:A2_taylor_series} becomes:
+\noindent Assuming $\Delta i\ll 1$, \autoref{eq:A2_taylor_series} becomes:
 
 \begin{subequations}
     \begin{alignat}{1}
@@ -35,7 +35,7 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
     n_{i-\Delta i} &=n_{i}-\Delta i \pdv{n}{i}\bigg|_{i-\Delta i} + O\qty(\Delta i^2)\text{ ,}  \label{eq:A2_taylor_series_neg2}
     \end{alignat} \label{eq:A2_taylor_series2}
 \end{subequations} 
-\noindent where $O\qty(\Delta i^3)$ is truncation error due to higher orders. Rearranging \autoref{eq:A2_taylor_series2} to first order gives:
+\noindent where $O\qty(\Delta i^3)$ is a truncation error due to higher orders. Rearranging \autoref{eq:A2_taylor_series2} to first order gives:
 
 \begin{subequations}
     \begin{alignat}{1}
@@ -49,11 +49,10 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
 \begin{equation}
     \begin{aligned}
     \pdv{n}{i} \bigg|_{i+\Delta i}+\pdv{n}{i} \bigg|_{i-\Delta i}&=\frac{n_{i+\Delta i}-n_i}{\Delta i} +\frac{n_i-n_{i-\Delta i}}{\Delta i} \\
-    \therefore \pdv{n}{i} \bigg|_i &=\frac{n_{i+\Delta i}-n_{i-\Delta i}}{2\Delta i}\text{ .} 
+    \therefore \pdv{n}{i} \bigg|_i &=\frac{n_{i+\Delta i}-n_{i-\Delta i}}{\Delta i}\text{ .} 
     \end{aligned}
 \end{equation}
-
-The second derivative of $n$ can be found by combining \autoref{eq:A2_taylor_series_plus} and \autoref{eq:A2_taylor_series_neg} up to the second order:
+\noindent The second derivative of $n$ can be found by combining \autoref{eq:A2_taylor_series_plus} and \autoref{eq:A2_taylor_series_neg} up to the second order:
 
 \begin{equation}
     \begin{aligned}
@@ -61,14 +60,14 @@ The second derivative of $n$ can be found by combining \autoref{eq:A2_taylor_ser
         \pdv[2]{n}{i} \bigg|_{i}&=\frac{n_{i+\Delta i}+n_{i-\Delta i}-2n_i}{\Delta i^2}\text{ .} 
     \end{aligned}
 \end{equation}
-\noindent Applying the forward difference to the LHS of \autoref{eq:A2_finite_difference_diffusion_expanded} and central difference to the RHS of \autoref{eq:A2_finite_difference_diffusion_expanded}:
+\noindent Applying the forward difference to the LHS of \autoref{eq:A2_finite_difference_diffusion_expanded} and central difference to the RHS of \autoref{eq:A2_finite_difference_diffusion_expanded} for time step $\Delta t$:
 
 \begin{equation}
     \begin{aligned}
     \frac{n_i^{t+\Delta t}-n_i^t}{\Delta t}&=\sum_{i=x,y,z}\frac{D_{i+\Delta i}-D_{i-\Delta i}}{2\Delta i}\cdot \frac{n_{i+\Delta i}^t-n_{i-\Delta i}^t}{2\Delta i}+D_i\frac{n_{i+\Delta i}^t+n_{i-\Delta i}^t-2n_i^t}{\Delta i^2}\text{ .} 
     \end{aligned}
 \end{equation}
-\noindent For isotropic case of diffusion ($\nabla D=0$, i.e. $D_{i+\Delta i}=D_{i-\Delta i}$):
+\noindent For isotropic diffusion ($\nabla D=0$, i.e. $D_{i+\Delta i}=D_{i-\Delta i}$):
 
 \begin{equation}
     \begin{aligned}
@@ -80,36 +79,34 @@ The second derivative of $n$ can be found by combining \autoref{eq:A2_taylor_ser
 
 \subsection{Stability of the Finite Difference} \label{sec:A2_finite_stability}
 
-Von Neumann stability analysis (or Fourier stability analysis) can be used to check the numerical stability of finite difference techniques \citep{alma9929637001811}.
-\par~\par 
-For a solution:
+Von Neumann stability analysis (or Fourier stability analysis) can be used to check the numerical stability of finite difference techniques \citep{alma9929637001811}. For a general solution:
 \begin{equation}
     \begin{aligned}
-        U\qty(t+\Delta t, x)&=\sum_{j=-n}^n C_j U\qty(t,x+j\Delta x)\text{ ,} 
+        U\qty(t+\Delta t, i)&=\sum_{m=-n}^n C_m U\qty(t,i+m\Delta i)\text{ ,} 
     \end{aligned} \label{eq:A3_von_newmann_example}
 \end{equation}
-\noindent where there are $2n+1$ points to calculate $U\qty(t+\Delta t, x)$. The error ($\epsilon_j^t$) is then defined to be
+\noindent where there are $2n+1$ points to calculate $U\qty(t+\Delta t, i)$, the error, $\epsilon_m^t$, with respect to the analytical solution is:
 
 \begin{equation}
     \begin{aligned}
-        \epsilon_j^t=U_j^t-u_j^t\text{ ,} 
+        \epsilon_m^t=U_m^t-u_m^t\text{ ,} 
     \end{aligned} \label{eq:A2_error_function}
 \end{equation}
-\noindent with $u_j^t$ being the analytical solution at point $j,t$. Then, $\epsilon_j$ satisfies \autoref{eq:A3_von_newmann_example}:
+\noindent with $u_m^t$ being the analytical solution at point $m,t$. Then, $\epsilon_m$ satisfies \autoref{eq:A3_von_newmann_example}:
 
 \begin{equation}
     \begin{aligned}
-        \epsilon \qty(t+\Delta t, x)&=\sum_{j=-n}^n C_j \epsilon\qty(t,x+j\Delta x)\text{ ,} 
+        \epsilon \qty(t+\Delta t, i)&=\sum_{m=-n}^n C_m \epsilon\qty(t,i+m\Delta i)\text{ ,} 
     \end{aligned} \label{eq:A3_von_newmann_example}
 \end{equation}
 \noindent For linear differential equations with periodic boundary conditions, the error can be treated as a time-dependent Fourier expansion with wave number $k$ \citep{cdi_wiley_ebooks_10_1002_9783527683147_ch11_ch11}.:
 
 \begin{equation}
     \begin{aligned}
-    \epsilon\qty(x,t)&=A\qty(t)e^{ikx}=A^te^{ikx}\text{ ,} 
+    \epsilon\qty(x,t)&=A\qty(t)e^{jki}=A^te^{jki}\text{ ,} 
     \end{aligned} \label{eq:A2_diffusion_finite_trial_sol}
 \end{equation}
-\noindent where \autoref{eq:A2_diffusion_finite_trial_sol} is the time-dependent spatial Fourier expansion with wave number $k$. For the solution to be stable:
+\noindent where $j$ is the complex number and \autoref{eq:A2_diffusion_finite_trial_sol} is the time-dependent spatial Fourier expansion with wave number $k$. For the solution to be stable:
 
 \begin{equation}
     \begin{aligned}
@@ -120,38 +117,38 @@ For a solution:
 
 \begin{equation}
     \begin{aligned}
-    \epsilon_x^{t+1}&= A^{t+1}e^{ikx} \\
-    \epsilon_{x+1}^{t}&= A^{t}e^{ik\qty(x+\Delta x)} \\
-    \epsilon_{x-1}^{t}&= A^{t}e^{ik\qty(x-\Delta x)}\text{ .} 
+    \epsilon_i^{t+1}&= A^{t+1}e^{jki} \\
+    \epsilon_{i+1}^{t}&= A^{t}e^{jk\qty(i+\Delta i)} \\
+    \epsilon_{i-1}^{t}&= A^{t}e^{jk\qty(i-\Delta i)}\text{ .} 
     \end{aligned} \label{eq:A2_diffusion_finite_trial_sol2}
 \end{equation}
 Applying Von Newmann stability analysis to the transport equation, \autoref{eq:A2_diffusion_finite_trial_sol} becomes:
 
 \begin{equation}
     \begin{aligned}
-    A^{t+1}e^{ikx}&=A^te^{ikx}+D'\qty(A^{t}e^{ik\qty(x+\Delta x)}+A^{t}e^{ik\qty(x-\Delta x)}-2A^te^{ikx}) \\
-    \frac{A^{t+1}}{A^t}&=1+D'\qty(e^{i\theta}+e^{-i\theta}-2) \\
+    A^{t+1}e^{jki}&=A^te^{jki}+D'\qty(A^{t}e^{jk\qty(i+\Delta i)}+A^{t}e^{jk\qty(i-\Delta i)}-2A^te^{jki}) \\
+    \frac{A^{t+1}}{A^t}&=1+D'\qty(e^{j\theta}+e^{-j\theta}-2) \\
     &=1+D'\qty(2\cos\theta-2) \\
     &=1-4D'\sin^2\frac{\theta}{2}\text{ ,} 
     \end{aligned}
 \end{equation}
-\noindent where $D'=D\Delta t/\Delta x^2$ and $\theta=k\Delta x$. For the solution to be stable, $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$. Hence:
+\noindent where $D'=D\Delta t/\Delta i^2$ and $\theta=k\Delta i$. For the solution to be stable, $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$. Hence:
 
 \begin{equation}
     \begin{aligned}
-    1-4D'\sin^2\frac{k\Delta x}{2} &\geq -1 \\
-    \text{\& } 1-4D'\sin^2\frac{k\Delta x}{2} &\leq 1 \text{ .} 
+    1-4D'\sin^2\frac{k\Delta i}{2} &\geq -1 \\
+    \text{\& } 1-4D'\sin^2\frac{k\Delta i}{2} &\leq 1 \text{ .} 
     \end{aligned} \label{eq:A2_diffusion_finite_stability_cond}
 \end{equation}
-\noindent As $0\leq \sin^2\frac{k\Delta x}{2}\leq 1$, \autoref{eq:A2_diffusion_finite_diff} is stable when:
+\noindent As $0\leq \sin^2\frac{k\Delta i}{2}\leq 1$, \autoref{eq:A2_diffusion_finite_diff} is stable when:
 
 \begin{equation}
     \begin{aligned}
-    D'=D\frac{\Delta t}{\Delta x^2}&\leq \frac{1}{2} \\
-    D&\leq \frac{1}{2}\frac{\Delta x^2}{\Delta t}\text{ .} 
+    D'=D\frac{\Delta t}{\Delta i^2}&\leq \frac{1}{2} \\
+    D&\leq \frac{1}{2}\frac{\Delta i^2}{\Delta t}\text{ .} 
     \end{aligned}
 \end{equation}
-\noindent i.e. finite difference techniques can be applied to the transport equation when the diffusion coefficient, $D$, is less than or equal to half of the `maximum' diffusion coefficient implied by the voxel size and time step $\Delta x^2/\Delta t$.
+\noindent i.e. finite difference techniques can be applied to the transport equation when the diffusion coefficient, $D$, is less than or equal to half of the `maximum' diffusion coefficient implied by the relation $\Delta i^2/\Delta t$.
 
 \section{Advection}
 

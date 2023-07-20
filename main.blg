@@ -39,6 +39,8 @@ Reallocated field_info (elt_size=4) to 36780 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: Bibliography/mybiblio.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--entry type for "cdi_wiley_ebooks_10_1002_9783527683147_ch11_ch11" isn't style-file defined
+--line 3212 of file Bibliography/mybiblio.bib
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
@@ -124,7 +126,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 227 entries,
             6399 wiz_defined-function locations,
             3039 strings with 184062 characters,
-and the built_in function-call counts, 14286341 in all, are:
+and the built_in function-call counts, 14286340 in all, are:
 = -- 1452567
 > -- 72650
 < -- 6199
@@ -157,9 +159,9 @@ swap$ -- 125672
 text.length$ -- 12133
 text.prefix$ -- 230
 top$ -- 1
-type$ -- 7705
+type$ -- 7704
 warning$ -- 0
 while$ -- 244782
 width$ -- 0
 write$ -- 45449
-(There were 26 warnings)
+(There were 27 warnings)
