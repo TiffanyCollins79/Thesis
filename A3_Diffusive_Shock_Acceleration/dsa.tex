@@ -145,7 +145,7 @@ Now consider the scenario shown in \autoref{fig:A3_shock_dynamics3}, where a cos
 
 
 \begin{alignat}{2}
-    R_{u\rightarrow d}\qty(\theta_1)&\approx-n_{CR}v\cos\theta_1,\quad &\ang{90}<\theta_1\ang{180} \\
+    R_{u\rightarrow d}\qty(\theta_1)&\approx-n_{CR}v\cos\theta_1,\quad &\ang{90}<\theta_1<\ang{180} \label{eq:ASA_DSA_rate_ud} \\
     R_{d\rightarrow u}\qty(\theta_2')&\approx n_{CR}v\cos\theta_2'\quad&\ang{0}<\theta_2<\ang{90} \text{ ,}
 \end{alignat}
 \noindent giving the probability of crossings to be:
@@ -185,4 +185,62 @@ Now consider the scenario shown in \autoref{fig:A3_shock_dynamics3}, where a cos
 
 \subsection{Cosmic-ray energy spectrum}
 
-To calculate the energy spectrum of cosmic rays accelerated by diffusive shock acceleration, the probabilities of the cosmic ray escaping and returning to the shock must be calculated. 
+To calculate the energy spectrum of cosmic rays accelerated by diffusive shock acceleration, the probability of the cosmic ray escaping to the the shock must be calculated. The probability of escape is the ratio of the rate that cosmic rays are lost downstream and the total rate that cosmic rays cross the shock upstream to downstream ($p_\text{esc}=R_\text{loss}/R_{tot}$). The rate that cosmic rays are lost downstream is:
+
+\begin{equation}
+    \begin{aligned}
+        R_\text{loss}&=n_\text{CR}U_2=n_\text{CR}\frac{v_s}{r}\text{ ,}
+    \end{aligned}
+\end{equation}
+\noindent and the total rate that cosmic rays travel upstream to downstream can be obtained by integrating \autoref{eq:ASA_DSA_rate_ud} over all possible angles:
+
+\begin{equation}
+    \begin{aligned}
+        R_{tot}&=\frac{1}{4\pi}\int_{-1}^0\dd{\cos\theta_1}2\pi R_{u\rightarrow d}\qty(\cos\theta_1) \\
+        &=\frac{n_\text{CR}v_\text{CR}}{4} \text{ .}
+    \end{aligned}
+\end{equation}
+\noindent This gives the probability of escape:
+
+\begin{equation}
+    \begin{aligned}
+        p_\text{esc}&=\frac{4v_s}{rv_\text{CR}} \text{ .}
+    \end{aligned}
+\end{equation}
+\noindent The integrated energy spectrum, $N\qty(>E)$ is proportional to the probability that a cosmic ray returns to the shock after $k$ crossings:
+
+\begin{equation}
+    \begin{aligned}
+        N\qty(>E)\propto p_\text{ret}&=\qty(1-p_\text{esc})^k \text{ ,}
+    \end{aligned}
+\end{equation}
+\noindent where the cosmic ray has energy:
+
+\begin{equation}
+    \begin{aligned}
+        E_k&=E_0\qty(1+\frac{\Delta E}{E})^k \\
+        \therefore k&=\frac{\ln(E/E_0)}{\ln(1+\Delta E/E)}
+    \end{aligned}
+\end{equation}
+\noindent with $E_0$ being the original cosmic-ray energy. Giving:
+
+\begin{equation}
+    \begin{aligned}
+        N\qty(>E)&=C\qty(1-\frac{4v_s}{rv_\text{CR}})^k \text{ ,}
+    \end{aligned}
+\end{equation}
+\noindent where $C$ is a constant. The integrated energy spectrum can be expressed in terms of a power-law, $N\qty(>E)=AE^{-\Gamma}$, with:
+
+\begin{equation}
+    \begin{aligned}
+        \Gamma = -\frac{\ln(1-\frac{4v_s}{rv_\text{CR}})}{\ln(1+\frac{4v_s\qty(r-1)}{3rc})} \text{ .}
+    \end{aligned}
+\end{equation}
+\noindent For non-relativistic shocks such as a SNR ($v_s\ll c$),  $\Gamma\approx 3/\qty(r-1)$. The differential energy spectrum becomes:
+
+\begin{equation}
+    \begin{aligned}
+        \dv{N}{E}\propto E^{-\qty(\frac{r+2}{r-1})} \text{ .}
+    \end{aligned}
+\end{equation}
+\noindent For strong shocks, $r=4$, the differntial energy spectrum takes form $\dv{N}{E}\propto E^{-2}$, which is approximately what is observed at Earth (see \autoref{sec:chapter1_non_thermal_emission}).
