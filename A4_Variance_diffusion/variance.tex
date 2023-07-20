@@ -11,11 +11,11 @@ The variance is a measurement of dispersion, comparing the standard deviation of
 \end{equation}
 \noindent where $E\qty(X^n)$ is the expected value of variable $X^n$.
 \par~\par 
-The distance that cosmic rays have travelled through diffusion (see \autoref{chapter_1_cr_propagation} and \autoref{sec:09_Transport_multizone_diffusion}) can be approximated by the radius containing $1\sigma=68\%$ of the particles, $r_\sigma$. This Appendix will calculate the variance (therefore $r_\sigma$) for diffusion in 1D, 2D and 3D. 
+The distance that cosmic rays have travelled via diffusion (see \autoref{chapter_1_cr_propagation} and \autoref{sec:09_Transport_multizone_diffusion}) can be approximated by the radius containing $1\sigma=68\%$ of the particles, $r_\sigma$. This Appendix will calculate the variance (therefore $r_\sigma$) for diffusion in 1D, 2D and 3D. 
 
 \section{1D Diffusion}
 
-\noindent For 1D diffusion, the solution to the transport equation for an impulsive accelerator injecting cosmic rays at $t=0$ and $x=0$ in a diffusion-only scenario (see \autoref{eq:chapter_7_cr_ev_green_solution}):
+\noindent For 1D isotropic diffusion, the solution to the transport equation for an impulsive accelerator injecting cosmic rays at $t=0$ and $x=0$ in a diffusion-only scenario (see \autoref{eq:chapter_7_cr_ev_green_solution}):
 
 \begin{equation}
     \begin{aligned}
@@ -40,7 +40,7 @@ The distance that cosmic rays have travelled through diffusion (see \autoref{cha
         &=2Dt\text{ .} 
     \end{aligned}
 \end{equation}
-\noindent Giving the variance in 1D:
+\noindent This gives the variance in 1D:
 
 \begin{equation}
     \begin{aligned}
@@ -112,7 +112,10 @@ For 3D diffusion, the solution to the transport equation for an impulsive accele
     \end{aligned}
 \end{equation}
 \noindent The radius containing $1\sigma=68\%$ of cosmic rays $R_{\sigma}=\sqrt{\mathrm{Var}\qty(r)}=\sqrt{6Dt}$ does not equate to the `diffusion distance', $R_\text{diff}=\sqrt{4Dt}$, defined in literature (e.g. see \cite{1995PhRvD..52.3265A}) .
-\begin{figure}[h!]
+\par~\par 
+Note that by taking a slice along the 3D energy distribution (e.g. $n=(x,y,z=0)$), the radius ($r^2=x^2+y^2$) containing $68\%$ of cosmic rays reverts back to the 2D situation ($R_\sigma=\sqrt{4Dt}$). This can be seen in \autoref{fig:A4_multizone_diffusion_only}.
+
+\begin{figure}[b]
     \centering
     \includegraphics[width=0.9\textwidth]{A4_Variance_diffusion/Images/diffusion_3D.pdf}
     \begin{tabular}{c c c c c c}
@@ -125,7 +128,5 @@ For 3D diffusion, the solution to the transport equation for an impulsive accele
       $\sim$ & 10 & 26.9 & 25.4 & 33.0 & 31.1 \\
       \bottomrule
     \end{tabular}
-    \caption{Evolution of the electron number density for a diffusion-only scenario taken at $z=0\pm 0.5~\pc$ along the line of sight. Electrons with energy $0.1~\TeV$ and $10~\TeV$ are injected at position $x=y=z=0$ (black cross) at $t=0$ into a uniform medium with magnetic field $B=10~\si{\micro G}$, $\chi=0.1$ and $D_0=10^{27}~\si{\centi\meter\squared\per\second}$ at $1~\GeV$. The electron number density is normalised to the maximum value in the 3D grid at $t=5.0~\kiloyear$. The black and yellow-dashed circles represents the 2D variance radius ($R_\text{var}=\sqrt{4Dt}$) and the radius containing $68\%$ of electrons in the $z=0\pm 0.5~\pc$ slice.}    \label{fig:A4_multizone_diffusion_only}
+    \caption{Evolution of the electron number density for a diffusion-only scenario taken at $z=0\pm 0.5~\pc$ along the line of sight. Electrons with energy $0.1~\TeV$ and $10~\TeV$ are injected at position $x=y=z=0$ (black cross) at $t=0$ into a uniform medium with magnetic field $B=10~\si{\micro G}$, $\chi=0.1$ and $D_0=10^{27}~\si{\centi\meter\squared\per\second}$ at $1~\GeV$. The electron number density is normalised to the maximum value in the 3D grid at $t=5.0~\kiloyear$. The black and yellow-dashed circles represents the 2D variance radius ($R_\text{var}=\sqrt{4Dt}$) and the radius $r_{\sigma\text{, 2D}}$ containing $68\%$ of electrons in the $z=0\pm 0.5~\pc$ slice. $R_\text{var}=\sqrt{6Dt}$ and $R_{\sigma\text{, 3D}}$ are the 3D variance radius and radius containing $68\%$ of electrons.}   \label{fig:A4_multizone_diffusion_only}
 \end{figure}
-\par~\par 
-Note that by taking a slice along the 3D energy distribution (e.g. $n=(x,y,z=0)$), the radius ($r^2=x^2+y^2$) containing $68\%$ of cosmic rays reverts back to the 2D situation ($R_\sigma=\sqrt{4Dt}$). This can be seen in \autoref{fig:A4_multizone_diffusion_only}.

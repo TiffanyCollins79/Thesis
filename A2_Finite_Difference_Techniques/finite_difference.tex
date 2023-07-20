@@ -176,75 +176,75 @@ The advective component of the transport equation is given by:
     &=n_i^t-\frac{v'}{2}\qty(n_{i+\Delta i}^t-n_{i+\Delta i}^t)\text{ ,} 
     \end{aligned} \label{eq:A2_advection_central_diff}
 \end{equation}
-\noindent where $v'=\frac{\Delta t}{\Delta x}$. Applying the Von Neumann stability analysis to \autoref{eq:A2_advection_central_diff}:
+\noindent where $v'_i=\frac{\Delta t}{\Delta i}$. Applying the Von Neumann stability analysis to \autoref{eq:A2_advection_central_diff}:
 
 \begin{equation}
     \begin{aligned}
-    A^{t+1}e^{ikx}&=A^te^{ikx}+\frac{v'}{2}\qty(e^{ikx}e^{ik\Delta x}-e^{ikx}e^{-ik\Delta x}) \\
-    \frac{A^{t+1}}{A^t}&=1-\frac{v'}{2}\qty(e^{i\theta}-e^{-i\theta}) \\
-    &=1-iv'\sin\theta\text{ .} 
+    A^{t+1}e^{jki}&=A^te^{jki}+\frac{v'_i}{2}\qty(e^{jki}e^{jk\Delta i}-e^{jki}e^{-jk\Delta i}) \\
+    \frac{A^{t+1}}{A^t}&=1-\frac{v'_i}{2}\qty(e^{j\theta}-e^{-j\theta}) \\
+    &=1-iv'_i\sin\theta\text{ ,} 
     \end{aligned}
 \end{equation}
-\noindent As $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$:
+\noindent with $\theta=k\Delta i$. As $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$:
 
 \begin{equation}
     \begin{aligned}
-        \bigg| \frac{A^{t+1}}{A^t}\bigg|=1+v'^2\sin^2\theta &\leq1\text{ .} 
+        \bigg| \frac{A^{t+1}}{A^t}\bigg|=1+{v'_i}^2\sin^2\theta &\leq1\text{ .} 
     \end{aligned}
 \end{equation}
-\noindent Therefore the numerical solution of advection that utilises a central finite difference is only stable when:
+\noindent Therefore, the numerical solution of advection that utilises a central finite difference is only stable when:
 
 \begin{equation}
     \begin{aligned}
-        \sin^2\theta=\sin^2\qty(k\Delta x)\leq 0\text{ .} 
+        \sin^2\theta=\sin^2\qty(k\Delta i)\leq 0\text{ .} 
     \end{aligned}
 \end{equation}
 \noindent i.e. the solution is only stable when the error function (see \autoref{eq:A2_error_function}) has wave number:
 
 \begin{equation}
     \begin{aligned}
-        k\Delta x = n\pi\text{ ,} 
+        k\Delta i = n\pi\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent where $n=0$, $1$, $\cdot\cdot\cdot$. Therefore, the numerical solution of advection that utilises central finite difference methods is unstable. Instead, the forward and backward difference in spatial coordinates can be applied to \autoref{eq:A2_advection_equation}:
 \begin{subequations}
     \begin{alignat}{2}
-    n_i^{t+\Delta t}&=n_i^t-v'\qty(n_{i+\Delta i}^t-n_{i}^t)\text{,}&\quad\text{Forward Difference} \\
-    n_i^{t+\Delta t}&=n_i^t-v'\qty(n_{i}^t-n_{i-\Delta i}^t)\text{,}&\quad\text{Backward Difference}\text{ .} 
+    n_i^{t+\Delta t}&=n_i^t-v'_i\qty(n_{i+\Delta i}^t-n_{i}^t)\text{,}\quad&&\text{Forward Difference} \\
+    n_i^{t+\Delta t}&=n_i^t-v'_i\qty(n_{i}^t-n_{i-\Delta i}^t)\text{,}\quad&&\text{Backward Difference}\text{ .} 
     \end{alignat} \label{sec:A2_advection}
 \end{subequations}
 \noindent Applying the Von Neumann analysis for the forward difference:
 
 \begin{equation}
     \begin{aligned}
-    \frac{A^{t+1}}{A^t}&=1-v'\qty(e^{i\theta}-1) \\
-    &=1-v'\qty(\cos\theta+i\sin\theta-1) \\
-    &=1+v'\qty(1-\cos\theta)+iv'\sin\theta\text{ ,} 
+    \frac{A^{t+1}}{A^t}&=1-v'\qty(e^{j\theta}-1) \\
+    &=1-v'\qty(\cos\theta+j\sin\theta-1) \\
+    &=1+v'\qty(1-\cos\theta)+jv'_i\sin\theta\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent and the backward difference:
 
 \begin{equation}
     \begin{aligned}
-    \frac{A^{t+1}}{A^t}&=1-v'\qty(1-e^{-i\theta}) \\
-    &=1-v'\qty(1-\cos\theta+i\sin\theta) \\
-    &=1-v'\qty(1-\cos\theta)-iv'\sin\theta\text{ .} 
+    \frac{A^{t+1}}{A^t}&=1-v'_i\qty(1-e^{-j\theta}) \\
+    &=1-v'_i\qty(1-\cos\theta+j\sin\theta) \\
+    &=1-v'_i\qty(1-\cos\theta)-jv'_i\sin\theta\text{ .} 
     \end{aligned}
 \end{equation}
 \noindent The forward and backward difference can be summarised as:
 
 \begin{equation}
     \begin{aligned}
-    \frac{A^{t+1}}{A^t}&=1\pm v'\qty(1-\cos\theta)\pm iv'\sin\theta\text{ ,} 
+    \frac{A^{t+1}}{A^t}&=1\pm v'_i\qty(1-\cos\theta)\pm jv'_i\sin\theta\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent Therefore:
 
 \begin{equation}
     \begin{aligned}
-    \bigg| \frac{A^{t+1}}{A^t} \bigg|^2&=1+v'^2+v'^2\cos^2\theta - 2v'^2\cos\theta \pm 2c \mp 2v'\cos\theta + v'^2\sin^2\theta \\
-    &=1-2v'\qty(v'\cos\theta -v'\pm \cos\theta \mp 1) \\
-    &=1\mp 2v'\qty(1\mp v')\qty(1-\cos\theta)\text{ .} 
+    \bigg| \frac{A^{t+1}}{A^t} \bigg|^2&=1+{v'_i}^2+{v'_i}^2\cos^2\theta - 2{v'_i}^2\cos\theta \pm 2c \mp 2{v_i}'\cos\theta + {v'_i}^2\sin^2\theta \\
+    &=1-2v'_i\qty(v'_i\cos\theta -v'_i\pm \cos\theta \mp 1) \\
+    &=1\mp 2v'_i\qty(1\mp v'_i)\qty(1-\cos\theta)\text{ .} 
     \end{aligned}
 \end{equation}
 \noindent For the finite difference to be stable:
@@ -253,14 +253,14 @@ The advective component of the transport equation is given by:
     \begin{aligned}
     1&\geq \bigg| \frac{A^{t+1}}{A^t} \bigg|\\
     1&\geq\bigg| \frac{A^{t+1}}{A^t} \bigg|^2\\
-    0&\geq \mp 2v'\qty(1\mp v')\qty(1-\cos\theta)\text{ .} 
+    0&\geq \mp 2v'_i\qty(1\mp v')\qty(1-\cos\theta)\text{ .} 
     \end{aligned}
 \end{equation}
 \noindent As $\qty(1-\cos\theta)\geq 0$:
 
 \begin{equation}
     \begin{aligned}
-    1&\geq \pm v\frac{\Delta t}{\Delta x}\text{ .} 
+    1&\geq \pm v\frac{\Delta t}{\Delta i}\text{ .} 
     \end{aligned} \label{eq:A3_advection_stability}
 \end{equation}
-\noindent i.e. \autoref{eq:A3_advection_stability} is stable when a particle has speed less or equal to the `maximum' speed ($\Delta x/\Delta t$) implied by the voxel size and time step. When $v\leq 0$, only the forward difference is stable. Similarly, when $v\geq 0$, only the backward difference is stable.
+\noindent i.e. \autoref{eq:A3_advection_stability} is stable when a particle has speed less or equal to the `maximum' speed ($\Delta i/\Delta t$) implied by the voxel size and time step. When $v\leq 0$, only the forward difference is stable. Similarly, when $v\geq 0$, only the backward difference is stable.

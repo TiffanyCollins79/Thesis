@@ -1371,9 +1371,6 @@ INPUT A2_Finite_Difference_Techniques/finite_difference.aux
 INPUT ./A4_Variance_diffusion/variance.aux
 INPUT A4_Variance_diffusion/variance.aux
 INPUT A4_Variance_diffusion/variance.aux
-INPUT ./A5_HESS_J1808_204/cluster.aux
-INPUT A5_HESS_J1808_204/cluster.aux
-INPUT A5_HESS_J1808_204/cluster.aux
 INPUT ./A6_misc/misc.aux
 INPUT A6_misc/misc.aux
 INPUT A6_misc/misc.aux
@@ -2846,16 +2843,6 @@ INPUT ./A4_Variance_diffusion/Images/diffusion_3D.pdf
 INPUT A4_Variance_diffusion/Images/diffusion_3D.pdf
 INPUT ./A4_Variance_diffusion/Images/diffusion_3D.pdf
 INPUT ./A4_Variance_diffusion/Images/diffusion_3D.pdf
-INPUT ./A5_HESS_J1808_204/cluster.tex
-INPUT ./A5_HESS_J1808_204/cluster.tex
-INPUT ./A5_HESS_J1808_204/cluster.tex
-OUTPUT A5_HESS_J1808_204/cluster.aux
-INPUT ./A5_HESS_J1808_204/cluster.tex
-INPUT ./A5_HESS_J1808_204/cluster.tex
-INPUT ./A5_HESS_J1808_204/cluster.tex
-INPUT A5_HESS_J1808_204/cluster.tex
-INPUT ./A5_HESS_J1808_204/cluster.tex
-INPUT A5_HESS_J1808_204/cluster.tex
 INPUT ./A6_misc/misc.tex
 INPUT ./A6_misc/misc.tex
 INPUT ./A6_misc/misc.tex
@@ -2916,9 +2903,6 @@ INPUT A2_Finite_Difference_Techniques/finite_difference.aux
 INPUT ./A4_Variance_diffusion/variance.aux
 INPUT A4_Variance_diffusion/variance.aux
 INPUT A4_Variance_diffusion/variance.aux
-INPUT ./A5_HESS_J1808_204/cluster.aux
-INPUT A5_HESS_J1808_204/cluster.aux
-INPUT A5_HESS_J1808_204/cluster.aux
 INPUT ./A6_misc/misc.aux
 INPUT A6_misc/misc.aux
 INPUT A6_misc/misc.aux

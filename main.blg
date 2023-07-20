@@ -18,7 +18,6 @@ A level-1 auxiliary file: A1_Supernova_Remnants/snrs.aux
 A level-1 auxiliary file: A3_Diffusive_Shock_Acceleration/dsa.aux
 A level-1 auxiliary file: A2_Finite_Difference_Techniques/finite_difference.aux
 A level-1 auxiliary file: A4_Variance_diffusion/variance.aux
-A level-1 auxiliary file: A5_HESS_J1808_204/cluster.aux
 A level-1 auxiliary file: A6_misc/misc.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -125,7 +124,7 @@ while executing--line 2727 of file biblatex.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 227 entries,
             6399 wiz_defined-function locations,
-            3039 strings with 184062 characters,
+            3038 strings with 184033 characters,
 and the built_in function-call counts, 14286340 in all, are:
 = -- 1452567
 > -- 72650

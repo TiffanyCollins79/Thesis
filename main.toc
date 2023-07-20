@@ -112,5 +112,4 @@
 \contentsline {section}{\numberline {D.1}1D Diffusion}{163}{section.D.1}%
 \contentsline {section}{\numberline {D.2}2D Diffusion}{164}{section.D.2}%
 \contentsline {section}{\numberline {D.3}3D Diffusion}{164}{section.D.3}%
-\contentsline {chapter}{\numberline {E}Spectral Energy Distribution towards Cl*\,1806-20}{166}{appendix.E}%
-\contentsline {chapter}{\numberline {F}Miscellaneous Tables}{167}{appendix.F}%
+\contentsline {chapter}{\numberline {E}Miscellaneous Tables}{167}{appendix.E}%
