@@ -26,15 +26,15 @@
 \contentsline {subsection}{\numberline {2.2.2}Propagation of charged particles}{21}{subsection.2.2.2}%
 \contentsline {subsubsection}{Diffusion of charged particles}{22}{subsubsection*.32}%
 \contentsline {subsubsection}{Local and Galactic Magnetic Fields}{23}{subsubsection*.33}%
-\contentsline {subsection}{\numberline {2.2.3}Cosmic Ray Spectrum}{23}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Cosmic Ray Spectrum}{24}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}PeVatrons}{24}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Gamma-rays: messengers of cosmic rays}{26}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}A brief history}{26}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Hadronic Gamma-Ray Emission}{26}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Leptonic Gamma-Ray emission}{28}{subsection.2.3.3}%
-\contentsline {subsubsection}{Synchrotron Radiation}{28}{subsubsection*.38}%
+\contentsline {subsection}{\numberline {2.3.3}Leptonic Gamma-Ray emission}{29}{subsection.2.3.3}%
+\contentsline {subsubsection}{Synchrotron Radiation}{29}{subsubsection*.38}%
 \contentsline {subsubsection}{Inverse-Compton emission}{31}{subsubsection*.41}%
-\contentsline {subsubsection}{Bremsstrahlung Emission}{33}{subsubsection*.44}%
+\contentsline {subsubsection}{Bremsstrahlung Emission}{34}{subsubsection*.44}%
 \contentsline {subsubsection}{Total Leptonic Radiative Processs}{34}{subsubsection*.45}%
 \contentsline {chapter}{\numberline {3}Gamma Ray Astronomy}{37}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Air Showers}{37}{section.3.1}%
@@ -89,27 +89,27 @@
 \contentsline {subsection}{\numberline {7.1.5}Diffusion and Radiative Energy Losses: Analytical and Numerical Solution Comparison}{112}{subsection.7.1.5}%
 \contentsline {section}{\numberline {7.2}Advection}{114}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Numerical Solution}{116}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Analytical Solution}{117}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Summary and Application}{121}{section.7.3}%
-\contentsline {chapter}{\numberline {8}A 3D Diffusive and Advective Model of Electron Transport Applied to the Pulsar Wind Nebula HESS J1825-137}{123}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and Future Work}{147}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Supernova Remnants}{150}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The supernova}{150}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Stages of a Supernova Remnant}{151}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Free Expansion Phase}{151}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Sedov-Taylor Phase}{151}{subsection.A.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}Snow-Plough Phase}{152}{subsection.A.2.3}%
-\contentsline {subsubsection}{Merging with the Interstellar Medium}{152}{subsubsection*.100}%
-\contentsline {chapter}{\numberline {B}Diffusive Shock Acceleration}{153}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Fermi's Original Theory}{153}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{155}{section.B.2}%
-\contentsline {chapter}{\numberline {C}Finite Difference Techniques applied to the Transport Equation}{158}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Diffusion}{158}{section.C.1}%
-\contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{159}{subsection.C.1.1}%
-\contentsline {section}{\numberline {C.2}Advection}{161}{section.C.2}%
-\contentsline {chapter}{\numberline {D}Variance of diffusion in $n$ dimensions}{163}{appendix.D}%
-\contentsline {section}{\numberline {D.1}1D Diffusion}{163}{section.D.1}%
-\contentsline {section}{\numberline {D.2}2D Diffusion}{164}{section.D.2}%
-\contentsline {section}{\numberline {D.3}3D Diffusion}{164}{section.D.3}%
-\contentsline {chapter}{\numberline {E}Spectral Energy Distribution towards Cl*\,1806-20}{166}{appendix.E}%
-\contentsline {chapter}{\numberline {F}Miscellaneous Tables}{167}{appendix.F}%
+\contentsline {subsection}{\numberline {7.2.2}Analytical Solution}{116}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Summary and Application}{120}{section.7.3}%
+\contentsline {chapter}{\numberline {8}A 3D Diffusive and Advective Model of Electron Transport Applied to the Pulsar Wind Nebula HESS J1825-137}{122}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and Future Work}{146}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Supernova Remnants}{149}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The supernova}{149}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Stages of a Supernova Remnant}{150}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Free Expansion Phase}{150}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Sedov-Taylor Phase}{150}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Snow-Plough Phase}{151}{subsection.A.2.3}%
+\contentsline {subsubsection}{Merging with the Interstellar Medium}{151}{subsubsection*.100}%
+\contentsline {chapter}{\numberline {B}Diffusive Shock Acceleration}{152}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Fermi's Original Theory}{152}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{154}{section.B.2}%
+\contentsline {chapter}{\numberline {C}Finite Difference Techniques applied to the Transport Equation}{157}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Diffusion}{157}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{158}{subsection.C.1.1}%
+\contentsline {section}{\numberline {C.2}Advection}{160}{section.C.2}%
+\contentsline {chapter}{\numberline {D}Variance of diffusion in $n$ dimensions}{162}{appendix.D}%
+\contentsline {section}{\numberline {D.1}1D Diffusion}{162}{section.D.1}%
+\contentsline {section}{\numberline {D.2}2D Diffusion}{163}{section.D.2}%
+\contentsline {section}{\numberline {D.3}3D Diffusion}{163}{section.D.3}%
+\contentsline {chapter}{\numberline {E}Spectral Energy Distribution towards Cl*\,1806-20}{165}{appendix.E}%
+\contentsline {chapter}{\numberline {F}Miscellaneous Tables}{166}{appendix.F}%
