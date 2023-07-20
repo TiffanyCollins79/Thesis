@@ -83,7 +83,7 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
 
 \section{Diffusive Shock Acceleration}
 
-Diffusive shock acceleration is a modified version of Fermi's original theory that considers acceleration at a shock front (e.g. SNR shock). The shock travels at velocity $v_s$ in the upsream reference frame with a ISM gas cloud downstream of the shock having velocity $v_c$. In the reference frame of the shock, the material upstream of the shock travels towards the shock at velocity $U_1=v_s$ and the downstream cloud now has velcoity $U_2=v_s-v_c$. The compression ratio is defined to be the mass density ratio of the shocked and unshocked material:
+Diffusive shock acceleration is a modified version of Fermi's original theory that considers acceleration at a shock front (e.g. SNR shock). The shock travels at velocity $v_s$ in the upsream reference frame (the region of ISM that has not been `shocked') with a ISM gas cloud downstream of the shock having velocity $v_c$ (see \autoref{fig:A3_shock_dynamics2}). In the reference frame of the shock, the material upstream of the shock travels towards the shock at velocity $U_1=v_s$ and the downstream cloud now has velcoity $U_2=v_s-v_c$. The compression ratio is defined to be the mass density ratio of the shocked and unshocked material:
 
 \begin{equation}
     \begin{aligned}
@@ -99,44 +99,41 @@ Diffusive shock acceleration is a modified version of Fermi's original theory th
     \end{aligned} \label{eq:A3_velocity_ratios}
 \end{equation}
 \noindent where $A$ is a constant. From conservation of momentum:
-
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=1.0\textwidth]{A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png}
+	\caption{A shock travelling through the ISM with velocity $v_s$ in the upstream reference frame. (\textit{left}) In the reference frame of the shock, the material upstream travels towards the shock at velocity $U_1=v_s$. The material downstream of the shock travels at velocity $U_2=v_s-v_c$, where $v_c$ is the velocity of an ISM gas cloud in the upstream reference frame (\textit{right}). The material upstream and downstream of the shock have densities, pressure and internal energy $\rho$, $P$ and $\epsilon$ respectively.}
+	\label{fig:A3_shock_dynamics2}
+\end{figure}
 \begin{subequations}
     \begin{alignat}{1}
         AU_{1}&=AU_{2}+P_2\text{ ,}
-    \end{alignat}
+    \end{alignat} \label{eq:A3_dsa_momentum_cons}
 \end{subequations}
 \noindent with $P_2$ being the pressure downstream. From the conservation of energy:
-
 \begin{equation}
     \begin{aligned}
-        \frac{1}{2}AU_{1}^2&=\frac{1}{2}U_{2}^2+U_{2}\qty(E_2+P_2)\text{ ,}
-    \end{aligned}
+        \frac{1}{2}AU_{1}^2&=\frac{1}{2}U_{2}^2+U_{2}\qty(\epsilon_2+P_2)\text{ ,}
+    \end{aligned} \label{eq:A3_DSA_energy_cons}
 \end{equation}
-\noindent where $E_2$ is the downstream internal energy. The compression ratio can be expressed in terms of $E_2$:
+\noindent where $\epsilon_2$ is the downstream internal energy. Combining \autoref{eq:A3_velocity_ratios}, \autoref{eq:A3_dsa_momentum_cons} and \autoref{eq:A3_DSA_energy_cons} gives the compression ratio to be:
 
 \begin{equation}
     \begin{aligned}
-        r&=1+\frac{2E_2}{P_2}\text{ ,}
+        r&=1+\frac{2\epsilon_2}{P_2}\text{ ,}
     \end{aligned}
 \end{equation}
 \noindent and $r$ takes values $4$ and $7$ for monatomic non-relativistic and relativistic gas respectively  \citep{1983RPPh...46..973D}.
 \par~\par 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1.0\textwidth]{A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png}
-	\caption{In the reference frame of the shock (\textit{left}), a cosmic ray travels upstream of the shock (with velocity $U_{1x}$ perpindicular to the shock) to downstream of the shock (now with perpindicular velocity velocity $U_{2x})$. The same process is shown in the right, but in the upstream reference frame where the shock has velcoity $v_s$.}
-	\label{fig:A3_shock_dynamics2}
-\end{figure}
-
-In the frame of the shock, the material upstream of the shock travels towards the shock at $U_1=V_s$ (see \autoref{fig:A3_shock_dynamics2}). Hence, the material downstream of the shock in the upstream reference frame (primed frame) travels at speed:
+From \autoref{eq:A3_velocity_ratios}, the velocity of the downstream material (in the shock reference frame) can be expressed in terms of the compression ratio:
 
 \begin{equation}
     \begin{aligned}
-        U_{2x}'&=U_{1x}-U_{2x} =V_s- \frac{V_s}{r} \\
-        \therefore \frac{U_{2x}'}{V_s}&=\frac{r-1}{r}\text{ ,}
+        v_c &=v_s-U_2=v_s-\frac{v_s}{r} \\
+        \therefore \frac{v_c}{v_s}&=\frac{r-1}{r}\text{ ,}
     \end{aligned} \label{eq:down_upstream_v_ratio}
 \end{equation}
-\noindent For non-relativistic particles ${U_{2x}'}/{V_s}=3/4$.
+\noindent For non-relativistic particles ${v_c}/{v_s}=3/4$.
 \begin{SCfigure}[0.5][h]
 	\centering
 	\includegraphics[width=0.65\textwidth]{A3_Diffusive_Shock_Acceleration/Images/dsa.png}
@@ -176,7 +173,7 @@ Now consider the scenario shown in \autoref{fig:A3_shock_dynamics3}, where a cos
 	&=\frac{\beta^2+\frac{4}{3}\beta+\frac{4}{9}\beta^2}{1-\beta_\text{cloud}^2}\text{ ,}
     \end{aligned} 
 \end{equation}
-\noindent where $\beta=U_2'/c$. For $\beta\ll 1$:
+\noindent where $\beta_c=v_c/c$. For $\beta_c\ll 1$:
 
 \begin{equation}
     \begin{aligned}
@@ -184,4 +181,4 @@ Now consider the scenario shown in \autoref{fig:A3_shock_dynamics3}, where a cos
 	&\approx \frac{4}{3}\beta 
     \end{aligned} 
 \end{equation}
-\noindent Each time the cosmic ray travels back and across the shock, the cosmic ray has increased its energy by a factor $V_s/c$. An Diffusive shock acceleration is also known as first-order fermi acceleration as the average energy gain is first order with $\beta$. 
+\noindent Each time the cosmic ray travels back and across the shock, the cosmic ray has increased its energy by a factor $v_s/c$, where $v_s\approx 10^4~\kmpersec$ for SNR shocks Therefore, diffusive shock acceleration is far more efficient than Fermi's original theory in accelerating cosmic rays.  Diffusive shock acceleration is also known as first-order fermi acceleration as the average energy gain is first order with $\beta_c$. 
