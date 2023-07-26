@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  20 JUL 2023 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  26 JUL 2023 10:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3040,7 +3040,7 @@ Package pdftex.def Info: A1_Supernova_Remnants/Images/SNR_evolution.png  used on
 
  (./A3_Diffusive_Shock_Acceleration/dsa.tex
 Appendix B.
-<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png, id=6073, 488.57532pt x 225.84375pt>
+<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png, id=6075, 488.57532pt x 225.84375pt>
 File: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png  used on input line 11.
@@ -3056,7 +3056,7 @@ Overfull \hbox (33.33pt too wide) in paragraph at lines 11--12
 
 
  <./A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png>]
-<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png, id=6086, 166.37157pt x 124.21407pt>
+<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png, id=6088, 166.37157pt x 124.21407pt>
 File: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png  used on input line 40.
@@ -3067,23 +3067,18 @@ Overfull \hbox (16.51945pt too wide) in paragraph at lines 57--59
  []
 
 [153 <./A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>]
-<A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png, id=6104, 487.06969pt x 130.23656pt>
+<A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png, id=6106, 487.06969pt x 130.23656pt>
 File: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png  used on input line 104.
 (pdftex.def)             Requested size: 455.24413pt x 121.72684pt.
  [154 <./A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png>]
-<A3_Diffusive_Shock_Acceleration/Images/dsa.png, id=6121, 312.41719pt x 224.33812pt>
+<A3_Diffusive_Shock_Acceleration/Images/dsa.png, id=6123, 312.41719pt x 224.33812pt>
 File: A3_Diffusive_Shock_Acceleration/Images/dsa.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/dsa.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/dsa.png  used on input line 139.
 (pdftex.def)             Requested size: 295.9059pt x 212.48672pt.
-
-Underfull \hbox (badness 1221) in paragraph at lines 142--142
-\OT1/cmr/m/n/12 frame of the ma-te-rial up-
- []
-
-[155 <./A3_Diffusive_Shock_Acceleration/Images/dsa.png>] [156]) [157]
+ [155 <./A3_Diffusive_Shock_Acceleration/Images/dsa.png>] [156]) [157]
 \openout2 = `A2_Finite_Difference_Techniques/finite_difference.aux'.
 
  (./A2_Finite_Difference_Techniques/finite_difference.tex
@@ -3097,33 +3092,33 @@ Appendix C.
 pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.41     \begin{alignat}{1}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.41     \begin{alignat}{1}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.41     \begin{alignat}{1}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.41     \begin{alignat}{1}
-                           ]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
 l.44     \end{alignat}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
 l.44     \end{alignat}
-                       [159]
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.44     \end{alignat}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.44     \end{alignat}
+                      ] [159
+pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.101 \end{equation}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.C.1.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.101 \end{equation}
+                    ]
 Overfull \hbox (98.31627pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 160 \OT1/cmr/m/sl/12 APPENDIX C.  FINITE DIFFERENCE TECHNIQUES APPLIED TO THE TRANSPORT EQUATION
  []
@@ -3160,7 +3155,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.7> not available
 
 
 ] [164]
-<A4_Variance_diffusion/Images/diffusion_3D.pdf, id=6271, 524.84656pt x 419.14986pt>
+<A4_Variance_diffusion/Images/diffusion_3D.pdf, id=6272, 524.84656pt x 419.14986pt>
 File: A4_Variance_diffusion/Images/diffusion_3D.pdf Graphic file (type pdf)
 <use A4_Variance_diffusion/Images/diffusion_3D.pdf>
 Package pdftex.def Info: A4_Variance_diffusion/Images/diffusion_3D.pdf  used on input line 120.
@@ -3233,7 +3228,7 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 676012C428C75CBEF0C1DDF6FE40E282;17421.
+(rerunfilecheck)             Checksum: 0882F1A3DE75AEEC73D5FA350B17B852;17421.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -3241,16 +3236,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  48757 strings out of 476025
  1024087 string characters out of 5790017
- 2218691 words of memory out of 5000000
+ 2218630 words of memory out of 5000000
  67352 multiletter control sequences out of 15000+600000
  572232 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,20n,131p,1992b,2704s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathabx-type1/mathb8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txbmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (188 pages, 33864847 bytes).
+Output written on main.pdf (188 pages, 33864962 bytes).
 PDF statistics:
- 6945 PDF objects out of 7423 (max. 8388607)
- 5130 compressed objects within 52 object streams
+ 6946 PDF objects out of 7423 (max. 8388607)
+ 5131 compressed objects within 52 object streams
  954 named destinations out of 1000 (max. 500000)
  1357 words of extra memory for PDF output out of 10000 (max. 10000000)
 

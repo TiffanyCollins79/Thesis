@@ -104,7 +104,7 @@
 \contentsline {section}{\numberline {B.1}Fermi's Original Theory}{152}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{154}{section.B.2}%
 \contentsline {subsection}{\numberline {B.2.1}Cosmic-ray energy spectrum}{156}{subsection.B.2.1}%
-\contentsline {chapter}{\numberline {C}Finite Difference Techniques applied to the Transport Equation}{158}{appendix.C}%
+\contentsline {chapter}{\numberline {C}Finite Difference Techniques Applied to the Transport Equation}{158}{appendix.C}%
 \contentsline {section}{\numberline {C.1}Diffusion}{158}{section.C.1}%
 \contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{159}{subsection.C.1.1}%
 \contentsline {section}{\numberline {C.2}Advection}{160}{section.C.2}%
