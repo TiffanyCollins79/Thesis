@@ -11,22 +11,22 @@ This chapter will first discuss the transport equation that governs the time and
 \autoref{sec:chapter_7_cr_SED_evol} described the solution of the cosmic-ray energy density distribution for a simple scenario of cosmic rays being injected into a homogeneous source. However, the environment around pulsars is not uniform. The evolution of the cosmic ray (including high-energy electrons) energy density distribution, $n$, for a non-uniform environment can be described by a Fokker-Planck equation \citep{1975MNRAS.172..557S,1978A&A....70..367C}:
 
 \begin{equation}
-\begin{aligned}
-\pdv{n}{t}=&-\nabla\cdot\qty(n\boldsymbol{v}_A)-\nabla\qty(\overline{\overline{D}}\cdot\nabla n)+\pdv{ }{\gamma}\qty(\dot{\gamma}n)-\pdv{ }{\gamma}\qty(\frac{\gamma}{3}\qty(\nabla\cdot\boldsymbol{v}_A)n) \\
-&\pdv{ }{\gamma}\qty(\gamma^2 D_{\gamma\gamma}\pdv{ }{\gamma}\qty(\frac{n}{\gamma^2})) + S\qty(\gamma,\boldsymbol{r},t)\text{ ,}      
-\end{aligned} \label{eq:chapter_9_full_numerical_diffusion_equation}
+    \begin{aligned}
+        \pdv{n}{t}=&\pdv{ }{\gamma}\qty(\dot{\gamma}n)+\nabla\qty(\overline{\overline{D}}\cdot\nabla n)-\nabla\cdot\qty(n\vec{v}_A)-\frac{1}{3}\pdv{ }{\gamma}\qty(\gamma\qty(\nabla\cdot\vec{v}_A))n \\
+        &\pdv{ }{\gamma}\qty(\gamma^2 D_{pp}\pdv{ }{\gamma}\qty(\frac{n}{\gamma^2})) + S\qty(\gamma,t,\vec{r})  \text{ ,}     
+    \end{aligned} \label{eq:chapter_9_full_numerical_diffusion_equation}
 \end{equation} 
-\noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} describes the evolution of cosmic rays due to a co-moving fluid with velocity $\boldsymbol{v}_A$. The second term considers the diffusion of cosmic rays where $\overline{\overline{D}}$ is a second rate tensor describing the rate of diffusion in 3D. The third and fourth term represents losses due to radiative processes (see chapter \autoref{sec:chapter1_non_thermal_emission}) and adiabatic expansion respectively. The fifth term describes diffusion as a result of the re-acceleration of cosmic rays due to stochastic process. Finally, $S\qty(\gamma,\boldsymbol{r},t)$, is the source term of high-energy cosmic rays.
+\noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} gives the evolution of cosmic ray energy density distribution due to radiative losses (see chapter \autoref{sec:chapter1_non_thermal_emission}) . The second term considers the spatial evolution of cosmic rays as a second-rank tensor, $\overline{\overline{D}}=\overline{\overline{D}}\qty(\gamma,t,\vec{r})$, allowing preferential direction of transport. The third term describes the evolution of the cosmic ray density due to a co-moving fluid with velocity $\boldsymbol{v}_A$. The fourth considers losses due to adiabatic expansion. The fifth term represents the re-acceleration of cosmic rays due to stochastic process with $D_{pp}$ being the acceleration rate. Finally, $S\qty(\gamma,t,\vec{r})$, is the source term of high-energy cosmic rays.
 \par~\par
 As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less than the gyro-radius $r_g$), cosmic rays propagate through the ISM via ballistic motion. Over large distances, cosmic rays scatter off magnetic field turbulence and the overall propagation can be described by diffusion \citep{2015PhRvD..92h3003P}. Neglecting adiabatic losses, bulk motion and re-acceleration of cosmic rays, \autoref{eq:chapter_9_full_numerical_diffusion_equation} can be simplified to:
 
+
 \begin{equation}
 \begin{aligned}
-\pdv{n}{t}&=-\nabla\qty(D\qty(\boldsymbol{r},\gamma)\cdot \nabla n) + \pdv{ }{\gamma}\qty(\dot{\gamma}n) + S\qty(\gamma,\boldsymbol{r},t) \\
-&= \qty(\pdv{n}{t})_\text{diffusion} + \qty(\pdv{n}{t})_\text{radiative} + \qty(\pdv{n}{t})_\text{source term}\text{ ,} 
+\pdv{n}{t}&=\pdv{ }{\gamma}\qty(\dot{\gamma}n) + \nabla\qty(D\qty(\boldsymbol{r},\gamma)\cdot \nabla n) + S\qty(\gamma,\boldsymbol{r},t)
 \end{aligned} \label{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}
 \end{equation} 
-\noindent where the time evolution of the cosmic ray distribution is described by the sum of the evolution due to diffusion, radiative cooling and a cosmic ray source term. Note that \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} is similar to \autoref{eq:chapter_7_cr_energy_distribution}, where the `escape term' has been replaced with an expression describing the losses due to diffusion. For a simple case of isotropic diffusion ($\overline{\overline{D}}=D$ and $\nabla D=0$), the diffusion term in \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} becomes: 
+\noindent Note that \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} is similar to \autoref{eq:chapter_7_cr_energy_distribution}, where the `escape term' has been replaced with an expression describing the losses due to diffusion. For a simple case of isotropic diffusion ($\overline{\overline{D}}=D$ and $\nabla D=0$), the diffusion term in \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} becomes: 
 
 \begin{equation}
     \begin{aligned}
