@@ -30,7 +30,7 @@ As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less t
 
 \begin{equation}
     \begin{aligned}
-    \qty(\pdv{n}{t})_\text{diffusion}&=-\nabla\qty(D\qty(\boldsymbol{r},\gamma)\cdot \nabla n)  \\
+    \qty(\pdv{n}{t})_\text{diff}&=-\nabla\qty(D\qty(\boldsymbol{r},\gamma)\cdot \nabla n)  \\
     &=-\nabla D\cdot \nabla n -D\nabla^2 n \\
     &=-D\nabla^2 n\text{ ,} 
     \end{aligned}
@@ -42,7 +42,7 @@ As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less t
 Numerical solutions of \autoref{eq:chapter_9_full_numerical_diffusion_equation} can be applied to many different scenarios in order to obtain an understanding of astrophysical phenomena. For example, \galprop is a publicly available software package that describes the propagation of cosmic rays within the Galaxy \citep{2022ApJS..262...30P}. It combines models of the cosmic-ray source distribution, interstellar gas, radiation fields and magnetic fields in order to solve the transport equation. \galprop then normalises the modelled cosmic ray spectrum to observations at Earth in order to predict the diffuse gamma-ray emission. Other examples of software that solve the transport equation on a Galactic scale include \dragon \citep{2017JCAP...02..015E} and \picard \citep{2014APh....55...37K}. \criptic is a recent software package that simulates the propagation through complex ISM with propagation properties depending on the state of the gas \citep{2022MNRAS.517.1355K}. \criptic has been used to investigate how ISM parameters (e.g. sonic Mach number, Alfv\'en Mach number) affect the transport of cosmic rays \citep{2023MNRAS.519.1503S}.
 
 \subsection{Numerical Solution of the Transport Equation} \label{sec:chapter_9_diffusion_numerical_sol}
-\galprop, \dragon and \picard solve the transport equation on a Galactic scale ($>100~\pc$). To understand the detailed nature and evolution of cosmic rays that escape their place of origin (e.g. PWN), the transport equation must be solved on smaller scales ($\gtrsim \pc$). To do this, finite difference techniques will be utilised to solve \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}. \textcolor{purple}{There are other techniques used to solve differential equations (e.g. method of lines, finite volume method), however finite difference techniques are one of the most commonly used and the simplest to apply. Similarly, finite difference techniques describe a range of techniques with the simplest being the forward difference, backward difference and central difference (see \autoref{sec:A2_finite_difference}). More complex techniques include the Euler method and Crank-Nicolson method require the solution of linear equations, which can be computationally intensive. Therefore, a combination of the simpler techniques will be considered in this thesis. As the transport equation} will be applied to the PWN \mbox{HESS\,J1825-137} in \autoref{sec:10_second_paper}, only the transport of electrons will be considered. However, these techniques also apply to the transport of cosmic ray protons.
+\galprop, \dragon and \picard solve the transport equation on a Galactic scale ($>100~\pc$). To understand the detailed nature and evolution of cosmic rays that escape their place of origin (e.g. PWN), the transport equation must be solved on smaller scales ($\gtrsim \pc$). To do this, finite difference techniques will be utilised to solve \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}. There are other techniques used to solve differential equations (e.g. method of lines, finite volume method), however finite difference techniques are one of the most commonly used and the simplest to apply. Similarly, finite difference techniques describe a range of techniques with the simplest being the forward difference, backward difference and central difference (see \autoref{sec:A2_finite_difference}). More complex techniques include the Euler method and Crank-Nicolson method require the solution of linear equations, which can be computationally intensive. Therefore, a combination of the simpler techniques will be considered in this thesis. As the transport equation will be applied to the PWN \mbox{HESS\,J1825-137} in \autoref{sec:10_second_paper}, only the transport of electrons will be considered. However, these techniques also apply to the transport of cosmic ray protons.
 \par~\par
 Finite difference techniques obtain numerical solutions to differential equations (e.g. transport equation) by approximating derivatives with finite differences found through a Taylor series expansion (see \autoref{sec:A2_finite_difference}). To solve \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} numerically, a region of interest is subdivided into a grid of voxels (a 3D pixel) of size $\Delta x \Delta y \Delta z$ as shown in \autoref{fig:chapter_8_multizone_cartesian}. The change in the electron energy distribution for a voxel at position $x$, $y$ and $z$ due to diffusion from surrounding voxels in time interval $\Delta t$ is then described by:
 \begin{figure}[h!]
@@ -59,65 +59,20 @@ Finite difference techniques obtain numerical solutions to differential equation
 \end{wrapfigure}
 \begin{equation}
     \begin{aligned}
-        \begin{split}
-            \qty(\pdv{n}{t})_\text{diffusion}\bigg|
-            \begin{array}l
-                 \gamma \\
-                 t \\
-                 x,y,z
-            \end{array}
-            = \sum_\qty{i=x,y,z} &\left[ \boldsymbol{D}^*\bigg|
-            \begin{array}{l}
-                \gamma \\
-                t-\Delta t \\
-                i+\Delta i/2
-            \end{array}
-            \qty(n\bigg|
-            \begin{array}{l}
-                \gamma \\
-                t-\Delta t \\
-                i+\Delta i
-            \end{array}
-            -n\bigg|
-            \begin{array}{l}
-                \gamma_0 \\
-                t-\Delta t \\
-                i
-            \end{array})
-            \right. \\
-            &+ \left.\boldsymbol{D}^*
-            \bigg|
-            \begin{array}{l}
-                \gamma \\
-                t-\Delta t \\
-                i-\Delta i/2
-            \end{array}
-            \qty(n\bigg|
-            \begin{array}{l}
-                \gamma \\
-                t-\Delta t \\
-                i-\Delta i
-            \end{array}
-            -n\bigg|
-            \begin{array}{l}
-                \gamma \\
-                t-\Delta t \\
-                i
-            \end{array})
-            \right]
-            \end{split}\text{ ,} 
+        \qty(\pdv{n}{t})_\text{diff}
+        &= -D\nabla^2 n_\text{diff} \\
+        n_\text{diff}\qty(\gamma,t+\Delta t,\vec{r})&=n_\text{diff}\qty(\gamma,t,\vec{r})+\sum_{i=x,y,z} \mathcal{D}
+        \qty(n_{i+\Delta i}^{t}
+        -n_{i}^t)
+        +\mathcal{D}
+        \qty(n_{i-\Delta i}^t
+        -n_i^t) \text{ ,} 
     \end{aligned} \label{eq:chapter_8_multizone_diff_numerical_sol}
 \end{equation}
-\noindent
-where
+\noindent where
 \begin{equation}
     \begin{aligned}
-    \boldsymbol{\boldsymbol{D}}^*\bigg|\begin{array}{l}
-                \gamma \\
-                t-\Delta t \\
-                i\pm\Delta i/2
-            \end{array}
-            &=\chi D_0 \qty(\frac{\gamma m_e}{1~\TeV})^\delta \qty(\frac{B_i + B_{i\pm 1}}{2\times 3~\si{\micro G}})^{-\delta} \frac{\Delta t}{\Delta i^2}\text{ ,} 
+    \mathcal{D}&=\chi D_0 \qty(\frac{\gamma m_e}{1~\TeV})^\delta \qty(\frac{B_i + B_{i\pm 1}}{2\times 3~\si{\micro G}})^{-\delta} \frac{\Delta t}{\Delta i^2}\text{ ,} 
     \end{aligned} \label{eq:chapter_9_diffusion_numeric}
 \end{equation}
 \noindent is the dimensionless diffusion factor that considers the average magnetic field between voxel $i$ and $i\pm 1$ (see \autoref{eq:diffusion}). See \autoref{eq:09_transport_cells} for a graphical description of \autoref{eq:chapter_9_diffusion_numeric}. 
@@ -125,7 +80,7 @@ where
 Errors in finite difference methods arise due to the discretization of the grid and approximating partial derivatives with truncated partial derivatives (see \autoref{sec:A2_diffusion}), leading to the discrepancy between the numerical and analytical solution. Finite difference methods are said to be `stable' when the numerical solution converges to the analytical solution. Von Neumann stability analysis treats the numerical error of finite difference techniques as a time-dependent Fourier expansion and determines the condition when the error at $t=t+1$ is less or equal to the error at $t=t$ (see \autoref{sec:A2_finite_stability}). That is, Von Neumann stability analysis determines whether any errors due to numerical techniques are magnified in further iterations. Using Von Neumann stability analysis, \autoref{eq:chapter_8_multizone_diff_numerical_sol} is stable when:
 \begin{equation}
     \begin{aligned}
-    D\frac{\Delta t}{\Delta x^2}\leq \frac{1}{2}\text{ .} 
+    \mathcal{D}\frac{\Delta t}{\Delta x^2}\leq \frac{1}{2}\text{ .} 
     \end{aligned} \label{eq:09_finite_difference_diff_stable}
 \end{equation}
 \noindent i.e. finite difference techniques can be applied to the transport equation when the diffusion coefficient, $D$, is less than or equal to half of the `maximum' diffusion coefficient (see \autoref{eq:diffusion}) implied by the voxel size and time step. Therefore, the maximum displacement of electrons across one time step is less than one voxel. If this condition is not met, electrons are transported across more than voxel. As \autoref{eq:chapter_8_multizone_diff_numerical_sol} only considers neighbouring voxels, there will be a net loss of electrons in the 3D grid.
@@ -140,12 +95,12 @@ Errors in finite difference methods arise due to the discretization of the grid 
 \itemsep0em
 \item The region of interest is divided into a grid of voxels of size $\Delta x\Delta y\Delta z$ of varying ISM number density and magnetic field. For simplicity, $\Delta x=\Delta y=\Delta z$. The ISM number density of each voxel can be obtained from observations of atomic and molecular gas from surveys such as Nanten (see \autoref{sec:NANTEN}). Similarly, the magnetic field of each voxel is estimated via Crutcher's relationship (see \autoref{eq:ISM_crutchers}) or assigned a value based on a specific magnetic field model (e.g. magnetic field of a PWN).
 \item From \autoref{eq:diffusion}, the rate at which an electron propagates via diffusion is proportional to its energy ($D\propto E^\delta$). The 3D grid is therefore subdivided into three resolutions based on the electron energy for computational efficiency. The highest energy electrons are tracked using the grid with the lowest resolution while the slower low energy electrons are tracked on the high resolution grid. The medium and high resolution voxels have size $2\Delta x2\Delta y2\Delta z$ and $4\Delta x4\Delta y4\Delta z$ respectively (see \autoref{fig:chapter_8_multizone_resolution_cartoon}). In the context of this thesis, the high energy resolution considers electrons with energy $<0.02~\TeV$, the medium energy resolution considers electrons between $0.02-15~\TeV$ and the lowest resolution considers electrons greater than $15~\TeV$.
-\item To ensure that the electron distribution stays positive ($n\geq 0$) and the position of the maximum value of $\boldsymbol{D}=D\Delta t/\Delta x^2$ remains constant across time:
+\item The time step used to solve \autoref{eq:chapter_8_multizone_diff_numerical_sol} is calculated (see \autoref{eq:09_finite_difference_diff_stable}) to ensure that the solution is numerically stable.
 \setcounter{counter1}{\value{enumi}}
 \end{enumerate}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{09_Multizone/Images/code/flow_chart.pdf}
+    \includegraphics[width=\textwidth]{09_Multizone/Images/code/flow_chart.png}
     \caption{A flow-chart description of the steps {\tt Multizone} uses to calculate the electron energy distribution and subsequent SED by numerically solving the transport equation.}
     \label{fig:{sec:chapter_9_multizone_flow_chart}}
 \end{figure}
@@ -155,25 +110,10 @@ Errors in finite difference methods arise due to the discretization of the grid 
     \caption{A 2D representation of the three 3D grid resolutions used to numerically solve \autoref{eq:chapter_8_multizone_diff_numerical_sol}. Voxels with high number density or magnetic field are shown in red.}
     \label{fig:chapter_8_multizone_resolution_cartoon}
 \end{figure}
-\begin{subequations}
-    \begin{alignat}{1}
-    n_\text{max}\qty(1-6\boldsymbol{D})&\geq n_\text{max} \boldsymbol{D} \label{eq:chapter_9_time_condition1} \\
-    \boldsymbol{D}_\text{max}&\leq \frac{1}{7}\text{ ,} 
-    \end{alignat}
-\end{subequations}
 
-\begin{enumerate}[label=\textbf{\arabic*}]
-\item[] where the factor six in \autoref{eq:chapter_9_time_condition1} comes from the three deggrees of freedom. Hence the time step becomes:
-\end{enumerate}
 
-\begin{equation}
-    \begin{aligned}
-    \Delta t = \frac{\Delta x^2}{\boldsymbol{D}_\text{max}}\text{ ,} 
-    \end{aligned} \label{eq:09_Multizone_time_step}
-\end{equation}
 
 \begin{enumerate}[label=\textbf{\arabic*}.]\setcounter{enumi}{\value{counter1}}
-\item[] where $\boldsymbol{D}_\text{max}$ is the maximum value of $\boldsymbol{D}$ across the 3D grid. Note that \autoref{eq:09_Multizone_time_step} satisfies the condition where the finite difference method is stable (\autoref{eq:09_finite_difference_diff_stable}).
 \item At $t=0$, electrons are injected into a region of size $4\Delta x4\Delta y4\Delta z$ centered on position $(x_s,y_s,z_s)$ This ensures that electrons are injected into the same region regardless of their energy. For an impulsive accelerator injecting electrons with injection luminosity $L~\qty(\ergspersecond)$ with spectra $J'\qty(E)$ (the `de-nomalised spectra following, e.g. a power law $E^{-\Gamma}$), the total energy of electrons injected into the $4\Delta x4\Delta y4\Delta z$ cube in time interval $\Delta t$ is:
 \setcounter{counter1}{\value{enumi}}
 \end{enumerate}
@@ -200,7 +140,7 @@ Errors in finite difference methods arise due to the discretization of the grid 
 
 \begin{equation}
     \begin{aligned}
-    n\qty(\gamma,t) &=\frac{\dot{\gamma}_0}{\dot{\gamma}}n\qty(\gamma_0,t-\Delta t)\text{ ,} 
+    n\qty(\gamma,t+\Delta t) &=\frac{\dot{\gamma}_t}{\dot{\gamma}_{t+\Delta t}}n\qty(\gamma,t,\vec{r})\text{ ,} 
     \end{aligned}
 \end{equation}
 
@@ -210,8 +150,8 @@ Errors in finite difference methods arise due to the discretization of the grid 
 \item[]
 \begin{enumerate}[label*=\textbf{\alph*}.]\setcounter{enumii}{\value{counter2}}
     \itemsep0em
-    \item[] where $\gamma_0$ is the Lorentz factor of the electron at $t=t-\Delta t$ before cooling to Lorentz factor $\gamma$ (see \autoref{eq:chapter_7_cooling_time}). 
-    \item For each voxel, the electron energy distribution at time $t$ is found by incrementing the electron energy distribution from step \ref{item:09_step_5a} with the net transfer of electrons from neighbouring voxels with (see \autoref{eq:chapter_8_multizone_diff_numerical_sol}).
+    \item[] where $\gamma_t$ is the Lorentz factor of the electron at time $t$ before cooling to Lorentz factor $\gamma_{t+\Delta t}$  (see \autoref{eq:chapter_7_cooling_time}). 
+    \item For each voxel, the electron energy distribution at time $t + \Delta t$ is found by incrementing the electron energy distribution from step \ref{item:09_step_5a} with the net transfer of electrons from neighbouring voxels with (see \autoref{eq:chapter_8_multizone_diff_numerical_sol}).
     \item Electrons are injected into the grid with total energy given by \autoref{eq:09_multizone_total_energy_in_cells}. The current electron energy distribution becomes the `old' electron energy distribution for the next time step.
 \end{enumerate}
 \setcounter{counter1}{\value{enumi}}

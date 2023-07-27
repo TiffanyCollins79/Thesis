@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  26 JUL 2023 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  27 JUL 2023 11:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2434,51 +2434,39 @@ File: 09_Multizone/Images/code/transport.png Graphic file (type png)
 <use 09_Multizone/Images/code/transport.png>
 Package pdftex.def Info: 09_Multizone/Images/code/transport.png  used on input line 56.
 (pdftex.def)             Requested size: 132.01773pt x 132.0217pt.
-
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 108.
-
-[107 <./09_Multizone/Images/code/cartesian.png>]
+ [107 <./09_Multizone/Images/code/cartesian.png>]
 \c@counter1=\count500
 \c@counter2=\count501
-<09_Multizone/Images/code/flow_chart.pdf, id=3533, 1055.14195pt x 542.74767pt>
-File: 09_Multizone/Images/code/flow_chart.pdf Graphic file (type pdf)
-<use 09_Multizone/Images/code/flow_chart.pdf>
-Package pdftex.def Info: 09_Multizone/Images/code/flow_chart.pdf  used on input line 148.
-(pdftex.def)             Requested size: 455.24413pt x 234.17198pt.
+<09_Multizone/Images/code/flow_chart.png, id=3536, 514.58414pt x 433.62pt>
+File: 09_Multizone/Images/code/flow_chart.png Graphic file (type png)
+<use 09_Multizone/Images/code/flow_chart.png>
+Package pdftex.def Info: 09_Multizone/Images/code/flow_chart.png  used on input line 103.
+(pdftex.def)             Requested size: 455.24413pt x 383.63127pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<09_Multizone/Images/code/resolution_cartoon_final.png, id=3534, 514.92375pt x 209.28188pt>
+<09_Multizone/Images/code/resolution_cartoon_final.png, id=3537, 514.92375pt x 209.28188pt>
 File: 09_Multizone/Images/code/resolution_cartoon_final.png Graphic file (type png)
 <use 09_Multizone/Images/code/resolution_cartoon_final.png>
-Package pdftex.def Info: 09_Multizone/Images/code/resolution_cartoon_final.png  used on input line 154.
+Package pdftex.def Info: 09_Multizone/Images/code/resolution_cartoon_final.png  used on input line 109.
 (pdftex.def)             Requested size: 455.24413pt x 185.0308pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.162     \end{alignat}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.162     \end{alignat}
-                       
 Overfull \hbox (58.30788pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 108 \OT1/cmr/m/sl/12 CHAPTER 7.  MODELLING THE 3D ENVIRONMENT AROUND PULSAR WIND NEBULAE
  []
 
-[108 <./09_Multizone/Images/code/transport.png>] [109 <./09_Multizone/Images/code/flow_chart.pdf> <./09_Multizone/Images/code/resolution_cartoon_final.png>]
-<09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf, id=3574, 454.14394pt x 432.34172pt>
+[108 <./09_Multizone/Images/code/transport.png>]
+Underfull \vbox (badness 2418) has occurred while \output is active []
+
+ [109 <./09_Multizone/Images/code/flow_chart.png> <./09_Multizone/Images/code/resolution_cartoon_final.png>]
+<09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf, id=3565, 454.14394pt x 432.34172pt>
 File: 09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf>
-Package pdftex.def Info: 09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf  used on input line 236.
+Package pdftex.def Info: 09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf  used on input line 176.
 (pdftex.def)             Requested size: 455.24413pt x 433.40277pt.
 
 
@@ -2495,15 +2483,15 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
  []
 
 [112]
-<09_Multizone/Images/diffusion/analytical_diff_convergence.pdf, id=3658, 350.17949pt x 454.26117pt>
+<09_Multizone/Images/diffusion/analytical_diff_convergence.pdf, id=3649, 350.17949pt x 454.26117pt>
 File: 09_Multizone/Images/diffusion/analytical_diff_convergence.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/diffusion/analytical_diff_convergence.pdf>
-Package pdftex.def Info: 09_Multizone/Images/diffusion/analytical_diff_convergence.pdf  used on input line 330.
+Package pdftex.def Info: 09_Multizone/Images/diffusion/analytical_diff_convergence.pdf  used on input line 270.
 (pdftex.def)             Requested size: 318.6695pt x 413.40604pt.
-<09_Multizone/Images/diffusion/analytical_diff_sol.pdf, id=3661, 463.59076pt x 244.254pt>
+<09_Multizone/Images/diffusion/analytical_diff_sol.pdf, id=3652, 463.59076pt x 244.254pt>
 File: 09_Multizone/Images/diffusion/analytical_diff_sol.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/diffusion/analytical_diff_sol.pdf>
-Package pdftex.def Info: 09_Multizone/Images/diffusion/analytical_diff_sol.pdf  used on input line 337.
+Package pdftex.def Info: 09_Multizone/Images/diffusion/analytical_diff_sol.pdf  used on input line 277.
 (pdftex.def)             Requested size: 455.24413pt x 239.86668pt.
 
 
@@ -2512,10 +2500,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<09_Multizone/Images/advection/adv_example.png, id=3673, 267.24844pt x 202.50656pt>
+<09_Multizone/Images/advection/adv_example.png, id=3664, 267.24844pt x 202.50656pt>
 File: 09_Multizone/Images/advection/adv_example.png Graphic file (type png)
 <use 09_Multizone/Images/advection/adv_example.png>
-Package pdftex.def Info: 09_Multizone/Images/advection/adv_example.png  used on input line 349.
+Package pdftex.def Info: 09_Multizone/Images/advection/adv_example.png  used on input line 289.
 (pdftex.def)             Requested size: 218.51523pt x 165.58675pt.
 [113]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2526,39 +2514,39 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
  []
 
 [114 <./09_Multizone/Images/diffusion/analytical_diff_convergence.pdf>]
-Overfull \hbox (4.58118pt too wide) in paragraph at lines 372--373
+Overfull \hbox (4.58118pt too wide) in paragraph at lines 312--313
 []\OT1/cmr/m/n/12 Several as-tro-phys-i-cal en-vi-ron-ments show
  []
 
 
-Overfull \hbox (8.14883pt too wide) in paragraph at lines 372--373
+Overfull \hbox (8.14883pt too wide) in paragraph at lines 312--313
 \OT1/cmr/m/n/12 the sub-se-quent shape of the SNR (e.g. []Meyer
  []
 
 
-Overfull \hbox (9.67601pt too wide) in paragraph at lines 372--373
+Overfull \hbox (9.67601pt too wide) in paragraph at lines 312--313
 \OT1/cmr/m/n/12 Such SNRs in-clude the young [],
  []
 
 
-Overfull \hbox (4.62328pt too wide) in paragraph at lines 372--373
+Overfull \hbox (4.62328pt too wide) in paragraph at lines 312--313
 [] \OT1/cmr/m/n/12 and the Cygnus loop neb-
  []
 
 
-Overfull \hbox (12.045pt too wide) in paragraph at lines 372--373
+Overfull \hbox (12.045pt too wide) in paragraph at lines 312--313
 \OT1/cmr/m/n/12 met-ric gamma-ray mor-phol-ogy to-wards PWN
  []
 
 [115 <./09_Multizone/Images/diffusion/analytical_diff_sol.pdf> <./09_Multizone/Images/advection/adv_example.png>]
-Overfull \hbox (99.04454pt too wide) detected at line 405
+Overfull \hbox (99.04454pt too wide) detected at line 345
 [][][][][]
  []
 
-<09_Multizone/Images/advection/advection_smearing.pdf, id=3763, 511.51224pt x 281.30418pt>
+<09_Multizone/Images/advection/advection_smearing.pdf, id=3754, 511.51224pt x 281.30418pt>
 File: 09_Multizone/Images/advection/advection_smearing.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/advection/advection_smearing.pdf>
-Package pdftex.def Info: 09_Multizone/Images/advection/advection_smearing.pdf  used on input line 430.
+Package pdftex.def Info: 09_Multizone/Images/advection/advection_smearing.pdf  used on input line 370.
 (pdftex.def)             Requested size: 455.24413pt x 250.36421pt.
 
 Overfull \hbox (58.30788pt too wide) has occurred while \output is active
@@ -2566,7 +2554,7 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
  []
 
 [116]
-Overfull \hbox (230.98358pt too wide) detected at line 443
+Overfull \hbox (230.98358pt too wide) detected at line 383
 [][][][][]
  []
 
@@ -2574,17 +2562,17 @@ Overfull \hbox (230.98358pt too wide) detected at line 443
 Underfull \vbox (badness 8019) has occurred while \output is active []
 
  [117 <./09_Multizone/Images/advection/advection_smearing.pdf>]
-Overfull \hbox (9.70335pt too wide) in paragraph at lines 445--446
-[]\OT1/cmr/m/n/12 Similarly, if the spa-tial deriva-tive []Eq. 7.29[][]
+Overfull \hbox (9.70335pt too wide) in paragraph at lines 385--386
+[]\OT1/cmr/m/n/12 Similarly, if the spa-tial deriva-tive []Eq. 7.27[][]
  []
 
 
-Overfull \hbox (230.11958pt too wide) detected at line 452
+Overfull \hbox (230.11958pt too wide) detected at line 392
 [][][][][]
  []
 
 
-Overfull \hbox (2.83078pt too wide) detected at line 477
+Overfull \hbox (2.83078pt too wide) detected at line 417
 [][][][][]
  []
 
@@ -2594,49 +2582,49 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
  []
 
 [118]
-<09_Multizone/Images/advection/advection_1D_multizone_final.pdf, id=3815, 394.21365pt x 467.362pt>
+<09_Multizone/Images/advection/advection_1D_multizone_final.pdf, id=3806, 394.21365pt x 467.362pt>
 File: 09_Multizone/Images/advection/advection_1D_multizone_final.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/advection/advection_1D_multizone_final.pdf>
-Package pdftex.def Info: 09_Multizone/Images/advection/advection_1D_multizone_final.pdf  used on input line 503.
+Package pdftex.def Info: 09_Multizone/Images/advection/advection_1D_multizone_final.pdf  used on input line 443.
 (pdftex.def)             Requested size: 318.6695pt x 377.81949pt.
 
-Underfull \hbox (badness 2376) in paragraph at lines 506--506
+Underfull \hbox (badness 2376) in paragraph at lines 446--446
 [][]\OT1/cmr/m/n/12 : |Ad-vec-tion
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 506--506
+Underfull \hbox (badness 2189) in paragraph at lines 446--446
 \OT1/cmr/m/n/12 iden-ti-cal pa-ram-e-ters as
  []
 
 
-Underfull \hbox (badness 3590) in paragraph at lines 506--506
+Underfull \hbox (badness 3590) in paragraph at lines 446--446
 \OT1/cmr/m/n/12 advection-only sce-nario.
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 506--506
+Underfull \hbox (badness 1946) in paragraph at lines 446--446
 \OT1/cmr/m/n/12 (\OT1/cmr/m/it/12 mid-dle\OT1/cmr/m/n/12 ) A com-par-i-son
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 506--506
+Underfull \hbox (badness 1163) in paragraph at lines 446--446
 \OT1/cmr/m/n/12 fer-ent ages of the sys-
  []
 
 
-Overfull \hbox (42.82149pt too wide) in paragraph at lines 507--508
+Overfull \hbox (42.82149pt too wide) in paragraph at lines 447--448
 []\OT1/cmr/m/n/12 Any ap-pli-ca-tion of ad-vec-tion to []
  []
 
 [119 <./09_Multizone/Images/advection/advection_1D_multizone_final.pdf>]
-<09_Multizone/Images/advection/advection_2D_multizone_final.pdf, id=3879, 453.6458pt x 428.17525pt>
+<09_Multizone/Images/advection/advection_2D_multizone_final.pdf, id=3870, 453.6458pt x 428.17525pt>
 File: 09_Multizone/Images/advection/advection_2D_multizone_final.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/advection/advection_2D_multizone_final.pdf>
-Package pdftex.def Info: 09_Multizone/Images/advection/advection_2D_multizone_final.pdf  used on input line 511.
+Package pdftex.def Info: 09_Multizone/Images/advection/advection_2D_multizone_final.pdf  used on input line 451.
 (pdftex.def)             Requested size: 455.24413pt x 429.69647pt.
 
-Overfull \hbox (34.71257pt too wide) in paragraph at lines 516--517
+Overfull \hbox (34.71257pt too wide) in paragraph at lines 456--457
 \OT1/cmr/m/n/12 is neg-li-gi-ble com-pared to $\OML/ntxmi/m/it/12 R[]$\OT1/cmr/m/n/12 . Thus $\OML/ntxmi/m/it/12 R[]$
  []
 
@@ -2646,32 +2634,32 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
  []
 
 [120 <./09_Multizone/Images/advection/advection_2D_multizone_final.pdf>]
-Overfull \hbox (17.48544pt too wide) in paragraph at lines 525--526
+Overfull \hbox (17.48544pt too wide) in paragraph at lines 465--466
 []$ \OT1/cmr/m/n/12 as ap-plied to [].
  []
 
 
-Overfull \hbox (1.5578pt too wide) in paragraph at lines 535--535
+Overfull \hbox (1.5578pt too wide) in paragraph at lines 475--475
 |[]\OT1/cmr/bx/n/17.28 Summary and Ap-pli-
  []
 
 
-Overfull \hbox (7.38809pt too wide) in paragraph at lines 537--538
+Overfull \hbox (7.38809pt too wide) in paragraph at lines 477--478
 \OT1/cmr/m/n/12 the an-a-lyt-i-cal so-lu-tion were shown and noted
  []
 
 [121]
-Overfull \hbox (29.64384pt too wide) in paragraph at lines 539--540
+Overfull \hbox (29.64384pt too wide) in paragraph at lines 479--480
 \OT1/cmr/m/n/12 of dense gas clouds to the north of []
  []
 
 
-Overfull \hbox (8.4828pt too wide) in paragraph at lines 539--540
+Overfull \hbox (8.4828pt too wide) in paragraph at lines 479--480
 \OT1/cmr/m/n/12 in ve-loc-ity range $40 \LMS/ntxsy/m/n/12 ^^@ \OT1/cmr/m/n/12 60 [] s[]$ ($3\OML/ntxmi/m/it/12 :\OT1/cmr/m/n/12 5 \LMS/ntxsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4\OML/ntxmi/m/it/12 :\OT1/cmr/m/n/12 5 []$).
  []
 
 
-Overfull \hbox (7.54088pt too wide) in paragraph at lines 539--540
+Overfull \hbox (7.54088pt too wide) in paragraph at lines 479--480
 \OT1/cmr/m/n/12 and travel south-wards to in-flu-ence the PWN.
  []
 
@@ -2685,7 +2673,7 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
 
  (./10_Second_Paper/Second_Paper.tex
 Chapter 8.
-<10_Second_Paper/statement.pdf, id=3942, 596.95016pt x 844.83629pt>
+<10_Second_Paper/statement.pdf, id=3933, 596.95016pt x 844.83629pt>
 File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 <use 10_Second_Paper/statement.pdf>
 Package pdftex.def Info: 10_Second_Paper/statement.pdf  used on input line 3.
@@ -2694,7 +2682,7 @@ File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 <use 10_Second_Paper/statement.pdf>
 Package pdftex.def Info: 10_Second_Paper/statement.pdf  used on input line 3.
 (pdftex.def)             Requested size: 596.94872pt x 844.83423pt.
-<10_Second_Paper/statement.pdf, id=3945, page=1, 596.95016pt x 844.83629pt>
+<10_Second_Paper/statement.pdf, id=3936, page=1, 596.95016pt x 844.83629pt>
 File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 <use 10_Second_Paper/statement.pdf, page 1>
 Package pdftex.def Info: 10_Second_Paper/statement.pdf , page1 used on input line 3.
@@ -2722,7 +2710,7 @@ File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/statement.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 477.56079pt x 675.86995pt.
  [124 <./10_Second_Paper/statement.pdf>]
-<10_Second_Paper/statement.pdf, id=3962, page=2, 596.95016pt x 844.83629pt>
+<10_Second_Paper/statement.pdf, id=3953, page=2, 596.95016pt x 844.83629pt>
 File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 <use 10_Second_Paper/statement.pdf, page 2>
 Package pdftex.def Info: 10_Second_Paper/statement.pdf , page2 used on input line 3.
@@ -2736,7 +2724,7 @@ File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/statement.pdf , page2 used on input line 3.
 (pdftex.def)             Requested size: 477.56079pt x 675.86995pt.
  [125 <./10_Second_Paper/statement.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=3975, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=3966, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf  used on input line 4.
@@ -2745,7 +2733,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf  used on input line 4.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=3978, page=1, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=3969, page=1, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 1>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page1 used on input line 4.
@@ -2767,7 +2755,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page1 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [126 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4037, page=2, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4028, page=2, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 2>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page2 used on input line 4.
@@ -2781,7 +2769,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page2 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [127 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4089, page=3, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4080, page=3, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 3>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page3 used on input line 4.
@@ -2795,7 +2783,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page3 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [128 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4099, page=4, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4090, page=4, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 4>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page4 used on input line 4.
@@ -2809,7 +2797,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page4 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [129 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4126, page=5, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4117, page=5, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 5>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page5 used on input line 4.
@@ -2823,7 +2811,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page5 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [130 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4162, page=6, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4153, page=6, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 6>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page6 used on input line 4.
@@ -2837,7 +2825,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page6 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [131 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4168, page=7, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4159, page=7, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 7>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page7 used on input line 4.
@@ -2851,7 +2839,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page7 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [132 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4350, page=8, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4341, page=8, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 8>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page8 used on input line 4.
@@ -2865,7 +2853,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page8 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [133 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4522, page=9, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4513, page=9, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 9>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page9 used on input line 4.
@@ -2879,7 +2867,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page9 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [134 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4562, page=10, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4553, page=10, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 10>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page10 used on input line 4.
@@ -2893,7 +2881,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page10 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [135 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4768, page=11, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4759, page=11, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 11>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page11 used on input line 4.
@@ -2907,7 +2895,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page11 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [136 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4879, page=12, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4870, page=12, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 12>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page12 used on input line 4.
@@ -2921,7 +2909,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page12 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [137 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5118, page=13, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5109, page=13, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 13>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page13 used on input line 4.
@@ -2935,7 +2923,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page13 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [138 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5338, page=14, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5329, page=14, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 14>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page14 used on input line 4.
@@ -2949,7 +2937,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page14 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [139 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5349, page=15, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5339, page=15, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 15>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page15 used on input line 4.
@@ -2963,7 +2951,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page15 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [140 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5354, page=16, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5344, page=16, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 16>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page16 used on input line 4.
@@ -2977,7 +2965,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page16 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [141 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5401, page=17, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5392, page=17, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 17>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page17 used on input line 4.
@@ -2991,7 +2979,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page17 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [142 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5411, page=18, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5402, page=18, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 18>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page18 used on input line 4.
@@ -3005,7 +2993,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page18 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [143 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5526, page=19, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5517, page=19, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 19>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page19 used on input line 4.
@@ -3019,7 +3007,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page19 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [144 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5641, page=20, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5632, page=20, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 20>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page20 used on input line 4.
@@ -3033,7 +3021,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page20 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [145 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5729, page=21, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5720, page=21, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 21>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page21 used on input line 4.
@@ -3069,7 +3057,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./A1_Supernova_Remnants/snrs.tex
 Appendix A.
-<A1_Supernova_Remnants/Images/supernova_classification.pdf, id=6010, 331.4784pt x 223.43477pt>
+<A1_Supernova_Remnants/Images/supernova_classification.pdf, id=6001, 331.4784pt x 223.43477pt>
 File: A1_Supernova_Remnants/Images/supernova_classification.pdf Graphic file (type pdf)
 <use A1_Supernova_Remnants/Images/supernova_classification.pdf>
 Package pdftex.def Info: A1_Supernova_Remnants/Images/supernova_classification.pdf  used on input line 7.
@@ -3125,7 +3113,7 @@ Underfull \hbox (badness 3333) in paragraph at lines 10--10
 
 
  <./A1_Supernova_Remnants/Images/supernova_classification.pdf>]
-<A1_Supernova_Remnants/Images/SNR_evolution.png, id=6031, 687.56876pt x 609.27625pt>
+<A1_Supernova_Remnants/Images/SNR_evolution.png, id=6021, 687.56876pt x 609.27625pt>
 File: A1_Supernova_Remnants/Images/SNR_evolution.png Graphic file (type png)
 <use A1_Supernova_Remnants/Images/SNR_evolution.png>
 Package pdftex.def Info: A1_Supernova_Remnants/Images/SNR_evolution.png  used on input line 23.
@@ -3135,7 +3123,7 @@ Package pdftex.def Info: A1_Supernova_Remnants/Images/SNR_evolution.png  used on
 
  (./A3_Diffusive_Shock_Acceleration/dsa.tex
 Appendix B.
-<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png, id=6079, 488.57532pt x 225.84375pt>
+<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png, id=6070, 488.57532pt x 225.84375pt>
 File: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png  used on input line 11.
@@ -3151,7 +3139,7 @@ Overfull \hbox (33.33pt too wide) in paragraph at lines 11--12
 
 
  <./A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png>]
-<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png, id=6092, 166.37157pt x 124.21407pt>
+<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png, id=6083, 166.37157pt x 124.21407pt>
 File: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png  used on input line 40.
@@ -3162,13 +3150,13 @@ Overfull \hbox (16.51945pt too wide) in paragraph at lines 57--59
  []
 
 [154 <./A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>]
-<A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png, id=6110, 487.06969pt x 130.23656pt>
+<A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png, id=6101, 487.06969pt x 130.23656pt>
 File: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png  used on input line 104.
 (pdftex.def)             Requested size: 455.24413pt x 121.72684pt.
  [155 <./A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png>]
-<A3_Diffusive_Shock_Acceleration/Images/dsa.png, id=6128, 312.41719pt x 224.33812pt>
+<A3_Diffusive_Shock_Acceleration/Images/dsa.png, id=6119, 312.41719pt x 224.33812pt>
 File: A3_Diffusive_Shock_Acceleration/Images/dsa.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/dsa.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/dsa.png  used on input line 139.
@@ -3250,7 +3238,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.7> not available
 
 
 ] [165]
-<A4_Variance_diffusion/Images/diffusion_3D.pdf, id=6276, 524.84656pt x 419.14986pt>
+<A4_Variance_diffusion/Images/diffusion_3D.pdf, id=6267, 524.84656pt x 419.14986pt>
 File: A4_Variance_diffusion/Images/diffusion_3D.pdf Graphic file (type pdf)
 <use A4_Variance_diffusion/Images/diffusion_3D.pdf>
 Package pdftex.def Info: A4_Variance_diffusion/Images/diffusion_3D.pdf  used on input line 120.
@@ -3329,18 +3317,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48758 strings out of 476025
- 1024095 string characters out of 5790017
- 2218630 words of memory out of 5000000
- 67352 multiletter control sequences out of 15000+600000
+ 48752 strings out of 476025
+ 1023917 string characters out of 5790017
+ 2218451 words of memory out of 5000000
+ 67348 multiletter control sequences out of 15000+600000
  572232 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,20n,131p,1992b,2704s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,19n,131p,1992b,2704s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathabx-type1/mathb8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txbmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (189 pages, 33863545 bytes).
+Output written on main.pdf (189 pages, 33831072 bytes).
 PDF statistics:
- 6951 PDF objects out of 7423 (max. 8388607)
- 5135 compressed objects within 52 object streams
- 955 named destinations out of 1000 (max. 500000)
+ 6941 PDF objects out of 7423 (max. 8388607)
+ 5126 compressed objects within 52 object streams
+ 953 named destinations out of 1000 (max. 500000)
  1357 words of extra memory for PDF output out of 10000 (max. 10000000)
 
