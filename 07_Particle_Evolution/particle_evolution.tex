@@ -345,7 +345,7 @@ We will take the simple example of an impulsive cosmic ray source injecting part
 
 \begin{subequations}
 	\begin{align}
-	n\qty(\gamma,r,t)&=\frac{\dot{\gamma}_0}{\dot{\gamma}}\frac{n\qty(\gamma,0,0)}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2}) \label{eq:chapter_7_cr_ev_green_solution} \\
+	n\qty(\gamma,t,r)&=\frac{\dot{\gamma}_0}{\dot{\gamma}}\frac{n\qty(\gamma,0,0)}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2}) \label{eq:chapter_7_cr_ev_green_solution} \\
 	R_\text{diff}\qty(\gamma,t,B)&=\sqrt{4\int_\gamma^{\gamma_0}\frac{D\qty(\gamma',B)}{\dot{\gamma}'}\dd{\gamma'}}\text{ ,} \label{eq:chapter_7_R_ev_green_solution}
 	\end{align}
 \end{subequations}  
@@ -368,7 +368,7 @@ The time evolution of the cosmic ray density distribution can be found by combin
 
 \begin{equation}
 	\begin{aligned}
-		n_p\qty(\gamma,r,t)&=\frac{A\gamma^{-\Gamma}}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{\qty(\Gamma-1)t}{\tau_{pp}}-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2})\text{ .}
+		n_p\qty(\gamma,t,r)&=\frac{A\gamma^{-\Gamma}}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{\qty(\Gamma-1)t}{\tau_{pp}}-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2})\text{ .}
 	\end{aligned} \label{eq:chapter_7_crpropev_hadronic_impulsive}
 \end{equation}
 \begin{figure}[hbtp]
@@ -383,14 +383,14 @@ A continuous source can be treated as a series of impulsive injectors and \autor
 
 \begin{equation}
     \begin{aligned}
-    n_p\qty(E,R,t)&=\frac{AE^{-\Gamma}}{4\pi D\qty(E,B)r}\text{erfc}\qty(\frac{r}{R_\text{diff}\qty(\gamma,t,B)}) \\
+    n_p\qty(E,t,r)&=\frac{AE^{-\Gamma}}{4\pi D\qty(E,B)r}\text{erfc}\qty(\frac{r}{R_\text{diff}\qty(\gamma,t,B)}) \\
     \text{erfc}\qty(z)&=\frac{2}{\sqrt{\pi}}\int_z^\infty \exp(-x^2)\dd{x}\text{ .}
     \end{aligned} \label{eq:chapter_7_crpropev_hadronic_continuous}
 \end{equation}
 \noindent The bottom panel of \autoref{fig:chapter_7_propagation_hadron_cr_spectrum} shows the cosmic ray energy density distribution at different distances $r$ from a continuous accelerator of protons. For distances close to the source ($R\ll R_\text{diff}$), the cosmic ray energy spectrum is simply:
 \begin{equation}
     \begin{aligned}
- 	   n_p\qty(E,R,t)&=\frac{AE^{-\Gamma}}{4\pi D\qty(E,B)r}\text{ .}
+ 	   n_p\qty(E,t,r)&=\frac{AE^{-\Gamma}}{4\pi D\qty(E,B)r}\text{ .}
     \end{aligned} 
 \end{equation}
 \noindent As $D\propto \gamma^{\delta}$ (see \autoref{eq:diffusion}), the cosmic ray energy spectrum can be described by a power law with index $\Gamma+\delta$. The higher index (compared to the injected spectrum) mathematically describes high-energy cosmic rays escaping at a faster rate compared to low energy protons.
@@ -411,7 +411,7 @@ For an accelerator injecting electrons, combining \autoref{eq:diffusion},  \auto
 
 \begin{equation}
 	\begin{aligned}
-		n_e\qty(\gamma,r,t)&=\frac{\qty(1-\gamma b_st)^{\Gamma-2}n_0\gamma^{-\Gamma}}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2})\text{ .}
+		n_e\qty(\gamma,t,r)&=\frac{\qty(1-\gamma b_st)^{\Gamma-2}n_0\gamma^{-\Gamma}}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2})\text{ .}
 	\end{aligned} \label{eq:chapter_7_crpropev_leptonic_impulsive}
 \end{equation}
 \begin{figure}[hbtp]
@@ -426,7 +426,7 @@ For a continuous source of electrons, \autoref{eq:chapter_7_cr_energy_distributi
 
 \begin{equation}
     \begin{aligned}
-    n_e\qty(E,R,t)&=\frac{n_0E^{-\Gamma}}{4\pi D\qty(E,B)r}\text{erfc}\qty(\frac{r}{2\sqrt{D\qty(E,B)t_\gamma}}) \\
+    n_e\qty(E,t,r)&=\frac{n_0E^{-\Gamma}}{4\pi D\qty(E,B)r}\text{erfc}\qty(\frac{r}{2\sqrt{D\qty(E,B)t_\gamma}}) \\
     t_\gamma&=\text{min}\qty(t,\frac{1}{b_s\gamma})\text{ .}
     \end{aligned} \label{eq:chapter_7_crpropev_leptonic_continuous}
 \end{equation}
@@ -434,7 +434,7 @@ For a continuous source of electrons, \autoref{eq:chapter_7_cr_energy_distributi
 Similarly to protons, for distances close to the source ($R\ll R_\text{diff}$), the electron energy spectrum is:
 \begin{equation}
     \begin{aligned}
-	    n_e\qty(E,R,t)&=\frac{AE^{-\Gamma}}{4\pi D\qty(E,B)r}\text{ ,}
+	    n_e\qty(E,t,r)&=\frac{AE^{-\Gamma}}{4\pi D\qty(E,B)r}\text{ ,}
     \end{aligned} 
 \end{equation}
 
