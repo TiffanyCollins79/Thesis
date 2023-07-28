@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  28 JUL 2023 11:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  28 JUL 2023 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1410,8 +1410,8 @@ Overfull \hbox (29.15346pt too wide) in paragraph at lines 15--16
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \gloss{HGPS}{HESS Galactic Plane Survey}
-                                              [2])
+l.27 \gloss{GC}{Galactic centre}
+                                 [2])
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1421,7 +1421,7 @@ l.189 \include{03a_Intro_page/intro}
 
  (./04_Introduction/introduction.tex
 Chapter 2.
-<04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png, id=549, 252.19218pt x 176.91093pt>
+<04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png, id=550, 252.19218pt x 176.91093pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png Graphic file (type png)
 <use 04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png  used on input line 12.
@@ -1442,7 +1442,7 @@ l.20 \par
 
 
  <./04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png>]
-<04_Introduction/Images/pulsar_wind_nebula/pulsar.jpeg, id=569, 330.39435pt x 326.6604pt>
+<04_Introduction/Images/pulsar_wind_nebula/pulsar.jpeg, id=570, 330.39435pt x 326.6604pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/pulsar.jpeg Graphic file (type jpg)
 <use 04_Introduction/Images/pulsar_wind_nebula/pulsar.jpeg>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/pulsar.jpeg  used on input line 24.
@@ -1453,23 +1453,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has b
                    \relax 
 l.29 A
       fter core collapse, pulsars retain the majority of a progenitor star's... [5 <./04_Introduction/Images/pulsar_wind_nebula/pulsar.jpeg>] [6] [7]
-<04_Introduction/Images/pulsar_wind_nebula/pulsar_wind_nebula_structure.pdf, id=645, 311.24278pt x 313.41089pt>
+<04_Introduction/Images/pulsar_wind_nebula/pulsar_wind_nebula_structure.pdf, id=646, 311.24278pt x 313.41089pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/pulsar_wind_nebula_structure.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/pulsar_wind_nebula/pulsar_wind_nebula_structure.pdf>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/pulsar_wind_nebula_structure.pdf  used on input line 118.
 (pdftex.def)             Requested size: 180.83438pt x 182.09486pt.
-<04_Introduction/Images/pulsar_wind_nebula/pwn_evolution.jpg, id=646, 289.08pt x 196.8153pt>
+<04_Introduction/Images/pulsar_wind_nebula/pwn_evolution.jpg, id=647, 289.08pt x 196.8153pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/pwn_evolution.jpg Graphic file (type jpg)
 <use 04_Introduction/Images/pulsar_wind_nebula/pwn_evolution.jpg>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/pwn_evolution.jpg  used on input line 119.
 (pdftex.def)             Requested size: 267.46097pt x 182.09486pt.
  [8 <./04_Introduction/Images/pulsar_wind_nebula/pulsar_wind_nebula_structure.pdf> <./04_Introduction/Images/pulsar_wind_nebula/pwn_evolution.jpg>]
-<04_Introduction/Images/pulsar_wind_nebula/magnetic_field_structure.pdf, id=683, 1583.9175pt x 1196.47pt>
+<04_Introduction/Images/pulsar_wind_nebula/magnetic_field_structure.pdf, id=684, 1583.9175pt x 1196.47pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/magnetic_field_structure.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/pulsar_wind_nebula/magnetic_field_structure.pdf>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/magnetic_field_structure.pdf  used on input line 166.
 (pdftex.def)             Requested size: 212.94957pt x 160.87277pt.
-<04_Introduction/Images/pulsar_wind_nebula/PWN_magnetic_field_structure.jpeg, id=684, 308.65312pt x 225.84375pt>
+<04_Introduction/Images/pulsar_wind_nebula/PWN_magnetic_field_structure.jpeg, id=685, 308.65312pt x 225.84375pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/PWN_magnetic_field_structure.jpeg Graphic file (type jpg)
 <use 04_Introduction/Images/pulsar_wind_nebula/PWN_magnetic_field_structure.jpeg>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/PWN_magnetic_field_structure.jpeg  used on input line 167.
@@ -1479,7 +1479,7 @@ Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/PWN_magnetic_
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9]
-<04_Introduction/Images/pulsar_wind_nebula/pwn_spectra_evolution.pdf, id=710, 512.07813pt x 360.24084pt>
+<04_Introduction/Images/pulsar_wind_nebula/pwn_spectra_evolution.pdf, id=711, 512.07813pt x 360.24084pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/pwn_spectra_evolution.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/pulsar_wind_nebula/pwn_spectra_evolution.pdf>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/pwn_spectra_evolution.pdf  used on input line 195.
@@ -1498,38 +1498,38 @@ Package epstopdf Info: Source file: <04_Introduction/Images/pulsar_wind_nebula/T
 (epstopdf)             Command: <repstopdf --outfile=04_Introduction/Images/pulsar_wind_nebula/TeV_PWN_location-eps-converted-to.pdf 04_Introduction/Images/pulsar_wind_nebula/TeV_PWN_location.eps>
 (epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
-<04_Introduction/Images/pulsar_wind_nebula/TeV_PWN_location-eps-converted-to.pdf, id=789, 388.45125pt x 341.275pt>
+<04_Introduction/Images/pulsar_wind_nebula/TeV_PWN_location-eps-converted-to.pdf, id=790, 388.45125pt x 341.275pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/TeV_PWN_location-eps-converted-to.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/pulsar_wind_nebula/TeV_PWN_location-eps-converted-to.pdf>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/TeV_PWN_location-eps-converted-to.pdf  used on input line 216.
 (pdftex.def)             Requested size: 225.34361pt x 197.9813pt.
-<04_Introduction/Images/pulsar_wind_nebula/pulsar_spin_down_vs_age.png, id=790, 361.35pt x 325.215pt>
+<04_Introduction/Images/pulsar_wind_nebula/pulsar_spin_down_vs_age.png, id=791, 361.35pt x 325.215pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/pulsar_spin_down_vs_age.png Graphic file (type png)
 <use 04_Introduction/Images/pulsar_wind_nebula/pulsar_spin_down_vs_age.png>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/pulsar_spin_down_vs_age.png  used on input line 220.
 (pdftex.def)             Requested size: 225.34361pt x 202.8073pt.
-<04_Introduction/Images/pulsar_wind_nebula/pulsar_luminosity_vs_age.png, id=791, 361.35pt x 325.215pt>
+<04_Introduction/Images/pulsar_wind_nebula/pulsar_luminosity_vs_age.png, id=792, 361.35pt x 325.215pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/pulsar_luminosity_vs_age.png Graphic file (type png)
 <use 04_Introduction/Images/pulsar_wind_nebula/pulsar_luminosity_vs_age.png>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/pulsar_luminosity_vs_age.png  used on input line 224.
 (pdftex.def)             Requested size: 225.34361pt x 202.8073pt.
-<04_Introduction/Images/pulsar_wind_nebula/pulsar_efficiency_vs_age.png, id=792, 361.35pt x 325.215pt>
+<04_Introduction/Images/pulsar_wind_nebula/pulsar_efficiency_vs_age.png, id=793, 361.35pt x 325.215pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/pulsar_efficiency_vs_age.png Graphic file (type png)
 <use 04_Introduction/Images/pulsar_wind_nebula/pulsar_efficiency_vs_age.png>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/pulsar_efficiency_vs_age.png  used on input line 228.
 (pdftex.def)             Requested size: 225.34361pt x 202.8073pt.
  [12 <./04_Introduction/Images/pulsar_wind_nebula/TeV_PWN_location-eps-converted-to.pdf> <./04_Introduction/Images/pulsar_wind_nebula/pulsar_spin_down_vs_age.png> <./04_Introduction/Images/pulsar_wind_nebula/pulsar_luminosity_vs_age.png> <./04_Introduction/Images/pulsar_wind_nebula/pulsar_efficiency_vs_age.png>] [13]
-<04_Introduction/Images/pulsar_wind_nebula/1825_energy_flux.png, id=856, 109.8504pt x 78.5334pt>
+<04_Introduction/Images/pulsar_wind_nebula/1825_energy_flux.png, id=857, 109.8504pt x 78.5334pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/1825_energy_flux.png Graphic file (type png)
 <use 04_Introduction/Images/pulsar_wind_nebula/1825_energy_flux.png>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/1825_energy_flux.png  used on input line 270.
 (pdftex.def)             Requested size: 204.56767pt x 146.24493pt.
-<04_Introduction/Images/pulsar_wind_nebula/1825_xray_flux.png, id=857, 695.59875pt x 491.8375pt>
+<04_Introduction/Images/pulsar_wind_nebula/1825_xray_flux.png, id=858, 695.59875pt x 491.8375pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/1825_xray_flux.png Graphic file (type png)
 <use 04_Introduction/Images/pulsar_wind_nebula/1825_xray_flux.png>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/1825_xray_flux.png  used on input line 271.
 (pdftex.def)             Requested size: 206.8344pt x 146.24493pt.
-<04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf, id=862, 337.39474pt x 253.50862pt>
+<04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf, id=863, 337.39474pt x 253.50862pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf  used on input line 278.
@@ -1571,7 +1571,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14 <./04_Introduction/Images/pulsar_wind_nebula/1825_energy_flux.png> <./04_Introduction/Images/pulsar_wind_nebula/1825_xray_flux.png (PNG copy)>] [15 <./04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf>]
-<04_Introduction/Images/pulsar_wind_nebula/1826_energy_flux.png, id=955, 136.8312pt x 77.088pt>
+<04_Introduction/Images/pulsar_wind_nebula/1826_energy_flux.png, id=956, 136.8312pt x 77.088pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/1826_energy_flux.png Graphic file (type png)
 <use 04_Introduction/Images/pulsar_wind_nebula/1826_energy_flux.png>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/1826_energy_flux.png  used on input line 333.
@@ -1585,7 +1585,7 @@ Package epstopdf Info: Source file: <04_Introduction/Images/pulsar_wind_nebula/h
 (epstopdf)             Command: <repstopdf --outfile=04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray-eps-converted-to.pdf 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.eps>
 (epstopdf)             \includegraphics on input line 334.
 Package epstopdf Info: Output file is already uptodate.
-<04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray-eps-converted-to.pdf, id=956, 219.82124pt x 161.60374pt>
+<04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray-eps-converted-to.pdf, id=957, 219.82124pt x 161.60374pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray-eps-converted-to.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray-eps-converted-to.pdf>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray-eps-converted-to.pdf  used on input line 334.
@@ -1594,7 +1594,7 @@ Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_13
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg, id=962, 511.1898pt x 217.5327pt>
+<04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg, id=963, 511.1898pt x 217.5327pt>
 File: 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg Graphic file (type jpg)
 <use 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg>
 Package pdftex.def Info: 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg  used on input line 367.
@@ -1605,19 +1605,19 @@ Overfull \hbox (2.16727pt too wide) in paragraph at lines 374--375
  []
 
 [17 <./04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg>]
-<04_Introduction/Images/History/hess_balloon_flight.jpg, id=1007, 75.28125pt x 100.27463pt>
+<04_Introduction/Images/History/hess_balloon_flight.jpg, id=1008, 75.28125pt x 100.27463pt>
 File: 04_Introduction/Images/History/hess_balloon_flight.jpg Graphic file (type jpg)
 <use 04_Introduction/Images/History/hess_balloon_flight.jpg>
 Package pdftex.def Info: 04_Introduction/Images/History/hess_balloon_flight.jpg  used on input line 383.
 (pdftex.def)             Requested size: 318.6695pt x 424.6421pt.
  [18 <./04_Introduction/Images/History/hess_balloon_flight.jpg>] [19] [20]
-<04_Introduction/Images/cosmic_rays/combined_turbulence.png, id=1074, 501.10391pt x 187.13623pt>
+<04_Introduction/Images/cosmic_rays/combined_turbulence.png, id=1075, 501.10391pt x 187.13623pt>
 File: 04_Introduction/Images/cosmic_rays/combined_turbulence.png Graphic file (type png)
 <use 04_Introduction/Images/cosmic_rays/combined_turbulence.png>
 Package pdftex.def Info: 04_Introduction/Images/cosmic_rays/combined_turbulence.png  used on input line 478.
 (pdftex.def)             Requested size: 455.24413pt x 170.01152pt.
  [21 <./04_Introduction/Images/cosmic_rays/combined_turbulence.png>] [22]
-<04_Introduction/Images/cosmic_rays/cosmic_ray_spectrum.pdf, id=1128, 425.87677pt x 214.36476pt>
+<04_Introduction/Images/cosmic_rays/cosmic_ray_spectrum.pdf, id=1129, 425.87677pt x 214.36476pt>
 File: 04_Introduction/Images/cosmic_rays/cosmic_ray_spectrum.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/cosmic_rays/cosmic_ray_spectrum.pdf>
 Package pdftex.def Info: 04_Introduction/Images/cosmic_rays/cosmic_ray_spectrum.pdf  used on input line 572.
@@ -1662,7 +1662,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 575--575
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [24 <./04_Introduction/Images/cosmic_rays/cosmic_ray_spectrum.pdf>] [25] [26]
-<04_Introduction/Images/non_thermal_emission/hadronic_interaction.pdf, id=1271, 465.1129pt x 311.6399pt>
+<04_Introduction/Images/non_thermal_emission/hadronic_interaction.pdf, id=1272, 465.1129pt x 311.6399pt>
 File: 04_Introduction/Images/non_thermal_emission/hadronic_interaction.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/non_thermal_emission/hadronic_interaction.pdf>
 Package pdftex.def Info: 04_Introduction/Images/non_thermal_emission/hadronic_interaction.pdf  used on input line 681.
@@ -1678,7 +1678,7 @@ Package siunitx Warning: Unit macro \barn has been deprecated in this release.
 (siunitx)                \DeclareSIUnit\barn{b}
 
 [28]
-<04_Introduction/Images/non_thermal_emission/synchrotron_frames.png, id=1328, 350.81062pt x 130.23656pt>
+<04_Introduction/Images/non_thermal_emission/synchrotron_frames.png, id=1329, 350.81062pt x 130.23656pt>
 File: 04_Introduction/Images/non_thermal_emission/synchrotron_frames.png Graphic file (type png)
 <use 04_Introduction/Images/non_thermal_emission/synchrotron_frames.png>
 Package pdftex.def Info: 04_Introduction/Images/non_thermal_emission/synchrotron_frames.png  used on input line 767.
@@ -1694,13 +1694,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.2
                    \relax 
 l.786 	\end{align}
                    [29 <./04_Introduction/Images/non_thermal_emission/synchrotron_frames.png>]
-<04_Introduction/Images/non_thermal_emission/synchrotron_spectrum.pdf, id=1347, 345.49567pt x 256.61168pt>
+<04_Introduction/Images/non_thermal_emission/synchrotron_spectrum.pdf, id=1348, 345.49567pt x 256.61168pt>
 File: 04_Introduction/Images/non_thermal_emission/synchrotron_spectrum.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/non_thermal_emission/synchrotron_spectrum.pdf>
 Package pdftex.def Info: 04_Introduction/Images/non_thermal_emission/synchrotron_spectrum.pdf  used on input line 833.
 (pdftex.def)             Requested size: 318.6695pt x 236.70427pt.
  [30 <./04_Introduction/Images/non_thermal_emission/synchrotron_spectrum.pdf>]
-<04_Introduction/Images/non_thermal_emission/inverse_compton.png, id=1383, 351.56343pt x 315.42844pt>
+<04_Introduction/Images/non_thermal_emission/inverse_compton.png, id=1384, 351.56343pt x 315.42844pt>
 File: 04_Introduction/Images/non_thermal_emission/inverse_compton.png Graphic file (type png)
 <use 04_Introduction/Images/non_thermal_emission/inverse_compton.png>
 Package pdftex.def Info: 04_Introduction/Images/non_thermal_emission/inverse_compton.png  used on input line 863.
@@ -1720,7 +1720,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.2
                    \relax 
 l.933     \end{align}
                       [32 <./04_Introduction/Images/non_thermal_emission/inverse_compton.png>]
-<04_Introduction/Images/non_thermal_emission/IC_spectrum.pdf, id=1412, 345.49567pt x 256.61168pt>
+<04_Introduction/Images/non_thermal_emission/IC_spectrum.pdf, id=1413, 345.49567pt x 256.61168pt>
 File: 04_Introduction/Images/non_thermal_emission/IC_spectrum.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/non_thermal_emission/IC_spectrum.pdf>
 Package pdftex.def Info: 04_Introduction/Images/non_thermal_emission/IC_spectrum.pdf  used on input line 938.
@@ -1741,7 +1741,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.2
                    \relax 
 l.1008 \end{alignat}
                      \label{eq:chapter_1_non_thermal_cooling_time} [34]
-<04_Introduction/Images/non_thermal_emission/cooling_time_final.pdf, id=1462, 464.90913pt x 339.48741pt>
+<04_Introduction/Images/non_thermal_emission/cooling_time_final.pdf, id=1463, 464.90913pt x 339.48741pt>
 File: 04_Introduction/Images/non_thermal_emission/cooling_time_final.pdf Graphic file (type pdf)
 <use 04_Introduction/Images/non_thermal_emission/cooling_time_final.pdf>
 Package pdftex.def Info: 04_Introduction/Images/non_thermal_emission/cooling_time_final.pdf  used on input line 1018.
@@ -1757,7 +1757,7 @@ Chapter 3.
 
 
 ]
-<05_Astronomy/Images/air_shower/gamma_ray.png, id=1534, 257.46187pt x 322.20375pt>
+<05_Astronomy/Images/air_shower/gamma_ray.png, id=1535, 257.46187pt x 322.20375pt>
 File: 05_Astronomy/Images/air_shower/gamma_ray.png Graphic file (type png)
 <use 05_Astronomy/Images/air_shower/gamma_ray.png>
 Package pdftex.def Info: 05_Astronomy/Images/air_shower/gamma_ray.png  used on input line 76.
@@ -1771,7 +1771,7 @@ Underfull \hbox (badness 1038) in paragraph at lines 79--79
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [38] [39 <./05_Astronomy/Images/air_shower/gamma_ray.png>]
-<05_Astronomy/Images/air_shower/cosmic_ray.png, id=1570, 251.43938pt x 332.74312pt>
+<05_Astronomy/Images/air_shower/cosmic_ray.png, id=1571, 251.43938pt x 332.74312pt>
 File: 05_Astronomy/Images/air_shower/cosmic_ray.png Graphic file (type png)
 <use 05_Astronomy/Images/air_shower/cosmic_ray.png>
 Package pdftex.def Info: 05_Astronomy/Images/air_shower/cosmic_ray.png  used on input line 162.
@@ -1781,7 +1781,7 @@ Package pdftex.def Info: 05_Astronomy/Images/air_shower/cosmic_ray.png  used on 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [40]
-<05_Astronomy/Images/air_shower/cosmic_ray_vs_gamma_ray2.png, id=1587, 853.1875pt x 587.19376pt>
+<05_Astronomy/Images/air_shower/cosmic_ray_vs_gamma_ray2.png, id=1588, 853.1875pt x 587.19376pt>
 File: 05_Astronomy/Images/air_shower/cosmic_ray_vs_gamma_ray2.png Graphic file (type png)
 <use 05_Astronomy/Images/air_shower/cosmic_ray_vs_gamma_ray2.png>
 Package pdftex.def Info: 05_Astronomy/Images/air_shower/cosmic_ray_vs_gamma_ray2.png  used on input line 189.
@@ -1807,7 +1807,7 @@ Underfull \hbox (badness 2229) in paragraph at lines 192--192
  []
 
 [41 <./05_Astronomy/Images/air_shower/cosmic_ray.png> <./05_Astronomy/Images/air_shower/cosmic_ray_vs_gamma_ray2.png>] [42]
-<05_Astronomy/Images/air_shower/chernkov_light.png, id=1617, 250.68657pt x 163.3603pt>
+<05_Astronomy/Images/air_shower/chernkov_light.png, id=1618, 250.68657pt x 163.3603pt>
 File: 05_Astronomy/Images/air_shower/chernkov_light.png Graphic file (type png)
 <use 05_Astronomy/Images/air_shower/chernkov_light.png>
 Package pdftex.def Info: 05_Astronomy/Images/air_shower/chernkov_light.png  used on input line 256.
@@ -1817,12 +1817,12 @@ Underfull \hbox (badness 1642) in paragraph at lines 260--260
 [][]\OT1/cmr/m/n/12 : |Huy-gens's con-struc-tion of a
  []
 
-<05_Astronomy/Images/air_shower/chenkov_light_pool.png, id=1620, 370.38374pt x 412.54124pt>
+<05_Astronomy/Images/air_shower/chenkov_light_pool.png, id=1621, 370.38374pt x 412.54124pt>
 File: 05_Astronomy/Images/air_shower/chenkov_light_pool.png Graphic file (type png)
 <use 05_Astronomy/Images/air_shower/chenkov_light_pool.png>
 Package pdftex.def Info: 05_Astronomy/Images/air_shower/chenkov_light_pool.png  used on input line 281.
 (pdftex.def)             Requested size: 262.60129pt x 292.48987pt.
-<05_Astronomy/Images/air_shower/cherenkov_telescope.png, id=1621, 290.08376pt x 566.115pt>
+<05_Astronomy/Images/air_shower/cherenkov_telescope.png, id=1622, 290.08376pt x 566.115pt>
 File: 05_Astronomy/Images/air_shower/cherenkov_telescope.png Graphic file (type png)
 <use 05_Astronomy/Images/air_shower/cherenkov_telescope.png>
 Package pdftex.def Info: 05_Astronomy/Images/air_shower/cherenkov_telescope.png  used on input line 282.
@@ -1831,13 +1831,13 @@ Package pdftex.def Info: 05_Astronomy/Images/air_shower/cherenkov_telescope.png 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [43 <./05_Astronomy/Images/air_shower/chernkov_light.png>]
-<05_Astronomy/Images/telescopes/HESS_image.jpg, id=1642, 602.25pt x 294.09875pt>
+<05_Astronomy/Images/telescopes/HESS_image.jpg, id=1643, 602.25pt x 294.09875pt>
 File: 05_Astronomy/Images/telescopes/HESS_image.jpg Graphic file (type jpg)
 <use 05_Astronomy/Images/telescopes/HESS_image.jpg>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/HESS_image.jpg  used on input line 300.
 (pdftex.def)             Requested size: 455.24413pt x 222.31918pt.
  [44 <./05_Astronomy/Images/air_shower/chenkov_light_pool.png> <./05_Astronomy/Images/air_shower/cherenkov_telescope.png>]
-<05_Astronomy/Images/telescopes/sensitivity_comparison.png, id=1658, 569.0058pt x 364.2408pt>
+<05_Astronomy/Images/telescopes/sensitivity_comparison.png, id=1659, 569.0058pt x 364.2408pt>
 File: 05_Astronomy/Images/telescopes/sensitivity_comparison.png Graphic file (type png)
 <use 05_Astronomy/Images/telescopes/sensitivity_comparison.png>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/sensitivity_comparison.png  used on input line 306.
@@ -1846,7 +1846,7 @@ Package pdftex.def Info: 05_Astronomy/Images/telescopes/sensitivity_comparison.p
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<05_Astronomy/Images/telescopes/hess_survey.pdf, id=1668, 542.61319pt x 424.37848pt>
+<05_Astronomy/Images/telescopes/hess_survey.pdf, id=1669, 542.61319pt x 424.37848pt>
 File: 05_Astronomy/Images/telescopes/hess_survey.pdf Graphic file (type pdf)
 <use 05_Astronomy/Images/telescopes/hess_survey.pdf>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/hess_survey.pdf  used on input line 321.
@@ -1856,12 +1856,12 @@ Package pdftex.def Info: 05_Astronomy/Images/telescopes/hess_survey.pdf  used on
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [46 <./05_Astronomy/Images/telescopes/sensitivity_comparison.png>]
-<05_Astronomy/Images/telescopes/LHAASO.jpg, id=1701, 170.70174pt x 98.57628pt>
+<05_Astronomy/Images/telescopes/LHAASO.jpg, id=1702, 170.70174pt x 98.57628pt>
 File: 05_Astronomy/Images/telescopes/LHAASO.jpg Graphic file (type jpg)
 <use 05_Astronomy/Images/telescopes/LHAASO.jpg>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/LHAASO.jpg  used on input line 339.
 (pdftex.def)             Requested size: 189.94218pt x 109.68091pt.
-<05_Astronomy/Images/telescopes/HAWC.png, id=1702, 1104.125pt x 470.75874pt>
+<05_Astronomy/Images/telescopes/HAWC.png, id=1703, 1104.125pt x 470.75874pt>
 File: 05_Astronomy/Images/telescopes/HAWC.png Graphic file (type png)
 <use 05_Astronomy/Images/telescopes/HAWC.png>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/HAWC.png  used on input line 340.
@@ -1875,7 +1875,7 @@ Overfull \hbox (57.59221pt too wide) in paragraph at lines 352--353
 \OT1/cmr/m/n/12 tic sources in-clud-ing [] (LHAASO equiv-a-lent of [] / [],
  []
 
-<05_Astronomy/Images/telescopes/cta_image.jpg, id=1851, 8239.78375pt x 4555.0175pt>
+<05_Astronomy/Images/telescopes/cta_image.jpg, id=1852, 8239.78375pt x 4555.0175pt>
 File: 05_Astronomy/Images/telescopes/cta_image.jpg Graphic file (type jpg)
 <use 05_Astronomy/Images/telescopes/cta_image.jpg>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/cta_image.jpg  used on input line 364.
@@ -1908,7 +1908,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.95872pt
 (hyperref)                removed on input line 1.
 
-<06_Interstellar_Medium/Images/18252.png, id=1877, 237.7683pt x 390.0171pt>
+<06_Interstellar_Medium/Images/18252.png, id=1878, 237.7683pt x 390.0171pt>
 File: 06_Interstellar_Medium/Images/18252.png Graphic file (type png)
 <use 06_Interstellar_Medium/Images/18252.png>
 Package pdftex.def Info: 06_Interstellar_Medium/Images/18252.png  used on input line 5.
@@ -1939,24 +1939,24 @@ Overfull \hbox (8.50385pt too wide) in paragraph at lines 12--13
 
 
  <./06_Interstellar_Medium/Images/18252.png>]
-<06_Interstellar_Medium/Images/Theory/intensity.png, id=1896, 353.06906pt x 185.19188pt>
+<06_Interstellar_Medium/Images/Theory/intensity.png, id=1897, 353.06906pt x 185.19188pt>
 File: 06_Interstellar_Medium/Images/Theory/intensity.png Graphic file (type png)
 <use 06_Interstellar_Medium/Images/Theory/intensity.png>
 Package pdftex.def Info: 06_Interstellar_Medium/Images/Theory/intensity.png  used on input line 26.
 (pdftex.def)             Requested size: 318.6695pt x 167.14868pt.
-<06_Interstellar_Medium/Images/Theory/radiative_transfer.png, id=1898, 509.65407pt x 127.97812pt>
+<06_Interstellar_Medium/Images/Theory/radiative_transfer.png, id=1899, 509.65407pt x 127.97812pt>
 File: 06_Interstellar_Medium/Images/Theory/radiative_transfer.png Graphic file (type png)
 <use 06_Interstellar_Medium/Images/Theory/radiative_transfer.png>
 Package pdftex.def Info: 06_Interstellar_Medium/Images/Theory/radiative_transfer.png  used on input line 67.
 (pdftex.def)             Requested size: 455.24413pt x 114.32pt.
  [51 <./06_Interstellar_Medium/Images/Theory/intensity.png>] [52 <./06_Interstellar_Medium/Images/Theory/radiative_transfer.png>] [53]
-<06_Interstellar_Medium/Images/Theory/emission.png, id=1944, 722.7pt x 280.79906pt>
+<06_Interstellar_Medium/Images/Theory/emission.png, id=1945, 722.7pt x 280.79906pt>
 File: 06_Interstellar_Medium/Images/Theory/emission.png Graphic file (type png)
 <use 06_Interstellar_Medium/Images/Theory/emission.png>
 Package pdftex.def Info: 06_Interstellar_Medium/Images/Theory/emission.png  used on input line 223.
 (pdftex.def)             Requested size: 318.6695pt x 123.81761pt.
  [54 <./06_Interstellar_Medium/Images/Theory/emission.png>] [55]
-<06_Interstellar_Medium/Images/Theory/galaxy_combined.png, id=1986, 507.39563pt x 325.215pt>
+<06_Interstellar_Medium/Images/Theory/galaxy_combined.png, id=1987, 507.39563pt x 325.215pt>
 File: 06_Interstellar_Medium/Images/Theory/galaxy_combined.png Graphic file (type png)
 <use 06_Interstellar_Medium/Images/Theory/galaxy_combined.png>
 Package pdftex.def Info: 06_Interstellar_Medium/Images/Theory/galaxy_combined.png  used on input line 326.
@@ -1966,7 +1966,7 @@ Overfull \hbox (11.88992pt too wide) in paragraph at lines 352--353
 []\OT1/cmr/m/n/12 Other Galac-tic ro-ta-tion curves in-clude []Clemens, ([]1985[]), who anal-ysed the Massachusetts-
  []
 
-<06_Interstellar_Medium/Images/Theory/gas_distance_example.pdf, id=2021, 497.786pt x 202.13254pt>
+<06_Interstellar_Medium/Images/Theory/gas_distance_example.pdf, id=2022, 497.786pt x 202.13254pt>
 File: 06_Interstellar_Medium/Images/Theory/gas_distance_example.pdf Graphic file (type pdf)
 <use 06_Interstellar_Medium/Images/Theory/gas_distance_example.pdf>
 Package pdftex.def Info: 06_Interstellar_Medium/Images/Theory/gas_distance_example.pdf  used on input line 366.
@@ -1988,7 +1988,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 389.
 
-<06_Interstellar_Medium/Images/Theory/Fabien_Halpha.pdf, id=2070, 238.49101pt x 220.42351pt>
+<06_Interstellar_Medium/Images/Theory/Fabien_Halpha.pdf, id=2071, 238.49101pt x 220.42351pt>
 File: 06_Interstellar_Medium/Images/Theory/Fabien_Halpha.pdf Graphic file (type pdf)
 <use 06_Interstellar_Medium/Images/Theory/Fabien_Halpha.pdf>
 Package pdftex.def Info: 06_Interstellar_Medium/Images/Theory/Fabien_Halpha.pdf  used on input line 393.
@@ -2012,7 +2012,7 @@ Underfull \hbox (badness 3029) in paragraph at lines 396--396
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [59] [60 <./06_Interstellar_Medium/Images/Theory/Fabien_Halpha.pdf>]
-<06_Interstellar_Medium/Images/Observatories/Nanten2.pdf, id=2103, 265.59225pt x 199.4652pt>
+<06_Interstellar_Medium/Images/Observatories/Nanten2.pdf, id=2104, 265.59225pt x 199.4652pt>
 File: 06_Interstellar_Medium/Images/Observatories/Nanten2.pdf Graphic file (type pdf)
 <use 06_Interstellar_Medium/Images/Observatories/Nanten2.pdf>
 Package pdftex.def Info: 06_Interstellar_Medium/Images/Observatories/Nanten2.pdf  used on input line 473.
@@ -2037,43 +2037,43 @@ Chapter 5.
 
 
 ] [64] [65]
-<07_Particle_Evolution/Images/evolution/impulsive_proton_total_spectrum.pdf, id=2195, 552.6045pt x 735.6805pt>
+<07_Particle_Evolution/Images/evolution/impulsive_proton_total_spectrum.pdf, id=2196, 552.6045pt x 735.6805pt>
 File: 07_Particle_Evolution/Images/evolution/impulsive_proton_total_spectrum.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/evolution/impulsive_proton_total_spectrum.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/evolution/impulsive_proton_total_spectrum.pdf  used on input line 175.
 (pdftex.def)             Requested size: 455.24413pt x 606.0683pt.
  [66] [67 <./07_Particle_Evolution/Images/evolution/impulsive_proton_total_spectrum.pdf>]
-<07_Particle_Evolution/Images/evolution/impulsive_electron_total_spectrum.pdf, id=2283, 552.6045pt x 735.6805pt>
+<07_Particle_Evolution/Images/evolution/impulsive_electron_total_spectrum.pdf, id=2284, 552.6045pt x 735.6805pt>
 File: 07_Particle_Evolution/Images/evolution/impulsive_electron_total_spectrum.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/evolution/impulsive_electron_total_spectrum.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/evolution/impulsive_electron_total_spectrum.pdf  used on input line 229.
 (pdftex.def)             Requested size: 455.24413pt x 606.0683pt.
  [68] [69 <./07_Particle_Evolution/Images/evolution/impulsive_electron_total_spectrum.pdf>]
-<07_Particle_Evolution/Images/evolution/continuous_proton_total_spectrum.pdf, id=2384, 552.6045pt x 730.91269pt>
+<07_Particle_Evolution/Images/evolution/continuous_proton_total_spectrum.pdf, id=2385, 552.6045pt x 730.91269pt>
 File: 07_Particle_Evolution/Images/evolution/continuous_proton_total_spectrum.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/evolution/continuous_proton_total_spectrum.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/evolution/continuous_proton_total_spectrum.pdf  used on input line 275.
 (pdftex.def)             Requested size: 455.24413pt x 602.14049pt.
  [70] [71 <./07_Particle_Evolution/Images/evolution/continuous_proton_total_spectrum.pdf>]
-<07_Particle_Evolution/Images/evolution/continuous_electron_total_spectrum.pdf, id=2462, 552.6045pt x 735.6805pt>
+<07_Particle_Evolution/Images/evolution/continuous_electron_total_spectrum.pdf, id=2463, 552.6045pt x 735.6805pt>
 File: 07_Particle_Evolution/Images/evolution/continuous_electron_total_spectrum.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/evolution/continuous_electron_total_spectrum.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/evolution/continuous_electron_total_spectrum.pdf  used on input line 331.
 (pdftex.def)             Requested size: 455.24413pt x 606.0683pt.
  [72] [73 <./07_Particle_Evolution/Images/evolution/continuous_electron_total_spectrum.pdf>]
-<07_Particle_Evolution/Images/propagation/propagation_proton_cr_spectrum.pdf, id=2561, 583.97475pt x 735.4923pt>
+<07_Particle_Evolution/Images/propagation/propagation_proton_cr_spectrum.pdf, id=2562, 583.97475pt x 735.4923pt>
 File: 07_Particle_Evolution/Images/propagation/propagation_proton_cr_spectrum.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/propagation/propagation_proton_cr_spectrum.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/propagation/propagation_proton_cr_spectrum.pdf  used on input line 376.
 (pdftex.def)             Requested size: 455.24413pt x 573.35622pt.
  [74] [75 <./07_Particle_Evolution/Images/propagation/propagation_proton_cr_spectrum.pdf>]
-<07_Particle_Evolution/Images/propagation/propagation_electron_cr_spectrum.pdf, id=2657, 583.97475pt x 734.48856pt>
+<07_Particle_Evolution/Images/propagation/propagation_electron_cr_spectrum.pdf, id=2658, 583.97475pt x 734.48856pt>
 File: 07_Particle_Evolution/Images/propagation/propagation_electron_cr_spectrum.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/propagation/propagation_electron_cr_spectrum.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/propagation/propagation_electron_cr_spectrum.pdf  used on input line 419.
 (pdftex.def)             Requested size: 455.24413pt x 572.57376pt.
  [76] [77 <./07_Particle_Evolution/Images/propagation/propagation_electron_cr_spectrum.pdf>]
-<07_Particle_Evolution/Images/Code/manolakou_verification.pdf, id=2756, 546.14874pt x 732.35558pt>
+<07_Particle_Evolution/Images/Code/manolakou_verification.pdf, id=2757, 546.14874pt x 732.35558pt>
 File: 07_Particle_Evolution/Images/Code/manolakou_verification.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/Code/manolakou_verification.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/Code/manolakou_verification.pdf  used on input line 458.
@@ -2083,13 +2083,13 @@ Package pdftex.def Info: 07_Particle_Evolution/Images/Code/manolakou_verificatio
 LaTeX Warning: Float too large for page by 34.2452pt on input line 461.
 
 [78] [79 <./07_Particle_Evolution/Images/Code/manolakou_verification.pdf>]
-<07_Particle_Evolution/Images/Code/leptonic_changing_variabls.pdf, id=2841, 536.31569pt x 505.10007pt>
+<07_Particle_Evolution/Images/Code/leptonic_changing_variabls.pdf, id=2842, 536.31569pt x 505.10007pt>
 File: 07_Particle_Evolution/Images/Code/leptonic_changing_variabls.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/Code/leptonic_changing_variabls.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/Code/leptonic_changing_variabls.pdf  used on input line 536.
 (pdftex.def)             Requested size: 455.24413pt x 428.74362pt.
  [80] [81 <./07_Particle_Evolution/Images/Code/leptonic_changing_variabls.pdf>]
-<07_Particle_Evolution/Images/Code/code_example.png, id=2933, 252.19218pt x 210.03468pt>
+<07_Particle_Evolution/Images/Code/code_example.png, id=2934, 252.19218pt x 210.03468pt>
 File: 07_Particle_Evolution/Images/Code/code_example.png Graphic file (type png)
 <use 07_Particle_Evolution/Images/Code/code_example.png>
 Package pdftex.def Info: 07_Particle_Evolution/Images/Code/code_example.png  used on input line 546.
@@ -2100,7 +2100,7 @@ Underfull \hbox (badness 1178) in paragraph at lines 549--549
  []
 
 [82 <./07_Particle_Evolution/Images/Code/code_example.png>]
-<07_Particle_Evolution/Images/Code/manolakou_ecape.pdf, id=2952, 527.43234pt x 356.71216pt>
+<07_Particle_Evolution/Images/Code/manolakou_ecape.pdf, id=2953, 527.43234pt x 356.71216pt>
 File: 07_Particle_Evolution/Images/Code/manolakou_ecape.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/Code/manolakou_ecape.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/Code/manolakou_ecape.pdf  used on input line 584.
@@ -2111,12 +2111,12 @@ Overfull \hbox (6.81564pt too wide) in paragraph at lines 610--611
  []
 
 [83 <./07_Particle_Evolution/Images/Code/manolakou_ecape.pdf>]
-<07_Particle_Evolution/Images/Code/diffusion_regimes_impulsive.pdf, id=3028, 533.89648pt x 735.4923pt>
+<07_Particle_Evolution/Images/Code/diffusion_regimes_impulsive.pdf, id=3029, 533.89648pt x 735.4923pt>
 File: 07_Particle_Evolution/Images/Code/diffusion_regimes_impulsive.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/Code/diffusion_regimes_impulsive.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/Code/diffusion_regimes_impulsive.pdf  used on input line 616.
 (pdftex.def)             Requested size: 409.71693pt x 564.43417pt.
-<07_Particle_Evolution/Images/Code/diffusion_regimes_continuous.pdf, id=3029, 603.57674pt x 803.60027pt>
+<07_Particle_Evolution/Images/Code/diffusion_regimes_continuous.pdf, id=3030, 603.57674pt x 803.60027pt>
 File: 07_Particle_Evolution/Images/Code/diffusion_regimes_continuous.pdf Graphic file (type pdf)
 <use 07_Particle_Evolution/Images/Code/diffusion_regimes_continuous.pdf>
 Package pdftex.def Info: 07_Particle_Evolution/Images/Code/diffusion_regimes_continuous.pdf  used on input line 623.
@@ -2140,7 +2140,7 @@ Overfull \hbox (3.2762pt too wide) in paragraph at lines 1--1
 |\OT1/cmr/bx/n/24.88 Explaining the ex-tended GeV gamma-
  []
 
-<08_First_Paper/statement.pdf, id=3215, 596.95016pt x 844.83629pt>
+<08_First_Paper/statement.pdf, id=3216, 596.95016pt x 844.83629pt>
 File: 08_First_Paper/statement.pdf Graphic file (type pdf)
 <use 08_First_Paper/statement.pdf>
 Package pdftex.def Info: 08_First_Paper/statement.pdf  used on input line 3.
@@ -2149,7 +2149,7 @@ File: 08_First_Paper/statement.pdf Graphic file (type pdf)
 <use 08_First_Paper/statement.pdf>
 Package pdftex.def Info: 08_First_Paper/statement.pdf  used on input line 3.
 (pdftex.def)             Requested size: 596.94872pt x 844.83423pt.
-<08_First_Paper/statement.pdf, id=3218, page=1, 596.95016pt x 844.83629pt>
+<08_First_Paper/statement.pdf, id=3219, page=1, 596.95016pt x 844.83629pt>
 File: 08_First_Paper/statement.pdf Graphic file (type pdf)
 <use 08_First_Paper/statement.pdf, page 1>
 Package pdftex.def Info: 08_First_Paper/statement.pdf , page1 used on input line 3.
@@ -2177,7 +2177,7 @@ File: 08_First_Paper/statement.pdf Graphic file (type pdf)
 Package pdftex.def Info: 08_First_Paper/statement.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 477.56079pt x 675.86995pt.
  [89 <./08_First_Paper/statement.pdf>]
-<08_First_Paper/statement.pdf, id=3236, page=2, 596.95016pt x 844.83629pt>
+<08_First_Paper/statement.pdf, id=3237, page=2, 596.95016pt x 844.83629pt>
 File: 08_First_Paper/statement.pdf Graphic file (type pdf)
 <use 08_First_Paper/statement.pdf, page 2>
 Package pdftex.def Info: 08_First_Paper/statement.pdf , page2 used on input line 3.
@@ -2191,7 +2191,7 @@ File: 08_First_Paper/statement.pdf Graphic file (type pdf)
 Package pdftex.def Info: 08_First_Paper/statement.pdf , page2 used on input line 3.
 (pdftex.def)             Requested size: 477.56079pt x 675.86995pt.
  [90 <./08_First_Paper/statement.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3247, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3248, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf  used on input line 4.
@@ -2200,7 +2200,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf  used on input line 4.
 (pdftex.def)             Requested size: 597.5048pt x 785.21768pt.
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3250, page=1, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3251, page=1, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 1>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page1 used on input line 4.
@@ -2222,7 +2222,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page1 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [91 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3301, page=2, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3302, page=2, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 2>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page2 used on input line 4.
@@ -2236,7 +2236,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page2 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [92 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3317, page=3, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3318, page=3, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 3>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page3 used on input line 4.
@@ -2250,7 +2250,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page3 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [93 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3337, page=4, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3338, page=4, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 4>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page4 used on input line 4.
@@ -2264,7 +2264,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page4 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [94 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3366, page=5, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3367, page=5, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 5>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page5 used on input line 4.
@@ -2278,7 +2278,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page5 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [95 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3372, page=6, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3373, page=6, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 6>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page6 used on input line 4.
@@ -2292,7 +2292,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page6 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [96 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3382, page=7, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3383, page=7, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 7>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page7 used on input line 4.
@@ -2306,7 +2306,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page7 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [97 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3392, page=8, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3393, page=8, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 8>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page8 used on input line 4.
@@ -2320,7 +2320,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page8 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [98 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3400, page=9, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3401, page=9, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 9>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page9 used on input line 4.
@@ -2334,7 +2334,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page9 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [99 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3409, page=10, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3410, page=10, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 10>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page10 used on input line 4.
@@ -2348,7 +2348,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page10 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [100 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3414, page=11, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3415, page=11, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 11>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page11 used on input line 4.
@@ -2362,7 +2362,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page11 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [101 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3430, page=12, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3431, page=12, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 12>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page12 used on input line 4.
@@ -2376,7 +2376,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page12 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [102 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3435, page=13, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3436, page=13, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 13>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page13 used on input line 4.
@@ -2390,7 +2390,7 @@ File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page13 used on input line 4.
 (pdftex.def)             Requested size: 478.00566pt x 628.17653pt.
  [103 <./08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf>]
-<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3440, page=14, 597.50627pt x 785.21959pt>
+<08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, id=3441, page=14, 597.50627pt x 785.21959pt>
 File: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf Graphic file (type pdf)
 <use 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf, page 14>
 Package pdftex.def Info: 08_First_Paper/Explaining_the_extended_GeV_gamma_ray_emission_adjacent_to_HESS_J1825_137.pdf , page14 used on input line 4.
@@ -2424,12 +2424,12 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
  []
 
 [106]
-<09_Multizone/Images/code/cartesian.png, id=3504, 511.15968pt x 252.945pt>
+<09_Multizone/Images/code/cartesian.png, id=3505, 511.15968pt x 252.945pt>
 File: 09_Multizone/Images/code/cartesian.png Graphic file (type png)
 <use 09_Multizone/Images/code/cartesian.png>
 Package pdftex.def Info: 09_Multizone/Images/code/cartesian.png  used on input line 50.
 (pdftex.def)             Requested size: 455.24413pt x 225.27472pt.
-<09_Multizone/Images/code/transport.png, id=3505, 250.68657pt x 250.68657pt>
+<09_Multizone/Images/code/transport.png, id=3506, 250.68657pt x 250.68657pt>
 File: 09_Multizone/Images/code/transport.png Graphic file (type png)
 <use 09_Multizone/Images/code/transport.png>
 Package pdftex.def Info: 09_Multizone/Images/code/transport.png  used on input line 56.
@@ -2437,7 +2437,7 @@ Package pdftex.def Info: 09_Multizone/Images/code/transport.png  used on input l
  [107 <./09_Multizone/Images/code/cartesian.png>]
 \c@counter1=\count500
 \c@counter2=\count501
-<09_Multizone/Images/code/flow_chart.png, id=3534, 514.58414pt x 433.62pt>
+<09_Multizone/Images/code/flow_chart.png, id=3535, 514.58414pt x 433.62pt>
 File: 09_Multizone/Images/code/flow_chart.png Graphic file (type png)
 <use 09_Multizone/Images/code/flow_chart.png>
 Package pdftex.def Info: 09_Multizone/Images/code/flow_chart.png  used on input line 103.
@@ -2446,7 +2446,7 @@ Package pdftex.def Info: 09_Multizone/Images/code/flow_chart.png  used on input 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<09_Multizone/Images/code/resolution_cartoon_final.png, id=3535, 514.92375pt x 209.28188pt>
+<09_Multizone/Images/code/resolution_cartoon_final.png, id=3536, 514.92375pt x 209.28188pt>
 File: 09_Multizone/Images/code/resolution_cartoon_final.png Graphic file (type png)
 <use 09_Multizone/Images/code/resolution_cartoon_final.png>
 Package pdftex.def Info: 09_Multizone/Images/code/resolution_cartoon_final.png  used on input line 109.
@@ -2463,7 +2463,7 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
  [109 <./09_Multizone/Images/code/flow_chart.png> <./09_Multizone/Images/code/resolution_cartoon_final.png>]
-<09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf, id=3563, 454.14394pt x 438.0913pt>
+<09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf, id=3564, 454.14394pt x 438.0913pt>
 File: 09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf>
 Package pdftex.def Info: 09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf  used on input line 176.
@@ -2483,12 +2483,12 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
  []
 
 [112]
-<09_Multizone/Images/diffusion/analytical_diff_convergence.pdf, id=3640, 350.17949pt x 454.26117pt>
+<09_Multizone/Images/diffusion/analytical_diff_convergence.pdf, id=3641, 350.17949pt x 454.26117pt>
 File: 09_Multizone/Images/diffusion/analytical_diff_convergence.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/diffusion/analytical_diff_convergence.pdf>
 Package pdftex.def Info: 09_Multizone/Images/diffusion/analytical_diff_convergence.pdf  used on input line 270.
 (pdftex.def)             Requested size: 318.6695pt x 413.40604pt.
-<09_Multizone/Images/diffusion/analytical_diff_sol.pdf, id=3643, 463.59076pt x 244.254pt>
+<09_Multizone/Images/diffusion/analytical_diff_sol.pdf, id=3644, 463.59076pt x 244.254pt>
 File: 09_Multizone/Images/diffusion/analytical_diff_sol.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/diffusion/analytical_diff_sol.pdf>
 Package pdftex.def Info: 09_Multizone/Images/diffusion/analytical_diff_sol.pdf  used on input line 277.
@@ -2500,7 +2500,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<09_Multizone/Images/advection/adv_example.png, id=3655, 267.24844pt x 202.50656pt>
+<09_Multizone/Images/advection/adv_example.png, id=3656, 267.24844pt x 202.50656pt>
 File: 09_Multizone/Images/advection/adv_example.png Graphic file (type png)
 <use 09_Multizone/Images/advection/adv_example.png>
 Package pdftex.def Info: 09_Multizone/Images/advection/adv_example.png  used on input line 289.
@@ -2519,13 +2519,13 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
  []
 
 [116]
-<09_Multizone/Images/advection/advection_smearing.pdf, id=3756, 511.51224pt x 281.30418pt>
+<09_Multizone/Images/advection/advection_smearing.pdf, id=3757, 511.51224pt x 281.30418pt>
 File: 09_Multizone/Images/advection/advection_smearing.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/advection/advection_smearing.pdf>
 Package pdftex.def Info: 09_Multizone/Images/advection/advection_smearing.pdf  used on input line 372.
 (pdftex.def)             Requested size: 455.24413pt x 250.36421pt.
  [117 <./09_Multizone/Images/advection/advection_smearing.pdf>]
-<09_Multizone/Images/advection/advection_1D_multizone_final.pdf, id=3784, 394.21365pt x 475.46509pt>
+<09_Multizone/Images/advection/advection_1D_multizone_final.pdf, id=3785, 394.21365pt x 475.46509pt>
 File: 09_Multizone/Images/advection/advection_1D_multizone_final.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/advection/advection_1D_multizone_final.pdf>
 Package pdftex.def Info: 09_Multizone/Images/advection/advection_1D_multizone_final.pdf  used on input line 445.
@@ -2558,7 +2558,7 @@ Underfull \hbox (badness 1163) in paragraph at lines 448--448
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<09_Multizone/Images/advection/advection_2D_multizone_final.pdf, id=3789, 453.6458pt x 433.92479pt>
+<09_Multizone/Images/advection/advection_2D_multizone_final.pdf, id=3790, 453.6458pt x 433.92479pt>
 File: 09_Multizone/Images/advection/advection_2D_multizone_final.pdf Graphic file (type pdf)
 <use 09_Multizone/Images/advection/advection_2D_multizone_final.pdf>
 Package pdftex.def Info: 09_Multizone/Images/advection/advection_2D_multizone_final.pdf  used on input line 453.
@@ -2584,7 +2584,7 @@ Overfull \hbox (58.30788pt too wide) has occurred while \output is active
 
  (./10_Second_Paper/Second_Paper.tex
 Chapter 8.
-<10_Second_Paper/statement.pdf, id=3916, 596.95016pt x 844.83629pt>
+<10_Second_Paper/statement.pdf, id=3917, 596.95016pt x 844.83629pt>
 File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 <use 10_Second_Paper/statement.pdf>
 Package pdftex.def Info: 10_Second_Paper/statement.pdf  used on input line 3.
@@ -2593,7 +2593,7 @@ File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 <use 10_Second_Paper/statement.pdf>
 Package pdftex.def Info: 10_Second_Paper/statement.pdf  used on input line 3.
 (pdftex.def)             Requested size: 596.94872pt x 844.83423pt.
-<10_Second_Paper/statement.pdf, id=3919, page=1, 596.95016pt x 844.83629pt>
+<10_Second_Paper/statement.pdf, id=3920, page=1, 596.95016pt x 844.83629pt>
 File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 <use 10_Second_Paper/statement.pdf, page 1>
 Package pdftex.def Info: 10_Second_Paper/statement.pdf , page1 used on input line 3.
@@ -2621,7 +2621,7 @@ File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/statement.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 477.56079pt x 675.86995pt.
  [123 <./10_Second_Paper/statement.pdf>]
-<10_Second_Paper/statement.pdf, id=3936, page=2, 596.95016pt x 844.83629pt>
+<10_Second_Paper/statement.pdf, id=3937, page=2, 596.95016pt x 844.83629pt>
 File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 <use 10_Second_Paper/statement.pdf, page 2>
 Package pdftex.def Info: 10_Second_Paper/statement.pdf , page2 used on input line 3.
@@ -2635,7 +2635,7 @@ File: 10_Second_Paper/statement.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/statement.pdf , page2 used on input line 3.
 (pdftex.def)             Requested size: 477.56079pt x 675.86995pt.
  [124 <./10_Second_Paper/statement.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=3948, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=3949, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf  used on input line 4.
@@ -2644,7 +2644,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf  used on input line 4.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=3951, page=1, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=3952, page=1, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 1>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page1 used on input line 4.
@@ -2666,7 +2666,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page1 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [125 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4011, page=2, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4012, page=2, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 2>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page2 used on input line 4.
@@ -2680,7 +2680,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page2 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [126 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4063, page=3, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4064, page=3, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 3>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page3 used on input line 4.
@@ -2694,7 +2694,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page3 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [127 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4073, page=4, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4074, page=4, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 4>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page4 used on input line 4.
@@ -2708,7 +2708,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page4 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [128 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4100, page=5, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4101, page=5, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 5>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page5 used on input line 4.
@@ -2722,7 +2722,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page5 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [129 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4136, page=6, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4137, page=6, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 6>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page6 used on input line 4.
@@ -2736,7 +2736,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page6 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [130 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4141, page=7, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4142, page=7, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 7>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page7 used on input line 4.
@@ -2750,7 +2750,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page7 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [131 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4324, page=8, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4325, page=8, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 8>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page8 used on input line 4.
@@ -2764,7 +2764,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page8 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [132 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4496, page=9, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4497, page=9, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 9>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page9 used on input line 4.
@@ -2778,7 +2778,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page9 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [133 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4536, page=10, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4537, page=10, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 10>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page10 used on input line 4.
@@ -2792,7 +2792,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page10 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [134 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4742, page=11, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4743, page=11, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 11>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page11 used on input line 4.
@@ -2806,7 +2806,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page11 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [135 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4853, page=12, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=4854, page=12, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 12>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page12 used on input line 4.
@@ -2820,7 +2820,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page12 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [136 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5091, page=13, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5092, page=13, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 13>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page13 used on input line 4.
@@ -2834,7 +2834,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page13 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [137 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5312, page=14, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5313, page=14, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 14>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page14 used on input line 4.
@@ -2848,7 +2848,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page14 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [138 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5322, page=15, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5323, page=15, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 15>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page15 used on input line 4.
@@ -2862,7 +2862,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page15 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [139 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5327, page=16, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5328, page=16, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 16>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page16 used on input line 4.
@@ -2876,7 +2876,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page16 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [140 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5375, page=17, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5376, page=17, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 17>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page17 used on input line 4.
@@ -2890,7 +2890,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page17 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [141 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5385, page=18, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5386, page=18, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 18>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page18 used on input line 4.
@@ -2904,7 +2904,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page18 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [142 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5499, page=19, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5500, page=19, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 19>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page19 used on input line 4.
@@ -2918,7 +2918,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page19 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [143 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5614, page=20, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5615, page=20, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 20>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page20 used on input line 4.
@@ -2932,7 +2932,7 @@ File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page20 used on input line 4.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [144 <./10_Second_Paper/Tiffany___2nd_paper.pdf>]
-<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5703, page=21, 597.50829pt x 845.0471pt>
+<10_Second_Paper/Tiffany___2nd_paper.pdf, id=5704, page=21, 597.50829pt x 845.0471pt>
 File: 10_Second_Paper/Tiffany___2nd_paper.pdf Graphic file (type pdf)
 <use 10_Second_Paper/Tiffany___2nd_paper.pdf, page 21>
 Package pdftex.def Info: 10_Second_Paper/Tiffany___2nd_paper.pdf , page21 used on input line 4.
@@ -2968,7 +2968,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./A1_Supernova_Remnants/snrs.tex
 Appendix A.
-<A1_Supernova_Remnants/Images/supernova_classification.pdf, id=5983, 331.4784pt x 223.43477pt>
+<A1_Supernova_Remnants/Images/supernova_classification.pdf, id=5984, 331.4784pt x 223.43477pt>
 File: A1_Supernova_Remnants/Images/supernova_classification.pdf Graphic file (type pdf)
 <use A1_Supernova_Remnants/Images/supernova_classification.pdf>
 Package pdftex.def Info: A1_Supernova_Remnants/Images/supernova_classification.pdf  used on input line 7.
@@ -3024,7 +3024,7 @@ Underfull \hbox (badness 3333) in paragraph at lines 10--10
 
 
  <./A1_Supernova_Remnants/Images/supernova_classification.pdf>]
-<A1_Supernova_Remnants/Images/SNR_evolution.png, id=6004, 687.56876pt x 609.27625pt>
+<A1_Supernova_Remnants/Images/SNR_evolution.png, id=6005, 687.56876pt x 609.27625pt>
 File: A1_Supernova_Remnants/Images/SNR_evolution.png Graphic file (type png)
 <use A1_Supernova_Remnants/Images/SNR_evolution.png>
 Package pdftex.def Info: A1_Supernova_Remnants/Images/SNR_evolution.png  used on input line 23.
@@ -3034,7 +3034,7 @@ Package pdftex.def Info: A1_Supernova_Remnants/Images/SNR_evolution.png  used on
 
  (./A3_Diffusive_Shock_Acceleration/dsa.tex
 Appendix B.
-<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png, id=6053, 488.57532pt x 225.84375pt>
+<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png, id=6054, 488.57532pt x 225.84375pt>
 File: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png  used on input line 11.
@@ -3050,7 +3050,7 @@ Overfull \hbox (33.33pt too wide) in paragraph at lines 11--12
 
 
  <./A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.png>]
-<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png, id=6066, 166.37157pt x 124.21407pt>
+<A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png, id=6067, 166.37157pt x 124.21407pt>
 File: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png  used on input line 40.
@@ -3061,13 +3061,13 @@ Overfull \hbox (16.51945pt too wide) in paragraph at lines 57--59
  []
 
 [153 <./A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.png>]
-<A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png, id=6084, 487.06969pt x 130.23656pt>
+<A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png, id=6085, 487.06969pt x 130.23656pt>
 File: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png  used on input line 104.
 (pdftex.def)             Requested size: 455.24413pt x 121.72684pt.
  [154 <./A3_Diffusive_Shock_Acceleration/Images/upstream_downstream.png>]
-<A3_Diffusive_Shock_Acceleration/Images/dsa.png, id=6101, 312.41719pt x 224.33812pt>
+<A3_Diffusive_Shock_Acceleration/Images/dsa.png, id=6102, 312.41719pt x 224.33812pt>
 File: A3_Diffusive_Shock_Acceleration/Images/dsa.png Graphic file (type png)
 <use A3_Diffusive_Shock_Acceleration/Images/dsa.png>
 Package pdftex.def Info: A3_Diffusive_Shock_Acceleration/Images/dsa.png  used on input line 139.
@@ -3149,7 +3149,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.7> not available
 
 
 ] [164]
-<A4_Variance_diffusion/Images/diffusion_3D.pdf, id=6248, 524.84656pt x 419.14986pt>
+<A4_Variance_diffusion/Images/diffusion_3D.pdf, id=6249, 524.84656pt x 419.14986pt>
 File: A4_Variance_diffusion/Images/diffusion_3D.pdf Graphic file (type pdf)
 <use A4_Variance_diffusion/Images/diffusion_3D.pdf>
 Package pdftex.def Info: A4_Variance_diffusion/Images/diffusion_3D.pdf  used on input line 120.
@@ -3230,16 +3230,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  48713 strings out of 476025
  1023412 string characters out of 5790017
- 2219578 words of memory out of 5000000
+ 2219583 words of memory out of 5000000
  67324 multiletter control sequences out of 15000+600000
  560233 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,131p,1992b,2704s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathabx-type1/mathb8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txbmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (188 pages, 33806861 bytes).
+Output written on main.pdf (188 pages, 33807482 bytes).
 PDF statistics:
- 6917 PDF objects out of 7423 (max. 8388607)
- 5106 compressed objects within 52 object streams
+ 6918 PDF objects out of 7423 (max. 8388607)
+ 5107 compressed objects within 52 object streams
  952 named destinations out of 1000 (max. 500000)
  1357 words of extra memory for PDF output out of 10000 (max. 10000000)
 
