@@ -80,7 +80,7 @@ Finite difference techniques obtain numerical solutions to differential equation
 Errors in finite difference methods arise due to the discretization of the grid and approximating partial derivatives with truncated partial derivatives (see \autoref{sec:A2_diffusion}), leading to the discrepancy between the numerical and analytical solution. Finite difference methods are said to be `stable' when the numerical solution converges to the analytical solution. Von Neumann stability analysis treats the numerical error of finite difference techniques as a time-dependent Fourier expansion and determines the condition when the error at $t=t+1$ is less or equal to the error at $t=t$ (see \autoref{sec:A2_finite_stability}). That is, Von Neumann stability analysis determines whether any errors due to numerical techniques are magnified in further iterations. Using Von Neumann stability analysis, \autoref{eq:chapter_8_multizone_diff_numerical_sol} is stable when:
 \begin{equation}
     \begin{aligned}
-    \mathcal{D}\frac{\Delta t}{\Delta x^2}\leq \frac{1}{2}\text{ .} 
+    D\frac{\Delta t}{\Delta x^2}\leq \frac{1}{2}\text{ .} 
     \end{aligned} \label{eq:09_finite_difference_diff_stable}
 \end{equation}
 \noindent i.e. finite difference techniques can be applied to the transport equation when the diffusion coefficient, $D$, is less than or equal to half of the `maximum' diffusion coefficient (see \autoref{eq:diffusion}) implied by the voxel size and time step. Therefore, the maximum displacement of electrons across one time step is less than one voxel. If this condition is not met, electrons are transported across more than voxel. As \autoref{eq:chapter_8_multizone_diff_numerical_sol} only considers neighbouring voxels, there will be a net loss of electrons in the 3D grid.
@@ -203,7 +203,7 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
 	\begin{aligned}
-		n\qty(x,y,z,\gamma,t)&=\iiint_{x,y,z=-\infty}^{\infty} n_\text{green}\qty(\boldsymbol{r}-\boldsymbol{s_r})R_\text{source}\qty(\boldsymbol{s_r})\dd{\boldsymbol{s_r}} \text{ ,} 
+		n\qty(\gamma,t,x,y,z)&=\iiint_{x,y,z=-\infty}^{\infty} n_\text{green}\qty(\boldsymbol{r}-\boldsymbol{s_r})R_\text{source}\qty(\boldsymbol{s_r})\dd{\boldsymbol{s_r}} \text{ ,} 
 	\end{aligned} \label{eq:chapter_9_multizone_diff_exact}
 \end{equation}
 \noindent where:
@@ -221,7 +221,7 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
     \begin{aligned}
-        n_\text{green}\qty(\gamma,r,t)&=\frac{\qty(1-\gamma b_st)^{\Gamma-2}A\gamma^{-\Gamma}}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2}) \\
+        n_\text{green}\qty(\gamma,t,r)&=\frac{\qty(1-\gamma b_st)^{\Gamma-2}A\gamma^{-\Gamma}}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2}) \\
         &=\frac{n_0}{\pi^{\frac{3}{2}}R_\text{diff}\qty(\gamma,t,B)^3}\exp\qty(-\frac{r^2}{R_\text{diff}\qty(\gamma,t,B)^2}) \\
         R_\text{diff}&=\sqrt{\frac{4D\qty(\gamma,B)}{b_s\gamma\qty(1-\delta)}\qty[1-\qty(1-\gamma b_s t)^{1-\delta}]}\text{ ,} 
     \end{aligned} \label{eq:09_multizone_green_rad_loss}
@@ -230,7 +230,7 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
 	\begin{aligned}
-		n_\text{exact}\qty(x,y,z,\gamma,t)&=\int_{x=-2}^{2}\int_{y=-2}^{2}\int_{z=-2}^{2}\frac{n_0}{64\pi^{\frac{3}{2}}R_\text{diff}^3}\prod_{i=x,y,z} \exp(-\frac{\qty(i-s_i)^2}{R_\text{diff}^2})\dd{s_i}\text{ ,} 
+		n_\text{exact}\qty(\gamma,t,x,y,z)&=\int_{x=-2}^{2}\int_{y=-2}^{2}\int_{z=-2}^{2}\frac{n_0}{64\pi^{\frac{3}{2}}R_\text{diff}^3}\prod_{i=x,y,z} \exp(-\frac{\qty(i-s_i)^2}{R_\text{diff}^2})\dd{s_i}\text{ ,} 
 	\end{aligned} \label{eq:chapter_9_multizone_diff_exact2}
 \end{equation}
 \noindent where $i=x,y,z$. Using a change of variables:
@@ -245,7 +245,7 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
 	\begin{aligned}
-		n_\text{exact}\qty(x,y,z,\gamma,t)&=\frac{n_0}{64\pi^{\frac{3}{2}}}\prod_{i=x,y,z}\int_{\frac{i-2}{R_\text{diff}}}^{\frac{i+2}{R_\text{diff}}}\exp(-u_i^2)\dd{u_i}\text{ .} 
+		n_\text{exact}\qty(\gamma,t,x,y,z)&=\frac{n_0}{64\pi^{\frac{3}{2}}}\prod_{i=x,y,z}\int_{\frac{i-2}{R_\text{diff}}}^{\frac{i+2}{R_\text{diff}}}\exp(-u_i^2)\dd{u_i}\text{ .} 
 	\end{aligned} \label{eq:09_diff_losses_temp}
 \end{equation}
 \noindent From the definition of the error function:
@@ -259,7 +259,7 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
 	\begin{aligned}
-		n_\text{exact}\qty(x,y,z,\gamma,t)&=\frac{n_0}{64\pi^{\frac{3}{2}}}\prod_{i=x,y,z}\int_{\frac{i-2}{R_\text{diff}}}^0\exp(-u_i^2) + \int_{0}^{\frac{i+2}{R_\text{diff}}}\exp(-u_i^2) \\
+		n_\text{exact}\qty(\gamma,t,x,y,z)&=\frac{n_0}{64\pi^{\frac{3}{2}}}\prod_{i=x,y,z}\int_{\frac{i-2}{R_\text{diff}}}^0\exp(-u_i^2) + \int_{0}^{\frac{i+2}{R_\text{diff}}}\exp(-u_i^2) \\
 		&=\frac{n_0}{512} \prod_{i=x,y,z} \erf\qty(\frac{i+2}{R_\text{diff}})-\erf\qty(\frac{i-2}{R_\text{diff}})\text{ .} 
 	\end{aligned} \label{eq:chapter_9_multizone_diff_exact_sol}
 \end{equation} 
@@ -284,12 +284,19 @@ source (top-panel), diffusion suppression factor (middle-panel) and inversely pr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Advection} \label{sec:09_advection}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
+\begin{SCfigure}[0.5][b!]
     \centering
-    \includegraphics[width=0.48\textwidth]{09_Multizone/Images/advection/adv_example.png}
+    \includegraphics{09_Multizone/Images/advection/adv_example.png}
     \caption{Advection of electrons in the lab frame due to impulsive injector (cross) moving at velocity $v$ in lab frame.}
     \label{fig:09_multizone_adv_edxample}
-\end{wrapfigure}
+\end{SCfigure}
+
+% \begin{wrapfigure}{R}{0.5\textwidth}
+%     \centering
+%     \includegraphics[width=0.48\textwidth]{09_Multizone/Images/advection/adv_example.png}
+%     \caption{Advection of electrons in the lab frame due to impulsive injector (cross) moving at velocity $v$ in lab frame.}
+%     \label{fig:09_multizone_adv_edxample}
+% \end{wrapfigure}
 \autoref{sec:09_Transport_multizone_diffusion} only considered a simple case of isotropic diffusion, where the diffusion tensor in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes a scalar ($\overline{\overline{D}}=D$). In this case, the overall net motion of the electron population is zero, i.e. the average position of the electrons does not change (see \autoref{fig:09_multizone_diff_3D}). However, this is not always the case. Consider an impulsive injector of cosmic rays moving at velocity $v$ in the laboratory frame (see the example in \autoref{fig:09_multizone_adv_edxample}). The average position of cosmic rays remains constant in the reference frame of the injector. While in laboratory frame, the average position of cosmic rays changes with time where the overall bulk particle flow is defined as advection.
 \par~\par
 Anisotropic diffusion describes a situation where cosmic rays have a preferential direction of diffusion. This can be due to the presence of strong magnetic field lines, inhibiting transport perpendicular to the magnetic field (see \cite{2013ApJ...768...73M,2013MNRAS.429.1643N,2023arXiv230402684L}) or some asymmetric force as typically seen in PWN. If diffusion is anisotropic then the second term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes:
@@ -317,39 +324,34 @@ The advective component of \autoref{eq:chapter_9_full_numerical_diffusion_equati
 
 \begin{equation}
     \begin{aligned}
-    \qty(\pdv{n}{t})_\text{advection}&=-\nabla\cdot\qty(n\boldsymbol{v}_A)\text{ ,} 
+    \qty(\pdv{n}{t})_\text{adv}&=-\nabla\cdot\qty(n\boldsymbol{v}_A)\text{ ,} 
     \end{aligned} \label{eq:09_multizone_adv}
 \end{equation}
 \noindent where $v_A$ is the velocity of the bulk flow. Taking the simple case where $v_A$ is constant over time and both energetically and spatially independent, \autoref{eq:09_multizone_adv} becomes:
 
 \begin{equation}
     \begin{aligned}
-    \qty(\pdv{n}{t})_\text{advection}&=-\boldsymbol{v}_A\nabla n\text{ .} 
+    \qty(\pdv{n}{t})_\text{adv}&=-\boldsymbol{v}_A\nabla n\text{ .} 
     \end{aligned} \label{eq:chapter_9_advection_component}
 \end{equation}
-\noindent For a scenario considering advection and isotropic diffusion, diffusion is the dominant particle transport process for higher energy particles (when $R_\text{diff}>v_at$) and advection dominating at lower energies ($R_\text{diff}<v_at$). For the 3D grid described in \autoref{sec:chapter_9_diffusion_numerical_sol}, the advective change in the electron energy distribution due to the surrounding voxels in time $\Delta t$ is described by (see \autoref{sec:A2_advection}):
+\noindent For a scenario considering advection and isotropic diffusion, diffusion is the dominant particle transport process for higher energy particles (when $R_\text{diff}>v_At$) and advection dominating at lower energies ($R_\text{diff}<v_At$). For the 3D grid described in \autoref{sec:chapter_9_diffusion_numerical_sol}, the advective change in the electron energy distribution due to the surrounding voxels in time $\Delta t$ is described by (see \autoref{sec:A2_advection}):
 
 \begin{equation}
     \begin{aligned}
-    \qty(\pdv{n}{t})_\text{advection}\bigg|
-        \begin{array}l
-             \gamma \\
-             t \\
-             x,y,z
-        \end{array}&=-v\frac{\Delta t}{\Delta x}\sum_\qty{i=x,y,z}
+        n_\text{adv}\qty(\gamma,t+\Delta t,\vec{r})&=n_\text{adv}\qty(\gamma,t,\vec{r})+\sum_\qty{i=x,y,z}v_{A,i}\frac{\Delta t}{\Delta i}
         \begin{cases}
-            \qty(n_{i+\Delta i}^t-n_{i}^t)\text{,}& v_i<0 \\
-            \qty(n_{i}^t-n_{i-\Delta i}^t)\text{,}& v_i>0
-        \end{cases}\text{ ,} 
+            \qty(n_{i+\Delta i}^t-n_{i}^t)\text{,}& v_\text{A,i}<0 \\
+            \qty(n_{i}^t-n_{i-\Delta i}^t)\text{,}& v_\text{A,i}>0
+        \end{cases} \text{ ,}
     \end{aligned} \label{eq:chapter_9_multizone_adv_numerical_sol}
 \end{equation}
-\noindent where the forward difference method (i.e. using cells $i$ and $i+\Delta i$ to approximate the derivative) is used when $v_i<0$ and the backward difference method (i.e. using cells $i$ and $i-\Delta i$) is used when $v_i>0$. 
+\noindent where the forward difference method (i.e. using cells $i$ and $i+\Delta i$ to approximate the derivative) is used when $v_\text{A,i}<0$ and the backward difference method (i.e. using cells $i$ and $i-\Delta i$) is used when $v_\text{A,i}>0$. 
 \par~\par 
 Using Von Neumann stability analysis (see \autoref{eq:A3_advection_stability}), \autoref{eq:chapter_9_multizone_adv_numerical_sol} is stable when:
 
 \begin{equation}
     \begin{aligned}
-    \Delta t \leq \frac{\Delta x}{\abs{v}}\text{ .} 
+    \Delta t \leq \frac{\Delta i}{\abs{v_{A,i}}}\text{ .} 
     \end{aligned} \label{eq:09_multizone_advection_stability}
 \end{equation}
 \noindent i.e. the distance travelled by a cosmic ray in one time step must be less than the size of one voxel.
@@ -360,7 +362,7 @@ Consider 1D advection, the analytical solution to \autoref{eq:09_multizone_adv} 
 
 \begin{equation}
     \begin{aligned}
-        n\qty(x,t)&=n\qty(x-vt,t=0)\text{ .} 
+        n\qty(t,x)&=n\qty(t=0,x-vt)\text{ .} 
     \end{aligned}
 \end{equation}
 
@@ -406,27 +408,27 @@ In the continuous limit:
 \noindent and \autoref{eq:09_multizone_dispersion_ex} and \autoref{eq:09_multizone_dispersion_ex2} become:
 \begin{equation}
     \begin{aligned}
-        \pdv{n}{t}+v\pdv{n}{x}&= \frac{v\Delta x}{2}\pdv[2]{n}{x}\mp \frac{\Delta t}{2}\pdv[2]{n}{t} \text{ .} 
+        \pdv{n}{t}+v\pdv{n}{i}&= \frac{v\Delta i}{2}\pdv[2]{n}{i}\mp \frac{\Delta t}{2}\pdv[2]{n}{t} \text{ .} 
     \end{aligned} \label{eq:09_multizone_dispersion_ex3}
 \end{equation}
 \noindent By taking the time derivative of \autoref{eq:chapter_9_advection_component}:
 \begin{equation}
     \begin{aligned}
-        \pdv[2]{n}{t}&= -v\pdv{}{t}\qty[\pdv{n}{x}] = -v\pdv{}{x}\qty[\pdv{n}{t}] =v^2\pdv[2]{n}{x}\text{ ,} 
+        \pdv[2]{n}{t}&= -v\pdv{}{t}\qty[\pdv{n}{i}] = -v\pdv{}{i}\qty[\pdv{n}{t}] =v^2\pdv[2]{n}{i}\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent and placing it into \autoref{eq:09_multizone_dispersion_ex3}:
 \begin{equation}
     \begin{aligned}
-        \pdv{n}{t}+v\pdv{n}{x}&= \frac{v\Delta x}{2}\pdv[2]{n}{x}\mp\frac{v^2\Delta t}{2}\pdv[2]{n}{x} \\
-        &=\frac{v\Delta x}{2}\qty(1\mp v\frac{\Delta t}{\Delta x})\pdv[2]{n}{x} \\
-        &=D' \pdv[2]{n}{x}\text{ ,} 
+        \pdv{n}{t}+v\pdv{n}{i}&= \frac{v\Delta i}{2}\pdv[2]{n}{i}\mp\frac{v^2\Delta t}{2}\pdv[2]{n}{i} \\
+        &=\frac{v\Delta i}{2}\qty(1\mp v\frac{\Delta t}{\Delta i})\pdv[2]{n}{i} \\
+        &=D' \pdv[2]{n}{i}\text{ ,} 
     \end{aligned}\label{eq:09_multizone_dispersion_ex4}
 \end{equation}
 \noindent where:
 \begin{equation}
     \begin{aligned}
-        D'&=\frac{v\Delta x}{2}\qty(1\mp v\frac{\Delta t}{\Delta x})\text{ ,} 
+        D'&=\frac{v\Delta i}{2}\qty(1\mp v\frac{\Delta t}{\Delta i})\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent represents the introduced dispersive component. Now consider a 1D scenario that includes both advection and diffusion in this mathematical form:
@@ -466,10 +468,10 @@ Finite difference methods will now be applied to 2D advection with parameters si
 
 \begin{equation}
     \begin{aligned}
-        n_\text{diff+adv}\qty(E,t,\boldsymbol{r},\boldsymbol{v})&=n_\text{diff}\qty(E,t,\boldsymbol{r}-\boldsymbol{v}t)\text{ ,} 
+        n_\text{diff+adv}\qty(E,t,\vec{r},\vec{v})&=n_\text{diff}\qty(E,t,\vec{r}-\vec{v}t)\text{ ,} 
     \end{aligned} \label{eq:09_multizone_adv_2D_analytical}
 \end{equation}
-\noindent where $\boldsymbol{r}=\qty[x,y,z=50]$, The numerical solution is able to match adequatly the analytical solution as shown in the top panels of \autoref{fig:09_multizone_adv_2D}.
+\noindent where $\vec{r}=\qty[x,y,z=50]$, The numerical solution is able to match adequatly the analytical solution as shown in the top panels of \autoref{fig:09_multizone_adv_2D}.
 
 
 \section{Summary and Application}

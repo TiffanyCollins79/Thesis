@@ -8,14 +8,14 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
 
 \begin{equation}
     \begin{aligned}
-    \pdv{n\qty(\boldsymbol{r},\gamma,t)}{t}&=\nabla \qty(\overline{\overline{D}}\cdot\nabla n\qty(\boldsymbol{r},\gamma,t))\text{ .} 
+    \pdv{n\qty(\gamma,t,\vec{r})}{t}&=\nabla \qty(\overline{\overline{D}}\cdot\nabla n\qty(\gamma,t,\vec{r}))\text{ .} 
     \end{aligned} \label{eq:A2_finite_difference_diffusion}
 \end{equation}
-\noindent A region of interstellar gas can be split into a 3D grid of voxels. Each voxel has width $\Delta x$, $\Delta y$ and $\Delta z$zs. Assuming that diffusion is isotropic ($\overline{\overline{D}}=D$), \autoref{eq:A2_finite_difference_diffusion} at position $x$, $y$, $z$ and time $t$ becomes:
+\noindent A region of interstellar gas can be split into a 3D grid of voxels. Each voxel has width $\Delta x$, $\Delta y$ and $\Delta z$. Assuming that diffusion is isotropic ($\overline{\overline{D}}=D$), \autoref{eq:A2_finite_difference_diffusion} at position $x$, $y$, $z$ and time $t$ becomes:
 
 \begin{equation}
     \begin{aligned}
-    \pdv{n\qty(\boldsymbol{r},\gamma,t)}{t}\bigg|_{i}^t &= \nabla D\cdot\nabla n + D\nabla^2 n \\
+    \pdv{n\qty(\gamma,t,\vec{r})}{t}\bigg|_{i}^t &= \nabla D\cdot\nabla n + D\nabla^2 n \\
     &= \sum_{i} \pdv{D}{i}\pdv{n}{i}+ D_i\pdv[2]{n}{i}\text{ ,} 
     \end{aligned} \label{eq:A2_finite_difference_diffusion_expanded}
 \end{equation}
@@ -71,11 +71,11 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
 
 \begin{equation}
     \begin{aligned}
-    n_i^{t+\Delta t}&=n_i^t+\sum_{i=x,y,z}\frac{\Delta t}{\Delta i^2}D_i\qty(n_{i+\Delta i}^t+n_{i-\Delta i}^t-2n_i^t) \\
-    &=n_i^t+\sum_{i=x,y,z} \frac{\Delta t}{\Delta i^2}\qty[D_i\qty(n_{i+\Delta i}^t-n_i^t)+D_i\qty(n_{i-\Delta i}^t-n_i^t)]\text{ .} 
+    n_i^{t+\Delta t}&=n_i^t+\sum_{i=x,y,z}\frac{\Delta t}{\Delta i^2}\mathcal{D}\qty(n_{i+\Delta i}^t+n_{i-\Delta i}^t-2n_i^t) \\
+    &=n_i^t+\sum_{i=x,y,z} \frac{\Delta t}{\Delta i^2}\qty[\mathcal{D}\qty(n_{i+\Delta i}^t-n_i^t)+\mathcal{D}\qty(n_{i-\Delta i}^t-n_i^t)]\text{ .} 
     \end{aligned} \label{eq:A2_diffusion_finite_diff}
 \end{equation}
-\noindent i.e. \autoref{eq:A2_diffusion_finite_diff} is the solution of \autoref{eq:A2_finite_difference_diffusion} at time $t+\Delta t$ using finite difference techniques.
+\noindent where $\mathcal{D}=D\Delta t/\Delta i^2$. %i.e. \autoref{eq:A2_diffusion_finite_diff} is the solution of \autoref{eq:A2_finite_difference_diffusion} at time $t+\Delta t$ using finite difference techniques.
 
 \subsection{Stability of the Finite Difference} \label{sec:A2_finite_stability}
 
@@ -126,25 +126,25 @@ Applying Von Newmann stability analysis to the transport equation, \autoref{eq:A
 
 \begin{equation}
     \begin{aligned}
-    A^{t+1}e^{jki}&=A^te^{jki}+D'\qty(A^{t}e^{jk\qty(i+\Delta i)}+A^{t}e^{jk\qty(i-\Delta i)}-2A^te^{jki}) \\
-    \frac{A^{t+1}}{A^t}&=1+D'\qty(e^{j\theta}+e^{-j\theta}-2) \\
-    &=1+D'\qty(2\cos\theta-2) \\
-    &=1-4D'\sin^2\frac{\theta}{2}\text{ ,} 
+    A^{t+1}e^{jki}&=A^te^{jki}+\mathcal{D}\qty(A^{t}e^{jk\qty(i+\Delta i)}+A^{t}e^{jk\qty(i-\Delta i)}-2A^te^{jki}) \\
+    \frac{A^{t+1}}{A^t}&=1+\mathcal{D}\qty(e^{j\theta}+e^{-j\theta}-2) \\
+    &=1+\mathcal{D}\qty(2\cos\theta-2) \\
+    &=1-4\mathcal{D}\sin^2\frac{\theta}{2}\text{ ,} 
     \end{aligned}
 \end{equation}
-\noindent where $D'=D\Delta t/\Delta i^2$ and $\theta=k\Delta i$. For the solution to be stable, $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$. Hence:
+\noindent where $\theta=k\Delta i$. For the solution to be stable, $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$. Hence:
 
 \begin{equation}
     \begin{aligned}
-    1-4D'\sin^2\frac{k\Delta i}{2} &\geq -1 \\
-    \text{\& } 1-4D'\sin^2\frac{k\Delta i}{2} &\leq 1 \text{ .} 
+    1-4\mathcal{D}\sin^2\frac{k\Delta i}{2} &\geq -1 \\
+    \text{\& } 1-4\mathcal{D}\sin^2\frac{k\Delta i}{2} &\leq 1 \text{ .} 
     \end{aligned} \label{eq:A2_diffusion_finite_stability_cond}
 \end{equation}
 \noindent As $0\leq \sin^2\frac{k\Delta i}{2}\leq 1$, \autoref{eq:A2_diffusion_finite_diff} is stable when:
 
 \begin{equation}
     \begin{aligned}
-    D'=D\frac{\Delta t}{\Delta i^2}&\leq \frac{1}{2} \\
+    \mathcal{D}=D\frac{\Delta t}{\Delta i^2}&\leq \frac{1}{2} \\
     D&\leq \frac{1}{2}\frac{\Delta i^2}{\Delta t}\text{ .} 
     \end{aligned}
 \end{equation}
@@ -156,27 +156,27 @@ The advective component of the transport equation is given by:
 
 \begin{equation}
     \begin{aligned}
-        \pdv{n\qty(\boldsymbol{r},\gamma,t)}{t}&=-\nabla\qty(n\boldsymbol{v_a})\text{ ,} 
+        \pdv{n\qty(\gamma,t,\vec{r})}{t}&=-\nabla\qty(n\vec{v}_A)\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent where $v_a$ is the advective velocity of cosmic rays. Assuming $v_a$ is spatially independent:
 
 \begin{equation}
     \begin{aligned}
-    \pdv{n\qty(\boldsymbol{r},\gamma,t)}{t}&=-\boldsymbol{v_a}\nabla n  \\
-    \pdv{n}{t}\bigg|_{i}^t&=-v_i\pdv{n}{i}\text{ ,} 
+    \pdv{n\qty(\gamma,t,\vec{r})}{t}&=-\vec{v}_A\nabla n  \\
+    \pdv{n}{t}\bigg|_{i}^t&=-\sum_{i=x,y,z}v_\text{A,i}\pdv{n}{i}\text{ ,} 
     \end{aligned} \label{eq:A2_advection_equation}
 \end{equation}
 \noindent where $i$ considers the three Cartesian axes $x$, $y$ and $z$. Applying the forward difference to the LHS of \autoref{eq:A2_advection_equation} and the central difference to the RHS:
 
 \begin{equation}
     \begin{aligned}
-    \frac{n^{t+\Delta t}_i-n^t_i}{\Delta t}&=-\sum_{i=x,y,z} v_i\frac{n_{i+\Delta i}^t-n_{i-\Delta i}^t}{2\Delta i} \\
-    n_i^{t+\Delta t}&=n_i^t-\frac{v_i}{2}\cdot\frac{\Delta t}{\Delta x}\qty(n_{i+\Delta i}^2-n_{i+\Delta i}^2) \\
-    &=n_i^t-\frac{v'}{2}\qty(n_{i+\Delta i}^t-n_{i+\Delta i}^t)\text{ ,} 
+    \frac{n^{t+\Delta t}_i-n^t_i}{\Delta t}&=-\sum_{i=x,y,z} v_\text{A,i}\frac{n_{i+\Delta i}^t-n_{i-\Delta i}^t}{2\Delta i} \\
+    n_i^{t+\Delta t}&=n_i^t-\frac{v_\text{A,i}}{2}\cdot\frac{\Delta t}{\Delta x}\qty(n_{i+\Delta i}^2-n_{i+\Delta i}^2) \\
+    &=n_i^t-\frac{v_\text{A,i}'}{2}\qty(n_{i+\Delta i}^t-n_{i+\Delta i}^t)\text{ ,} 
     \end{aligned} \label{eq:A2_advection_central_diff}
 \end{equation}
-\noindent where $v'_i=\frac{\Delta t}{\Delta i}$. Applying the Von Neumann stability analysis to \autoref{eq:A2_advection_central_diff}:
+\noindent where $v'_i=v_\text{A,i}{\Delta t}/{\Delta i}$. Applying the Von Neumann stability analysis to \autoref{eq:A2_advection_central_diff}:
 
 \begin{equation}
     \begin{aligned}
@@ -209,17 +209,17 @@ The advective component of the transport equation is given by:
 \noindent where $n=0$, $1$, $\cdot\cdot\cdot$. Therefore, the numerical solution of advection that utilises central finite difference methods is unstable. Instead, the forward and backward difference in spatial coordinates can be applied to \autoref{eq:A2_advection_equation}:
 \begin{subequations}
     \begin{alignat}{2}
-    n_i^{t+\Delta t}&=n_i^t-v'_i\qty(n_{i+\Delta i}^t-n_{i}^t)\text{,}\quad&&\text{Forward Difference} \\
-    n_i^{t+\Delta t}&=n_i^t-v'_i\qty(n_{i}^t-n_{i-\Delta i}^t)\text{,}\quad&&\text{Backward Difference}\text{ .} 
+    n_i^{t+\Delta t}&=n_i^t-v_\text{A,i}\frac{\Delta t}{\Delta i}\qty(n_{i+\Delta i}^t-n_{i}^t)\text{,}\quad&&\text{Forward Difference} \\
+    n_i^{t+\Delta t}&=n_i^t-v_\text{A,i}\frac{\Delta t}{\Delta i}\qty(n_{i}^t-n_{i-\Delta i}^t)\text{,}\quad&&\text{Backward Difference}\text{ .} 
     \end{alignat} \label{sec:A2_advection}
 \end{subequations}
 \noindent Applying the Von Neumann analysis for the forward difference:
 
 \begin{equation}
     \begin{aligned}
-    \frac{A^{t+1}}{A^t}&=1-v'\qty(e^{j\theta}-1) \\
-    &=1-v'\qty(\cos\theta+j\sin\theta-1) \\
-    &=1+v'\qty(1-\cos\theta)+jv'_i\sin\theta\text{ ,} 
+    \frac{A^{t+1}}{A^t}&=1-v_i'\qty(e^{j\theta}-1) \\
+    &=1-v_i'\qty(\cos\theta+j\sin\theta-1) \\
+    &=1+v_i'\qty(1-\cos\theta)+jv'_i\sin\theta\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent and the backward difference:
@@ -253,14 +253,14 @@ The advective component of the transport equation is given by:
     \begin{aligned}
     1&\geq \bigg| \frac{A^{t+1}}{A^t} \bigg|\\
     1&\geq\bigg| \frac{A^{t+1}}{A^t} \bigg|^2\\
-    0&\geq \mp 2v'_i\qty(1\mp v')\qty(1-\cos\theta)\text{ .} 
+    0&\geq \mp 2v'_i\qty(1\mp v_i')\qty(1-\cos\theta)\text{ .} 
     \end{aligned}
 \end{equation}
 \noindent As $\qty(1-\cos\theta)\geq 0$:
 
 \begin{equation}
     \begin{aligned}
-    1&\geq \pm v\frac{\Delta t}{\Delta i}\text{ .} 
+    1&\geq \pm v_\text{A,i}\frac{\Delta t}{\Delta i}\text{ .} 
     \end{aligned} \label{eq:A3_advection_stability}
 \end{equation}
-\noindent i.e. \autoref{eq:A3_advection_stability} is stable when a particle has speed less or equal to the `maximum' speed ($\Delta i/\Delta t$) implied by the voxel size and time step. When $v\leq 0$, only the forward difference is stable. Similarly, when $v\geq 0$, only the backward difference is stable.
+\noindent i.e. \autoref{eq:A3_advection_stability} is stable when a particle has speed less or equal to the `maximum' speed ($\Delta i/\Delta t$) implied by the voxel size and time step. When $v_\text{A,i}\leq 0$, only the forward difference is stable. Similarly, when $v_\text{A,i}\geq 0$, only the backward difference is stable.
