@@ -16,21 +16,21 @@ This chapter will first discuss the transport equation that governs the time and
         &\pdv{ }{\gamma}\qty(\gamma^2 D_{pp}\pdv{ }{\gamma}\qty(\frac{n}{\gamma^2})) + S\qty(\gamma,t,\vec{r})  \text{ ,}     
     \end{aligned} \label{eq:chapter_9_full_numerical_diffusion_equation}
 \end{equation} 
-\noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} gives the evolution of cosmic ray energy density distribution due to radiative losses (see chapter \autoref{sec:chapter1_non_thermal_emission}) . The second term considers the spatial evolution of cosmic rays as a second-rank tensor, $\overline{\overline{D}}=\overline{\overline{D}}\qty(\gamma,t,\vec{r})$, allowing preferential direction of transport. The third term describes the evolution of the cosmic ray density due to a co-moving fluid with velocity $\boldsymbol{v}_A$. The fourth considers losses due to adiabatic expansion. The fifth term represents the re-acceleration of cosmic rays due to stochastic process with $D_{pp}$ being the acceleration rate. Finally, $S\qty(\gamma,t,\vec{r})$, is the source term of high-energy cosmic rays.
+\noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} gives the evolution of cosmic ray energy density distribution due to radiative losses (see chapter \autoref{sec:chapter1_non_thermal_emission}) . The second term considers the spatial evolution of cosmic rays as a second-rank tensor, $\overline{\overline{D}}=\overline{\overline{D}}\qty(\gamma,t,\vec{r})$, allowing preferential direction of transport. The third term describes the evolution of the cosmic ray density due to a co-moving fluid with velocity $\vec{v}_A$. The fourth considers losses due to adiabatic expansion. The fifth term represents the re-acceleration of cosmic rays due to stochastic process with $D_{pp}$ being the acceleration rate. Finally, $S\qty(\gamma,t,\vec{r})$, is the source term of high-energy cosmic rays.
 \par~\par
 As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less than the gyro-radius $r_g$), cosmic rays propagate through the ISM via ballistic motion. Over large distances, cosmic rays scatter off magnetic field turbulence and the overall propagation can be described by diffusion \citep{2015PhRvD..92h3003P}. Neglecting adiabatic losses, bulk motion and re-acceleration of cosmic rays, \autoref{eq:chapter_9_full_numerical_diffusion_equation} can be simplified to:
 
 
 \begin{equation}
 \begin{aligned}
-\pdv{n}{t}&=\pdv{ }{\gamma}\qty(\dot{\gamma}n) + \nabla\qty(D\qty(\boldsymbol{r},\gamma)\cdot \nabla n) + S\qty(\gamma,\boldsymbol{r},t)
+\pdv{n}{t}&=\pdv{ }{\gamma}\qty(\dot{\gamma}n) + \nabla\qty(D\qty(\vec{r},\gamma)\cdot \nabla n) + S\qty(\gamma,\vec{r},t)
 \end{aligned} \label{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}
 \end{equation} 
 \noindent Note that \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} is similar to \autoref{eq:chapter_7_cr_energy_distribution}, where the `escape term' has been replaced with an expression describing the losses due to diffusion. For a simple case of isotropic diffusion ($\overline{\overline{D}}=D$ and $\nabla D=0$), the diffusion term in \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} becomes: 
 
 \begin{equation}
     \begin{aligned}
-    \qty(\pdv{n}{t})_\text{diff}&=-\nabla\qty(D\qty(\boldsymbol{r},\gamma)\cdot \nabla n)  \\
+    \qty(\pdv{n}{t})_\text{diff}&=-\nabla\qty(D\qty(\vec{r},\gamma)\cdot \nabla n)  \\
     &=-\nabla D\cdot \nabla n -D\nabla^2 n \\
     &=-D\nabla^2 n\text{ ,} 
     \end{aligned}
@@ -203,14 +203,14 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
 	\begin{aligned}
-		n\qty(\gamma,t,x,y,z)&=\iiint_{x,y,z=-\infty}^{\infty} n_\text{green}\qty(\boldsymbol{r}-\boldsymbol{s_r})R_\text{source}\qty(\boldsymbol{s_r})\dd{\boldsymbol{s_r}} \text{ ,} 
+		n\qty(\gamma,t,x,y,z)&=\iiint_{x,y,z=-\infty}^{\infty} n_\text{green}\qty(\vec{r}-\vec{s}_r)R_\text{source}\qty(\vec{s}_r)\dd{\vec{s}_r} \text{ ,} 
 	\end{aligned} \label{eq:chapter_9_multizone_diff_exact}
 \end{equation}
 \noindent where:
 
 \begin{equation}
     \begin{aligned}
-    R_\text{source}\qty(\boldsymbol{s_r})=
+    R_\text{source}\qty(\vec{s}_r)=
     \begin{cases}
     1\text{, }-2~\pc\leq s_r\leq 2~\pc \\
     0\text{, }\quad\text{otherwise}
@@ -311,7 +311,7 @@ Anisotropic diffusion describes a situation where cosmic rays have a preferentia
 
  \begin{equation}
      \begin{aligned}
-         \qty(\pdv{n}{t})_\text{diff+adv}&=\nabla\cdot\qty(n\boldsymbol{\nu_A})+D\nabla^2 n\text{ .} 
+         \qty(\pdv{n}{t})_\text{diff+adv}&=\nabla\cdot\qty(n\vec{\nu}_A)+D\nabla^2 n\text{ .} 
      \end{aligned}
  \end{equation}
 \noindent i.e. anisotropic diffusion can be approximated by diffusion isotropic diffusion with an advective component (as in the case of \autoref{fig:09_multizone_adv_edxample}).
@@ -324,14 +324,14 @@ The advective component of \autoref{eq:chapter_9_full_numerical_diffusion_equati
 
 \begin{equation}
     \begin{aligned}
-    \qty(\pdv{n}{t})_\text{adv}&=-\nabla\cdot\qty(n\boldsymbol{v}_A)\text{ ,} 
+    \qty(\pdv{n}{t})_\text{adv}&=-\nabla\cdot\qty(n\vec{v}_A)\text{ ,} 
     \end{aligned} \label{eq:09_multizone_adv}
 \end{equation}
 \noindent where $v_A$ is the velocity of the bulk flow. Taking the simple case where $v_A$ is constant over time and both energetically and spatially independent, \autoref{eq:09_multizone_adv} becomes:
 
 \begin{equation}
     \begin{aligned}
-    \qty(\pdv{n}{t})_\text{adv}&=-\boldsymbol{v}_A\nabla n\text{ .} 
+    \qty(\pdv{n}{t})_\text{adv}&=-\vec{v}_A\nabla n\text{ .} 
     \end{aligned} \label{eq:chapter_9_advection_component}
 \end{equation}
 \noindent For a scenario considering advection and isotropic diffusion, diffusion is the dominant particle transport process for higher energy particles (when $R_\text{diff}>v_At$) and advection dominating at lower energies ($R_\text{diff}<v_At$). For the 3D grid described in \autoref{sec:chapter_9_diffusion_numerical_sol}, the advective change in the electron energy distribution due to the surrounding voxels in time $\Delta t$ is described by (see \autoref{sec:A2_advection}):

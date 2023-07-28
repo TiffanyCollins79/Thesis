@@ -2345,8 +2345,6 @@ INPUT ./09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf
 INPUT 09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf
 INPUT ./09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf
 INPUT ./09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/newtx/ntxbmi.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/NewTXBMI.tfm
 INPUT ./09_Multizone/Images/diffusion/analytical_diff_convergence.pdf
 INPUT ./09_Multizone/Images/diffusion/analytical_diff_convergence.pdf
 INPUT 09_Multizone/Images/diffusion/analytical_diff_convergence.pdf
