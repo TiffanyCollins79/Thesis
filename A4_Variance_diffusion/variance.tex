@@ -55,7 +55,7 @@ For 2D diffusion, the solution to the transport equation for an impulsive accele
 
 \begin{equation}
     \begin{aligned}
-        n\qty(x)&=\frac{1}{4\pi Dt}\exp(-\frac{r^2}{4Dt}) \\
+        n\qty(r)&=\frac{1}{4\pi Dt}\exp(-\frac{r^2}{4Dt}) \\
         r^2&=x^2+y^2\text{ .} 
     \end{aligned}
 \end{equation}
@@ -91,7 +91,7 @@ For 3D diffusion, the solution to the transport equation for an impulsive accele
 
 \begin{equation}
     \begin{aligned}
-        n\qty(x)&=\frac{1}{\pi^{\frac{3}{2}} R_\text{diff}}\exp(-\frac{r^2}{R_\text{diff}^2}) \\
+        n\qty(r)&=\frac{1}{\pi^{\frac{3}{2}} R_\text{diff}}\exp(-\frac{r^2}{R_\text{diff}^2}) \\
         R_\text{diff}&=\sqrt{4Dt}\text{ ,} 
     \end{aligned}
 \end{equation}
@@ -113,7 +113,7 @@ For 3D diffusion, the solution to the transport equation for an impulsive accele
 \end{equation}
 \noindent The radius containing $1\sigma=68\%$ of cosmic rays $R_{\sigma}=\sqrt{\mathrm{Var}\qty(r)}=\sqrt{6Dt}$ does not equate to the `diffusion distance', $R_\text{diff}=\sqrt{4Dt}$, defined in literature (e.g. see \cite{1995PhRvD..52.3265A}) .
 \par~\par 
-Note that by taking a slice along the 3D energy distribution (e.g. $n=(x,y,z=0)$), the radius ($r^2=x^2+y^2$) containing $68\%$ of cosmic rays reverts back to the 2D situation ($R_\sigma=\sqrt{4Dt}$). This can be seen in \autoref{fig:A4_multizone_diffusion_only}.
+Note that by taking a slice along the 3D energy distribution (e.g. $n(x,y,z=0)$), the radius ($r^2=x^2+y^2$) containing $68\%$ of cosmic rays reverts back to the 2D situation ($R_\sigma=\sqrt{4Dt}$). This can be seen in \autoref{fig:A4_multizone_diffusion_only}.
 
 \begin{figure}[b]
     \centering
