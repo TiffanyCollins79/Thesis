@@ -5,11 +5,15 @@ The variance is a measurement of dispersion, comparing the standard deviation of
 \begin{equation}
     \begin{aligned}
         \mathrm{Var}\qty(X)&=\sigma^2 \\
-        &=E\qty(X^2)-E\qty(X)^2 \\
-        E\qty(X^n)&=\int_{-\infty}^\infty x^nf\qty(x)\dd{x}\text{ ,} 
+        &=E\qty(X^2)-E\qty(X)^2 \text{ ,} 
     \end{aligned}
 \end{equation}
-\noindent where $E\qty(X^n)$ is the expected value of variable $X^n$.
+\noindent where $E\qty(X^n)$ is the expected value of variable $X^n$:
+\begin{equation}
+    \begin{aligned}
+        E\qty(X^n)&=\int_{-\infty}^\infty x^nf\qty(x)\dd{x}\text{ .}
+    \end{aligned}
+\end{equation}
 \par~\par 
 The distance that cosmic rays have travelled via diffusion (see \autoref{chapter_1_cr_propagation} and \autoref{sec:09_Transport_multizone_diffusion}) can be approximated by the radius containing $1\sigma=68\%$ of the particles, $r_\sigma$. This Appendix will calculate the variance (therefore $r_\sigma$) for diffusion in 1D, 2D and 3D. 
 
@@ -77,7 +81,7 @@ For two variables $X$ and $Y$ with expected values $E\qty(X)$ and $E\qty(Y)$, th
     \end{aligned}
 \end{equation}
 
-\noindent Giving the variance in 2D:
+\noindent The variance in 2D is:
 
 \begin{equation}
     \begin{aligned}
@@ -104,7 +108,7 @@ For 3D diffusion, the solution to the transport equation for an impulsive accele
         &=6Dt\text{ .} 
     \end{aligned}
 \end{equation}
-\noindent Giving the variance in 3D:
+\noindent The variance in 3D is:
 
 \begin{equation}
     \begin{aligned}

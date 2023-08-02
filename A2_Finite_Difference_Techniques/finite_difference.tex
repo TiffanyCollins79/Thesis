@@ -1,4 +1,4 @@
-\chapter{Finite Difference Techniques Applied to the Transport Equation} \label{sec:A2_finite_difference}
+\chapter[Finite Difference Techniques]{Finite Difference Techniques Applied to the Transport Equation} \label{sec:A2_finite_difference}
 
 Often, differential equations cannot be solved analytically unless in certain scenarios. Finite difference techniques are utilised to solve differential equations numerically by approximating derivatives by finite differences. This section will describe the basics of finite difference techniques and the application to the transport equation.
 
@@ -19,7 +19,7 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
     &= \sum_{i} \pdv{D}{i}\pdv{n}{i}+ D_i\pdv[2]{n}{i}\text{ ,} 
     \end{aligned} \label{eq:A2_finite_difference_diffusion_expanded}
 \end{equation}
-\noindent where $i$ represents the three cartesian axes $x$, $y$ and $z$. Assuming that diffusion is spatially independent, $\pdv{D}{i}=0$, the Taylor series expansion of $n$ around point i becomes:
+\noindent where $i$ represents the three cartesian axes $x$, $y$ and $z$. Assuming that diffusion is spatially independent, $\pdv{D}{i}=0$, the Taylor series expansion of $n$ around point $i$ becomes:
 
 \begin{subequations}
     \begin{alignat}{1}
@@ -235,7 +235,7 @@ The advective component of the transport equation is given by:
 
 \begin{equation}
     \begin{aligned}
-    \frac{A^{t+1}}{A^t}&=1\pm v'_i\qty(1-\cos\theta)\pm jv'_i\sin\theta\text{ ,} 
+    \frac{A^{t+1}}{A^t}&=1\pm v'_i\qty(1-\cos\theta)\pm jv'_i\sin\theta\text{ .} 
     \end{aligned}
 \end{equation}
 \noindent Therefore:
