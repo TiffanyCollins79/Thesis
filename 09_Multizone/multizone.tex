@@ -47,13 +47,13 @@ Numerical solutions of \autoref{eq:chapter_9_full_numerical_diffusion_equation} 
 Finite difference techniques obtain numerical solutions to differential equations (e.g. transport equation) by approximating derivatives with finite differences found through a Taylor series expansion (see \autoref{sec:A2_finite_difference}). To solve \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} numerically, a region of interest is subdivided into a grid of voxels (a 3D pixel) of size $\Delta x \Delta y \Delta z$ as shown in \autoref{fig:chapter_8_multizone_cartesian}. The change in the electron energy distribution for a voxel at position $x$, $y$ and $z$ due to diffusion from surrounding voxels in time interval $\Delta t$ is then described by:
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{09_Multizone/Images/code/cartesian.png}
+	\includegraphics[width=\textwidth]{09_Multizone/Images/code/cartesian.pdf}
 	\caption{Front (\textit{left}) and side (\textit{right}) view of an example region of interest showing three clouds of different densities and sizes. To numerically solve the transport equation, the region of interest is split into a 3D grid of voxels.}
 	\label{fig:chapter_8_multizone_cartesian}
 \end{figure}
 \begin{wrapfigure}[19]{R}{0.3\textwidth}
 	\centering
-	\includegraphics[width=0.29\textwidth]{09_Multizone/Images/code/transport.png}
+	\includegraphics[width=0.29\textwidth]{09_Multizone/Images/code/transport.pdf}
 	\caption{The electron energy distribution in each voxel will be calculated by tracking the flux in (red) and out (green) of neighbouring cells.}
 	\label{eq:09_transport_cells}
 \end{wrapfigure}
@@ -100,13 +100,13 @@ Errors in finite difference methods arise due to the discretization of the grid 
 \end{enumerate}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{09_Multizone/Images/code/flow_chart.png}
+    \includegraphics[width=\textwidth]{09_Multizone/Images/code/flow_chart.pdf}
     \caption{A flow-chart description of the steps {\tt Multizone} uses to calculate the electron energy distribution and subsequent SED by numerically solving the transport equation.}
     \label{fig:{sec:chapter_9_multizone_flow_chart}}
 \end{figure}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{09_Multizone/Images/code/resolution_cartoon_final.png}
+    \includegraphics[width=\textwidth]{09_Multizone/Images/code/resolution_cartoon_final.pdf}
     \caption{A 2D representation of the three 3D grid resolutions used to numerically solve \autoref{eq:chapter_8_multizone_diff_numerical_sol}. Voxels with high number density or magnetic field are shown in red.}
     \label{fig:chapter_8_multizone_resolution_cartoon}
 \end{figure}
