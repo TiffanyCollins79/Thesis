@@ -2326,11 +2326,11 @@ INPUT ./09_Multizone/Images/diffusion/analytical_diff_sol.pdf
 INPUT 09_Multizone/Images/diffusion/analytical_diff_sol.pdf
 INPUT ./09_Multizone/Images/diffusion/analytical_diff_sol.pdf
 INPUT ./09_Multizone/Images/diffusion/analytical_diff_sol.pdf
-INPUT ./09_Multizone/Images/advection/adv_example.png
-INPUT ./09_Multizone/Images/advection/adv_example.png
-INPUT 09_Multizone/Images/advection/adv_example.png
-INPUT ./09_Multizone/Images/advection/adv_example.png
-INPUT ./09_Multizone/Images/advection/adv_example.png
+INPUT ./09_Multizone/Images/advection/adv_example.pdf
+INPUT ./09_Multizone/Images/advection/adv_example.pdf
+INPUT 09_Multizone/Images/advection/adv_example.pdf
+INPUT ./09_Multizone/Images/advection/adv_example.pdf
+INPUT ./09_Multizone/Images/advection/adv_example.pdf
 INPUT ./09_Multizone/Images/advection/advection_smearing.pdf
 INPUT ./09_Multizone/Images/advection/advection_smearing.pdf
 INPUT 09_Multizone/Images/advection/advection_smearing.pdf

@@ -286,17 +286,11 @@ source (top-panel), diffusion suppression factor (middle-panel) and inversely pr
 
 \begin{SCfigure}[0.5][b!]
     \centering
-    \includegraphics{09_Multizone/Images/advection/adv_example.png}
+    \includegraphics{09_Multizone/Images/advection/adv_example.pdf}
     \caption{Advection of electrons in the lab frame due to impulsive injector (cross) moving at velocity $v$ in lab frame.}
     \label{fig:09_multizone_adv_edxample}
 \end{SCfigure}
 
-% \begin{wrapfigure}{R}{0.5\textwidth}
-%     \centering
-%     \includegraphics[width=0.48\textwidth]{09_Multizone/Images/advection/adv_example.png}
-%     \caption{Advection of electrons in the lab frame due to impulsive injector (cross) moving at velocity $v$ in lab frame.}
-%     \label{fig:09_multizone_adv_edxample}
-% \end{wrapfigure}
 \autoref{sec:09_Transport_multizone_diffusion} only considered a simple case of isotropic diffusion, where the diffusion tensor in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes a scalar ($\overline{\overline{D}}=D$). In this case, the overall net motion of the electron population is zero, i.e. the average position of the electrons does not change (see \autoref{fig:09_multizone_diff_3D}). However, this is not always the case. Consider an impulsive injector of cosmic rays moving at velocity $v$ in the laboratory frame (see the example in \autoref{fig:09_multizone_adv_edxample}). The average position of cosmic rays remains constant in the reference frame of the injector. While in laboratory frame, the average position of cosmic rays changes with time where the overall bulk particle flow is defined as advection.
 \par~\par
 Anisotropic diffusion describes a situation where cosmic rays have a preferential direction of diffusion. This can be due to the presence of strong magnetic field lines, inhibiting transport perpendicular to the magnetic field (see \cite{2013ApJ...768...73M,2013MNRAS.429.1643N,2023arXiv230402684L}) or some asymmetric force as typically seen in PWN. If diffusion is anisotropic then the second term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes:
