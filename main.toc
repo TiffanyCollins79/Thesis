@@ -64,17 +64,17 @@
 \contentsline {subsection}{\numberline {4.2.6}Nanten2 Observatory}{61}{subsection.4.2.6}%
 \contentsline {chapter}{\numberline {5}Time evolution of CR particles}{63}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Radiation losses}{63}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Impulsive source of cosmic rays}{65}{subsection.5.1.1}%
-\contentsline {subsubsection}{Hadronic Cosmic Ray Source}{66}{subsubsection*.69}%
-\contentsline {subsubsection}{Leptonic Cosmic Ray Source}{66}{subsubsection*.71}%
-\contentsline {subsection}{\numberline {5.1.2}Continuous source of cosmic rays}{68}{subsection.5.1.2}%
-\contentsline {subsubsection}{Hadronic Cosmic Ray Source}{68}{subsubsection*.73}%
-\contentsline {subsubsection}{Leptonic Cosmic Ray Source}{70}{subsubsection*.75}%
+\contentsline {subsection}{\numberline {5.1.1}Impulsive Source of Cosmic Rays}{65}{subsection.5.1.1}%
+\contentsline {subsubsection}{Hadronic Cosmic-Ray Source}{66}{subsubsection*.69}%
+\contentsline {subsubsection}{Leptonic Cosmic-Ray Source}{66}{subsubsection*.71}%
+\contentsline {subsection}{\numberline {5.1.2}Continuous Source of Cosmic Rays}{68}{subsection.5.1.2}%
+\contentsline {subsubsection}{Hadronic Cosmic-Ray Source}{68}{subsubsection*.73}%
+\contentsline {subsubsection}{Leptonic Cosmic-Ray Source}{70}{subsubsection*.75}%
 \contentsline {section}{\numberline {5.2}Transport of Cosmic Rays}{72}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Propagation of Cosmic Rays}{72}{subsection.5.2.1}%
-\contentsline {subsubsection}{Hadronic Cosmic Ray Source}{72}{subsubsection*.77}%
-\contentsline {subsubsection}{Leptonic Cosmic Ray Source}{76}{subsubsection*.79}%
-\contentsline {section}{\numberline {5.3}Modelling the energy density distribution of cosmic rays}{78}{section.5.3}%
+\contentsline {subsubsection}{Hadronic Cosmic-Ray Source}{72}{subsubsection*.77}%
+\contentsline {subsubsection}{Leptonic Cosmic-Ray Source}{76}{subsubsection*.79}%
+\contentsline {section}{\numberline {5.3}Modelling the Energy Density Distribution of Cosmic Rays}{78}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}{\tt Newsedprod}}{78}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Including particle escape in {\tt Newsedprod}}{82}{subsection.5.3.2}%
 \contentsline {subsection}{\numberline {5.3.3}Investigation of magnetic field turbulence regimes}{84}{subsection.5.3.3}%

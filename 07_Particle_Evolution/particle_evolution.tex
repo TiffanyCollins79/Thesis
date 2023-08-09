@@ -16,7 +16,7 @@ First consider cosmic rays being injected by a homogeneous source into a region 
     \pdv{n\qty(\gamma,t)}{t}&=\pdv{ }{\gamma}\qty[\dot{\gamma}\qty(\gamma)n\qty(\gamma, t)] - \nu_\text{esc}\qty(\gamma)n\qty(\gamma,t) + S\qty(\gamma, t)\text{ ,}
     \end{aligned} \label{eq:chapter_7_cr_energy_distribution}
 \end{equation}
-\noindent where cosmic rays with Lorentz Factor $\gamma$ continuously lose energy at rate $\dv{\gamma}{t}=\dot{\gamma}$ and have probability $v_\text{esc}\dd{t}$ of escaping the system in time $\dd{t}$. Physically, $\dot{\gamma}\qty(\gamma)n\qty(\gamma,t)$ is the number of cosmic rays per unit time that cool at Lorentz factor $\gamma$ for a cosmic ray density $n$. The following will describe the solution of \autoref{eq:chapter_7_cr_energy_distribution} using Laplace transformations.
+\noindent where cosmic rays with Lorentz Factor $\gamma$ continuously lose energy at rate $\dv{\gamma}{t}=\dot{\gamma}$ and have probability $v_\text{esc}\dd{t}$ of escaping the system in time $\dd{t}$. Physically, $\dot{\gamma}\qty(\gamma)n\qty(\gamma,t)$ is the number of cosmic rays per unit time that cool at Lorentz factor $\gamma$ for a cosmic-ray density $n$. The following will describe the solution of \autoref{eq:chapter_7_cr_energy_distribution} using Laplace transformations.
 \par~\par
 Laplace transformations are used to reduce differential equations conveniently into an algebraic equation. The Laplace Transform for the function $f\qty(t)$ is given by:
 
@@ -94,7 +94,7 @@ Laplace transformations are used to reduce differential equations conveniently i
         \bar{n}\qty(\gamma,q) &=\frac{1}{\dot{\gamma}}\int_\gamma^\infty e^{-\lambda\qty(\gamma',\gamma)} \qty{e^{-q\tau\qty(\gamma',\gamma)}\bar{S}\qty(\gamma',s)+e^{-q\tau\qty(\gamma',\gamma)}n\qty(\gamma',0)}\dd{\gamma'}\text{ .}
     \end{aligned} \label{eq:chapter_7_cr_energy_distribution_transform_sol}
 \end{equation}
-\noindent The following inverse Laplace transformations can be used to obtain the cosmic ray energy density distribution $n\qty(\gamma,t)$ from \autoref{eq:chapter_7_cr_energy_distribution_transform_sol}:
+\noindent The following inverse Laplace transformations can be used to obtain the cosmic-ray energy density distribution $n\qty(\gamma,t)$ from \autoref{eq:chapter_7_cr_energy_distribution_transform_sol}:
 
 \begin{equation}
     \begin{alignedat}{2}
@@ -112,7 +112,7 @@ Laplace transformations are used to reduce differential equations conveniently i
 \end{equation}
 \noindent where $\gamma_0$ is the original Lorentz factor (at $t=0$) of a cosmic ray before cooling to Lorentz factor $\gamma$, i.e. $\tau\qty(\gamma_0,\gamma)=t$. \autoref{eq:chapter_7_cr_energy_distribution_sol} describes the cosmic-ray energy density distribution at time $t$ with Lorentz factor $\gamma$. In order to solve \autoref{eq:chapter_7_cr_energy_distribution_sol} analytically, impulsive and continuous accelerator sources will be treated separately. 
 
-\subsection{Impulsive source of cosmic rays}
+\subsection{Impulsive Source of Cosmic Rays}
 
 An impulsive source is a source of cosmic rays (and/or electrons) that injects material into the ISM at one point in time instantaneously or over a time period much less than the observation time. Examples of impulsive sources include supernovae, SNRs or gamma-ray bursts. The source term of an impulsive source can be described by $S\qty(\gamma,t>0)=0$. Assuming that cosmic rays do not escape the system ($\lambda=0$), \autoref{eq:chapter_7_cr_energy_distribution_sol} becomes:
 
@@ -132,7 +132,7 @@ The cosmic-ray flux at Earth tends to follow a power law spectrum (see \autoref{
 \end{equation}
 \noindent where $\Gamma$ is the spectral index, $A=\tilde{A}\qty(mc^2)^{-\Gamma}$ is the normalisation factor and $E_c$ and $\gamma_c$ are the cutoff energy and cutoff Lorentz factor respectively.
 
-\subsubsection{Hadronic Cosmic Ray Source}
+\subsubsection{Hadronic Cosmic-Ray Source}
 
 Hadronic cosmic rays lose their energies through proton-proton interactions with the ISM (see \autoref{sec:chapter1_hadronic_gr_emission}). The energy loss rate of hadronic cosmic rays with Lorentz factor $\gamma$ is approximated by \cite{1996A&A...309..917A}:
 
@@ -179,7 +179,7 @@ Hadronic cosmic rays lose their energies through proton-proton interactions with
 
 The top panel of \autoref{fig:chapter_7_impulsive_hadron_cr_spectrum} shows the evolution of a hadronic cosmic-ray energy density distribution and subsequent gamma-ray SED for an initial power law spectrum ($\Gamma=2.2$) and an exponential cutoff power law spectrum ($\Gamma=2.2$, $E_c=100~\TeV$). As the age of the system increases beyond the proton cooling time (i.e. $t>\tau_{pp}=5.3\times 10^5~\si{yr}$), the cosmic-ray density and subsequent gamma-ray emission decreases (see \autoref{sec:chapter1_hadronic_gr_emission}).
 
-\subsubsection{Leptonic Cosmic Ray Source}
+\subsubsection{Leptonic Cosmic-Ray Source}
 
 Assuming synchrotron losses are dominant (valid for high-energy electrons and/or regions of high magnetic field strength, see \autoref{eq:chapter_1_non_thermal_leptonic_cooling_rate2}), the leptonic cooling rate is given by:
 
@@ -227,13 +227,13 @@ Assuming synchrotron losses are dominant (valid for high-energy electrons and/or
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=1.0\textwidth]{07_Particle_Evolution/Images/evolution/impulsive_electron_total_spectrum.pdf}
-	\caption{Evolution of the cosmic ray energy density distribution (\textit{top}) and subsequent gamma-ray SED (\textit{bottom}) for an impulsive source injecting electrons following a power law spectrum (red) and an exponential cutoff power law spectrum (black) as given by \autoref{eq:chapter_7_imp_leptonic_cr_energy_distrib}. The critical Lorentz factor (\autoref{eq:chapter_7_imp_lep_critical_lorentz}) at different ages are shown by the vertical blue-dashed lines.}
+	\caption{Evolution of the cosmic-ray energy density distribution (\textit{top}) and subsequent gamma-ray SED (\textit{bottom}) for an impulsive source injecting electrons following a power law spectrum (red) and an exponential cutoff power law spectrum (black) as given by \autoref{eq:chapter_7_imp_leptonic_cr_energy_distrib}. The critical Lorentz factor (\autoref{eq:chapter_7_imp_lep_critical_lorentz}) at different ages are shown by the vertical blue-dashed lines.}
 	\label{fig:chapter_7_impulsive_lepton_cr_spectrum}
 \end{figure}
 \autoref{fig:chapter_7_impulsive_lepton_cr_spectrum} shows the energy density distribution evolution of electrons and the subsequent gamma-ray emission for an impulsive source with an initial power law and exponential cutoff power law spectrum. As the system ages, the critical Lorentz factor (see \autoref{eq:chapter_7_imp_lep_critical_lorentz}) decreases and the energy density distribution can be described by an exponential cutoff power regardless of the distribution at times, $t=0~\si{\year}$. The peak in the subsequent synchrotron and inverse Compton emission shifts to lower energies as the system evolves in time.
 
 
-\subsection{Continuous source of cosmic rays}
+\subsection{Continuous Source of Cosmic Rays}
 
 A continuous source is a source that injects cosmic rays into the ISM at a constant rate over a significant time frame. For simplicity, it's assumed that source has a constant injection luminosity; i.e. no outbursts or `dormant' stages. Examples of continuous sources include pulsars and massive stellar clusters which typically inject cosmic rays for over $10^5~\si{yr}$. At $t=0~\si{yr}$ the initial cosmic-ray density, $n\qty(\gamma_0,0)$, is zero. Assuming that no cosmic rays escape the system ($\lambda=0$), \autoref{eq:chapter_7_cr_energy_distribution_transform_sol} becomes:
 
@@ -250,7 +250,7 @@ A continuous source is a source that injects cosmic rays into the ISM at a const
     \end{aligned} \label{eq:chapter_7_cr_energy_distribution_cont_t0} 
 \end{equation}
 
-\subsubsection{Hadronic Cosmic Ray Source}
+\subsubsection{Hadronic Cosmic-Ray Source}
 
 Combining \autoref{eq:chaper_7_hadron_loss_rate}, \autoref{eq:chapter_7_hadron_loss_solution}, \autoref{eq:chapter_7_cr_energy_distribution_cont} \& \autoref{eq:chapter_7_cr_energy_distribution_cont_t0} gives the proton energy density distribution at Lorentz factor $\gamma$:
 
@@ -278,7 +278,7 @@ At $t=0$, the cosmic-ray energy density distribution is initially zero. As the s
 \end{figure}
 \autoref{fig:chapter_7_continuous_hadron_cr_spectrum} shows the evolution of the cosmic-ray and subsequent gamma-ray spectra for a system that continuously injects protons into a system with proton-proton cooling time of $5.7\times 10^5~\si{yr}$.
 
-\subsubsection{Leptonic Cosmic Ray Source}
+\subsubsection{Leptonic Cosmic-Ray Source}
 Again, synchrotron radiation is assumed to be the dominant cause of electron energy loss. From \autoref{eq:chapter_7_imp_leptonic_lorentz_initial} \& \autoref{eq:chapter_7_imp_lep_critical_lorentz}, electrons with Lorentz factor greater than the critical Lorentz factor ($\gamma\geq\gamma_\text{cr}$) must be treated separately:
 
 \begin{equation}
@@ -351,7 +351,7 @@ We will take the simple example of an impulsive cosmic-ray source injecting part
 \end{subequations}  
 \noindent where $R_\text{diff}\qty(\gamma,t)$ represents the distance of which cosmic rays with Lorentz factor $\gamma$ propagate after time $t$, i.e. `diffusion distance' and $D\qty(\gamma,B)$ represents the diffusion coefficient for cosmic rays in a magnetic field strength $B$ (see \autoref{eq:diffusion}).
 
-\subsubsection{Hadronic Cosmic Ray Source}
+\subsubsection{Hadronic Cosmic-Ray Source}
 
 Combining \autoref{eq:chaper_7_hadron_loss_rate} and \autoref{eq:chapter_7_R_ev_green_solution} gives the evolution of the diffusion radius at distance $r$ from the accelerator:
 
@@ -395,7 +395,7 @@ A continuous source can be treated as a series of impulsive injectors and \autor
 \end{equation}
 \noindent As $D\propto \gamma^{\delta}$ (see \autoref{eq:diffusion}), the cosmic-ray energy spectrum can be described by a power law with index $\Gamma+\delta$. The higher index (compared to the injected spectrum) mathematically describes high-energy cosmic rays escaping at a faster rate compared to low energy protons.
 
-\subsubsection{Leptonic Cosmic Ray Source}
+\subsubsection{Leptonic Cosmic-Ray Source}
 
 For an accelerator injecting electrons, combining \autoref{eq:diffusion},  \autoref{eq:chapter_7_lepton_loss_rate} and \autoref{eq:chapter_7_R_ev_green_solution} gives the diffusion radius for electrons:
 
@@ -440,7 +440,7 @@ Similarly to protons, for distances close to the source ($R\ll R_\text{diff}$), 
 
 \noindent where $n_e\propto \gamma^{-\qty(\Gamma+\delta)}$.
 
-\section{Modelling the energy density distribution of cosmic rays}
+\section{Modelling the Energy Density Distribution of Cosmic Rays}
 
 \autoref{sec:chapter_7_cr_SED_evol} and \autoref{sec:chapter_7_cr_SED_trans} assumed simple scenarios in order to solve \autoref{eq:chapter_7_cr_energy_distribution_sol}. Such scenarios included the type of accelerator (impulsive or continuous) and whether the time of interest is less than the cooling time of the particle (e.g. \autoref{eq:chapter_7_crpropev_hadronic_continuous} and \autoref{eq:chapter_7_crpropev_leptonic_continuous}). It was also assumed that no particles escape the system (i.e. $v_\text{esc}=0$ in \autoref{eq:chapter_7_cr_energy_distribution}. For scenarios that do not make these assumptions, \autoref{eq:chapter_7_cr_energy_distribution_sol} must be solved analytically. A Reimann sum can be used to approximate the integral in \autoref{eq:chapter_7_cr_energy_distribution_sol} with:
 
