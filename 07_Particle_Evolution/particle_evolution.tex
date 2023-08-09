@@ -6,7 +6,7 @@ This section first discusses how the energy distribution of cosmic rays evolves 
 \par~\par
 This code was applied to investigate the origin of the $\GeV$ gamma-ray emission to the south of \mbox{HESS\,J1825-137}. Proposed sources included the impulsive SNR and continuous PWN associated with \mbox{HESS\,J1825-137} and the impulsive SNR and continuous compact object binary associated with \mbox{LS\,5039}. The results of this study were published in the Monthly Notices of the Royal Astronomical Society and is shown in \autoref{sec:08}.
 
-\section{Radiation losses} \label{sec:chapter_7_cr_SED_evol} 
+\section{Radiation Losses} \label{sec:chapter_7_cr_SED_evol} 
 
 First consider cosmic rays being injected by a homogeneous source into a region of interest at rate $S\qty(\gamma,t)$ and escaping at rate $v_\text{esc}$. The time evolution of the cosmic-ray energy density distribution, $n\qty(\gamma,t)$, can be described by \citep{1980gbs..bookR....M}:
 %The time evolution of the cosmic ray energy distribution, $n\qty(\gamma,t)$ for a homogeneous source injecting particles at rate $S\qty(\gamma,t)$ and escape rate $v_\text{esc}$ can be described by \citep{1980gbs..bookR....M}:
@@ -539,7 +539,7 @@ After injection, cosmic rays radiate their energy and cool to lower Lorentz fact
 \end{figure}
 \autoref{fig:chapter_7_newsedprod_leptonic_changing} shows the subsequent inverse-Compton and synchrotron photon emission of a continuous source of electrons for different scenarios. The top-left panel of \autoref{fig:chapter_7_newsedprod_leptonic_changing} shows the evolution of the spectral energy density distribution at times $10^3$, $10^4$, $10^5$ and $10^6$ years.  The IC and synchrotron emission originally peaks at high energies and then migrates to lower energies at later ages, representing the steady state of cooled low-energy electrons. The highest energy photons of the IC and synchotron spectra rapidly reaches a steady state due to the relatively short lifetime of high-energy electrons (e.g. a $100~\TeV$ electron has cooling time $\tau\approx 10^3~\si{\year}$). The top-right panel of \autoref{fig:chapter_7_newsedprod_leptonic_changing} shows how the magnetic field affects the IC and synchrotron flux ratio  (where we find${f_\text{IC}\qty(E)}/{f_\text{sync}\qty(E)}\propto 1/B^2$, see  \autoref{eq:chapter_IC_2_sync_ratio}). As the magnetic field increases, synchrotron losses start to dominate and less energy is channelled into inverse Compton emission ${f_\text{IC}\qty(E)}/{f_\text{sync}\qty(E)}\rightarrow 0$. However, the peak in synchrotron emission eventually plateaus due to the finite amount of electrons injected into the system up to a given age. Hence, lower energy electrons begin to accumulate in the region. The bottom-left hand panel of \autoref{fig:chapter_7_newsedprod_leptonic_changing} shows that introducing a cutoff in the injected electron spectrum shifts the IC and synchrotron emission to lower energies as well as decreasing the overall flux. Both examples shown in \autoref{fig:chapter_7_newsedprod_leptonic_changing} assume that electrons do not escape the system.
 
-\subsection{Including particle escape in {\tt Newsedprod}}
+\subsection{Including Particle Escape in {\tt Newsedprod}}
 
 \begin{SCfigure}[0.5][htbt]
     \centering
@@ -609,7 +609,7 @@ For simplicity, synchrotron losses will be assumed to be dominant ($\dot{\gamma}
 \par~\par
 \autoref{fig:chapter_7_manolakou_escape} shows the comparison of the electron energy density distribution of {\tt Newsedprod} to the results  by \cite{2007A&A...474..689M} for different values of $b_\text{es}$ assuming Bohm diffusion ($\delta=1$). There is negligible escape when $b_\text{es}=0.1$, but escape losses become significant when $b_\text{es}=100$ and $1000$. Electrons with Lorentz factor $\gamma_1$, the maximum Lorentz factor that electrons injected at $t=0$ can take, is the least affected by escape losses. Electrons with Lorentz factor $>\gamma_1$ represent the population of electrons injected after $t=0$. As the Lorentz factor increases beyond $\gamma_1$, electrons rapidly escape the region and only recently injected electrons contribute to the energy spectrum. Below $\gamma_1$, the electron cooling rate rapidly decreases and the probability that an electron escapes before cooling increases. 
 
-\subsection{Investigation of magnetic field turbulence regimes}
+\subsection{Investigation of Magnetic Field Turbulence Regimes}
 
 \begin{figure}[hbtp]
     \centering
