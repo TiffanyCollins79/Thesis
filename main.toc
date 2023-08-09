@@ -28,7 +28,7 @@
 \contentsline {subsubsection}{Local and Galactic Magnetic Fields}{23}{subsubsection*.33}%
 \contentsline {subsection}{\numberline {2.2.3}Cosmic Ray Spectrum}{24}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}PeVatrons}{24}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Gamma-rays: messengers of cosmic rays}{26}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Gamma rays: messengers of cosmic rays}{26}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}A brief history}{26}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Hadronic Gamma-Ray Emission}{26}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Leptonic Gamma-Ray emission}{29}{subsection.2.3.3}%
