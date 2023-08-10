@@ -1616,6 +1616,8 @@ INPUT 03a_Intro_page/intro.tex
 INPUT ./03a_Intro_page/intro.tex
 INPUT 03a_Intro_page/intro.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/newtx/ntxsy.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
@@ -1629,8 +1631,6 @@ INPUT ./04_Introduction/introduction.tex
 INPUT 04_Introduction/introduction.tex
 INPUT ./04_Introduction/introduction.tex
 INPUT 04_Introduction/introduction.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png
 INPUT ./04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png
 INPUT 04_Introduction/Images/pulsar_wind_nebula/pulsar_structure.png
