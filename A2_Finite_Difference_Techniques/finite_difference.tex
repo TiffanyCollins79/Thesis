@@ -71,8 +71,8 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
 
 \begin{equation}
     \begin{aligned}
-    n_i^{t+\Delta t}&=n_i^t+\sum_{i=x,y,z}\frac{\Delta t}{\Delta i^2}\mathcal{D}\qty(n_{i+\Delta i}^t+n_{i-\Delta i}^t-2n_i^t) \\
-    &=n_i^t+\sum_{i=x,y,z} \frac{\Delta t}{\Delta i^2}\qty[\mathcal{D}\qty(n_{i+\Delta i}^t-n_i^t)+\mathcal{D}\qty(n_{i-\Delta i}^t-n_i^t)]\text{ .} 
+    n_i^{t+\Delta t}&=n_i^t+\sum_{i=x,y,z}\frac{\Delta t}{\Delta i^2}\mathcal{D}\cdot\qty[n_{i+\Delta i}^t+n_{i-\Delta i}^t-2n_i^t] \\
+    &=n_i^t+\sum_{i=x,y,z} \frac{\Delta t}{\Delta i^2}\qty{\mathcal{D}\cdot\qty[n_{i+\Delta i}^t-n_i^t]+\mathcal{D}\cdot\qty[n_{i-\Delta i}^t-n_i^t]}\text{ .} 
     \end{aligned} \label{eq:A2_diffusion_finite_diff}
 \end{equation}
 \noindent where $\mathcal{D}=D\Delta t/\Delta i^2$. %i.e. \autoref{eq:A2_diffusion_finite_diff} is the solution of \autoref{eq:A2_finite_difference_diffusion} at time $t+\Delta t$ using finite difference techniques.

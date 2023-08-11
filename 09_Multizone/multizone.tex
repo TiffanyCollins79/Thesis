@@ -61,18 +61,18 @@ Finite difference techniques obtain numerical solutions to differential equation
     \begin{aligned}
         \qty(\pdv{n}{t})_\text{diff}
         &= -D\nabla^2 n_\text{diff} \\
-        n_\text{diff}\qty(\gamma,t+\Delta t,\vec{r})&=n_\text{diff}\qty(\gamma,t,\vec{r})+\sum_{i=x,y,z} \mathcal{D}
-        \qty(n_{i+\Delta i}^{t}
-        -n_{i}^t)
-        +\mathcal{D}
-        \qty(n_{i-\Delta i}^t
-        -n_i^t) \text{ ,} 
+        n_\text{diff}\qty(\gamma,t+\Delta t,\vec{r})&=n_\text{diff}\qty(\gamma,t,\vec{r})+\sum_{i=x,y,z} &\mathcal{D}_i\cdot
+        \qty[n_{i+\Delta i}^{t}
+        -n_{i}^t]
+        +\mathcal{D}_i\cdot
+        \qty[n_{i-\Delta i}^t
+        -n_i^t]\text{ ,}
     \end{aligned} \label{eq:chapter_8_multizone_diff_numerical_sol}
 \end{equation}
 \noindent where
 \begin{equation}
     \begin{aligned}
-    \mathcal{D}&=\chi D_0 \qty(\frac{\gamma m_e}{1~\TeV})^\delta \qty(\frac{B_i + B_{i\pm 1}}{2\times 3~\si{\micro G}})^{-\delta} \frac{\Delta t}{\Delta i^2}\text{ ,} 
+    \mathcal{D}_i&=\chi D_0 \qty(\frac{\gamma m_e}{1~\TeV})^\delta \qty(\frac{B_i + B_{i\pm 1}}{2\times 3~\si{\micro G}})^{-\delta} \frac{\Delta t}{\Delta i^2}\text{ ,} 
     \end{aligned} \label{eq:chapter_9_diffusion_numeric}
 \end{equation}
 \noindent is the dimensionless diffusion factor that considers the average magnetic field between voxel $i$ and $i\pm 1$ (see \autoref{eq:diffusion}). See \autoref{eq:09_transport_cells} for a graphical description of \autoref{eq:chapter_9_diffusion_numeric}. 
