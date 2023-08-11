@@ -13,7 +13,7 @@ This chapter will first discuss the transport equation that governs the time and
 \begin{equation}
     \begin{aligned}
         \pdv{n}{t}=&\pdv{ }{\gamma}\qty(\dot{\gamma}n)+\nabla\qty(\overline{\overline{D}}\cdot\nabla n)-\nabla\cdot\qty(n\vec{v}_A)-\frac{1}{3}\pdv{ }{\gamma}\qty(\gamma\qty(\nabla\cdot\vec{v}_A))n \\
-        &\pdv{ }{\gamma}\qty(\gamma^2 D_{pp}\pdv{ }{\gamma}\qty(\frac{n}{\gamma^2})) + S\qty(\gamma,t,\vec{r})  \text{ ,}     
+        &+\pdv{ }{\gamma}\qty(\gamma^2 D_{pp}\pdv{ }{\gamma}\qty(\frac{n}{\gamma^2})) + S\qty(\gamma,t,\vec{r})  \text{ ,}     
     \end{aligned} \label{eq:chapter_9_full_numerical_diffusion_equation}
 \end{equation} 
 \noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} gives the evolution of cosmic-ray energy density distribution due to radiative losses (see chapter \autoref{sec:chapter1_non_thermal_emission}) . The second term considers the spatial evolution of cosmic rays as a second-rank tensor, $\overline{\overline{D}}=\overline{\overline{D}}\qty(\gamma,t,\vec{r})$, allowing preferential direction of transport. The third term describes the evolution of the cosmic-ray density due to a co-moving fluid with velocity $\vec{v}_A$. The fourth considers losses due to adiabatic expansion. The fifth term represents the re-acceleration of cosmic rays due to stochastic processes with $D_{pp}$ being the acceleration rate. Finally, $S\qty(\gamma,t,\vec{r})$ is the source term of high-energy cosmic rays.
