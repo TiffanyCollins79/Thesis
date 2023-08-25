@@ -74,7 +74,7 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
     &=n_i^t+\sum_{i=x,y,z} \frac{\Delta t}{\Delta i^2}\qty{\mathcal{D}\cdot\qty[n_{i+\Delta i}^t-n_i^t]+\mathcal{D}\cdot\qty[n_{i-\Delta i}^t-n_i^t]}\text{ .} 
     \end{aligned} \label{eq:A2_diffusion_finite_diff}
 \end{equation}
-\noindent where $\mathcal{D}\equiv D\Delta t/\Delta i^2$. %i.e. \autoref{eq:A2_diffusion_finite_diff} is the solution of \autoref{eq:A2_finite_difference_diffusion} at time $t+\Delta t$ using finite difference techniques.
+\noindent where $\mathcal{D}= D\Delta t/\Delta i^2$. %i.e. \autoref{eq:A2_diffusion_finite_diff} is the solution of \autoref{eq:A2_finite_difference_diffusion} at time $t+\Delta t$ using finite difference techniques.
 
 \subsection{Stability of the Finite Difference} \label{sec:A2_finite_stability}
 
@@ -131,7 +131,7 @@ Applying Von Newmann stability analysis to the transport equation, \autoref{eq:A
     &=1-4\mathcal{D}\sin^2\frac{\theta}{2}\text{ ,} 
     \end{aligned}
 \end{equation}
-\noindent where $\theta\equiv k\Delta i$. For the solution to be stable, $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$. Hence:
+\noindent where $\theta= k\Delta i$. For the solution to be stable, $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$. Hence:
 
 \begin{equation}
     \begin{aligned}
@@ -175,7 +175,7 @@ The advective component of the transport equation is given by:
     &=n_i^t-\frac{v_\text{A,i}'}{2}\qty(n_{i+\Delta i}^t-n_{i+\Delta i}^t)\text{ ,} 
     \end{aligned} \label{eq:A2_advection_central_diff}
 \end{equation}
-\noindent where $v'_i\equiv v_\text{A,i}{\Delta t}/{\Delta i}$. Applying the Von Neumann stability analysis to \autoref{eq:A2_advection_central_diff}:
+\noindent where $v'_i= v_\text{A,i}{\Delta t}/{\Delta i}$. Applying the Von Neumann stability analysis to \autoref{eq:A2_advection_central_diff}:
 
 \begin{equation}
     \begin{aligned}
