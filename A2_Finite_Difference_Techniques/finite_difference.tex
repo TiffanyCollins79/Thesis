@@ -3,15 +3,15 @@
 Often, differential equations cannot be solved analytically unless in certain scenarios. Finite difference techniques are utilised to solve differential equations numerically by approximating derivatives by finite differences. This section will describe the basics of finite difference techniques and the application to the transport equation.
 
 \section{Diffusion} \label{sec:A2_diffusion}
-
+ß
 The diffusive component of the transport equation (see \autoref{eq:chapter_9_full_numerical_diffusion_equation}) is described by:
 
 \begin{equation}
     \begin{aligned}
-    \pdv{n\qty(\gamma,t,\vec{r})}{t}&=\nabla \qty(\overline{\overline{D}}\cdot\nabla n\qty(\gamma,t,\vec{r}))\text{ .} 
+    \pdv{n\qty(\gamma,t,\vec{r})}{t}&=\nabla \qty(\bar{\bar{D}}\cdot\nabla n\qty(\gamma,t,\vec{r}))\text{ .} 
     \end{aligned} \label{eq:A2_finite_difference_diffusion}
 \end{equation}
-\noindent A region of interstellar gas can be split into a 3D grid of voxels. Each voxel has width $\Delta x$, $\Delta y$ and $\Delta z$. Assuming that diffusion is isotropic ($\overline{\overline{D}}=D$), \autoref{eq:A2_finite_difference_diffusion} at position $x$, $y$, $z$ and time $t$ becomes:
+\noindent A region of interstellar gas can be split into a 3D grid of voxels. Each voxel has width $\Delta x$, $\Delta y$ and $\Delta z$. Assuming that diffusion is isotropic ($\bar{\bar{D}}=D$), \autoref{eq:A2_finite_difference_diffusion} at position $x$, $y$, $z$ and time $t$ becomes:
 
 \begin{equation}
     \begin{aligned}

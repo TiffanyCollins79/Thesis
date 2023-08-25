@@ -12,11 +12,11 @@ This chapter will first discuss the transport equation that governs the time and
 
 \begin{equation}
     \begin{aligned}
-        \pdv{n}{t}=&\pdv{ }{\gamma}\qty(\dot{\gamma}n)+\nabla\qty(\overline{\overline{D}}\cdot\nabla n)-\nabla\cdot\qty(n\vec{v}_A)-\frac{1}{3}\pdv{ }{\gamma}\qty(\gamma\qty(\nabla\cdot\vec{v}_A))n \\
+        \pdv{n}{t}=&\pdv{ }{\gamma}\qty(\dot{\gamma}n)+\nabla\qty(\bar{\bar{D}}\cdot\nabla n)-\nabla\cdot\qty(n\vec{v}_A)-\frac{1}{3}\pdv{ }{\gamma}\qty(\gamma\qty(\nabla\cdot\vec{v}_A))n \\
         &+\pdv{ }{\gamma}\qty(\gamma^2 D_\mathrm{pp}\pdv{ }{\gamma}\qty(\frac{n}{\gamma^2})) + S\qty(\gamma,t,\vec{r})  \text{ ,}     
     \end{aligned} \label{eq:chapter_9_full_numerical_diffusion_equation}
 \end{equation} 
-\noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} gives the evolution of cosmic-ray energy density distribution due to radiative losses (see chapter \autoref{sec:chapter1_non_thermal_emission}) . The second term considers the spatial evolution of cosmic rays as a second-rank tensor, $\overline{\overline{D}}=\overline{\overline{D}}\qty(\gamma,t,\vec{r})$, allowing preferential direction of transport. The third term describes the evolution of the cosmic-ray density due to a co-moving fluid with velocity $\vec{v}_A$. The fourth considers losses due to adiabatic expansion. The fifth term represents the re-acceleration of cosmic rays due to stochastic processes with $D_\mathrm{pp}$ being the acceleration rate. Finally, $S\qty(\gamma,t,\vec{r})$ is the source term of high-energy cosmic rays.
+\noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} gives the evolution of cosmic-ray energy density distribution due to radiative losses (see chapter \autoref{sec:chapter1_non_thermal_emission}) . The second term considers the spatial evolution of cosmic rays as a second-rank tensor, $\bar{\bar{D}}=\bar{\bar{D}}\qty(\gamma,t,\vec{r})$, allowing preferential direction of transport. The third term describes the evolution of the cosmic-ray density due to a co-moving fluid with velocity $\vec{v}_A$. The fourth considers losses due to adiabatic expansion. The fifth term represents the re-acceleration of cosmic rays due to stochastic processes with $D_\mathrm{pp}$ being the acceleration rate. Finally, $S\qty(\gamma,t,\vec{r})$ is the source term of high-energy cosmic rays.
 \par~\par
 As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less than the gyro-radius $r_g$), cosmic rays propagate through the ISM via ballistic motion. Over large distances, cosmic rays scatter off magnetic field turbulence and the overall propagation can be described by diffusion \citep{2015PhRvD..92h3003P}. Neglecting adiabatic losses, bulk motion and re-acceleration of cosmic rays, \autoref{eq:chapter_9_full_numerical_diffusion_equation} can be simplified to:
 
@@ -26,7 +26,7 @@ As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less t
 \pdv{n}{t}&=\pdv{ }{\gamma}\qty(\dot{\gamma}n) + \nabla\qty(D\qty(\vec{r},\gamma)\cdot \nabla n) + S\qty(\gamma,\vec{r},t)
 \end{aligned} \label{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}
 \end{equation} 
-\noindent Note that \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} is similar to \autoref{eq:chapter_7_cr_energy_distribution}, where the `escape term' has been replaced with an expression describing the losses due to diffusion. For a simple case of isotropic diffusion ($\overline{\overline{D}}=D$ and $\nabla D=0$), the diffusion term in \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} becomes: 
+\noindent Note that \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} is similar to \autoref{eq:chapter_7_cr_energy_distribution}, where the `escape term' has been replaced with an expression describing the losses due to diffusion. For a simple case of isotropic diffusion ($\bar{\bar{D}}=D$ and $\nabla D=0$), the diffusion term in \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} becomes: 
 
 \begin{equation}
     \begin{aligned}
@@ -291,14 +291,14 @@ source (top-panel), diffusion suppression factor (middle-panel) and inversely pr
     \label{fig:09_multizone_adv_edxample}
 \end{SCfigure}
 
-\autoref{sec:09_Transport_multizone_diffusion} only considered a simple case of isotropic diffusion, where the diffusion tensor in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes a scalar ($\overline{\overline{D}}=D$). In this case, the overall net motion of the electron population is zero, i.e. the average position of the electrons does not change (see \autoref{fig:09_multizone_diff_3D}). However, this is not always the case. Consider an impulsive injector of cosmic rays moving at velocity $v$ in the laboratory frame (see the example in \autoref{fig:09_multizone_adv_edxample}). The average position of cosmic rays remains constant in the reference frame of the injector. While in laboratory frame, the average position of cosmic rays changes with time where the overall bulk particle flow is defined as advection.
+\autoref{sec:09_Transport_multizone_diffusion} only considered a simple case of isotropic diffusion, where the diffusion tensor in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes a scalar ($\bar{\bar{D}}=D$). In this case, the overall net motion of the electron population is zero, i.e. the average position of the electrons does not change (see \autoref{fig:09_multizone_diff_3D}). However, this is not always the case. Consider an impulsive injector of cosmic rays moving at velocity $v$ in the laboratory frame (see the example in \autoref{fig:09_multizone_adv_edxample}). The average position of cosmic rays remains constant in the reference frame of the injector. While in laboratory frame, the average position of cosmic rays changes with time where the overall bulk particle flow is defined as advection.
 \par~\par
 Anisotropic diffusion describes a situation where cosmic rays have a preferential direction of diffusion. This can be due to the presence of strong magnetic field lines, inhibiting transport perpendicular to the magnetic field (see \cite{2013ApJ...768...73M,2013MNRAS.429.1643N,2023arXiv230402684L}) or some asymmetric force as typically seen in PWN. If diffusion is anisotropic then the second term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes:
 
 \begin{equation}
     \begin{aligned}
-        \qty(\pdv{n}{t})_\text{diff}&=\nabla\qty(\overline{\overline{D}}\cdot\nabla n)
-        &=\nabla\overline{\overline{D}}\cdot\nabla n+\overline{\overline{D}}\cdot\nabla^2 n\text{ .} 
+        \qty(\pdv{n}{t})_\text{diff}&=\nabla\qty(\bar{\bar{D}}\cdot\nabla n)
+        &=\nabla\bar{\bar{D}}\cdot\nabla n+\bar{\bar{D}}\cdot\nabla^2 n\text{ .} 
     \end{aligned} \label{eq:09_anisotropic_diffusion}
 \end{equation}
  \noindent Note that \autoref{eq:09_anisotropic_diffusion} is similar to the transport equation that considers both advection and isotropic diffusion:
