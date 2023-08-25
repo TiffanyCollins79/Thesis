@@ -3,7 +3,6 @@
 Often, differential equations cannot be solved analytically unless in certain scenarios. Finite difference techniques are utilised to solve differential equations numerically by approximating derivatives by finite differences. This section will describe the basics of finite difference techniques and the application to the transport equation.
 
 \section{Diffusion} \label{sec:A2_diffusion}
-ß
 The diffusive component of the transport equation (see \autoref{eq:chapter_9_full_numerical_diffusion_equation}) is described by:
 
 \begin{equation}
@@ -11,7 +10,7 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
     \pdv{n\qty(\gamma,t,\vec{r})}{t}&=\nabla \qty(\bar{\bar{D}}\cdot\nabla n\qty(\gamma,t,\vec{r}))\text{ .} 
     \end{aligned} \label{eq:A2_finite_difference_diffusion}
 \end{equation}
-\noindent A region of interstellar gas can be split into a 3D grid of voxels. Each voxel has width $\Delta x$, $\Delta y$ and $\Delta z$. Assuming that diffusion is isotropic ($\bar{\bar{D}}=D$), \autoref{eq:A2_finite_difference_diffusion} at position $x$, $y$, $z$ and time $t$ becomes:
+\noindent A region of interstellar gas can be split into a 3D grid of voxels. Each voxel has width $\Delta x$, $\Delta y$ and $\Delta z$. Assuming that diffusion is isotropic ($\bar{\bar{D}}\equiv D$), \autoref{eq:A2_finite_difference_diffusion} at position $x$, $y$, $z$ and time $t$ becomes:
 
 \begin{equation}
     \begin{aligned}
@@ -24,10 +23,10 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
 \begin{subequations}
     \begin{alignat}{1}
     n_{i+\Delta i} &=n_{i}+\Delta i \pdv{n}{i}\bigg|_{i+\Delta i} + \frac{\Delta i^2}{2}\pdv[2]{n}{i}\bigg|_{i+\Delta i}+ \frac{\Delta i^3}{3!}\pdv[3]{n}{i}\bigg|_{i+\Delta i} +\cdot\cdot\cdot \label{eq:A2_taylor_series_plus} \\
-    n_{i-\Delta i} &=n_{i}-\Delta i \pdv{n}{i}\bigg|_{i-\Delta i} + \frac{\Delta i^2}{2}\pdv[2]{n}{i}\bigg|_{i-\Delta i}- \frac{\Delta i^3}{3!}\pdv[3]{n}{i}\bigg|_{i-\Delta i} +\cdot\cdot\cdot\text{ .}   \label{eq:A2_taylor_series_neg}
+    n_{i-\Delta i} &=n_{i}-\Delta i \pdv{n}{i}\bigg|_{i-\Delta i} + \frac{\Delta i^2}{2}\pdv[2]{n}{i}\bigg|_{i-\Delta i}- \frac{\Delta i^3}{3!}\pdv[3]{n}{i}\bigg|_{i-\Delta i} +\cdot\cdot\cdot\text{ ,}   \label{eq:A2_taylor_series_neg}
     \end{alignat} \label{eq:A2_taylor_series}
 \end{subequations} 
-\noindent Assuming $\Delta i\ll 1$, \autoref{eq:A2_taylor_series} becomes:
+\noindent where $n_i^t\equiv n\qty(\gamma,t,i)$ Assuming $\Delta i\ll 1$, \autoref{eq:A2_taylor_series} becomes:
 
 \begin{subequations}
     \begin{alignat}{1}
@@ -75,7 +74,7 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
     &=n_i^t+\sum_{i=x,y,z} \frac{\Delta t}{\Delta i^2}\qty{\mathcal{D}\cdot\qty[n_{i+\Delta i}^t-n_i^t]+\mathcal{D}\cdot\qty[n_{i-\Delta i}^t-n_i^t]}\text{ .} 
     \end{aligned} \label{eq:A2_diffusion_finite_diff}
 \end{equation}
-\noindent where $\mathcal{D}=D\Delta t/\Delta i^2$. %i.e. \autoref{eq:A2_diffusion_finite_diff} is the solution of \autoref{eq:A2_finite_difference_diffusion} at time $t+\Delta t$ using finite difference techniques.
+\noindent where $\mathcal{D}\equiv D\Delta t/\Delta i^2$. %i.e. \autoref{eq:A2_diffusion_finite_diff} is the solution of \autoref{eq:A2_finite_difference_diffusion} at time $t+\Delta t$ using finite difference techniques.
 
 \subsection{Stability of the Finite Difference} \label{sec:A2_finite_stability}
 
@@ -132,7 +131,7 @@ Applying Von Newmann stability analysis to the transport equation, \autoref{eq:A
     &=1-4\mathcal{D}\sin^2\frac{\theta}{2}\text{ ,} 
     \end{aligned}
 \end{equation}
-\noindent where $\theta=k\Delta i$. For the solution to be stable, $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$. Hence:
+\noindent where $\theta\equiv k\Delta i$. For the solution to be stable, $\lvert \frac{A^{t+1}}{A^t}\rvert\leq 1$. Hence:
 
 \begin{equation}
     \begin{aligned}
@@ -159,7 +158,7 @@ The advective component of the transport equation is given by:
         \pdv{n\qty(\gamma,t,\vec{r})}{t}&=-\nabla\qty(n\vec{v}_A)\text{ ,} 
     \end{aligned}
 \end{equation}
-\noindent where $v_a$ is the advective velocity of cosmic rays. Assuming $v_a$ is spatially independent:
+\noindent where $\vec{v}_A\equiv [v_\text{A,x},v_\text{A,y},v_\text{A,z}]$ is the advective velocity of cosmic rays. Assuming $\vec{v}_a$ is spatially independent:
 
 \begin{equation}
     \begin{aligned}
@@ -176,7 +175,7 @@ The advective component of the transport equation is given by:
     &=n_i^t-\frac{v_\text{A,i}'}{2}\qty(n_{i+\Delta i}^t-n_{i+\Delta i}^t)\text{ ,} 
     \end{aligned} \label{eq:A2_advection_central_diff}
 \end{equation}
-\noindent where $v'_i=v_\text{A,i}{\Delta t}/{\Delta i}$. Applying the Von Neumann stability analysis to \autoref{eq:A2_advection_central_diff}:
+\noindent where $v'_i\equiv v_\text{A,i}{\Delta t}/{\Delta i}$. Applying the Von Neumann stability analysis to \autoref{eq:A2_advection_central_diff}:
 
 \begin{equation}
     \begin{aligned}

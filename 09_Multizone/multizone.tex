@@ -16,7 +16,7 @@ This chapter will first discuss the transport equation that governs the time and
         &+\pdv{ }{\gamma}\qty(\gamma^2 D_\mathrm{pp}\pdv{ }{\gamma}\qty(\frac{n}{\gamma^2})) + S\qty(\gamma,t,\vec{r})  \text{ ,}     
     \end{aligned} \label{eq:chapter_9_full_numerical_diffusion_equation}
 \end{equation} 
-\noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} gives the evolution of cosmic-ray energy density distribution due to radiative losses (see chapter \autoref{sec:chapter1_non_thermal_emission}) . The second term considers the spatial evolution of cosmic rays as a second-rank tensor, $\bar{\bar{D}}=\bar{\bar{D}}\qty(\gamma,t,\vec{r})$, allowing preferential direction of transport. The third term describes the evolution of the cosmic-ray density due to a co-moving fluid with velocity $\vec{v}_A$. The fourth considers losses due to adiabatic expansion. The fifth term represents the re-acceleration of cosmic rays due to stochastic processes with $D_\mathrm{pp}$ being the acceleration rate. Finally, $S\qty(\gamma,t,\vec{r})$ is the source term of high-energy cosmic rays.
+\noindent where the first term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} gives the evolution of cosmic-ray energy density distribution due to radiative losses (see chapter \autoref{sec:chapter1_non_thermal_emission}) . The second term considers the spatial evolution of cosmic rays as a second-rank tensor, $\bar{\bar{D}}\equiv\bar{\bar{D}}\qty(\gamma,t,\vec{r})$, allowing preferential direction of transport. The third term describes the evolution of the cosmic-ray density due to a co-moving fluid with velocity $\vec{v}_A$. The fourth considers losses due to adiabatic expansion. The fifth term represents the re-acceleration of cosmic rays due to stochastic processes with $D_\mathrm{pp}$ being the acceleration rate. Finally, $S\qty(\gamma,t,\vec{r})$ is the source term of high-energy cosmic rays.
 \par~\par
 As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less than the gyro-radius $r_g$), cosmic rays propagate through the ISM via ballistic motion. Over large distances, cosmic rays scatter off magnetic field turbulence and the overall propagation can be described by diffusion \citep{2015PhRvD..92h3003P}. Neglecting adiabatic losses, bulk motion and re-acceleration of cosmic rays, \autoref{eq:chapter_9_full_numerical_diffusion_equation} can be simplified to:
 
@@ -26,7 +26,7 @@ As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less t
 \pdv{n}{t}&=\pdv{ }{\gamma}\qty(\dot{\gamma}n) + \nabla\qty(D\qty(\vec{r},\gamma)\cdot \nabla n) + S\qty(\gamma,\vec{r},t)
 \end{aligned} \label{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}
 \end{equation} 
-\noindent Note that \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} is similar to \autoref{eq:chapter_7_cr_energy_distribution}, where the `escape term' has been replaced with an expression describing the losses due to diffusion. For a simple case of isotropic diffusion ($\bar{\bar{D}}=D$ and $\nabla D=0$), the diffusion term in \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} becomes: 
+\noindent Note that \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} is similar to \autoref{eq:chapter_7_cr_energy_distribution}, where the `escape term' has been replaced with an expression describing the losses due to diffusion. For a simple case of isotropic diffusion ($\bar{\bar{D}}\equiv D$ and $\nabla D=0$), the diffusion term in \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} becomes: 
 
 \begin{equation}
     \begin{aligned}
@@ -61,10 +61,10 @@ Finite difference techniques obtain numerical solutions to differential equation
     \begin{aligned}
         \qty(\pdv{n}{t})_\text{diff}
         &= -D\nabla^2 n_\text{diff} \\
-        n_\text{diff}\qty(\gamma,t+\Delta t,\vec{r})&=n_\text{diff}\qty(\gamma,t,\vec{r})+\sum_{i=x,y,z} &\mathcal{D}_i\cdot
+        n_\text{diff}\qty(\gamma,t+\Delta t,\vec{r})&=n_\text{diff}\qty(\gamma,t,\vec{r})+\sum_{i=x,y,z} \mathcal{D}_{i+\Delta i/2}\cdot
         \qty[n_{i+\Delta i}^{t}
         -n_{i}^t]
-        +\mathcal{D}_i\cdot
+        +\mathcal{D}_{i-\Delta i/2}\cdot
         \qty[n_{i-\Delta i}^t
         -n_i^t]\text{ ,}
     \end{aligned} \label{eq:chapter_8_multizone_diff_numerical_sol}
@@ -72,12 +72,12 @@ Finite difference techniques obtain numerical solutions to differential equation
 \noindent where
 \begin{equation}
     \begin{aligned}
-    \mathcal{D}_i&=\chi D_0 \qty(\frac{\gamma m_e}{1~\TeV})^\delta \qty(\frac{B_i + B_{i\pm 1}}{2\times 3~\si{\micro G}})^{-\delta} \frac{\Delta t}{\Delta i^2}\text{ ,} 
+        \mathcal{D}_{i\pm\Delta i/2}&=\frac{D_{i\pm\Delta i}-D_i}{2} \frac{\Delta t}{\Delta i^2}\text{ ,} 
     \end{aligned} \label{eq:chapter_9_diffusion_numeric}
 \end{equation}
-\noindent is the dimensionless diffusion factor that considers the average magnetic field between voxel $i$ and $i\pm 1$ (see \autoref{eq:diffusion}). See \autoref{eq:09_transport_cells} for a graphical description of \autoref{eq:chapter_9_diffusion_numeric}. 
+\noindent is the dimensionless diffusion factor that considers the average magnetic field between voxel $i$ and $i\pm 1$ (see \autoref{eq:diffusion}) and $n_i^t\equiv n\qty(\gamma,r,u)$. See \autoref{eq:09_transport_cells} for a graphical description of \autoref{eq:chapter_9_diffusion_numeric}. 
 \par~\par 
-Errors in finite difference methods arise due to the discretization of the grid and approximating partial derivatives with truncated partial derivatives (see \autoref{sec:A2_diffusion}), leading to the discrepancy between the numerical and analytical solution. Finite difference methods are said to be `stable' when the numerical solution converges to the analytical solution. Von Neumann stability analysis treats the numerical error of finite difference techniques as a time-dependent Fourier expansion and determines the condition when the error at $t=t+1$ is less or equal to the error at $t=t$ (see \autoref{sec:A2_finite_stability}). That is, Von Neumann stability analysis determines whether any errors due to numerical techniques are magnified in further iterations. Using Von Neumann stability analysis, \autoref{eq:chapter_8_multizone_diff_numerical_sol} is stable when:
+Errors in finite difference methods arise due to the discretization of the grid and approximating partial derivatives with truncated partial derivatives (see \autoref{sec:A2_diffusion}), leading to the discrepancy between the numerical and analytical solution. Finite difference methods are said to be `stable' when the numerical solution converges to the analytical solution. Von Neumann stability analysis treats the numerical error of finite difference techniques as a time-dependent Fourier expansion and determines the condition when the error at time $t+1$ is less or equal to the error at time $t$ (see \autoref{sec:A2_finite_stability}). That is, Von Neumann stability analysis determines whether any errors due to numerical techniques are magnified in further iterations. Using Von Neumann stability analysis, \autoref{eq:chapter_8_multizone_diff_numerical_sol} is stable when:
 \begin{equation}
     \begin{aligned}
     D\frac{\Delta t}{\Delta x^2}\leq \frac{1}{2}\text{ .} 
@@ -210,7 +210,7 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
     \begin{aligned}
-    R_\text{source}\qty(\vec{s}_r)=
+    R_\text{source}\qty(\vec{s}_r)\equiv
     \begin{cases}
     1\text{, }-2~\pc\leq s_r\leq 2~\pc \\
     0\text{, }\quad\text{otherwise}
@@ -237,7 +237,7 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
 	\begin{aligned}
-		u_i&=\frac{i-s_i}{R_\text{diff}} \\
+		u_i&\equiv\frac{i-s_i}{R_\text{diff}} \\
 		\therefore \dd{s_i}&=-R_\text{diff}\dd{u_i}\text{ .} 
 	\end{aligned}
 \end{equation}
@@ -252,7 +252,7 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 
 \begin{equation}
     \begin{aligned}
-    \erf(a)&=\frac{2}{\sqrt{\pi}}\int_{0}^{a}\exp(-t^2)\dd{t}\text{ .} 
+    \erf(a)&\equiv \frac{2}{\sqrt{\pi}}\int_{0}^{a}\exp(-t^2)\dd{t}\text{ .} 
     \end{aligned}
 \end{equation}
 \noindent The analytical solution can be simplified to:
@@ -291,7 +291,7 @@ source (top-panel), diffusion suppression factor (middle-panel) and inversely pr
     \label{fig:09_multizone_adv_edxample}
 \end{SCfigure}
 
-\autoref{sec:09_Transport_multizone_diffusion} only considered a simple case of isotropic diffusion, where the diffusion tensor in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes a scalar ($\bar{\bar{D}}=D$). In this case, the overall net motion of the electron population is zero, i.e. the average position of the electrons does not change (see \autoref{fig:09_multizone_diff_3D}). However, this is not always the case. Consider an impulsive injector of cosmic rays moving at velocity $v$ in the laboratory frame (see the example in \autoref{fig:09_multizone_adv_edxample}). The average position of cosmic rays remains constant in the reference frame of the injector. While in laboratory frame, the average position of cosmic rays changes with time where the overall bulk particle flow is defined as advection.
+\autoref{sec:09_Transport_multizone_diffusion} only considered a simple case of isotropic diffusion, where the diffusion tensor in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes a scalar ($\bar{\bar{D}}\equiv D$). In this case, the overall net motion of the electron population is zero, i.e. the average position of the electrons does not change (see \autoref{fig:09_multizone_diff_3D}). However, this is not always the case. Consider an impulsive injector of cosmic rays moving at velocity $v$ in the laboratory frame (see the example in \autoref{fig:09_multizone_adv_edxample}). The average position of cosmic rays remains constant in the reference frame of the injector. While in laboratory frame, the average position of cosmic rays changes with time where the overall bulk particle flow is defined as advection.
 \par~\par
 Anisotropic diffusion describes a situation where cosmic rays have a preferential direction of diffusion. This can be due to the presence of strong magnetic field lines, inhibiting transport perpendicular to the magnetic field (see \cite{2013ApJ...768...73M,2013MNRAS.429.1643N,2023arXiv230402684L}) or some asymmetric force as typically seen in PWN. If diffusion is anisotropic then the second term in \autoref{eq:chapter_9_full_numerical_diffusion_equation} becomes:
 
@@ -321,7 +321,7 @@ The advective component of \autoref{eq:chapter_9_full_numerical_diffusion_equati
     \qty(\pdv{n}{t})_\text{adv}&=-\nabla\cdot\qty(n\vec{v}_A)\text{ ,} 
     \end{aligned} \label{eq:09_multizone_adv}
 \end{equation}
-\noindent where $v_A$ is the velocity of the bulk flow. Taking the simple case where $v_A$ is constant over time and both energetically and spatially independent, \autoref{eq:09_multizone_adv} becomes:
+\noindent where $\vec{v}_A\equiv [v_\text{A,x},v_\text{A,y},v_\text{A,z}]$ is the velocity of the bulk flow. Taking the simple case where $v_A$ is constant over time and both energetically and spatially independent, \autoref{eq:09_multizone_adv} becomes:
 
 \begin{equation}
     \begin{aligned}
