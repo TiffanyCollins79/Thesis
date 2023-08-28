@@ -16,7 +16,7 @@ First consider cosmic rays being injected by a homogeneous source into a region 
     \pdv{n\qty(\gamma,t)}{t}&=\pdv{ }{\gamma}\qty[\dot{\gamma}\qty(\gamma)n\qty(\gamma, t)] - \nu_\text{esc}\qty(\gamma)n\qty(\gamma,t) + S\qty(\gamma, t)\text{ ,}
     \end{aligned} \label{eq:chapter_7_cr_energy_distribution}
 \end{equation}
-\noindent where cosmic rays with Lorentz Factor $\gamma$ continuously lose energy at rate $\dv{\gamma}{t}=\dot{\gamma}$ and have probability $v_\text{esc}\dd{t}$ of escaping the system in time $\dd{t}$. Physically, $\dot{\gamma}\qty(\gamma)n\qty(\gamma,t)$ is the number of cosmic rays per unit time that cool at Lorentz factor $\gamma$ for a cosmic-ray density $n$. The following will describe the solution of \autoref{eq:chapter_7_cr_energy_distribution} using Laplace transformations.
+\noindent where cosmic rays with Lorentz Factor $\gamma$ continuously lose energy at rate $\dv{\gamma}{t}\equiv \dot{\gamma}$ and have probability $v_\text{esc}\dd{t}$ of escaping the system in time $\dd{t}$. Physically, $\dot{\gamma}\qty(\gamma)n\qty(\gamma,t)$ is the number of cosmic rays per unit time that cool at Lorentz factor $\gamma$ for a cosmic-ray density $n$. The following will describe the solution of \autoref{eq:chapter_7_cr_energy_distribution} using Laplace transformations.
 \par~\par
 Laplace transformations are used to reduce differential equations conveniently into an algebraic equation. The Laplace Transform for the function $f\qty(t)$ is given by:
 
@@ -25,7 +25,7 @@ Laplace transformations are used to reduce differential equations conveniently i
         \bar{f}\qty(q)&=\int_0^\infty e^{-qt}f\qty(t)\dd{t}\text{ .}
     \end{aligned}
 \end{equation}
-\noindent Similarly, the Laplace transformation for $f'\qty(t)=\dv{f}{t}$:
+\noindent Similarly, the Laplace transformation for $f'\qty(t)\equiv \dv{f}{t}$:
 
 \begin{equation}
 	\begin{aligned}
@@ -78,7 +78,7 @@ Laplace transformations are used to reduce differential equations conveniently i
     &=\int_\gamma^{\gamma'}\dd{\gamma''}\frac{1}{\dot{\gamma}\qty(\gamma'')}\text{ ,}
     \end{aligned} \label{eq:chapter_7_cooling_time}
 \end{equation}
-\noindent where $\gamma_0$ is the original Lorentz factor (at $t=0$) of a cosmic ray before cooling to Lorentz factor $\gamma$, i.e. $\tau(\gamma_0,\gamma)=t$. The term $\lambda\qty(\gamma',\gamma)$ is defined such that $1-\exp[-\lambda\qty(\gamma',\gamma)]$ is the probability that the cosmic ray escapes the region of interest while cooling from Lorentz factor $\gamma'$ to $\gamma$:
+\noindent where $\gamma_0$ is the original Lorentz factor (at $t=0$) of a cosmic ray before cooling to Lorentz factor $\gamma$, i.e. $\tau(\gamma_0,\gamma)\equiv t$. The term $\lambda\qty(\gamma',\gamma)$ is defined such that $1-\exp[-\lambda\qty(\gamma',\gamma)]$ is the probability that the cosmic ray escapes the region of interest while cooling from Lorentz factor $\gamma'$ to $\gamma$:
 
 \begin{equation}
     \begin{aligned}

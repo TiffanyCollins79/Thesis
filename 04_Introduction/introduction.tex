@@ -15,9 +15,9 @@ This chapter is divided as follows: \autoref{sec:01_PWN} discusses the structure
 \end{wrapfigure}
 
 In 1967 Jocelyn Bell and Antony Hewish observed a series of radio pulses every $1.33\si{\second}$ originating from the same location in the night sky. The object was label LGM-1, short for `little green men' and eventually, became the first known neutron star/pulsar. First proposed by Walter Baade and Fritz Zwicky in the 1930's \citep{1934PhRv...46...76B}, neutron stars are the rotating, highly dense, magnetised remnants of massive stars that emits a beam of photons from its magnetic poles. The magnetic and rotational axes do not necessarily align and the beams of photons rotate around the neutron star. A neutron star is a pulsar when the beam of light points in the direction of earth, forming the characteristic pulse.
-\par~\par
+\newpar
 Neutron stars are formed during a supernova when a massive star ($\gtrsim 8~M_\odot$) can no longer able support the immense gravitational pressure due to accumulation of iron in the core and undergoes core collapse. Gravitational pressure overcomes electron-degeneracy pressure, forcing electrons and protons in the core to combine to form neutrons. At this point, neutron-degeneracy and the strong force prevents further collapse and the neutron star is created. If the neutron star mass exceeds the Tolman–Oppenheimer–Volkoff limit ($1.5-3~M_\odot$), further collapse can result in a black hole \citep{1996A&A...305..871B, 2015SSRv..188..187S}.
-\par~\par
+\newpar
 Neutron stars have a mass of $1-3~M_\odot$, average density $\rho_0=2.8\times 10^{14}\si{\gram\per\centi\meter\cubed}$ (nuclear saturated mass density) and a radius $10-15~\si{\kilo\meter}$ which is subdivided into the following layers (see \autoref{fig:chapter1_pulsar_structure}) \citep{2007ASSL..326.....H}: the \textbf{atmosphere} consists of a thin layer of plasma (electrons and light nuclei) up to $10~\cm$ thick with temperature around $10^5-10^6~\si{\kelvin}$ \citep{2002nsps.conf..263Z}. The magnetic field of $10^{11}-10^{14}~\si{G}$ controls the dynamics of the atmosphere. Ions and electrons make up the \textbf{outer crust} in a layer of $0.3-0.5~\km$ thickness of density $\rho=4\times 10^{11}~\si{\gram\per\centi\meter\cubed}$. Just below the atmosphere, a thin non-degenerate electron gas form the edges of the outer crust. This gives way to a liquid/solid crust where nuclei undergo electron capture forming neutrons. The \textbf{inner crust} is around $1~\km$ thick and has average density of $0.3-0.5\rho_0$. The inner crust is composed of electrons, neutrons and neutron-rich nuclei. Both the inner and outer crust have been postulated to contain `nuclear pasta', degenerate matter where neutrons and electrons arrange themselves into complex structures \citep{PhysRevC.88.065807}. The \textbf{outer core} is the thickest part of the neutron star at around $9-12~\km$ thick and has density $0.5-2.0\rho_0$. The \textbf{inner core} exists at the centre of the more massive neutron stars with conditions so extreme, it has been postulated that protons and neutrons break up into their constituent quarks \citep{2007ASSL..326.....H}.
 \begin{figure}[ht]
 	\centering
@@ -25,8 +25,8 @@ Neutron stars have a mass of $1-3~M_\odot$, average density $\rho_0=2.8\times 10
 	\caption{Magnetosphere structure of a pulsar with spin velocity $\vec{\Omega}$ at angle $\alpha$ to the magnetic field axis and angle $\zeta$ to the observer. The acceleration site for the polar cap model and outer gap model is shown in green and blue respectively while the site for the slot gap model is enclosed by the red-dashed lines. Image courtesy of \cite{2014ARA&A..52..211C}.}
 	\label{fig:chapter1_magnetosphere_structure}
 \end{figure}
-\par~\par
-After core collapse, pulsars retain the majority of a progenitor star's angular momentum ($L=m\omega r$; \mbox{$m \equiv$ mass}, \mbox{$\omega\equiv$ spin velocity} and \mbox{$r$ = radius}), leading to the pulsar spinning rapidly on its axis. Based on the assumption that the magnetic flux of the progenitor star is conserved, \cite{1964ApJ...140.1309W} proposed that the pulsar's magnetic field could be as strong as $10^{14}-10^{16}~\si{G}$. The rotation coupled with the magnetic field, $\vec{B}$, generates an electric field given by:
+\newpar
+After core collapse, pulsars retain the majority of a progenitor star's angular momentum ($L=m\omega r$; $m$ is the pulsar mass, $\omega$ is the spin velocity and $r$ is the pulsar radius), leading to the pulsar spinning rapidly on its axis. Based on the assumption that the magnetic flux of the progenitor star is conserved, \cite{1964ApJ...140.1309W} proposed that the pulsar's magnetic field could be as strong as $10^{14}-10^{16}~\si{G}$. The rotation coupled with the magnetic field, $\vec{B}$, generates an electric field given by:
 
 \begin{equation}
     \begin{aligned}
@@ -40,9 +40,9 @@ where $\vec{v}$ is the linear velocity of rotation. The magnetic field rips part
     \end{aligned}
 \end{equation}
 where $c$ is the speed of light and $\Omega$ is the angular frequency of the pulsar.
-\par~\par
+\newpar
 To explain the pulsed radio and gamma-ray emission from the pulsar, \cite{1971ApJ...164..529S} developed the polar-cap model where particles are accelerated at the poles of the pulsar (see \autoref{fig:chapter1_magnetosphere_structure}) and interact with the magnetic field to produce an electron-positron pair ($e^-e^+$). The electron-positron pair emit photons via synchrotron radiation, which then produce a second electron-positron pair. This process cascades until the produced photon can no longer undergo pair production and contributes to the beamed radio emission. The polar-cap model predicts gamma-ray emission due to synchrotron and inverse Compton scattering from the $e^-e^+$ pair. The slot-gap model \citep{1983ApJ...266..215A} extends the acceleration site to higher altitudes until the last open magnetic field line (see \autoref{fig:chapter1_magnetosphere_structure}). The outer-gap model predicts gamma-ray emission due to particle acceleration between the region where $\vec{\Omega}\cdot\vec{B}=0$ and the light cylinder \citep{1986ApJ...300..500C}.
-\par~\par
+\newpar
 Over time, the rotational kinetic energy is dissipated at a rate described by:
 
 \begin{equation}
@@ -73,7 +73,7 @@ The braking index typically takes values between $2\text{ to }3$, where $n=3$ re
     \end{aligned} \label{eq:chapter1_characteristic_age}
 \end{equation}
 \noindent where $P$ and $\dot{P}$ are the period and period derivative of the pulsar. If the pulsar has a companion star, the extreme gravitational force of the pulsar can strip the companion of its mass and its angular rotation increases. Therefore, the characteristic age may not reflect the true age of the pulsar. The accretion of matter onto the pulsar is believed to be the origin for millisecond pulsars; pulsars with a period less than $10\si{\milli\second}$ \citep{1982Natur.300..728A}.
-\par~\par
+\newpar
 At the surface of the pulsar, the magnetic field depends on the period and spin down period (\cite{2012hpa..book.....L} and references within):
 
 \begin{equation}
@@ -82,7 +82,7 @@ At the surface of the pulsar, the magnetic field depends on the period and spin 
     \end{aligned}
 \end{equation}
 \noindent Pulsars with extremely strong magnetic fields are known as magnetars and may be linked to the origin of short gamma-ray bursts and soft gamma-ray repeaters \citep{1992ApJ...392L...9D}. For `regular' pulsars, the surface magnetic field has strength $B=10^{11-13}~\si{G}$ while magnetars have magnetic fields up to $10^{14-15}~\si{G}$ \citep{2007ASSL..326.....H}. Possible theories for the extreme magnetic field of a magnetar include; conservation of magnetic field flux of a star with an extreme magnetic field, collapse of a highly magnetized white dwarf or the magnetic field amplification during the birth of the neutron through a dynamo mechanism (the mechanism where a magnetic field is produced by charged plasma in a rotating celestial body) \citep{1992ApJ...392L...9D, 1993_magnetar, 1996AIPC..366..111D}.
-\par~\par
+\newpar
 The distance to a pulsar can be determined by considering the line of sight ISM. For ISM with electron density $n_e$, electrons naturally oscillate at plasma frequency, $\omega_p$:
 
 \begin{equation}
@@ -110,7 +110,7 @@ The distance to a pulsar can be determined by considering the line of sight ISM.
 \subsection{Time Evolution of Pulsar Wind Nebulae} \label{sec:01_intro_time_ev_PWN}
 Charged particles (electrons, positrons, protons and nuclei) from the pulsar escape the magnetosphere (which extends up to the light cylinder, see \autoref{fig:chapter1_magnetosphere_structure}) and form the powerful winds known as a PWN. These charged particles
 emit photons isotropically and are not tied to the pulsar beam. Therefore, the PWN emission is said to be `unpulsed'. PWNe typically evolve inside a supernova remnant (SNR) (see \autoref{appendix:snrs}).
-\par~\par
+\newpar
 The characteristics (e.g. morphology, spectral energy distribution) of a PWN depends on the age of the powering pulsar. The PWN can be divided into three stages: the expansion phase, a compression-expansion phase and the formation of a halo.
 
 \begin{figure*}[h!]
@@ -138,13 +138,13 @@ where $\dot{E}$ is the spin-down power and $\omega$ is the filling factor of the
     \end{aligned}
 \end{equation}
 where $E_\text{SNR}$ and $M_\text{ej}$ are the energy and ejected mass of the SNR respectively. At this stage the spin down energy of the pulsar, $E_0$, is roughly constant.
-\par~\par 
+\newpar 
 Asymmetry in the progenitor supernova will result in the pulsar gaining a so-called kick velocity of $300~\kmpersec$ \citep{2017ApJ...844....1K}, however at early stages the pulsar appears towards the centre of the SNR. 
 
 \subsubsection{Stage 2: ($10-100~\kiloyear$)}
 
 As the PWN evolves inside the SNR, the outer edges of the SNR collide with the ISM and forms a reverse shock (see \autoref{appendix:snrs}). The reverse shock travels radially inwards and crushes the PWN, increasing its pressure and magnetic field \citep{2006ARA&A..44...17G}. The pressure inside the PWN increases until it is greater than its surroundings, resulting in a subsonic expansion of the nebula. This compression and expansion phase repeats itself over a time scale of a few thousand years. The crushing of the PWN by the reverse shock is anti-symmetric due to the kick velocity of the pulsar and non-uniformity in the ISM, which leads to complex morphology of the PWN.
-\par~\par 
+\newpar 
 At the edge of the PWN, $r_\text{PWN}$, the pressure is balanced with that of the associated SNR. During stage 2, the SNR will be in its Sedov-Taylor phase of its evolution (see \autoref{appendix:snrs}) with radius $r_\text{SNR} \propto t^{\frac{2}{5}}$. Therefore the radius of the PWN is thought to be related to the SNR radius via \citep{2001A&A...380..309V}:
 
 \begin{equation}
@@ -152,7 +152,7 @@ At the edge of the PWN, $r_\text{PWN}$, the pressure is balanced with that of th
         r_\text{PWN}\propto t^{\frac{1}{3}} r_\text{SNR} = t^{11/15}\text{ .}
     \end{aligned}
 \end{equation}
-\par~\par
+\newpar
 High-energy electrons can escape the PWN into the ISM and can emit $\TeV$ gamma rays via inverse Compton interactions, forming a $\TeV$ halo \citep{2020A&A...636A.113G}.
 
 \subsubsection{Stage 3: Formation of $\TeV$ halos ($t\gtrsim100~\kiloyear$)}
@@ -170,7 +170,7 @@ At this stage, the kick velocity of the pulsar has allowed it to escape the SNR 
 \end{figure}
 
 The charged winds of PWNe are influenced by the presence of magnetic fields. The magnetic field structure of PWNe is believed to be toroidal in nature, with the viewing angle affecting observations at Earth \citep{2006ApJ...638..225K, 2012SSRv..166..231R}. If the axis of rotation aligns with the viewing angle, the magnetic field appears to be toroidal (see left hand panel of \autoref{fig:chapter1_magnetic_field_structure_PWN}). In contrast, the magnetic field of the pulsar will appear to be radially dependent if the viewing angle and axis of rotation is perpendicular to each other. More complex observed magnetic field structures occur when the viewing angle is between these two extremes (see the right hand panel of \autoref{fig:chapter1_magnetic_field_structure_PWN}).
-\par~\par
+\newpar
 The magnetic field evolves with the PWN. The average magnetic field of the PWN, $B_\text{PWN}$, at time $t$ can be found by considering the conservation of magnetic energy density (see \cite{2010ApJ...715.1248T} and references within):
 
 \begin{equation}
@@ -197,13 +197,13 @@ The magnetic field evolves with the PWN. The average magnetic field of the PWN, 
     \label{fig:chapter_1_PWN_spectra_evolution}
 \end{figure}
 A spectral energy distribution (SED) describes how the energy flux of photons (or particles) from a source varies with energy. \autoref{fig:chapter_1_PWN_spectra_evolution} from the study \cite{2009ApJ...703.2051G} shows the SED time evolution for an example PWN with braking index $3$ and electron injection luminosity of $10^{40}~\ergspersec$, where electrons follow a power-law spectrum ($\propto E^{-1.6}$).
-\par~\par
+\newpar
 At $t=0$ (stage 1), the injected electrons have not experienced any energy losses and form a strong peak in the X-ray regime through synchotron emission. The same electrons will interact with the cosmic microwave background (CMB) through inverse Compton interactions and form a strong peak in the $\GeV$ regime  (top-left panel of \autoref{fig:chapter_1_PWN_spectra_evolution}). As the PWN expands within the SNR, the overall magnetic field strength of the PWN decreases and the synchotron luminosity peak migrates to lower energies in the optical regime. This leaves more energy to be lost through inverse Compton (IC) interactions (see \autoref{sec:chapter_1_leptonic_gre}) and the IC peak transitions from the $\GeV$ to the $\TeV$ regime.
-\par~\par
+\newpar
 As the reverse shock compresses the PWN (stage 2), the increased magnetic field turbulence within the PWN strengthens the magnetic field. Thus, electrons injected into the PWN lose more energy to synchrotron losses and the ratio of synchrotron to IC flux increases (top-right panel of \autoref{fig:chapter_1_PWN_spectra_evolution}). At this point, two distinct peaks start to form in the synchrotron and inverse Compton spectra due to the two populations of young high-energy electrons and the older lower energy electrons that were initially injected into the PWN. During this compression, the pulsar may leave the PWN and no new electrons are injected into the system. The synchrotron and IC peak from the young high electrons subsequently disappears (black line in the top-right panel of \autoref{fig:chapter_1_PWN_spectra_evolution}).
-\par~\par
+\newpar
 The pressure inside the PWN increases due to compression until is greater than the surrounding ISM and the PWN expands. Before the pulsar re-enters the PWN, the overall magnetic field strength of the PWN decreases and the IC flux from the`  electron population increases at the expense of the synchrotron flux (top-right and bottom-left panel of \autoref{fig:chapter_1_PWN_spectra_evolution}). New electrons are injected in the PWN when the pulsar re-enters the system, creating two populations of old low-energy electrons and young high-energy electrons. This is reflected in the IC and synchrotron emission (dotted orange line in the bottom-left panel of \autoref{fig:chapter_1_PWN_spectra_evolution}).
-\par~\par
+\newpar
 As the PWN re-expands, the pressure inside the PWN decreases until it less than the pressure due to the associated SNR and the PWN is compressed. Similarly to the the first compression, the magnetic field strength inside the PWN increases and the ratio of synchrotron to IC flux increases. The pulsar will again leave the PWN (dotted yellow line in the bottom right-panel of \autoref{fig:chapter_1_PWN_spectra_evolution}) and no new electrons are injected into the system (stage 3). The synchrotron and IC peak from the young high-energy electrons migrates to lower energies due to high energy losses. However, the energy of the synchotron peak from old low-energy electrons increases while the energy of the IC peak decreases as a result of the increasing magnetic field.
 
 \subsection{TeV Pulsar Wind Nebula} \label{sec:01_PWN_TeVPWN}
@@ -230,9 +230,9 @@ It was postulated by \cite{1965PhRvL..15..577G} that PWN are a source of $\TeV$ 
 	\caption{(\textit{top-left}) An illustration of the Milky Way spiral arm structure and the location of identified and candidate PWN from the H.E.S.S. HPGS. Spin down power (\textit{top-right}), $\TeV$ luminosity (\textit{bottom-left}) and $\TeV$ efficiency (\textit{bottom-right}) vs the characteristic age of known PWN. Images from  \cite{2018A&A...612A...2H}.}
 	\label{fig:chapter1_PWN_properties}
 \end{figure}
-\par~\par
+\newpar
 The H.E.S.S. $\TeV$ gamma-ray survey revealed 78 very high-energy (VHE) gamma-ray sources \citep{2018A&A...612A...1H}: 12 are confirmed $\TeV$ PWNe, 8 are composite objects (PWN + SNR) and a further 36 are identified as $\TeV$ PWNe candidates. The H.E.S.S. observatory will be discussed further in \autoref{sec:02_HESS}. \cite{2018A&A...612A...2H} reviewed the H.E.S.S. Galactic Plane Survey (HPGS) in order to investigate the evolution and nature of TeV PWNe. It was found that the majority of PWN are located on or near the Milky Way spiral arms, with the Crux-Scutum arm hosting half of the PWN from the HGPS (see \autoref{fig:chapter1_PWN_properties}).
-\par~\par
+\newpar
 Through time-dependent modelling of $\TeV$ PWN, \cite{2018A&A...612A...2H}, it was noted that as PWNe age:
 
 \begin{enumerate}
@@ -249,15 +249,15 @@ Even though multiple PWNe have been observed and studies such as \cite{2018A&A..
 \subsubsection{How are electrons transported within pulsar wind nebula?}
 
 Electrons released by a pulsar are subject to varying transportation processes and energy losses. In a non-uniform environment (due to gas and magnetic field turbulence), electrons scatter off the ISM atoms and magnetic field turbulence resulting in diffusive motion outwards from the acceleration site (see \autoref{chapter_1_cr_propagation}). Electrons in PWNe may also experience an overlying bulk transport in a particular direction, i.e. advection. It has been proposed that advection dominates the particle transport close to the pulsar while diffusion dominates the outer reaches of the nebula \citep{2020A&A...636A.113G, 2021PhRvD.104l3017R}. Electrons undergo energy loss through inverse-Compton, synchrotron and Bremsstrahlung emission (see section \autoref{sec:chapter_1_leptonic_gre}). The rate at which an electron loses energy depends heavily on the surrounding environment.
-\par~\par
+\newpar
 A challenge in modelling PWN will be balancing the transportation of electrons and energy losses with respect to the surrounding environment to order to explain the multiwavelength emission.
 
 \subsubsection{Can pulsar wind nebula accelerate particles up to $\PeV$ energies?}
 
 The break between the knee ($1~\PeV=10^{15}~\eV$) and the ankle ($10^{18}~\si{\exa\electronvolt}$) in the cosmic-ray proton and nuclei spectrum at Earth suggests the transition from Galactic to extra-Galactic cosmic rays (see \autoref{sec:chapter_1_cr_spectrum}). Thus, what type of Galactic source is capable of accelerating cosmic rays up to PeV energies, i.e. a PeVatron?
-\par~\par
+\newpar
 Due to their large energy budget ($\approx 10^{51}~\ergs$ of kinetic energy) and production rate ($\approx 2-3$ supernova occur in the Milky Way per century), SNRs have been the most likely candidates for Galactic PeVatrons \citep{1983A&A...125..249L, 1984ARA&A..22..425H,2004MNRAS.353..550B,10.1093/mnras/sty1589}. Recently, the suitability of SNRs by themselves as PeVatrons has been called into question \citep{CRISTOFARI2020102492} and PWNe are now being considered as additional candidates \citep{2018MNRAS.478..926O, Xin_2019, de_O_a_Wilhelmi_2022,2022A&A...660A...8B}.
-\par~\par
+\newpar
 In 2021, the LHAASO facility identified 12 gamma-ray sources with the detection of photons between $100~\TeV$ to $1.4~\PeV$ \citep{2021Natur.594...33C}. These sources are prime PeVatron candidates; two being firmly identified PWNe and a further nine having possible PWN counterparts. One of the twelve PeVatron candidates is the Crab Nebula. The $\MeV$ synchrotron emission from the Crab Nebula and maximum gamma-ray energy of $\approx 0.9~\PeV$ heavily implies the presence of $\PeV$ electrons within the nebula \citep{doi:10.1126/science.abg5137}.
 
 \subsubsection{Is there a hadronic component to the pulsar wind nebula?}
@@ -329,9 +329,9 @@ This thesis will focus on the PWN associated with $\TeV$ source \mbox{HESS\,J182
 \end{table}
 
 Discovered in $2005$, \mbox{HESS\,J1825-137} is one of the most luminous and extensive $\TeV$ PWN \citep{2005A&A...442L..25A,2006A&A...460..365A}. \mbox{HESS\,J1825-137} is powered by \mbox{PSR\,J1826-1334}, which has a spin down power, period, period derivative and DM distance of $2.8\times 10^{36}~\ergspersec$, $101.5~\si{\milli\second}$, $7.5\times 10^{-14}~\si{\second\per\second}$ and $3.6~\kpc$ respectively \citep{2005AJ....129.1993M}. \autoref{eq:chapter1_characteristic_age} gives the characteristic age of PSR\,J1826-1334 as $21.4~\si{\kiloyear}$, placing the PWN in its second phase of its evolution (see \autoref{sec:01_intro_time_ev_PWN}). In support of this, a $\TeV$ halo appears to be forming around \mbox{HESS\,J1825-137} \citep{2020A&A...640A..76P}. The High Altitude Water Cherenkov (HAWC) observatory has observed gamma rays towards equivalent source \mbox{eHWC\,J1825-134} with energies greater than $100~\TeV$ \citep{PhysRevLett.124.021102}. Similarly, LHAASO identified \mbox{HESS\,J1825-137} (LHAASO\,J1825-1326) as a possible PeVatron candidate (see section.\,\autoref{sec:chapter_1_PeVatrons}) \citep{2021Natur.594...33C}. The equivalent $\GeV$ \textit{Fermi}-LAT source is \mbox{4FGL\,J1824.5-1351e}.  See \autoref{tab:chapter1_1825_parameters} and \autoref{fig:chapter1_hess_j1825_137_object_positions} for the spectral and spatial information of \mbox{HESS\,J1825-137} and equivalent sources.
-\par~\par
+\newpar
 The $\TeV$ morphology towards \mbox{HESS\,J1825-137} (see \autoref{fig:chapter1_hess_j1825_137_object_positions}) is asymmetric around the pulsar, with more extensive emission towards the southern side of the nebula (in Galactic coordinates). The extent (defined to be the point at which the emission drops to $1/e$ of its highest value) towards the south of \mbox{HESS\,J1825-137} was found \citep{2019A&A...621A.116H} to be $\ang{0.66}\pm\ang{0.03}_\text{stat}\pm\ang{0.04}_\text{sys}$, while the northern side is extended by $\ang{0.41}\pm\ang{0.03}_\text{stat}\pm\ang{0.09}_\text{sys}$. At a distance of $4.0~\kpc$, this equates to a physical distance of $91\pm4\pm6~\pc$ and $57\pm4\pm13~\pc$ to the south and north respectively. The southern side of the nebula is also extensive in $\GeV$ gamma rays as revealed by \cite{2019MNRAS.485.1001A}. This region of gamma-ray emission has a hard spectrum with photon index $1.9$ and also suggested to be powered by high-energy electrons from the PWN associated with \mbox{HESS\,J1825-137}.
-\par~\par
+\newpar
 The progenitor SNR associated with \mbox{HESS\,J1825-137} will likely be in its Sedov-Taylor phase stage of evolution based on the characteristic age of \mbox{PSR\,J1826-1334} (see \autoref{appendix:snrs}). \cite{2001A&A...380..309V} suggests that the size of a SNR will be approximately four times the size of the PWN. The radius of the $\TeV$ PWN associated with \mbox{HESS\,J1825-137} is $38~\pc$ for a distance of $4~\kpc$ (see \autoref{tab:chapter1_1825_parameters}), giving an estimated SNR radius of $~150~\pc$. \cite{2016MNRAS.458.2813V} noted a large H$\alpha$ rim-like structure indicative of a SNR shock lying $120~\pc$ to the south of \mbox{PSR\,J1826-1334}, which is consistent with the predicted SNR size. \cite{2016MNRAS.458.2813V} further postulated a connection between this H$\alpha$ rim and a second H$\alpha$ rim (discovered by \cite{2008MNRAS.390.1037S}) lying at a similar angular distance to the pulsar.
 
 \subsubsection{HESS\,J1826-130}
@@ -377,9 +377,9 @@ The progenitor SNR associated with \mbox{HESS\,J1825-137} will likely be in its 
 \end{figure}
 
 \mbox{HESS\,J1826-130}, an unidentified gamma-ray source situated $\approx\ang{0.7}$ to the Galactic north of \mbox{HESS\,J1825-137} (see \autoref{fig:chapter1_hess_j1825_137_object_positions}). Due to its proximity, \mbox{HESS\,J1826-130} was originally thought to be an extension of \mbox{HESS\,J1825-137} until it was classified as a separate source through its energy-dependent morphology \citep{2017AIPC.1792d0024A}. \mbox{HESS\,J1826-130} becomes more distinct from \mbox{HESS\,J1825-137} at higher gamma-ray energies. The analysis conducted by \cite{2020A&A...644A.112H} showed that \mbox{HESS\,J1825-137} contaminates the SED of \mbox{\mbox{HESS\,J1826-130}} by approximately $40\%$ below $1.5~\TeV$ and $20\%$ above $1.5~\TeV$. As shown by \autoref{fig:chapter1_hess_j1825_137_object_positions}, the position of \mbox{eHWC\,J1825-134} lies approximately midwway between \mbox{HESS\,J1825-137} and \mbox{HESS\,J1826-130}. Due to the coarse angular resolution of HAWC, \mbox{eHWC\,J1825-134} may represent the combined emission from both \mbox{HESS\,J1825-137} and \mbox{HESS\,J1826-130}.
-\par~\par
+\newpar
 Several objects towards \mbox{HESS\,J1826-130} have been associated with the gamma-ray emission based on spatial correlation. This includes the Eel nebula (\mbox{PWN\,G18.5-0.4}), a PWN with a long faint trail ($\ang{0.1}$) of hard X-ray emission above $2~\keV$ (see \autoref{fig:chapter1_hess_j1826_xray}) \citep{2007whsn.conf...24R,2022ApJ...930..148B}.  Similarly, \cite{2018A&A...612A...1H} proposed two possible SNRs as a source of protons interacting with the interstellar gas to produce the observed gamma-ray emission; \mbox{SNR\,G018.1-0.1} and \mbox{SNR\,G018.6-0.2.} As shown by the purple cross in \autoref{fig:chapter1_hess_j1825_137_object_positions}, \mbox{PSR\,1826-1256} is located towards \mbox{HESS\,J1826-130} and may be a source of electrons powering the PWN. \mbox{PSR\,1826-1256} has spin down power and characteristic age of $3.6\times10^{36}~\ergspersec$ and $14~\kiloyear$ respectively \citep{2010ApJS..187..460A}. %The lack of DM distance measurements to the pulsar makes it difficult to solidify its connection to the Eel nebula, \mbox{HESS\,J1826-130} and the aforementioned SNRs.
-\par~\par
+\newpar
 \cite{2016MNRAS.458.2813V} revealed dense turbulent molecular gas between \mbox{HESS\,J1825-137} and \mbox{HESS\,J1826-130}. The same study places the majority of these clouds in the $40-60~\kmpersec$ velocity range, equivalent to a distance of $3.5-4.5~\kpc$ as given by the Galactic rotation model (see \autoref{sec:06_galactic_rotation} \citep{1993A&A...275...67B}). This is consistent with the DM distance of \mbox{PSR\,J1826-1334}. Therefore, protons from the associated SNR may interact with these dense clouds through p-p collisions (see \autoref{sec:chapter1_hadronic_gr_emission}) to emit the high-energy gamma rays as seen by \mbox{eHWC\,J1825-134}.
 
 \section{Cosmic Rays} \label{sec:01_cosmic_rays}
@@ -391,13 +391,13 @@ As discussed in \autoref{sec:01_PWN}, PWN are a source of high-energy cosmic ray
 	\caption{Victor HESS about to ascend to an altitude $>5~\si{\kilo\meter}$ to discover cosmic rays \citep{hess1912observations}}
 	\label{fig:chapter1_hess_balloon_flight}
 \end{figure}
-\par~\par 
+\newpar 
 In 1896 Henri Becquerel discovered that uranium salts emitted a form of invisible radiation that could could penetrate through solid matter. At the beginning of the 20th century, it was generally believed that only elements in the Earth could emit such radiation. However in 1912, Victor HESS ascended $5~\km$ with an electroscope in a hot air balloon. He noticed that as altitude increased, the amount of radiation measured by the electroscope increased \citep{hess1912observations}. In contrast, Millikan submerged electroscopes in Muir Lake located in the Rocky Mountains \citep{1926PhRv...28..851M}.  As the electroscopes descended, less radiation was detected. The findings of Hess and Millikan showed that ionising radiation, later dubbed `cosmic rays', originate from the sky. In the mid 20th century, the level of cosmic-ray ionisation was found to be dependent on latitude due to deflection by the Earth's magnetic field \citep{1960Natur.187.1099S}.
-\par~\par
+\newpar
 Cosmic rays comprise of protons, electrons, nuclei, neutrinos and anti-matter. Within this thesis, cosmic rays will be referred to as protons and electrons. Protons consist of three quarks (two up and one down-quark) and are classified as hadrons, a composite subatomic particle made of two or more quarks held together by the strong force. Meanwhile, electrons are elementary particles that belong in the lepton `family' in the standard model of particle physics. Henc, hadronic cosmic rays refer to protons while leptonic cosmic rays refer to electrons.
-\par~\par 
+\newpar 
 Supernovae were proposed as a source for cosmic rays by \cite{1934PNAS...20..259B} in the 1930s. In his 1949 paper, Enrico Fermi provided a method where shock fronts (including those generated by SNRs) accelerate cosmic-ray protons up to ultra-high energies \citep{1949PhRv...75.1169F}. SNRs also accelerate cosmic-ray electrons up to high energies as indicated by X-ray emission produced through synchrotron interactions at the rims of SNRS such as \mbox{SN\,1006} \citep{1995Natur.378..255K}.
-\par~\par
+\newpar
 Other sources that have been proposed as accelerators of cosmic rays include PWN (as discussed in \autoref{sec:01_PWN}), star clusters, binary systems and active Galactic nuclei.
 
 \subsection{Acceleration of Charged Particles}
@@ -437,7 +437,7 @@ As discussed in \autoref{sec:01_PWN_pulsar}, pulsars are the highly dense, magne
 \end{equation}
 
 \noindent i.e. the electric field generated by the pulsar is proportional to the rotation and magnetic field of the pulsar. 
-\par~\par 
+\newpar 
 The change in energy, $\mathcal{E}$, of particles in the presence of an electric field is given by:
 
 \begin{equation}
@@ -463,7 +463,7 @@ where $0<\zeta<1$ is an "acceleration rate parameter" that depends on the accele
 \subsubsection{Acceleration by the pulsar wind nebula termination shock}
 
 A termination shock forms where the internal pressure of the PWN counteracts the ram pressure of the interstellar wind at approximately $r_\text{ts}=0.1~\pc$ (see \autoref{sec:01_intro_time_ev_PWN}). Particles can be accelerated by the TS through diffusive shock acceleration (DSA) where a particle can scatter back and forth a shock due to magnetic field irregularities, resulting in an overall gain of energy (see \autoref{A3_DSA}).
-\par~\par
+\newpar
 The magnetic field of the PWNe is toroidal in nature where the magnetic field lines are perpendicular to the propagation of the shock. For a pulsar injecting electrons/positrons, the structure of the shock depends on the ratio, $\sigma$, of the upstream magnetic energy and plasma energy \citep{1992ApJ...391...73G}:
 
 \begin{equation}
@@ -472,9 +472,9 @@ The magnetic field of the PWNe is toroidal in nature where the magnetic field li
     \end{aligned}
 \end{equation}
 \noindent where $B$ and $n$ is the upstream magnetic field and electron energy density respectively and $\gamma$ is the Lorentz factor of the electrons. Models of PWN suggest that the magnetization parameter takes values $10^{-3}-10^{-2}$ \citep{1974MNRAS.167....1R,1984ApJ...283..694K,2004MNRAS.349..779K}. The magnetic field turbulence is too weak for particles to scatter back and forth across the termination shock and DSA is suppressed \citep{2010MNRAS.402..321L,2015SSRv..191..519S}. In general, DSA for magnetic fields perpendicular to the shock propagation is too suppressed to accelerate electrons up the energies required to explain PWN emission \citep{2003APh....19..649M, 2014ApJ...783...91C}.
-\par~\par
+\newpar
 It has been suggested pre-acceleration of particles driven by magnetic reconnection at the shock front \citep{2001ApJ...547..437L,2003MNRAS.345..153L,2016JPlPh..82d6301L}, or resonant cyclotron absorption of electrons/positrons \cite{2001ApJ...547..437L}  followed by DSA may overcome these issues.
-\par~\par
+\newpar
 Any modelling conducted in this thesis will assume an injection of accelerated electrons.
 
 \subsection{Propagation of Charged Particles} \label{chapter_1_cr_propagation}
@@ -501,9 +501,9 @@ Neglecting any electric fields, the Lorentz equation (\autoref{eq:chapter_1_lore
     \end{aligned} \label{eq:chapter_1_gyroradius}
 \end{equation}
 \noindent where $p$ is the momentum of the charged particle. For relativistic cosmic rays $p\approx E/c$. If the charged particle has velocity at an angle $\theta$ to a magnetic field, it will spiral around the magnetic field direction as shown in the left panel of \autoref{fig:01_CR_in_Bfield}.
-\par~\par 
+\newpar 
 The magnetic field around PWNe and within dense gas clouds (see \autoref{eq:sec_Bfield_gas}) is not uniform and will affect the propagation of charged particles. The presence of magnetic field turbulence of length $\Delta x$ in an otherwise uniform field will affect the propagation of charged particles (see the right panel of \autoref{fig:01_CR_in_Bfield}). For charged particles, where the gyroradius is much less than the magnetic turbulence ($r_g\ll \Delta x$), the particle will follow the magnetic field lines with no changed to its pitch angle. When the gyroradius is much greater than the turbulence ($r_g\gg \Delta x$), the propagation will be unaffected. For charged particles, where the the gyroradius is similar in scale to the perturbation ($r_g\approx \Delta x$), the pitch angle $\theta$ changes and alters the direction of travel. In other words, charged particles scatter on the magnetic field turbulence that is of similar scale as the gyroradius.
-\par~\par
+\newpar
 The gyroradius of ultra-high energy particles ($r_g=3.6~\kpc$ at $10^{19}~\eV$ and $B=3~\si{\micro G}$) is so large that they tend to travel in a ballistic manner (for distances less than $r_g$) and thus point back to their place of origin. Lower energy particles (e.g. $r_g\approx 10^{-4}~\pc$ at $1~\TeV$ and $B=3~\si{\micro G}$) scatter multiple times and their trajectory tends to follow a random walk, i.e. diffusion.
 
 \subsubsection{Diffusion of charged particles} 
@@ -537,7 +537,7 @@ The diffusion coefficient, $D~\qty[\si{\centi\meter\squared\per\second}]$, descr
     \end{aligned}
 \end{equation}
 \noindent where $D_B=r_gv/3$ is known as the Bohm diffusion coefficient representing the case when $\lambda\approx r_g$.
-\par~\par 
+\newpar 
 Three different regimes of turbulence are considered: Bohm ($\Gamma=1$), Kraichnan ($\Gamma=\frac{3}{2}$) and Kolomogrov ($\Gamma=\frac{5}{3}$). Quasi-linear theory states that diffusion perpendicular to the magnetic field lines is negligible (\cite{2016MNRAS.461.3552N} and references within). As $r_g\propto E$ and $k\propto 1/E$, \autoref{eq:01_diff_parallel} becomes:
 
 \begin{equation}
@@ -546,7 +546,7 @@ Three different regimes of turbulence are considered: Bohm ($\Gamma=1$), Kraichn
     \end{aligned}
 \end{equation}
 This results in energy dependent diffusion: $D\propto E$ in the Bohm regime, $D\propto E^{\frac{1}{2}}$ in the Kraichnan regime and $D\propto E^{\frac{1}{3}}$ in the Kolmogrov regime. From cosmic-ray observations, values of the diffusion coefficient follows a power law spectrum ($D\propto E^{\delta}$) with $\delta$ taking values between $0.3-0.6$, implying a situation in the Kraichnan/Komogrov regime (e.g. see \cite{2007ARNPS..57..285S}).
-\par~\par 
+\newpar 
 Neglecting acceleration, \cite{2007Ap&SS.309..365G} parameterized the diffusion coefficient for cosmic rays of energy $E$ travelling in a molecular cloud with a magnetic field $B$ to be:
 \begin{align}
     D\qty(E,B)&=\chi D_0\qty(\frac{E/\GeV}{B/3~\si{\micro G}})^\delta\quad [\si{\centi\meter\squared\per\second}] \label{eq:diffusion}
@@ -563,7 +563,7 @@ Magnetic fields affect the propagation of charged particles through the Galaxy. 
     \end{aligned}
 \end{equation}
 \noindent where $B_\parallel$ is the magnetic field component along the line of sight, RM is the rotation measure due to Faraday rotation and DM (see \autoref{eq:chapter_1_dispersion_measurement} is the dispersion measurement of the pulsar. Magnetic fields are also measured through observations of synchrotron emission, where the intensity is proportional to the magnetic field strength and electron energy density (see \cite{2013pss5.book..641B} and references within).
-\par~\par 
+\newpar 
 The magnetic field in the `local' vicinity takes value $1-6~\si{\micro G}$ based on both rotation measure and synchrotron measurements  \citep{1989ApJ...343..760R,2001SSRv...99..243B}.  Using the rotation measures from $223$ pulsars, \cite{2006ApJ...642..868H} found the magnetic field strength in the Galactic disk was found to depend on the distance to the Galactic centre:
 
 \begin{equation}
@@ -580,7 +580,7 @@ where $B_0=2.1\pm 0.3~\si{\micro G}$ and $R_B=8.5\pm 4.7~\kpc$. This gives the a
     \caption{Cosmic-ray (and high-energy electron) energy spectrum at Earth as measured by multiple ground-based observatories. Image courtesy of \cite{2019BAAS...51c.131S}}
     \label{fig:chapter1_cosmic_ray_flux}
 \end{SCfigure}
-\par~\par
+\newpar
 The energy spectrum of cosmic rays (see \autoref{fig:chapter1_cosmic_ray_flux}) has been measured up to $10^{20}~\eV$ \citep{2022arXiv221116020T} and broadly follows a power-law:
 
 \begin{equation}
@@ -634,13 +634,13 @@ Below $10~\GeV$, the cosmic-ray energy spectrum is dominantly composed of high-e
     }
 \end{table}
 The transition from Galactic to extra-Galactic cosmic rays in the cosmic-ray spectrum occurs between $10^{15}~\eV$ and $10^{18}~\eV$ with Galactic cosmic rays expected to contribute up to $10^{17}~\eV=100~\PeV$ \citep{2016A&A...595A..33T}. Sources capable of accelerating particles up to and beyond $1~\PeV=10^{15}~\eV$ are known as PeVatrons. Finding Galactic PeVatrons are key to understanding the mechanism of accelerating particles up to $\PeV$ energies.
-\par~\par
+\newpar
 Cosmic rays with energies $1~\PeV$ and $100~\PeV$ have gyroradii of $\approx 0.4~\pc$ and $40~\pc$ respectively, making their direct origin impossible to determine. However, cosmic rays interact with interstellar gas and magnetic fields near their birthplace to produce gamma rays with energies greater than $100~\TeV$ (see \autoref{sec:chapter1_non_thermal_emission}). Therefore, any gamma-ray source with significant gamma-ray emission above $100~\TeV$ is an indicator of a PeVatron
-\par~\par 
+\newpar 
 The High-Altitude Water Cherenkov Gamma-ray observatory (HAWC) and the Large High Altitude Air Shower observatory (LHAASO) are observatories that detect the air shower triggered by gamma rays \citep{LHAASO_website, HAWC}. \autoref{tab:chapter1_peVatron_candidates} lists observed HAWC and LHAASO sources with significant gamma-ray emission above $100~\TeV$ with possible counterparts and accelerator type \citep{PhysRevLett.124.021102,2021Natur.594...33C}. In the past, SNRs have been regarded as the most likely source capable of accelerating protons up to $\PeV$ energies. However, there has been no firm identification of a SNR PeVatron and their suitability as a PeVatron has been called into question \citep{10.1093/mnras/sty1589,2019IJMPD..2830022G,2021Univ....7..324C,2022MNRAS.516..492B}. However, both the Crab Nebula and \mbox{HESS\,J1825-137} are confirmed $\TeV$ PWN counterparts of \mbox{LHAASO\,J0534+2202} and \mbox{LHAASO\,J1825-1326} respectively. Out of the remaining LHAASO candidates, at least eight have possible PWN counterparts. PWN are now being considered as possible candidates to accelerate electrons up to $\PeV$ energies \citep{2021ApJ...908L..49B,de_O_a_Wilhelmi_2022}. \cite{2022ApJ...928...19V} suggests that unresolved PWNe provides significant contribution to the diffuse gamma-ray emission above $100~\TeV$.
-\par~\par
+\newpar
 H.E.S.S. has only discovered one PeVatron that is postulated to be associated with the Galactic Center during an active phase \cite{2016Natur.531..476H}. They highlighted that the current rate of particle acceleration is not powerful enough to explain the cosmic-ray flux at Earth.  Alternatively, superbubbles and massive stellar clusters have been proposed as PeVatron candidates. Stellar clusters form within dense molecular clouds, creating an expanding `bubble' of low density ISM \citep{1998LNP...506..399I}. It has been suggested that turbulent plasma within superbubbles confine cosmic rays, allowing multiple shock fronts to accelerate them to high energies (e.g. see \cite{2022MNRAS.515.2256V} and references within).
-\par~\par 
+\newpar 
 The \mbox{Tibet AS$\gamma$} collaboration revealed the detection of diffuse gamma rays with energies between $100~\TeV$ to $10^3~\TeV=1~\PeV$ in the Galactic disk, indicating the presence of PeVatrons in the Galaxy \citep{PhysRevLett.126.141101}. Similarly, LHAASO reported measurements of the diffusive gamma-ray emission up to $1000~\PeV$ and suggests that $\TeV$ halos (see \autoref{sec:01_intro_time_ev_PWN}) significantly contribute to the diffusive emission up to the ultra-high energy band \citep{2023arXiv230505372C}.
 
 \section{Gamma rays: Messengers of Cosmic Rays} \label
@@ -689,7 +689,7 @@ Relativistic protons (and nuclei) can collide with gas in the ISM to form charge
     \caption{(\textit{top-left}) Proton-proton interaction cross section as given by \autoref{eq:chapter1_non_thermal_pp_cross_section}. (\textit{top-right}) Hadronic gamma-ray emission from a cosmic-ray proton with energy $E_p$ and target density $n_H=1~\centimeterminusthree$ (\textit{bottom}) Gamma-ray spectra from p-p interactions from cosmic-rays protons with an exponential cutoff power law distribution ($\dd{N}/\dd{E}\propto E^{-\Gamma}\exp(-E/E_c)$) with $E_c=10^3~\TeV$ (\textit{left}) and $\Gamma=2.0$ (\textit{right}).}
     \label{fig:chapter_1_non_thermal_hadronic_emission}
 \end{figure}
-\par~\par
+\newpar
 For a distribution of protons with spectral index $\Gamma$ and exponential cutoff energy $E_c$:
 
 \begin{equation}
@@ -706,7 +706,7 @@ For a distribution of protons with spectral index $\Gamma$ and exponential cutof
 \end{equation}
 \noindent where $c$ is the speed of light and $n_H$ is the density of the ambient medium.
 From the bottom panels in \autoref{fig:chapter_1_non_thermal_hadronic_emission} it can be seen that the shape of the p-p gamma-ray SED is influenced by the distribution of cosmic-ray protons. While the spatial morphology of hadronic gamma rays is shaped by interstellar gas, as seen in \autoref{eq:01_hadronic_g_spectrum}. In summary, gamma rays act as messengers for hadronic cosmic rays and carry information about the source and its surrounding environment.
-\par~\par
+
 The total inelastic cross section of p-p interactions for a proton of kinetic energy $T_p$ (where the total energy is $E_p=m_pc^2+T_p$) is given by \citep{2014PhRvD..90l3014K}:
 
 \begin{equation}
@@ -715,7 +715,7 @@ The total inelastic cross section of p-p interactions for a proton of kinetic en
     \end{aligned} \label{eq:chapter1_non_thermal_pp_cross_section}
 \end{equation}
 \noindent where $T_\text{thr}=2m_\pi + m_\pi^2/2m_p \approx 0.28~\GeV$ is the minimum proton kinetic energy to form a neutral pion ($E_\text{thr}=1.22~\GeV$). The top-left panel of \autoref{fig:chapter_1_non_thermal_hadronic_emission} shows the total inelastic cross section at different proton energies.
-\par~\par
+\newpar
 The time it takes for a proton to lose its energy (or `cool' to a lower energy) through p-p interactions in a medium with ambient density $n_H$ is given by \citep{2009ARA&A..47..523H}:
 
 \begin{equation}
@@ -725,7 +725,7 @@ The time it takes for a proton to lose its energy (or `cool' to a lower energy) 
 \end{aligned} \label{eq:chapter_1_pp_cooling time}
 \end{equation}
 \noindent \autoref{eq:chapter_1_pp_cooling time} shows that the cooling rate of protons is inversely proportional to the density of interstellar gas and approximately independent of the proton energy. Therefore, the brightness of gamma rays towards a source of cosmic-ray protons will correlate with the density morphology of the surrounding ISM gas.
-\par~\par 
+\newpar 
 Using GEANT4 models, \cite{2014PhRvD..90l3014K} parameterized the spectra of gamma rays of energy ($E_\gamma$) from a single proton with kinetic energy $T_p$ to be:
 
 \begin{equation}
@@ -775,7 +775,7 @@ Synchrotron radiation occurs when charged particles gyrate in a magnetic field o
 	\caption {An electron travelling at velocity $\vec{v}$ in the x-direction of the lab frame (\textit{left}) with a uniform magnetic field on the x-y plane at angle $\alpha$ to the x-axis. The rest frame of the particle (\textit{right}) travels at velocity $\vec{v}$ to the lab frame. The pure magnetic field $\vec{B}$ (i.e. no electric fields) in the lab frame appears as a mixture of magnetic field $\vec{B}'$ and electric field $\vec{E}'$ in rest frame.}
 	\label{fig:chapter_1_non_thermal_sync_frames}
 \end{figure}
-\par~\par 
+\newpar 
 In the particles rest frame ($\vec{v}=0$), the force acted on the particle is described by:
 
 \begin{equation}
@@ -864,7 +864,7 @@ Inverse-Compton emission occurs when an electron scatters off a photon:
 	\gamma_\text{low E} + e^{-'}&\rightarrow \gamma_{\TeV}+e^{-}\text{ ,}
 \end{align}
 where the final photon energy is greater than the original photon energy at cost of the electron energy ($E_{e^{-'}}>E_{e^-}$). Photon fields such as the CMB, infra-red photons, visible light, UV and X-rays provide target photons for the electron to scatter up to $\gamma$-ray energies. 
-\par~\par
+\newpar
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\textwidth]{04_Introduction/Images/non_thermal_emission/inverse_compton.pdf}
@@ -922,7 +922,7 @@ where the final photon energy is greater than the original photon energy at cost
     \end{aligned}   \label{eq:chapter_1_non_thermal_IC_e_energy_lost}
 \end{equation}
 \noindent where $U_\text{rad}=n\qty(E_i)E_i$ is the radiation energy density and $n\qty(E_i)$ is the number density.
-\par~\par
+\newpar
 The number density of target photons provided by photon fields such as the CMB can be described by a blackbody spectrum (see \autoref{sec:06_blackbodies}). Therefore, the spectrum from a single electron with energy $E_e$ scattering of a target photon with energy in range $\epsilon + \dd{\epsilon}$ is described by \citep{RevModPhys.42.237}:
 
 \begin{equation}
@@ -946,7 +946,7 @@ The number density of target photons provided by photon fields such as the CMB c
     \caption{IC spectrum from an electron of energy $E$ interacting with the CMB.  The red vertical lines represent the energy at which the IC emission approximately peaks assuming a CMB photon has energy $\approx 7\times 10^{-4}~\eV$.}
     \label{fig:01_IC_flux}
 \end{SCfigure}
-\par~\par
+\newpar
 In the Thompson regime, the inverse-Compton emission peaks at \citep{2009ARA&A..47..523H}:
 
 \begin{equation}
@@ -986,7 +986,7 @@ Bremsstrahlung emission occurs when an electron experiences deacceleration due t
         \phi_1&\approx\phi_2=4Z^2\qty[\ln(\frac{2E_iE_f}{k})-\half]\text{ .}
     \end{aligned}
 \end{equation}
-\par~\par
+\newpar
 The SED of Bremsstrahlung emission is proportional to the density of the ambient medium (see \autoref{eq:chapter_1_non_thermal_brem_SED}). Therefore in cases such as pulsar wind nebuae, where the ISM has been "swept" out by the progenitor stellar wind, inverse Compton and synchrotron emission will generally dominate over Bremsstrahlung emission. The electron energy loss rate, as derived by \cite{RevModPhys.42.237}, for an electron interacting with ambient gas with density $n_z$ and atomic number $Z$ is related by:
 
 \begin{equation}
@@ -1065,7 +1065,7 @@ where $\sum_{i}$ sums over all radiation fields contributing to the Inverse-Comp
     \end{aligned} \label{eq:chapter_1_non_thermal_leptonic_cooling_rate2}
 \end{equation}
 \noindent \autoref{fig:chapter_1_non_thermal_emission_lep_cooling_losses} shows the individual and total cooling time for electrons for different electron energies in a uniform cloud with varying magnetic field strengths. Synchrotron losses dominate in high magnetic fields and/or high electron energies. For example, synchrotron losses are dominant for electrons greater $\approx 85~\TeV$ than in a magnetic field of $3~\si{\micro G}$ and dominant for magnetic fields greater than $\approx 12~\si{\micro G}$ for $1~\TeV$ electrons scattering against CMB photons ($u_0=0.26~\si{\electronvolt\per\centi\meter\cubed}$ and $T=2.7~\si{\kelvin}$). 
-\par~\par 
+\newpar 
 \autoref{fig:01_sync_flux} and \autoref{fig:01_IC_flux} shows the synchrotron and IC emission from a single electron energy. The SED from an electron distribution $J_e\qty(E_e)$ is described by:
 
 \begin{equation}
@@ -1080,5 +1080,5 @@ where $\sum_{i}$ sums over all radiation fields contributing to the Inverse-Comp
     \frac{f_\text{IC}\qty(E)}{f_s\qty(E)}&=\frac{U_\text{rad}}{U_B}\text{ .}
     \end{aligned} \label{eq:chapter_IC_2_sync_ratio}
 \end{equation}
-\par~\par
+\newpar
 Electrons escaping the PWN cool at a rate that is dependent on the surrounding environment (\autoref{eq:chapter_1_non_thermal_leptonic_cooling_rate2}), affecting the energy distribution of cosmic rays and the subsequent multiwavelength emission (\autoref{eq:01_non_thermal_leptonic_total}). Therefore, \autoref{sec:07_particle_ev} will describe the evolution of cosmic rays (leptonic and hadronic) and the subsequent SED.

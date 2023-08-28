@@ -31,10 +31,10 @@
 \contentsline {section}{\numberline {2.3}Gamma rays: Messengers of Cosmic Rays}{26}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}A Brief History}{26}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Hadronic Gamma-Ray Emission}{26}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Leptonic Gamma-Ray Emission}{29}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Leptonic Gamma-Ray Emission}{28}{subsection.2.3.3}%
 \contentsline {subsubsection}{Synchrotron Radiation}{29}{subsubsection*.38}%
 \contentsline {subsubsection}{Inverse-Compton emission}{31}{subsubsection*.41}%
-\contentsline {subsubsection}{Bremsstrahlung Emission}{34}{subsubsection*.44}%
+\contentsline {subsubsection}{Bremsstrahlung Emission}{33}{subsubsection*.44}%
 \contentsline {subsubsection}{Total Leptonic Radiative Processs}{34}{subsubsection*.45}%
 \contentsline {chapter}{\numberline {3}Gamma-Ray Astronomy}{37}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Air Showers}{37}{section.3.1}%
