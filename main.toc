@@ -7,9 +7,9 @@
 \contentsline {section}{\numberline {2.1}Pulsar Wind Nebulae}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Neutron Stars/ Pulsars}{4}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Time Evolution of Pulsar Wind Nebulae}{8}{subsection.2.1.2}%
-\contentsline {subsubsection}{Stage 1: Expansion Phase ($<10~\si {\kilo \year }$)}{8}{subsubsection*.8}%
-\contentsline {subsubsection}{Stage 2: ($10-100~\si {\kilo \year }$)}{9}{subsubsection*.9}%
-\contentsline {subsubsection}{Stage 3: Formation of $\si {\tera \electronvolt }$ halos ($t\gtrsim 100~\si {\kilo \year }$)}{9}{subsubsection*.10}%
+\contentsline {subsubsection}{Stage 1: Expansion Phase ($<10\,\si {\kilo \year }$)}{8}{subsubsection*.8}%
+\contentsline {subsubsection}{Stage 2: ($10-100\,\si {\kilo \year }$)}{9}{subsubsection*.9}%
+\contentsline {subsubsection}{Stage 3: Formation of $\si {\tera \electronvolt }$ halos ($t\gtrsim 100\,\si {\kilo \year }$)}{9}{subsubsection*.10}%
 \contentsline {subsubsection}{Time Evolution of the PWN Magnetic Field Structure}{9}{subsubsection*.11}%
 \contentsline {subsubsection}{Time Evolution of the Spectral Energy Distribution}{10}{subsubsection*.13}%
 \contentsline {subsection}{\numberline {2.1.3}TeV Pulsar Wind Nebula}{12}{subsection.2.1.3}%
