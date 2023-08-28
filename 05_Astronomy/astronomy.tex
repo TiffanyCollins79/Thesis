@@ -1,15 +1,15 @@
 \chapter{Gamma-Ray Astronomy} \label{sec:02_astronomy}
 
 \autoref{sec:01_PWN_chapter} discussed how PWNe like \mbox{HESS\,J1825-137} accelerate cosmic rays up to $\TeV$ energies and how gamma rays can be used as alternative messengers. To study accelerators like \mbox{HESS\,J1825-137}, astronomers require instruments that are capable of observing gamma rays up to $\TeV$ energies.
-\par~\par 
-Upon reaching the Earth atmosphere, gamma rays produce air showers comprising of billions of secondary particles and photons. Astronomers in the early 20th century placed Geiger counters on balloons to detect gamma rays at high altitude \citep{hess1912observations}. Now, satellites like \textit{Fermi}-LAT are used to observe gamma rays less than $\approx 0.1~\TeV$ before they enter the atmosphere \citep{2010RPPh...73g4901M}. Alternatively, ground-based observatories analyse the air shower itself to reconstruct information about the original gamma ray. This is a method used by the High Energy Stereoscopic System (H.E.S.S.) to study $\TeV$ gamma-ray sources like \mbox{HESS\,J1825-137}.
-\par~\par 
+\newpar 
+Upon reaching the Earth atmosphere, gamma rays produce air showers comprising of billions of secondary particles and photons. Astronomers in the early 20th century placed Geiger counters on balloons to detect gamma rays at high altitude \citep{hess1912observations}. Now, satellites like \textit{Fermi}-LAT are used to observe gamma rays less than $\approx 0.1\,\TeV$ before they enter the atmosphere \citep{2010RPPh...73g4901M}. Alternatively, ground-based observatories analyse the air shower itself to reconstruct information about the original gamma ray. This is a method used by the High Energy Stereoscopic System (H.E.S.S.) to study $\TeV$ gamma-ray sources like \mbox{HESS\,J1825-137}.
+\newpar 
 This section will provide a brief overview of how gamma rays interact with the atmosphere and the techniques used to observe the subsequent shower of particles. Finally, there will be a description of the gamma-ray observatories whose data products were utilised in this thesis.% in particular the High Energy Stereoscopic System (H.E.S.S.).
 
 \section{Air Showers}
 
 The presence of molecules in the atmosphere provides a target for gamma rays and cosmic-ray protons to interact and produce lower energy particles (electrons, positrons, pions). The daughter particles then go on to decay or interact with the atmosphere to produce even lower energy particles. This process cascades to form an air shower which is shown in \autoref{fig:chapter_2_air_shower_em} and \autoref{fig:chapter_2_air_shower_hadron}.
-\par~\par 
+\newpar 
 The morphology and structure of the air shower is dependent on the atmosphere. Atmospheric depth is defined to be the attitudinal integral of atmospheric density above height $h$ \citep{alma9924446790001811}:
 
 \begin{equation}
@@ -24,7 +24,7 @@ The morphology and structure of the air shower is dependent on the atmosphere. A
     X=X_0\exp(-h/h_0)\text{ ,}
     \end{aligned}
 \end{equation}
-where $h_0$ is the scale height of the atmosphere and $X_0=1030~\grampercentimetresquared$ is the atmospheric depth at sea level. 
+where $h_0$ is the scale height of the atmosphere and $X_0=1030\,\grampercentimetresquared$ is the atmospheric depth at sea level. 
 
 \subsection{Gamma-Ray Air Showers} \label{sec:05_air_shower_gamma_ray}
 To produce an electron-positron pair, a gamma ray must be in the vicinity of a nucleus to conserve both momentum and energy. When a gamma ray above a few $\GeV$ enters the atmosphere, the presence of atmospheric nuclei allows pair production to occur:
@@ -39,8 +39,8 @@ To produce an electron-positron pair, a gamma ray must be in the vicinity of a n
     E_{e^\pm}&\approx \half\qty(E_\gamma-2m_ec^2)\text{ ,}
     \end{aligned} \label{eq:05_gamma_astrom_pair_condition}
 \end{equation}
-\noindent with $E_\gamma$ being the energy of the original gamma ray. Hence, the original gamma ray must have a threshold energy of twice the rest mas of the electron ($m_ec^2=511~\keV$) to undergo pair production.
-\par~\par
+\noindent with $E_\gamma$ being the energy of the original gamma ray. Hence, the original gamma ray must have a threshold energy of twice the rest mas of the electron ($m_ec^2=511\,\keV$) to undergo pair production.
+\newpar
 Electrons and positrons interact with atmospheric nucleii through Bremsstrahlung interactions (see \autoref{sec:chapter_1_leptonic_gre}), resulting in the production of photons:
 
 \begin{equation}
@@ -56,7 +56,7 @@ Electrons and positrons interact with atmospheric nucleii through Bremsstrahlung
     \end{aligned}
 \end{equation}
 \noindent where the radiation length, $\lambda_r$, is characteristic to a material and relates to the energy loss of high-energy particles as it transverses through a medium.
-\par~\par 
+\newpar 
 Positrons can also annihilate with atmospheric electrons to produce two photons:
 
 \begin{equation}
@@ -78,7 +78,7 @@ where $k$ is the energy of the resulting photons.
     \caption{Heitler's model of the formation of an air shower triggered by a gamma ray \citep{1954qtr..book.....H}. The gamma ray undergoes pair production to produce an electron and positron. In turn, the electron/positron undergo Bremsstrahlung interactions and/or electron-positron annihilation to produce photons. This process cascades into the air shower.}
     \label{fig:chapter_2_air_shower_em}
 \end{SCfigure}
-\par~\par 
+\newpar 
 Heitler's model of electromagnetic air showers (see \autoref{fig:chapter_2_air_shower_em}) provides a method to model the development of the electromagnetic shower \citep{1934RSPSA.146...83B}. It assumes that the radiation length for both pair production and Bremsstrahlung interactions are identical due to a similar cross section. Therefore, the atmospheric depth of the air shower after $n$ interactions is:
 
 \begin{equation}
@@ -100,8 +100,8 @@ Heitler's model of electromagnetic air showers (see \autoref{fig:chapter_2_air_s
     \end{aligned}
 \end{equation}
 \noindent where $E_0$ is the energy of the original gamma-ray photon that triggered the air shower.
-\par~\par 
-The exponential growth of the air shower continues until the daughter particles reach a critical energy $E_c$ ($\approx 85~\MeV$ in air) where ionisation losses dominate over radiative losses \citep{1954qtr..book.....H}. At this point, the shower has the maximum number of particles:
+\newpar 
+The exponential growth of the air shower continues until the daughter particles reach a critical energy $E_c$ ($\approx 85\,\MeV$ in air) where ionisation losses dominate over radiative losses \citep{1954qtr..book.....H}. At this point, the shower has the maximum number of particles:
 
 \begin{equation}
     \begin{aligned}
@@ -137,7 +137,7 @@ The exponential growth of the air shower continues until the daughter particles 
     \end{aligned}
 \end{equation}
 \noindent In air, electromagnetic air showers have elongation rate of $85\grampercentimetresquared$ per decade of primary energy.
-\par~\par
+\newpar
 
 Further studies \citep{MATTHEWS2005387} showed that the the maximum number of electrons predicted by Heitler's model, $N_\text{e, H}$ overestimates the number of particles compared to that measured by experiments. \cite{MATTHEWS2005387} revised the maximum number of particles, $N_\text{e, M}$, to be:
 
@@ -165,7 +165,7 @@ Further studies \citep{MATTHEWS2005387} showed that the the maximum number of el
     \label{fig:chapter_2_air_shower_hadron}
 \end{SCfigure}
 Both gamma rays and cosmic rays initiate air showers upon entering the atmosphere. Therefore, any observatory dedicated to studying gamma rays must be able to distinguish between a gamma-ray air shower and cosmic-ray air shower.
-\par~\par
+\newpar
 Cosmic rays (protons or nucleii) above a few $\GeV$ undergo proton-proton collisions (see \autoref{sec:chapter1_hadronic_gr_emission}) with atmospheric nuclei and produce pions.
 
 \begin{equation}
@@ -175,7 +175,7 @@ Cosmic rays (protons or nucleii) above a few $\GeV$ undergo proton-proton collis
 \end{equation}
 
 \noindent where the ratio of charged pions to neutral pions is approximately $2:1$. Charged pions decay into neutrinos and muons, with muons then decaying into electrons, positrons, neutrinos and anti-neutrinos. The presence of muons in an air shower can indicate whether the shower was triggered by a gamma ray or cosmic ray. Electrons and positrons interact with the atmosphere via Bremstrahlung and electron-positron annihilation to produce photons as discussed in \autoref{sec:05_air_shower_gamma_ray}. Unlike gamma-ray air showers, the original cosmic ray can go on to undergo further proton-proton collisions to increase the number of charged pions in the atmosphere. This development of cosmic-ray air showers is shown in \autoref{fig:chapter_2_air_shower_hadron}.
-\par~\par
+\newpar
 The decay length, $d$, is defined to be the distance a particle with Lorentz factor $\gamma$ will travel before it decays \citep{MATTHEWS2005387}:
 
 \begin{equation}
@@ -183,15 +183,15 @@ The decay length, $d$, is defined to be the distance a particle with Lorentz fac
     d=\beta \gamma c \tau \text{ ,}
     \end{aligned}
 \end{equation}
-\noindent where ($\tau$ is the mean lifetime of the particle). The mean life time of charged pions is approximately $2.6\times 10^{-8}~\si{\second}$, while neutral pions have a mean life of $8.4\times 10^{-17}~\secs$. This gives the decay length for neutral and charged pions to be $d_{\pi_0}=\gamma \times  2.51 \times 10^{-6}~\cm$ and $d_{\pi_\pm}= 780\gamma~\cm$ respectively. Compared to charged pions, neutral pions decay essentially where they were created.
+\noindent where ($\tau$ is the mean lifetime of the particle). The mean life time of charged pions is approximately $2.6\times 10^{-8}\,\si{\second}$, while neutral pions have a mean life of $8.4\times 10^{-17}\,\secs$. This gives the decay length for neutral and charged pions to be $d_{\pi_0}=\gamma \times  2.51 \times 10^{-6}\,\cm$ and $d_{\pi_\pm}= 780\gamma\,\cm$ respectively. Compared to charged pions, neutral pions decay essentially where they were created.
 %Unlike Heitler's model of gamma-ray air showers, the radiation length for the decay of neutral and charged pions cannot be assumed to be identical.
 \begin{SCfigure}[][h!]
     \centering
     \includegraphics[width=0.7\textwidth]{05_Astronomy/Images/air_shower/cosmic_ray_vs_gamma_ray2.pdf}
-    \caption{Monte Carlo simulations of a air shower triggered by a $0.3~\TeV$ gamma ray (\textit{left}) vs an air shower triggered by a $1~\TeV$ cosmic-ray proton (\textit{right}). Image courtesy of \cite{2008RPPh...71i6901A}}
+    \caption{Monte Carlo simulations of a air shower triggered by a $0.3\,\TeV$ gamma ray (\textit{left}) vs an air shower triggered by a $1\,\TeV$ cosmic-ray proton (\textit{right}). Image courtesy of \cite{2008RPPh...71i6901A}}
     \label{fig:chapter_2_air_shower2}
 \end{SCfigure}
-\par~\par 
+\newpar 
 After $n$ interactions, there are $N_{\pi_\pm}$ charged pions with individual energy \citep{MATTHEWS2005387}:
 
 \begin{equation}
@@ -200,7 +200,7 @@ After $n$ interactions, there are $N_{\pi_\pm}$ charged pions with individual en
     \end{aligned}
 \end{equation}
 \noindent where $E_0$ is the energy of the initial cosmic ray and $N_\text{ch}$ is the multiplicity of charged particles produced in hadronic interactions.
-\par~\par
+\newpar
 \cite{MATTHEWS2005387} gives the number of interactions (of the initial cosmic ray) for a pion to reach critical energy, $E_c^\pi$, to be:
 \begin{equation}
     \begin{aligned}
@@ -212,15 +212,15 @@ After $n$ interactions, there are $N_{\pi_\pm}$ charged pions with individual en
 \begin{equation}
     \begin{aligned}
     E_0&=N_\mu E_c^\pi + N_c^e N_\text{max} \\
- &\approx 0.85~\GeV\qty(N_e+24 N_\mu)\text{ ,}
+ &\approx 0.85\,\GeV\qty(N_e+24 N_\mu)\text{ ,}
     \end{aligned}
 \end{equation}
 \noindent where $N_e=N_\text{max}/10$ from \autoref{eq:chapter_2_gas_e_correction_factor}
-\par~\par
+\newpar
 The atmospheric depth where the number of air shower particles is at a maximum, $X_\text{max}^p$, is found through \citep{MATTHEWS2005387}:
 \begin{equation}
     \begin{aligned}
-    X_\text{max}^p&= X_0 + \lambda_r\ln(\frac{E_0}{3N_\text{ch}E_c^e}) =470+58\log_{10}\qty(E_0/1~\PeV)~\grampercentimetresquared \text{ ,}  
+    X_\text{max}^p&= X_0 + \lambda_r\ln(\frac{E_0}{3N_\text{ch}E_c^e}) =470+58\log_{10}\qty(E_0/1\,\PeV)\,\grampercentimetresquared \text{ ,}  
     \end{aligned}
 \end{equation}
 \noindent where $X_0$ is the atmospheric depth where the shower was initiated. The atmospheric depth maximum can be compared to the atmospheric depth maximum for gamma-ray air showers via:
@@ -234,10 +234,10 @@ The atmospheric depth where the number of air shower particles is at a maximum, 
 \begin{equation}
     \begin{aligned}
     \Lambda^p &= \Lambda^\gamma + \dv{ }{\log_{10}E_0}\qty[X-\lambda_r\ln 3N_{ch}] \\
-    &\approx 58~\grampercentimetresquared~\text{per decade of primary energy}\text{ .}
+    &\approx 58\,\grampercentimetresquared\,\text{per decade of primary energy}\text{ .}
     \end{aligned}
 \end{equation}
-\noindent \autoref{fig:chapter_2_air_shower2} compares Monte Carlo simulations of air showers triggered by a $0.3~\TeV$ gamma ray and a $1~\TeV$ cosmic-ray proton, where the hadronic air shower is more spread out than gamma-ray air shower. Additionally, any photons produced by proton-proton interactions can trigger an electromagnetic shower within a hadronic air shower. Using this information, gamma-ray observatories can analyse the air shower to determine whether the initial particle was a gamma ray or proton.
+\noindent \autoref{fig:chapter_2_air_shower2} compares Monte Carlo simulations of air showers triggered by a $0.3\,\TeV$ gamma ray and a $1\,\TeV$ cosmic-ray proton, where the hadronic air shower is more spread out than gamma-ray air shower. Additionally, any photons produced by proton-proton interactions can trigger an electromagnetic shower within a hadronic air shower. Using this information, gamma-ray observatories can analyse the air shower to determine whether the initial particle was a gamma ray or proton.
 
 \subsection{Cherenkov Light and Cherenkov Telescopes}
 
@@ -248,10 +248,10 @@ Particles produced in a electromagnetic air shower can travel faster than the sp
     c_n = \frac{c}{n}\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent where $c=3.0\times 10^8~\si{\meter\per\second}$ and $n>1$.
-\par~\par 
+\noindent where $c=3.0\times 10^8\,\si{\meter\per\second}$ and $n>1$.
+\newpar 
 A charged particle polarises the medium it is travelling through. As the particle propagates, the polarised medium oscillates back to its resting state and emits electromagnetic radiation. This is shown in \autoref{fig:chapter_2_chernkov_light}, where the resulting radiation can be described by Huygen's construction of light. For a particle that is travelling with velocity less than the speed of light, the electromagnetic radiation wave-fronts will destructively interfere with each other with no net production. If the charged particle is travelling faster than the speed of light in that medium, the electromagnetic wave-fronts will constructively interfere and there is a net production of light.
-\par~\par
+\newpar
 \begin{SCfigure}[1][h!]
     % \centering
     \includegraphics[width=0.5\textwidth]{05_Astronomy/Images/air_shower/chernkov_light.pdf}
@@ -267,7 +267,7 @@ Cherenkov light is emitted in a cone in the direction of particle propagation (s
     \end{aligned}
 \end{equation}
 \noindent For ultra relativistic particles, $\beta\rightarrow 1$ and the light is emitted at angle $\theta \rightarrow \cos[-1](1/n)$.
-\par~\par
+\newpar
 The threshold for particle with mass $m$ to produce Cherenkov light occurs when it is travelling at the speed of light in a medium $(v=c/n)$:
 
 \begin{equation}
@@ -275,7 +275,7 @@ The threshold for particle with mass $m$ to produce Cherenkov light occurs when 
     E_\text{thr}&=\gamma mc^2=\frac{mc^2}{\sqrt{1-{1}/{n^2}}}\text{ .}
     \end{aligned}
 \end{equation}
-\noindent For electrons at sea level ($n=1.0003$), the threshold energy is $\approx 21~\MeV$. In water, $n=1.33$, the threshold energy decreases to $1~\MeV$. Observatories such as the Pierre Auger observatory and the High Altitude Water Cherenkov gamma-ray observatory use water tanks (which has a higher refractive index $n=1.33$, hence slower speed of light than air) to produce Cherenkov light \citep{alma9924446790001811}.
+\noindent For electrons at sea level ($n=1.0003$), the threshold energy is $\approx 21\,\MeV$. In water, $n=1.33$, the threshold energy decreases to $1\,\MeV$. Observatories such as the Pierre Auger observatory and the High Altitude Water Cherenkov gamma-ray observatory use water tanks (which has a higher refractive index $n=1.33$, hence slower speed of light than air) to produce Cherenkov light \citep{alma9924446790001811}.
 
 \begin{figure}[h]
     \centering
@@ -285,9 +285,9 @@ The threshold for particle with mass $m$ to produce Cherenkov light occurs when 
     (\textit{right}) Projection of the Cherenkov light onto one camera focal plane by the four telescopes. Images courtesy of \cite{2009ExA....25..173V,}.}
     \label{fig:chapter_2_chernkov_telescope}
 \end{figure}
-\par~\par
-The air shower forms an observable pool of Cherenkov light on the ground as shown by the left-hand panel of \autoref{fig:chapter_2_chernkov_telescope}. At sea level, the radius of the light cone is approximately $125~\si{\meter}$ for a primary gamma ray of energy $0.1~\TeV$ but can extend to $1~\si{\kilo\meter}$ for energies greater than $100~\TeV$ \citep{Patterson_1983}.  A telescope can be placed anywhere within the light pool to detect the Chernkov light produced from particles in an air shower. Hence, the the effective collection area of the telescopes becomes the area of the light pool at the ground, which is of order $\approx1~\si{\kilo\meter\squared}$.
-\par~\par
+\newpar
+The air shower forms an observable pool of Cherenkov light on the ground as shown by the left-hand panel of \autoref{fig:chapter_2_chernkov_telescope}. At sea level, the radius of the light cone is approximately $125\,\si{\meter}$ for a primary gamma ray of energy $0.1\,\TeV$ but can extend to $1\,\si{\kilo\meter}$ for energies greater than $100\,\TeV$ \citep{Patterson_1983}.  A telescope can be placed anywhere within the light pool to detect the Chernkov light produced from particles in an air shower. Hence, the the effective collection area of the telescopes becomes the area of the light pool at the ground, which is of order $\approx1\,\si{\kilo\meter\squared}$.
+\newpar
 The top-right hand panel of \autoref{fig:chapter_2_chernkov_telescope} shows how Cherenkov light is observed by single and multiple telescopes. To characterise Cherenkov light, the light is first modelled by an ellipse and then parameters such as the width, length, location \& azimuthal angle to the center of the telescope is found. These parameters, known as the Hillas parameters \citep{1985ICRC....3..445H}, can be used to determine the arrival direction, energy and type of the particle that triggered the air shower. If multiple telescopes observe the same light at different angles, the combined image (see the right hand panel of \autoref{fig:chapter_2_chernkov_telescope}) can be reconstructed using `stereo' techniques with far more precision than if one telescope was used.
 
 \section{TeV Gamma-Ray Observatories} \label{sec:02_TeV_observatories}
@@ -305,15 +305,15 @@ Evidence of $\TeV$ gamma rays from AGN Centaurus were reported by \cite{1975ApJ.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{05_Astronomy/Images/telescopes/sensitivity_comparison.png}
-    \caption{Comparison of the performance (minimum detectable flux) of different gamma-ray instruments for an observation time of $50~\si{h}$. H.E.S.S., CTA south and CTA north is shown by the red, dark blue and light blue lines respectively. Image courtesy of \cite{2019scta.book.....C}.}
+    \caption{Comparison of the performance (minimum detectable flux) of different gamma-ray instruments for an observation time of $50\,\si{h}$. H.E.S.S., CTA south and CTA north is shown by the red, dark blue and light blue lines respectively. Image courtesy of \cite{2019scta.book.....C}.}
     \label{fig:chapter_2_sensitivity comparison}
 \end{figure}
 
-The High Energy Stereoscopic System (H.E.S.S.) telescope (named after Victor Hess) is an array of telescopes located at $1800~\si{\m}$ above sea lebvel in Namibia (see \autoref{fig:chapter_2_HESS}) \citep{HESS}. H.E.S.S. consists of five telescopes and utilises the atmospheric Cherenkov imaging technique described above to detect gamma radiation in the energy range $20~\GeV$ to $100~\TeV$. A comparison of the performance of H.E.S.S. to other instruments is shown in \autoref{fig:chapter_2_sensitivity comparison}. The angular resolution of H.E.S.S. ($\leq\ang{0.1}$) allows detailed observations of gamma-ray sources, which is key in understanding the morphology of objects such as SNRs and PWNe \citep{2018A&A...612A...1H}. HESS was constructed in two different phases; Phase I consisting of four $12~\m$ telescopes and Phase II added one $28~\m$ telescope at the centre of the array. Phase I and Phase II of H.E.S.S. commenced operations in December 2003 and July 2012 respectively. 
-\par~\par 
-The four $12~\m$ telescopes of Phase I have 382 mirror segments of $0.6~\m$ diameter mounted onto a steel frame in a Davies-Cotton optical layout (a parabolic layout where each mirror has focal length $f$, which is the focal length of the entire telescope ($15~\m$)) \citep{2003APh....20..111B}. The mirrors combine to have total mirror surface area of $107~\si{\meter\squared}$ and focus the Cherenkov light onto a photomultiplier camera (containing $\approx 1000$ pixels) with a $\ang{5}$ field of view. Each dish is mounted on a rotating base frame which rotates azimuthally on a rail of $13.6~\m$ diameter. The telescopes have a peak positioning speed of $100\si{^\circ\per\minute}$ in both azimuth and elevation and is sensitive to gamma rays above $100~\GeV$. This is ideal for observing events such as gamma-ray bursts and following up activity triggered by other observatories (e.g. neutrinos from IceCube, GRBs from Swift). The four telescopes are placed in a square geometry with distances $120~\m$ from each other.
-\par~\par
-Phase II of H.E.S.S. placed an additional $24~\m$ telescope in the centre of phase I \citep{2005ICRC....5..163V}. The telescope consists of 875 hexagonal mirrors of $0.9~\m$ sides laid out in a parabolic shape with focal length of $36~\m$ and total mirror area of $614~\si{\meter\squared}$. The Phase II telescope has azimuth and elevation speed of $200\si{^\circ\per\minute}$ and $100\si{^\circ\per\minute}$ respectively. Similar to Phase I, Phase II focuses Cherenkov light onto a photomultiplier camera consisting of $\approx 2000$ pixels with a $\ang{3.2}$ view of the sky.
+The High Energy Stereoscopic System (H.E.S.S.) telescope (named after Victor Hess) is an array of telescopes located at $1800\,\si{\m}$ above sea lebvel in Namibia (see \autoref{fig:chapter_2_HESS}) \citep{HESS}. H.E.S.S. consists of five telescopes and utilises the atmospheric Cherenkov imaging technique described above to detect gamma radiation in the energy range $20\,\GeV$ to $100\,\TeV$. A comparison of the performance of H.E.S.S. to other instruments is shown in \autoref{fig:chapter_2_sensitivity comparison}. The angular resolution of H.E.S.S. ($\leq\ang{0.1}$) allows detailed observations of gamma-ray sources, which is key in understanding the morphology of objects such as SNRs and PWNe \citep{2018A&A...612A...1H}. HESS was constructed in two different phases; Phase I consisting of four $12\,\m$ telescopes and Phase II added one $28\,\m$ telescope at the centre of the array. Phase I and Phase II of H.E.S.S. commenced operations in December 2003 and July 2012 respectively. 
+\newpar 
+The four $12\,\m$ telescopes of Phase I have 382 mirror segments of $0.6\,\m$ diameter mounted onto a steel frame in a Davies-Cotton optical layout (a parabolic layout where each mirror has focal length $f$, which is the focal length of the entire telescope ($15\,\m$)) \citep{2003APh....20..111B}. The mirrors combine to have total mirror surface area of $107\,\si{\meter\squared}$ and focus the Cherenkov light onto a photomultiplier camera (containing $\approx 1000$ pixels) with a $\ang{5}$ field of view. Each dish is mounted on a rotating base frame which rotates azimuthally on a rail of $13.6\,\m$ diameter. The telescopes have a peak positioning speed of $100\si{^\circ\per\minute}$ in both azimuth and elevation and is sensitive to gamma rays above $100\,\GeV$. This is ideal for observing events such as gamma-ray bursts and following up activity triggered by other observatories (e.g. neutrinos from IceCube, GRBs from Swift). The four telescopes are placed in a square geometry with distances $120\,\m$ from each other.
+\newpar
+Phase II of H.E.S.S. placed an additional $24\,\m$ telescope in the centre of phase I \citep{2005ICRC....5..163V}. The telescope consists of 875 hexagonal mirrors of $0.9\,\m$ sides laid out in a parabolic shape with focal length of $36\,\m$ and total mirror area of $614\,\si{\meter\squared}$. The Phase II telescope has azimuth and elevation speed of $200\si{^\circ\per\minute}$ and $100\si{^\circ\per\minute}$ respectively. Similar to Phase I, Phase II focuses Cherenkov light onto a photomultiplier camera consisting of $\approx 2000$ pixels with a $\ang{3.2}$ view of the sky.
 
 \subsubsection{The H.E.S.S. Galactic Plane Survey}
 
@@ -328,13 +328,13 @@ In 2018, H.E.S.S. released its third Galactic Plane Survey (HGPS) in $\TeV$ gamm
 
 \subsection{\textit{Fermi}-LAT}
 
-The \textit{Fermi} Gamma-ray Space Telescope is a space based observatory launched on the 11th of June 2008. \textit{Fermi} has two instruments; the Large Area Telescope (LAT) and the Gamma-ray Burst Monitor \citep{2010RPPh...73g4901M}. \textit{Fermi}-LAT consists of thin metal sheets that assist in the production of electron-positron pairs. The electron-positron pair then pass through microstrip detectors that can track their trajectory. Finally, the products enter a calorimeter which measures the combined energy of the electron-positron pair to determine the energy of the initial gamma ray. The Gamma-ray Burst Monitor consists of scintillators positioned on opposite sides of the spacecraft allowing different viewing angles to detect gamma-ray bursts and solar flares \citep{2010RPPh...73g4901M}. The performance characteristic of \textit{Fermi}-LAT allows sensitivity in the energy range of $20~\MeV - 300~\GeV$ with a field of view of $2.4~\si{\steradian}$ \citep{2010RPPh...73g4901M}. 
-\par~\par
-The equivalent \textit{Fermi}-LAT source towards \mbox{HESS\,J1825-137} is \mbox{4FGL\,J1824.5\,1351e} \citep{2020ApJS..247...33A}. \cite{2020A&A...640A..76P} combined GeV data from \textit{Fermi}-LAT and $\TeV$ data from H.E.S.S. to provide a broader view of the gamma-ray emission towards \mbox{HESS\,J1825-137} from $1~\GeV$ up to $100~\TeV$. They found that the size of the PWN increases at lower energies, implying that electrons from the outer edges are from an older population of electrons compared to the recently injected electrons near the powering pulsar. This is indicative of a $\TeV$ halo forming, where electrons begin to escape the PWN into the ISM and emit $\TeV$ emission via inverse Compton interactions.
+The \textit{Fermi} Gamma-ray Space Telescope is a space based observatory launched on the 11th of June 2008. \textit{Fermi} has two instruments; the Large Area Telescope (LAT) and the Gamma-ray Burst Monitor \citep{2010RPPh...73g4901M}. \textit{Fermi}-LAT consists of thin metal sheets that assist in the production of electron-positron pairs. The electron-positron pair then pass through microstrip detectors that can track their trajectory. Finally, the products enter a calorimeter which measures the combined energy of the electron-positron pair to determine the energy of the initial gamma ray. The Gamma-ray Burst Monitor consists of scintillators positioned on opposite sides of the spacecraft allowing different viewing angles to detect gamma-ray bursts and solar flares \citep{2010RPPh...73g4901M}. The performance characteristic of \textit{Fermi}-LAT allows sensitivity in the energy range of $20\,\MeV - 300\,\GeV$ with a field of view of $2.4\,\si{\steradian}$ \citep{2010RPPh...73g4901M}. 
+\newpar
+The equivalent \textit{Fermi}-LAT source towards \mbox{HESS\,J1825-137} is \mbox{4FGL\,J1824.5\,1351e} \citep{2020ApJS..247...33A}. \cite{2020A&A...640A..76P} combined GeV data from \textit{Fermi}-LAT and $\TeV$ data from H.E.S.S. to provide a broader view of the gamma-ray emission towards \mbox{HESS\,J1825-137} from $1\,\GeV$ up to $100\,\TeV$. They found that the size of the PWN increases at lower energies, implying that electrons from the outer edges are from an older population of electrons compared to the recently injected electrons near the powering pulsar. This is indicative of a $\TeV$ halo forming, where electrons begin to escape the PWN into the ISM and emit $\TeV$ emission via inverse Compton interactions.
 
 \subsection{LHAASO}
 
-The Large High Altitude Air Shower Observatory (LHAASO) is a gamma-ray and cosmic-ray observatory located $\approx 4400~\m$ above sea level in Sichuan China \citep{2022ChPhC..46c0001M}. LHAASO consists of:
+The Large High Altitude Air Shower Observatory (LHAASO) is a gamma-ray and cosmic-ray observatory located $\approx 4400\,\m$ above sea level in Sichuan China \citep{2022ChPhC..46c0001M}. LHAASO consists of:
 \begin{figure}[h!]
     \centering
     \includegraphics[height=0.15\textheight]{05_Astronomy/Images/telescopes/LHAASO.jpg}
@@ -344,19 +344,19 @@ The Large High Altitude Air Shower Observatory (LHAASO) is a gamma-ray and cosmi
 \end{figure}
 \begin{itemize}
     \itemsep0em
-    \item $1.3~\si{\kilo\meter\squared}$ array of $\approx 5200$ electromagnetic detectors and muon detectors that focuses on detecting gamma rays above $30~\TeV$ and cosmic rays from $10~\TeV$ to $100~\PeV$ \citep{2021ChPhC..45b5002A}.
-    \item A water Cherenkov array sensitive to gamma rays between $100~\GeV$ and $30~\TeV$ and has total detection area of $7.8\times 10^4~\si{\meter\squared}$. This array monitors galactic gamma-ray sources, gamma-ray bursts and AGNs \citep{2021arXiv210103508L}.
-    \item 18 Cherenkov telescopes that aims to measure the cosmic-ray energy spectrum and composition between $10~\TeV$ and $1~\si{E\electronvolt}$ \citep{2021EPJC...81..657A}.
-    \item An upcoming electron-neutron detector array to study the cosmic-ray spectrum and composition above $1~\PeV$ \citep{2022ChPhC..46c0001M}.
+    \item $1.3\,\si{\kilo\meter\squared}$ array of $\approx 5200$ electromagnetic detectors and muon detectors that focuses on detecting gamma rays above $30\,\TeV$ and cosmic rays from $10\,\TeV$ to $100\,\PeV$ \citep{2021ChPhC..45b5002A}.
+    \item A water Cherenkov array sensitive to gamma rays between $100\,\GeV$ and $30\,\TeV$ and has total detection area of $7.8\times 10^4\,\si{\meter\squared}$. This array monitors galactic gamma-ray sources, gamma-ray bursts and AGNs \citep{2021arXiv210103508L}.
+    \item 18 Cherenkov telescopes that aims to measure the cosmic-ray energy spectrum and composition between $10\,\TeV$ and $1\,\si{E\electronvolt}$ \citep{2021EPJC...81..657A}.
+    \item An upcoming electron-neutron detector array to study the cosmic-ray spectrum and composition above $1\,\PeV$ \citep{2022ChPhC..46c0001M}.
 \end{itemize}
-\par~\par
-LHAASO has detected significant gamma-ray emission above $100~\TeV$ from 12 Galactic sources including \mbox{LHAASO\,1825-1326} (LHAASO equivalent of \mbox{HESS\,J1825-137} / \mbox{HESS\,J1826-130}, see \autoref{fig:chapter1_hess_j1825_137_object_positions}) \citep{2021Natur.594...33C}. In 2021, LHAASO revealed the detection of gamma rays up to $1.1~\PeV$ from the Crab Nebula, implying the existence of a $2.3~\PeV$ electron \citep{doi:10.1126/science.abg5137}
+\newpar
+LHAASO has detected significant gamma-ray emission above $100\,\TeV$ from 12 Galactic sources including \mbox{LHAASO\,1825-1326} (LHAASO equivalent of \mbox{HESS\,J1825-137} / \mbox{HESS\,J1826-130}, see \autoref{fig:chapter1_hess_j1825_137_object_positions}) \citep{2021Natur.594...33C}. In 2021, LHAASO revealed the detection of gamma rays up to $1.1\,\PeV$ from the Crab Nebula, implying the existence of a $2.3\,\PeV$ electron \citep{doi:10.1126/science.abg5137}
 
 \subsection{HAWC}
 
-The High Altitude Water Cherenkov Observatory (HAWC) is a gamma-ray and cosmic-ray observatory located in Puebla, Mexico. The primary detector of HAWC consists of $300$ water tanks arranged in a $22\,000~\si{\meter\squared}$ area at an altitude of $\approx 4100~\m$ above sea level \citep{2023NIMPA105268253A}. The high refractive index of water ($n=1.33$) lowers the cosmic-ray/gamma-ray energy threshold to produce Cherenkov light which is then observed by four photomultiplier tubes.
-\par~\par
-HAWC has detected over $100$ sources of VHE gamma rays, which are summarised in the third HAWC catalogue \citep{2020ApJ...905...76A}. \cite{PhysRevLett.124.021102} revealed $9$ gamma-ray sources with emission above $56~\TeV$, with three of these sources having significant detection above $100\TeV$. This includes the equivalent \mbox{HESS\,J1825-137} / \mbox{HESS\,J1826-130}: \mbox{eHWC\,J1825-134}.
+The High Altitude Water Cherenkov Observatory (HAWC) is a gamma-ray and cosmic-ray observatory located in Puebla, Mexico. The primary detector of HAWC consists of $300$ water tanks arranged in a $22\,000\,\si{\meter\squared}$ area at an altitude of $\approx 4100\,\m$ above sea level \citep{2023NIMPA105268253A}. The high refractive index of water ($n=1.33$) lowers the cosmic-ray/gamma-ray energy threshold to produce Cherenkov light which is then observed by four photomultiplier tubes.
+\newpar
+HAWC has detected over $100$ sources of VHE gamma rays, which are summarised in the third HAWC catalogue \citep{2020ApJ...905...76A}. \cite{PhysRevLett.124.021102} revealed $9$ gamma-ray sources with emission above $56\,\TeV$, with three of these sources having significant detection above $100\,\TeV$. This includes the equivalent \mbox{HESS\,J1825-137} / \mbox{HESS\,J1826-130}: \mbox{eHWC\,J1825-134}.
 
 \subsection{The Cherenkov Telescope Array}
 
@@ -367,8 +367,8 @@ HAWC has detected over $100$ sources of VHE gamma rays, which are summarised in 
     \label{fig:chapter_2_cta}
 \end{figure}
 
-The Cherenkov Telescope Array (CTA) is the next generation ground-based telescope array that will observe gamma rays from $10~\GeV$ up to $300~\TeV$. It will be the largest ground-based telescope that can observe the night sky with sensitivity up to $10$ times greater than current instruments (see \autoref{fig:chapter_2_sensitivity comparison}). CTA will have two arrays in both the Southern (Chile) and Northern hemisphere (Canary Islands) to allow access to the majority of the night sky.
-\par~\par
-CTA will be an array of three different sized telescopes (see \autoref{fig:chapter_2_cta}): Small-Sized Telescopes (sensitive to energies $>1~\TeV$) with a mirror diameter and field of view of $4~\m$ and $\approx\ang{0}$ respectively, Medium-Sized Telescopes (sensitive to energies between $80~\GeV$ and $50~\TeV$) with a mirror diameter and field of view of $11.5~\m$ and $\approx\ang{7.5}$ respectively and the Large-Sized Telescope (sensitive to the lowest energy gamma rays) with a mirror diameter and field of view of $\approx 23~\m$ and $\approx\ang{4.3}$ respectively \citep{cherenkov_telescope_array,2019scta.book.....C}.
-\par~\par
+The Cherenkov Telescope Array (CTA) is the next generation ground-based telescope array that will observe gamma rays from $10\,\GeV$ up to $300\,\TeV$. It will be the largest ground-based telescope that can observe the night sky with sensitivity up to $10$ times greater than current instruments (see \autoref{fig:chapter_2_sensitivity comparison}). CTA will have two arrays in both the Southern (Chile) and Northern hemisphere (Canary Islands) to allow access to the majority of the night sky.
+\newpar
+CTA will be an array of three different sized telescopes (see \autoref{fig:chapter_2_cta}): Small-Sized Telescopes (sensitive to energies $>1\,\TeV$) with a mirror diameter and field of view of $4\,\m$ and $\approx\ang{0}$ respectively, Medium-Sized Telescopes (sensitive to energies between $80\,\GeV$ and $50\,\TeV$) with a mirror diameter and field of view of $11.5\,\m$ and $\approx\ang{7.5}$ respectively and the Large-Sized Telescope (sensitive to the lowest energy gamma rays) with a mirror diameter and field of view of $\approx 23\,\m$ and $\approx\ang{4.3}$ respectively \citep{cherenkov_telescope_array,2019scta.book.....C}.
+\newpar
 PWN transitioning from their second to their third stage of evolution (see \autoref{sec:01_intro_time_ev_PWN}) are too faint and/or extended for their emission to be detected by current instruments such as H.E.S.S.. The increased sensitivity of CTA (see \autoref{fig:chapter_2_sensitivity comparison}) will be able observe these previously undetectable $\TeV$ PWN, providing more insight into the evolution of PWN.
