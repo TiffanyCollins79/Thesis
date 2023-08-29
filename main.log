@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  29 AUG 2023 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.17)  29 AUG 2023 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1769,20 +1769,27 @@ Chapter 3.
 
 
 ]
-<05_Astronomy/Images/air_shower/gamma_ray.pdf, id=1641, 257.24144pt x 323.04689pt>
+<05_Astronomy/Images/air_shower/gamma_ray.pdf, id=1637, 257.24144pt x 323.04689pt>
 File: 05_Astronomy/Images/air_shower/gamma_ray.pdf Graphic file (type pdf)
 <use 05_Astronomy/Images/air_shower/gamma_ray.pdf>
-Package pdftex.def Info: 05_Astronomy/Images/air_shower/gamma_ray.pdf  used on input line 77.
+Package pdftex.def Info: 05_Astronomy/Images/air_shower/gamma_ray.pdf  used on input line 32.
 (pdftex.def)             Requested size: 227.62206pt x 285.85458pt.
 
-Underfull \hbox (badness 1038) in paragraph at lines 80--80
+Underfull \hbox (badness 1038) in paragraph at lines 35--35
 \OT1/cmr/m/n/12 positron un-dergo Bremsstrahlung in-ter-ac-
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (2.46202pt too wide) in paragraph at lines 56--58
+\OT1/cmr/m/n/12 with a cross sec-tion, $[][]$, de-scribed by []Eq. 2.70[][] . The dis-tance that an []
+ []
 
-[38] [39 <./05_Astronomy/Images/air_shower/gamma_ray.pdf>]
+
+Overfull \hbox (13.3413pt too wide) in paragraph at lines 56--58
+\OT1/cmr/m/n/12 trav-els be-fore ra-di-at-ing a pho-ton through Bremsstrahlung in-ter-ac-tions is given by ([]Matthews,
+ []
+
+[38 <./05_Astronomy/Images/air_shower/gamma_ray.pdf>] [39]
 <05_Astronomy/Images/air_shower/cosmic_ray.pdf, id=1691, 257.24141pt x 333.16472pt>
 File: 05_Astronomy/Images/air_shower/cosmic_ray.pdf Graphic file (type pdf)
 <use 05_Astronomy/Images/air_shower/cosmic_ray.pdf>
@@ -1858,22 +1865,28 @@ File: 05_Astronomy/Images/telescopes/HESS_image.jpg Graphic file (type jpg)
 <use 05_Astronomy/Images/telescopes/HESS_image.jpg>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/HESS_image.jpg  used on input line 301.
 (pdftex.def)             Requested size: 455.24413pt x 222.31918pt.
- [44 <./05_Astronomy/Images/air_shower/chenkov_light_pool.png> <./05_Astronomy/Images/air_shower/cherenkov_telescope.png>]
-<05_Astronomy/Images/telescopes/sensitivity_comparison.png, id=1812, 569.0058pt x 364.2408pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<05_Astronomy/Images/telescopes/sensitivity_comparison.png, id=1801, 569.0058pt x 364.2408pt>
 File: 05_Astronomy/Images/telescopes/sensitivity_comparison.png Graphic file (type png)
 <use 05_Astronomy/Images/telescopes/sensitivity_comparison.png>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/sensitivity_comparison.png  used on input line 307.
 (pdftex.def)             Requested size: 409.71693pt x 262.2754pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44 <./05_Astronomy/Images/air_shower/chenkov_light_pool.png> <./05_Astronomy/Images/air_shower/cherenkov_telescope.png>]
 <05_Astronomy/Images/telescopes/hess_survey.pdf, id=1822, 542.61319pt x 424.37848pt>
 File: 05_Astronomy/Images/telescopes/hess_survey.pdf Graphic file (type pdf)
 <use 05_Astronomy/Images/telescopes/hess_survey.pdf>
 Package pdftex.def Info: 05_Astronomy/Images/telescopes/hess_survey.pdf  used on input line 322.
 (pdftex.def)             Requested size: 409.71693pt x 320.44589pt.
-[45 <./05_Astronomy/Images/telescopes/HESS_image.jpg>]
+ [45 <./05_Astronomy/Images/telescopes/HESS_image.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -3223,7 +3236,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,19n,131p,2032b,2704s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathabx-type1/mathb8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (186 pages, 38646276 bytes).
+Output written on main.pdf (186 pages, 38646239 bytes).
 PDF statistics:
  6698 PDF objects out of 7423 (max. 8388607)
  4951 compressed objects within 50 object streams
