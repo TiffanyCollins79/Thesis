@@ -8,7 +8,7 @@ This chapter will first discuss the transport equation that governs the time and
 
 \section{The Transport Equation} \label{sec:09_Transport_multizone_diffusion}
 
-\autoref{sec:chapter_7_cr_SED_evol} described the solution of the cosmic-ray energy density distribution for a simple scenario of cosmic rays being injected into a homogeneous source. However, the environment around pulsars is not uniform. The evolution of the cosmic-ray (including high-energy electrons) energy density distribution, $n$, for a non-uniform environment can be described by a Fokker-Planck equation \citep{1975MNRAS.172..557S,1978A&A....70..367C}:
+\autoref{sec:chapter_7_cr_SED_evol} described the solution of the cosmic-ray energy density distribution for a simple scenario of cosmic rays being injected into a homogeneous source. However, the environment around pulsars are not uniform. The evolution of the cosmic-ray (including high-energy electrons) energy density distribution, $n$, for a non-uniform environment can be described by a Fokker-Planck equation \citep{1975MNRAS.172..557S,1978A&A....70..367C}:
 
 \begin{equation}
     \begin{aligned}
@@ -35,11 +35,11 @@ As discussed in \autoref{chapter_1_cr_propagation}, over small distances (less t
     &=-D\nabla^2 n\text{ ,} 
     \end{aligned}
 \end{equation}
-\noindent \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} can only be solved analytically for simple scenarios (e.g. an impulsive accelerator of electrons in a medium of constant density and magnetic field, see \cite{1995PhRvD..52.3265A}). These assumptions cannot be applied to accelerators like PWNe that evolve within complex environments (see \autoref{sec:01_PWN}). Therefore, numerical methods must be applied in order to solve \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}.
+\noindent where $D$ is given by \autoref{eq:diffusion}. \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation} can only be solved analytically for simple scenarios (e.g. an impulsive accelerator of electrons in a medium of constant density and magnetic field, see \cite{1995PhRvD..52.3265A}). These assumptions cannot be applied to accelerators like PWNe that evolve within complex environments (see \autoref{sec:01_PWN}). Therefore, numerical methods must be applied in order to solve \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}.
 
 \subsection{Particle Transport Literature Review}
 
-Numerical solutions of \autoref{eq:chapter_9_full_numerical_diffusion_equation} can be applied to many different scenarios in order to obtain an understanding of astrophysical phenomena. For example, \galprop is a publicly available software package that describes the propagation of cosmic rays within the Galaxy \citep{2022ApJS..262...30P}. It combines models of the cosmic-ray source distribution, interstellar gas, radiation fields and magnetic fields in order to solve the transport equation. \galprop then normalises the modelled cosmic-ray spectrum to observations at Earth in order to predict the diffuse gamma-ray emission. Other examples of software that solve the transport equation on a Galactic scale include \dragon \citep{2017JCAP...02..015E} and \picard \citep{2014APh....55...37K}. \criptic is a recent software package that simulates the propagation through complex ISM with propagation properties depending on the state of the gas \citep{2022MNRAS.517.1355K}. \criptic has been used to investigate how ISM parameters (e.g. sonic Mach number, Alfv\'en Mach number) affect the transport of cosmic rays \citep{2023MNRAS.519.1503S}.
+Numerical solutions of \autoref{eq:chapter_9_full_numerical_diffusion_equation} can be applied to different scenarios in order to obtain an understanding of astrophysical phenomena. For example, \galprop is a publicly available software package that describes the propagation of cosmic rays within the Galaxy \citep{2022ApJS..262...30P}. It combines models of the cosmic-ray source distribution, interstellar gas, radiation fields and magnetic fields in order to solve the transport equation. \galprop then normalises the modelled cosmic-ray spectrum to observations at Earth in order to predict the diffuse gamma-ray emission. Other examples of software that solve the transport equation on a Galactic scale include \dragon \citep{2017JCAP...02..015E} and \picard \citep{2014APh....55...37K}. \criptic is a recent software package that simulates the propagation through complex ISM with propagation properties depending on the state of the gas \citep{2022MNRAS.517.1355K}. \criptic has been used to investigate how ISM parameters (e.g. sonic Mach number, Alfv\'en Mach number) affect the transport of cosmic rays \citep{2023MNRAS.519.1503S}.
 
 \subsection{Numerical Solution of the Transport Equation} \label{sec:chapter_9_diffusion_numerical_sol}
 \galprop, \dragon and \picard solve the transport equation on a Galactic scale ($>100\,\pc$). To understand the detailed nature and evolution of cosmic rays that escape their place of origin (e.g. PWN), the transport equation must be solved on smaller scales ($\gtrsim \pc$). To do this, finite difference techniques will be utilised to solve \autoref{eq:chapter_9_iso_diffusion_numerical_diffusion_equation}. There are other techniques used to solve differential equations (e.g. method of lines, finite volume method), however finite difference techniques are one of the most commonly used and the simplest to apply. Similarly, finite difference techniques describe a range of techniques with the simplest being the forward difference, backward difference and central difference (see \autoref{sec:A2_finite_difference}). More complex techniques, including the Euler method and Crank-Nicolson method, require the solution of linear equations, which can be computationally intensive. Therefore, a combination of the simpler techniques will be considered in this thesis. As the transport equation will be applied to the PWN \mbox{HESS\,J1825-137} in \autoref{sec:10_second_paper}, only the transport of electrons will be considered. However, these techniques also apply to the transport of cosmic-ray protons.
@@ -75,7 +75,7 @@ Finite difference techniques obtain numerical solutions to differential equation
         \mathcal{D}_{i\pm\Delta i/2}&=\frac{D_{i\pm\Delta i}-D_i}{2} \frac{\Delta t}{\Delta i^2}\text{ ,} 
     \end{aligned} \label{eq:chapter_9_diffusion_numeric}
 \end{equation}
-\noindent is the dimensionless diffusion factor that considers the average magnetic field between voxel $i$ and $i\pm 1$ (see \autoref{eq:diffusion}) and $n_i^t\equiv n\qty(\gamma,r,i)$. See \autoref{eq:09_transport_cells} for a graphical description of \autoref{eq:chapter_9_diffusion_numeric}. 
+\noindent is the dimensionless diffusion factor that considers the average magnetic field between voxel $i$ and $i\pm 1$ (see \autoref{eq:diffusion}), $n_i^t\equiv n\qty(\gamma,r,i)$ and $D\qty(i)=D\qty(\gamma,i)$. See \autoref{eq:09_transport_cells} for a graphical description of \autoref{eq:chapter_9_diffusion_numeric}. 
 \newpar 
 Errors in finite difference methods arise due to the discretization of the grid and approximating partial derivatives with truncated partial derivatives (see \autoref{sec:A2_diffusion}), leading to the discrepancy between the numerical and analytical solution. Finite difference methods are said to be `stable' when the numerical solution converges to the analytical solution. Von Neumann stability analysis treats the numerical error of finite difference techniques as a time-dependent Fourier expansion and determines the condition when the error at time $t+1$ is less or equal to the error at time $t$ (see \autoref{sec:A2_finite_stability}). That is, Von Neumann stability analysis determines whether any errors due to numerical techniques are magnified in further iterations. Using Von Neumann stability analysis, \autoref{eq:chapter_8_multizone_diff_numerical_sol} is stable for time step:
 \begin{equation}
@@ -98,20 +98,12 @@ Errors in finite difference methods arise due to the discretization of the grid 
 \item The time step used to solve \autoref{eq:chapter_8_multizone_diff_numerical_sol} is calculated (see \autoref{eq:09_finite_difference_diff_stable}) to ensure that the solution is numerically stable.
 \setcounter{counter1}{\value{enumi}}
 \end{enumerate}
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=\textwidth]{09_Multizone/Images/code/flow_chart.pdf}
     \caption{A flow-chart description of the steps {\tt Multizone} uses to calculate the electron energy distribution and subsequent SED by numerically solving the transport equation.}
     \label{fig:{sec:chapter_9_multizone_flow_chart}}
 \end{figure}
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\textwidth]{09_Multizone/Images/code/resolution_cartoon_final.pdf}
-    \caption{A 2D representation of the three 3D grid resolutions used to numerically solve \autoref{eq:chapter_8_multizone_diff_numerical_sol}. Voxels with high number density or magnetic field are shown in red.}
-    \label{fig:chapter_8_multizone_resolution_cartoon}
-\end{figure}
-
-
 
 \begin{enumerate}[label=\textbf{\arabic*}.]\setcounter{enumi}{\value{counter1}}
 \item At $t=0$, electrons are injected into a region of size $4\Delta x4\Delta y4\Delta z$ centered on position $(x_s,y_s,z_s)$ This ensures that electrons are injected into the same region regardless of their energy. For an impulsive accelerator injecting electrons with injection luminosity $L\,\qty(\ergspersecond)$ with spectra $J'\qty(E)$ (the `de-nomalised spectra following, e.g. a power law $E^{-\Gamma}$), the total energy of electrons injected into the $4\Delta x4\Delta y4\Delta z$ cube in time interval $\Delta t$ is:
@@ -129,6 +121,7 @@ Errors in finite difference methods arise due to the discretization of the grid 
 \item For every time step:
 \setcounter{counter1}{\value{enumi}}
 \end{enumerate}
+
 \begin{enumerate}[label=\textbf{\arabic*}]\setcounter{enumi}{\value{counter1}}
 	\item[]
 \begin{enumerate}[label*=\textbf{\alph*}.]
@@ -138,6 +131,12 @@ Errors in finite difference methods arise due to the discretization of the grid 
 \end{enumerate}
 \end{enumerate}
 
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=\textwidth]{09_Multizone/Images/code/resolution_cartoon_final.pdf}
+    \caption{A 2D representation of the three 3D grid resolutions used to numerically solve \autoref{eq:chapter_8_multizone_diff_numerical_sol}. Voxels with high number density or magnetic field are shown in red.}
+    \label{fig:chapter_8_multizone_resolution_cartoon}
+\end{figure}
 \begin{equation}
     \begin{aligned}
     n\qty(\gamma,t+\Delta t) &=\frac{\dot{\gamma}_t}{\dot{\gamma}_{t+\Delta t}}n\qty(\gamma,t,\vec{r})\text{ ,} 
@@ -171,7 +170,7 @@ The numerical solution ({\tt Multizone}) will now be compared to a diffusion-onl
 \end{equation}
 \noindent where $r^2=x^2+y^2+z^2$.
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=\textwidth]{09_Multizone/Images/diffusion/diffusion_3D_multizone_final.pdf}
     \caption{Distribution of electrons injected into a 3D grid at $x=y=z=t=0$ and subjected to diffusion. (\textit{Top}) The number density distribution taken at slice $z=(0\pm 1)\,\pc$ and time $40\,\kiloyear$. The black and yellow dashed circles represent the 2D variance radius ($R_\text{var}$) and the radius containing $1\sigma=68\%$ of electrons ($R_\sigma$) in the 2D slice respectively. (\textit{Bottom}) Comparing the numerical solution (lines) and analytical solution (dots, see \autoref{eq:09_multizone_diff_only_sol}) at $t=20$ and $40\,\kiloyear$ along $y=(0\pm 1)\,\pc$ (dashed horizontal line in the bottom panel).}
@@ -264,15 +263,15 @@ An impulsive accelerator will inject electrons with spectra $=AE^{-\Gamma}$ into
 	\end{aligned} \label{eq:chapter_9_multizone_diff_exact_sol}
 \end{equation} 
 
-\autoref{fig:09_multizone_diff_exact_convergence} shows the time it takes for the the numerical solution of the electron energy distribution to `converge' to the analytical solution (\autoref{eq:chapter_9_multizone_diff_exact_sol}) for a situation with the same parameters as \autoref{fig:09_multizone_diff_3D} but including energy losses due to synchrotron radiation. It can be noted that the numerical solution tends to under-predict the analytical solution before converging, where the convergence time is proportional to the distance from the
-\begin{figure}[h!]
+\autoref{fig:09_multizone_diff_exact_convergence} shows the time it takes for the numerical solution of the electron energy distribution to `converge' to the analytical solution (\autoref{eq:chapter_9_multizone_diff_exact_sol}) for a situation with the same parameters as \autoref{fig:09_multizone_diff_3D} but including energy losses due to synchrotron radiation. It can be noted that the numerical solution tends to under-predict the analytical solution before converging, where the convergence time is proportional to the distance from the
+\begin{figure}[t!]
 	\centering
 	\includegraphics[width=0.7\textwidth]{09_Multizone/Images/diffusion/analytical_diff_convergence.pdf}
 	\caption{Evolution of the impulsive electron energy density distribution for the analytical solution (filled dots) and numerical solution (solid lines) with the same parameters to \autoref{fig:09_multizone_diff_3D}. The top panel shows the evolution at distance $5\,\pc$ and $10\,\pc$ from the source. The middle panel compares the evolution for a situation where $\chi=0.01$ and $\chi=0.1$. The blue dashed line represents the numerical solution for $\chi=0.01$ with a time and spatial resolution of $\dd{t}=0.08\,\si{yr}$ and $\dd{x}=0.2\,\pc$ respectively. The bottom panel compares the evolution for electrons with energy $E=0.1\,\TeV$ and $10\,\TeV$.}
 	\label{fig:09_multizone_diff_exact_convergence}
 \end{figure} 
 source (top-panel), diffusion suppression factor (middle-panel) and inversely proportional to the energy (bottom panel). The blue dashed line in the middle panel shows the numerical solution for $\chi=0.01~$ with a finer time and spatial resolution. The convergence time for the fine ($\dd{x}=0.2\,\pc$, $\dd{t}=0.08\,\si{yr}$) and coarse ($\dd{x}=2\,\pc$, $\dd{t}=8\,\si{yr}$) resolution are $\approx 0.4\,\si{kyr}$ and $\approx 12.8\,\si{kyr}$ respectively. Note that the numerical solution starts to diverge after $30\,\kiloyear$ for $\chi=0.1$ and electron energy of $10\,\TeV$ (middle-panel). Divergence occurs when the variance radius $R_\text{var}=\sqrt{6Dt}$ is approximately half the width of the grid, i.e. the time it takes electrons to reach the simulated boundary. For the aforementioned example, this occurs at approximately $10\,\kiloyear$. Therefore, the numerical solution must employ a grid size larger than the diffusion variance radius.
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1.0\textwidth]{09_Multizone/Images/diffusion/analytical_diff_sol.pdf}
     \caption{Energy distribution of electrons $20\,\kiloyear$ (\textit{left}) and $40\,\kiloyear$ (\textit{right}) after an impulsive accelerator injects electrons into a system with the same parameters as \autoref{fig:09_multizone_diff_3D}. The electron energy distribution of electrons is taken  $5\,\pc$ (red), $10\,\pc$ (green) and $15\,\pc$ (blue) from the accelerator with the analytical and numerical solutions being represented by the circles and solid lines respectively. The vertical black dotted lines represents the critical energy $E_\text{cr}$ of electrons (see \autoref{eq:chapter_7_imp_lep_critical_lorentz}).}
@@ -310,7 +309,7 @@ Anisotropic diffusion describes a situation where cosmic rays have a preferentia
  \end{equation}
 \noindent i.e. anisotropic diffusion can be approximated by isotropic diffusion with an advective component (as in the case of \autoref{fig:09_multizone_adv_edxample}).
 \newpar 
-Several astrophysical environments show a preferential direction of particle transport. For example, the geometry of SNRs and the surrounding medium can affect the transport of protons out of the system and the subsequent shape of the SNR (e.g. \cite{2015MNRAS.450.3080M,2021ApJ...923..233G}). Such SNRs include the young \mbox{SNR\,G1.9+0.3}, \mbox{SNR\,G296.5+10.0} and the Cygnus loop nebula. Advection may be of particular importance to PWNe. For example the asymmetric gamma-ray morphology towards PWN \mbox{HESS\,J1825-137} \citep{2019A&A...621A.116H} implies a bulk motion of particles towards lower Galactic longitudes with total velocity ($v=v_\text{adv}+v_\text{diff}$) of $0.01c$ \citep{2019A&A...621A.116H}. In general, it has been proposed that advection dominates the particle transport close to the pulsar, while diffusion dominates the outer reaches of the nebula \citep{2020A&A...636A.113G,2021PhRvD.104l3017R}. This section will describe the finite difference techniques used to solve \autoref{eq:chapter_9_full_numerical_diffusion_equation} that includes a bulk advective transport of electrons.
+Several astrophysical environments show a preferential direction of particle transport. For example, the geometry of SNRs and the surrounding medium can affect the transport of protons out of the system and the subsequent shape of the SNR (e.g. \cite{2015MNRAS.450.3080M,2021ApJ...923..233G}). Such SNRs include the young \mbox{SNR\,G1.9+0.3}, \mbox{SNR\,G296.5+10.0} and the Cygnus loop nebula. Advection may be of particular importance to PWNe. For example the asymmetric gamma-ray morphology towards PWN \mbox{HESS\,J1825-137} \citep{2019A&A...621A.116H} implies a bulk motion of particles towards lower Galactic longitudes with total velocity ($v=v_\text{adv}+v_\text{diff}$) of $0.01c$ \citep{2019A&A...621A.116H}. In general, it has been proposed that advection dominates the particle transport close to the pulsar, while diffusion dominates the outer reaches of the nebula \citep{2020A&A...636A.113G,2021PhRvD.104l3017R}. This section will describe the finite difference techniques used to solve \autoref{eq:chapter_9_full_numerical_diffusion_equation} that includes bulk advective transport of electrons.
 
 \subsection{Numerical Solution} \label{sec:09_multizone_advection_num_sol}
 
@@ -361,7 +360,7 @@ Consider 1D advection, the analytical solution to \autoref{eq:09_multizone_adv} 
 \end{equation}
 
 \noindent i.e. by assuming $v_A$ is constant, advection is simply a translation in space. However, the discetization of space can lead to dispersion in the numerical solution. If $\Delta t = \Delta x/v$, electrons are translated exactly one voxel for each time step as shown in the upper panels of \autoref{fig:09_multizone_smearing}. But when $\Delta t < \Delta x/v$, electrons are transported less than the voxel width and the numerical solution effectively begins to `disperse' particles as shown in the lower panels of \autoref{fig:09_multizone_smearing}.
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=\textwidth]{09_Multizone/Images/advection/advection_smearing.pdf}
     \caption{The application of finite difference methods for an initial distribution following distribution ($n(-0.5<=x<0.5)=4$) at $t=0$ with velocity $v=1$. The voxel width ($\Delta x=1$) remains constant while the time steps are $1$ (\textit{top}) and $0.5$ (\textit{bottom}).}
@@ -372,9 +371,9 @@ To understand the origins of the dispersion, consider \autoref{eq:chapter_9_adve
 
 \begin{equation}
     \begin{aligned}
-        \frac{n_i^{t+\Delta t}-n_{i}^{t}}{\Delta t}&=-\frac{v}{\Delta i} \qty(n_{i}^t-n_{i-\Delta i}^t)\\
-        \frac{1}{2\Delta t} \qty(n_{i}^{t+\Delta t}+n_{i}^{t+\Delta t}-n_{i}^{t-\Delta t}+n_{i}^{t-\Delta t}-2n_{i}^{t}) &=-\frac{v}{2\Delta i} \qty(2n_{i}^t-n_{i-\Delta i}^t-n_{i-\Delta i}^t-n_{i+\Delta i}^t+n_{i+\Delta i}^t) \\
-        \frac{1}{2\Delta t}\qty(\qty[n_{i}^{t+\Delta t}-n_{i}^{t-\Delta t}]+\qty[n_{i}^{t+\Delta t}+n_{i}^{t-\Delta t}-2n_{i}^{t}])&=-\frac{v}{2\Delta i} \qty(\qty[n_{i+\Delta i}^t-n_{i-\Delta i}^t]-\qty[n_{i+\Delta i}^t+n_{i-\Delta i}^t-2n_{i}^t]) \text{ .} 
+        \frac{n_i^{t+\Delta t}-n_{i}^{t}}{\Delta t}&=-\frac{v_\text{A,i}}{\Delta i} \qty(n_{i}^t-n_{i-\Delta i}^t)\\
+        \frac{1}{2\Delta t} \qty(n_{i}^{t+\Delta t}+n_{i}^{t+\Delta t}-n_{i}^{t-\Delta t}+n_{i}^{t-\Delta t}-2n_{i}^{t}) &=-\frac{v_\text{A,i}}{2\Delta i} \qty(2n_{i}^t-n_{i-\Delta i}^t-n_{i-\Delta i}^t-n_{i+\Delta i}^t+n_{i+\Delta i}^t) \\
+        \frac{1}{2\Delta t}\qty(\qty[n_{i}^{t+\Delta t}-n_{i}^{t-\Delta t}]+\qty[n_{i}^{t+\Delta t}+n_{i}^{t-\Delta t}-2n_{i}^{t}])&=-\frac{v_\text{A,i}}{2\Delta i} \qty(\qty[n_{i+\Delta i}^t-n_{i-\Delta i}^t]-\qty[n_{i+\Delta i}^t+n_{i-\Delta i}^t-2n_{i}^t]) \text{ .} 
     \end{aligned} \label{eq:09_multizone_dispersion_ex}
 \end{equation}
 
@@ -402,39 +401,39 @@ In the continuous limit:
 \noindent and \autoref{eq:09_multizone_dispersion_ex} and \autoref{eq:09_multizone_dispersion_ex2} become:
 \begin{equation}
     \begin{aligned}
-        \pdv{n}{t}+v\pdv{n}{i}&= \frac{v\Delta i}{2}\pdv[2]{n}{i}\mp \frac{\Delta t}{2}\pdv[2]{n}{t} \text{ .} 
+        \pdv{n}{t}+v_\text{A,i}\pdv{n}{i}&= \frac{v_\text{A,i}\Delta i}{2}\pdv[2]{n}{i}\mp \frac{\Delta t}{2}\pdv[2]{n}{t} \text{ .} 
     \end{aligned} \label{eq:09_multizone_dispersion_ex3}
 \end{equation}
 \noindent By taking the time derivative of \autoref{eq:chapter_9_advection_component}:
 \begin{equation}
     \begin{aligned}
-        \pdv[2]{n}{t}&= -v\pdv{}{t}\qty[\pdv{n}{i}] = -v\pdv{}{i}\qty[\pdv{n}{t}] =v^2\pdv[2]{n}{i}\text{ ,} 
+        \pdv[2]{n}{t}&= -v_\text{A,i}\pdv{}{t}\qty[\pdv{n}{i}] = -v_\text{A,i}\pdv{}{i}\qty[\pdv{n}{t}] =v_\text{A,i}^2\pdv[2]{n}{i}\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent and placing it into \autoref{eq:09_multizone_dispersion_ex3}:
 \begin{equation}
     \begin{aligned}
-        \pdv{n}{t}+v\pdv{n}{i}&= \frac{v\Delta i}{2}\pdv[2]{n}{i}\mp\frac{v^2\Delta t}{2}\pdv[2]{n}{i} \\
-        &=\frac{v\Delta i}{2}\qty(1\mp v\frac{\Delta t}{\Delta i})\pdv[2]{n}{i} \\
+        \pdv{n}{t}+v_\text{A,i}\pdv{n}{i}&= \frac{v_\text{A,i}\Delta i}{2}\pdv[2]{n}{i}\mp\frac{v_\text{A,i}^2\Delta t}{2}\pdv[2]{n}{i} \\
+        &=\frac{v_\text{A,i}\Delta i}{2}\qty(1\mp v_\text{A,i}\frac{\Delta t}{\Delta i})\pdv[2]{n}{i} \\
         &=D' \pdv[2]{n}{i}\text{ ,} 
     \end{aligned}\label{eq:09_multizone_dispersion_ex4}
 \end{equation}
 \noindent where:
 \begin{equation}
     \begin{aligned}
-        D'&=\frac{v\Delta i}{2}\qty(1\mp v\frac{\Delta t}{\Delta i})\text{ ,} 
+        D'&=\frac{v_\text{A,i}\Delta i}{2}\qty(1\mp v_\text{A,i}\frac{\Delta t}{\Delta i})\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent represents the introduced dispersive component. Now consider a 1D scenario that includes both advection and diffusion in this mathematical form:
 
  \begin{equation}
      \begin{aligned}
-         \pdv{n}{t}+v\pdv{n}{x}&=-\qty(D-D') \pdv[2]{n}{x}\text{ .} 
+         \pdv{n}{t}+v_\text{A,i}\pdv{n}{x}&=-\qty(D-D') \pdv[2]{n}{x}\text{ .} 
      \end{aligned}
  \end{equation}
 \noindent When $D'\ll D$, dispersion can be considered negligible compared to diffusion.
 \newpar 
-\begin{SCfigure}[0.71][h!]
+\begin{SCfigure}[0.71][t!]
     \centering
     \includegraphics[width=0.7\textwidth]{09_Multizone/Images/advection/advection_1D_multizone_final.pdf}
     \caption{Advection and diffusion of the electron number density with velocity $v=0.002c$ with identical parameters as per \autoref{fig:09_multizone_diff_3D}. (\textit{top}) Dispersion of electrons for an advection-only scenario. (\textit{middle}) A comparison of the 1D diffusive variance radius ($R=\sqrt{2Dt}$) and the radius containing $68\%$ of electrons after advection ($R_{\sigma}$) for an advection-only, diffusion only and diffusion + advection scenarios at different ages of the system. (\textit{bottom}) The numerical (solid lines) and analytical (dots) electron number density distribution at $t=40\,\kiloyear$ for electron energies $E=0.1$ and $10\,\TeV$.}
@@ -442,7 +441,7 @@ In the continuous limit:
 \end{SCfigure}
 Any application of advection to \mbox{HESS\,J1825-137} in this thesis will consider the same parameters as used in \autoref{fig:09_multizone_diff_3D} ($\Delta x =2\,\pc$, $\Delta t=8\,\si{yr}$, $\chi=0.1$, $D_0=3\times 10^{27}\,\si{\centi\meter\squared\per\second}$ and $B=3\,\si{\micro G}$) with an additional an advective velocity of $0.002c$ (see \autoref{sec:10_second_paper}). Therefore, dispersion is negligible compared to diffusion for electrons with energy $\gg 10^{-3}\,\TeV$. The resultant photon from a $10^{-3}\,\TeV$ electron interacting with the CMB via inverse Compton interactions will have energy $\approx 10^{-8}\,\TeV$. Consequently, the dispersion due to the application of finite difference techniques to advection is negligible to the electron and gamma-ray energy range considered in this thesis.
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=\textwidth]{09_Multizone/Images/advection/advection_2D_multizone_final.pdf}
     \caption{Electron injection into a 2D grid at $x=y=t=0$ and experiencing diffusion and advection with $v=\qty[0.002c,0.002c]$. (\textit{Top}) The number density distribution after $40\,\kiloyear$. The black and yellow dashed circles represent the 2D variance radius ($R_\text{var}$) and the radius containing $1\sigma=68\%$ of electrons ($R_\sigma$) respectively. The red circle describes the $R_\sigma$ containment radius for an advection-only scenario. Finally, the red cross represents the electron source position at $x=y=0$ (\textit{Bottom}) Comparing the numerical solution (lines) and analytical solution (dots, see \autoref{eq:09_multizone_adv_2D_analytical}) at $t=20$ and $40\,\kiloyear$ along $y=(vt\pm 1)\,\pc$ (dashed horizontal line in the bottom panel). The vertical grey line shows the electron source position at $x=0$.}
@@ -472,6 +471,6 @@ Finite difference methods will now be applied to 2D advection with parameters si
 
 In summary, {\tt Multizone} uses finite difference techniques to numerically solve the transport equation in order to predict the electron energy distribution around an accelerator. Isotropic diffusion and spatially independent advection were considered as the main methods of transport. The conditions under which \multizone can match the analytical solution were shown and noted that the dispersive effects due to numerical techniques were negligible for the parameters considered here.
 \newpar
-Finite difference methods can be used to predict the electron number density in 3D due to advection, where the third dimension is the distance along the line of sight. As discussed in \autoref{appendix:snrs}, the reverse shock of the associated SNR is influenced by the surrounding ISM, where the time the reverse shock takes to form depends on the amount of ISM gas \citep{alma9928040781501811}. The reverse shock, in turn, influences the morphology of the PWN and the preferential direction of electron flow. Figure 2. in \autoref{sec:08} shows the presence of dense gas clouds to the north of \mbox{PSR\,1826-1334} in velocity range $40-60\,\kmpersec$ ($3.5-4.5\,\kpc$). Therefore, the reverse shock will first form to the Galactic north of \mbox{\HESS\,J1825-137} and travel southwards to influence the PWN. Electrons will then be preferentially transported to the Galactic south, resulting the asymmetric gamma-ray morphology seen towards \mbox{HESS\,J1825-137}. Therefore for simplicity, any modelling of \mbox{HESS\,J1825-137} in this thesis will assume a bulk flow of electrons to the Galactic south and zero bulk flow in the line of sight.
+Finite difference methods can be used to predict the electron number density in 3D due to advection, where the third dimension is the distance along the line of sight. As discussed in \autoref{appendix:snrs}, the reverse shock of the associated SNR is influenced by the surrounding ISM, where the time the reverse shock takes to form depends on the amount of ISM gas \citep{alma9928040781501811}. The reverse shock, in turn, influences the morphology of the PWN and the preferential direction of electron flow. Figure 2. in \autoref{sec:08} shows the presence of dense gas clouds to the north of \mbox{PSR\,1826-1334} in velocity range $40-60\,\kmpersec$ ($3.5-4.5\,\kpc$). Therefore, the reverse shock will first form to the Galactic north of \mbox{\HESS\,J1825-137} and travel southwards to influence the PWN. Electrons will then be preferentially transported to the Galactic south, resulting the asymmetric gamma-ray morphology seen towards \mbox{HESS\,J1825-137}. Therefore, any modelling of \mbox{HESS\,J1825-137} in this thesis will assume a bulk flow of electrons to the Galactic south and zero bulk flow in the line of sight.
 \newpar
 {\tt Multizone} will be combined with Nanten data (see \autoref{sec:NANTEN}) and magnetic field models to predict the electron energy distribution around \mbox{HESS\,J1825-137} due to pulsar \mbox{PSR\,1826-1334} and the subsequent multi-wavelength morphology. The contamination of nearby $\TeV$ gamma-ray source \mbox{HESS\,J1826-130} (see \autoref{sec:01_1825_1826}) due to \mbox{HESS\,J1825-137} will be investigated. This is summarised in \autoref{sec:10_second_paper}.
