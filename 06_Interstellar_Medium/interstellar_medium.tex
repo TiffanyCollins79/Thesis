@@ -20,14 +20,13 @@ The ISM gas towards \mbox{HESS\,J1825-137} influences the rate at which cosmic r
 Firstly, this section will define fundamental concepts.
 \newpar 
 \noindent Let a telescope with detecting area $\dd{A}$ observe photons (in frequency range $\nu + \dd{\nu}$ and energy range $E+\dd{E}$) from a source within solid angle $\dd{\Omega}$ at orientation $\theta$ in time $\dd{t}$ (see \autoref{fig:telescope_basic_diagram2}).
-
-\begin{SCfigure}[0.42][h!]
+\begin{SCfigure}[0.42][b!]
 	\centering
 	\includegraphics[width=0.7\textwidth]{06_Interstellar_Medium/Images/Theory/intensity.pdf}
-	\caption{A basic illustration of a telescope with area $\dd{A}$ observing a cloud of ISM gas with solid angle $\dd{\Omega}$ at at orientation $\theta$.}
+	\caption{A basic illustration of a telescope with area $\dd{A}$ observing a cloud of ISM gas with solid angle $\dd{\Omega}$ at orientation $\theta$.}
 	\label{fig:telescope_basic_diagram2}
 \end{SCfigure}
-\noindent The amount of photons arriving within solid angle $\dd{\Omega}$ is described by the the specific intensity:
+The amount of photons arriving within solid angle $\dd{\Omega}$ is described by the specific intensity:
 
 \begin{equation}
 	\begin{aligned}
@@ -61,14 +60,13 @@ Firstly, this section will define fundamental concepts.
 \subsection{Radiative Transfer}
 
 Let a cloud with thickness $\dd{s}=c\dd{t}$ (volume $\dd{V}=\dd{A}c\dd{t}$) and particle number density $n$ be illuminated by a background source with specific intensity $I_\nu$ on area $\dd{A}$ (see \autoref{fig:photon_energy_density}).
-
-\begin{figure}[H]
+\begin{figure}[b!]
 	\centering
 	\includegraphics[width=\textwidth]{06_Interstellar_Medium/Images/Theory/radiative_transfer.pdf}
 	\caption{A cloud of thickness $\dd{s}$ is illuminated by a background source with intensity $I_\nu\qty(s)$. Photons of frequency $\nu$ are emitted and re-emitted by particles (dark circles) within the cloud, changing the intensity by $\dd{I_\nu}$}
 	\label{fig:photon_energy_density}
 \end{figure}
-\noindent The cloud contains $n\dd{V}$ particles with each particle having an absorption cross section $\sigma_\nu$ for radiation of frequency $\nu$. The total absorption area of the cloud can be described by $n\dd{s}\dd{A}\sigma_\nu$, giving the fraction of photons absorbed to be:
+The cloud contains $n\dd{V}$ particles with each particle having an absorption cross section $\sigma_\nu$ for radiation of frequency $\nu$. The total absorption area of the cloud can be described by $n\dd{s}\dd{A}\sigma_\nu$, giving the fraction of photons absorbed to be:
 
 \begin{equation}
     \begin{aligned}
@@ -218,7 +216,7 @@ In radio astronomy, brightness temperature ($T_B$) is often used to measure inte
 
 \subsection{Spectral Line Excitation and Emission} \label{sec:interstellar_medium_excitation_emission}
 
-\begin{figure}[h]
+\begin{figure}[b!]
 	\centering
 	\includegraphics[width=0.7\textwidth]{06_Interstellar_Medium/Images/Theory/emission.pdf}
 	\caption{(\textit{left}) Excitation of an electron from a low to higher energy level due to absorption of energy from a photon. (\textit{middle}) The emission of a photon when an electron spontaneously decays to a lower energy level. (\textit{right}) An incident photon interacts with an excited atom, causing the electron to decay to a lower energy level and emit a photon.}
@@ -234,7 +232,7 @@ Atoms populate their electrons in orbitals, from low to high energy levels. The 
 \end{equation}
 \noindent For example, H$\alpha$ emission occurs when the electron in an excited hydrogen atom decays from the third to second energy level. As a result H$\alpha$ emission is used as a tracer for ionised gas. In its neutral state, a hydrogen atom consists of one electron-proton pair with their spins either parallel or antiparallel. The hydrogen atom may spontaneously switch the spin of its electron from parallel to antiparallel to the proton spin and release radiation with a wavelength of $21\,\cm$ known as the HI line. This HI line can be used to probe neutral hydrogen gas in the Galaxy and beyond.
 \newpar
-Stimulated emission occurs when an external photon interacts with an excited atom causing an emission of a photon with the same wavelength, polarisation and direction as the initial photon (see \autoref{fig:absorption_emission}). The initial photon must have -- for stimulated emission to occur.
+Stimulated emission occurs when an external photon interacts with an excited atom causing an emission of a photon with the same wavelength, polarisation and direction as the initial photon (see \autoref{fig:absorption_emission}). The initial photon must have energy equal to the energy difference between the levels for stimulated emission to occur.
 
 \section{Probing the Interstellar Medium} 
 
@@ -272,7 +270,7 @@ The two nuclei in $H_2$ molecules rotate around their centre of mass with angula
 \end{equation}
 \noindent For molecular hydrogen, temperatures greater than $100\,\si{\kelvin}$ are required for rotational energy excitation. Hence, molecules within the majority of quiescent $H_2$ clouds exist in their vibrational and rotational ground state. 
 \newpar 
-After H$_2$, the second most abundant molecule is CO, following a  CO/H$_2$ abundance ratio of $10^{-4}$ in molecular clouds \citep{1994ApJ...428L..69L}. The transition between the ground and first rotational energy level ($J=1-0$) for CO requires much lower temperatures $\approx 5\,\si{\kelvin}$, corresponding to photons being emitted at frequency $115\,\si{\giga\hertz}$ ($\lambda=2.6\,\si{\milli\meter}$) \citep{alma9927598238601811}. Therefore, carbon monoxide can be used as a tracer for molecular hydrogen (see \citep{Bolatto2013}).
+After H$_2$, the second most abundant molecule is CO, following a  CO/H$_2$ abundance ratio of $10^{-4}$ in molecular clouds \citep{1994ApJ...428L..69L}. The transition between the ground and first rotational energy level ($J=1-0$) for CO requires much lower temperatures ($\approx 5\,\si{\kelvin})$, corresponding to photons being emitted at frequency $115\,\si{\giga\hertz}$ ($\lambda=2.6\,\si{\milli\meter}$) \citep{alma9927598238601811}. Therefore, carbon monoxide can be used as a tracer for molecular hydrogen (see \citep{Bolatto2013}).
 \newpar
 High-frequency radio telescopes, such as Nanten (see \autoref{sec:NANTEN}), observe the intensity of molecular CO in units of brightness temperature (see \autoref{eq:chapter_6_brightness_temp}). To interpret the amount of gas towards a particular region, the CO$(1-0)$ brightness intensity is converted to a column density ($\si{\per\centi\meter\squared}$) of molecular hydrogen through the conversion factor $X_\text{CO}$:
 
@@ -307,7 +305,7 @@ High-frequency radio telescopes, such as Nanten (see \autoref{sec:NANTEN}), obse
         \nu = \frac{c+V_\text{obs}}{c+V}\nu_0\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent where $\nu$ is the observed frequency, $\nu_0$ is the emitted frequency, $V$ is the veloicty of the gas cloud and $V_\text{obs}$ is the velocity of the observer. Therefore, a shift in frequency can be represented as a velocity in respect to a rest frame:
+\noindent where $\nu$ is the observed frequency, $\nu_0$ is the emitted frequency, $V$ is the velocity of the gas cloud and $V_\text{obs}$ is the velocity of the observer. Therefore, a shift in frequency can be represented as a velocity in respect to a rest frame:
 
 \begin{equation}
     \begin{aligned}
@@ -319,7 +317,7 @@ High-frequency radio telescopes, such as Nanten (see \autoref{sec:NANTEN}), obse
 \subsection{Galactic Rotation Curve} \label{sec:06_galactic_rotation}
 
 Matter rotates around the GC with an average tangential speed of $\Theta_0\approx 220\,\kmpersec$. The Galactic rotation curve is an empirical model (see \autoref{fig:Galactic_rotation_model}) that relates the galactocentric radius (distance to the GC) of an object to its observational velocity.
-\begin{figure}[h!]
+\begin{figure}[b!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{06_Interstellar_Medium/Images/Theory/galaxy_combined.pdf}
 	\caption{(\textit{Left}) Rotation of the Galaxy around the GC (dark blue circle) with the yellow circle as the Sun, the red arrows are the tangential velocity of the green objects (e.g. gas cloud) and the blue arrows are their velocities projected along the line of sight to the Sun. (\textit{Right}) Geometry of an object at Galactic longitude $\ell$, Galactic latitude $b$ and distance $d$ from the Sun.}
@@ -357,9 +355,9 @@ Other parameterisations of the Galactic rotation curves include \cite{1985ApJ...
 \end{equation}
 \noindent with $a_{p1}=[241\pm 9]\,\kmpersec$, $a_{p2}=0.5\pm 3.7$ and $a_{p3}=-15.1\pm 8.4$. 
 \newpar 
-The velocity in \autoref{eq:chapter_6_brand_blitz_velocity} describes the circular rotation velocity of an object around the Galaxy. However, the velocity measured at Earth is the combined velocity due to Galactic rotation and local individual gas motion (e.g. due to stellar winds, SNR shock fronts). \cite{1993A&A...275...67B} noted that residuals of modelled gas with respect to the Galactic rotation curve can be as large as $40\,\kmpersec$ with the average being around $12.8\,\kmpersec$. This is significant compared to the Nanten observatory (see \autoref{sec:NANTEN}), velocity resolution of $1\,\kmpersec$, whose data products were used in this thesis. The uncertainty in the individual velocity of the gas will lead to large uncertainties in distances (hundreds of parsecs) to gas clouds.
+The velocity in \autoref{eq:chapter_6_brand_blitz_velocity} describes the circular rotation velocity of an object around the Galaxy. However, the velocity measured at Earth is the combined velocity due to Galactic rotation and local individual gas motion (e.g. due to stellar winds, SNR shock fronts). \cite{1993A&A...275...67B} noted that residuals of modelled gas with respect to the Galactic rotation curve can be as large as $40\,\kmpersec$ with the average being around $12.8\,\kmpersec$. This is significant compared to the Nanten observatory (see \autoref{sec:NANTEN}) velocity resolution of $1\,\kmpersec$, whose data products were used in this thesis. The uncertainty in the individual velocity of the gas will lead to large uncertainties in distances (hundreds of parsecs) to gas clouds.
 \newpar 
-\begin{figure}
+\begin{figure}[b!]
     \centering
     \includegraphics[width=1.0\textwidth]{06_Interstellar_Medium/Images/Theory/gas_distance_example.pdf}
     \caption{(\textit{Left}) Four spherical gas clouds located $4\,\kpc$ from the Earth at distances $d$ along the line of sight (z-axis runs in/out of page) from a source of electrons (red cross). (\textit{Right}) Subsequent gamma-ray flux $40\,\kiloyear$ after electron injection commences.}
@@ -393,7 +391,7 @@ Cosmic rays propagating through the ISM scatter off magnetic field turbulence an
 	\label{fig:06_1825_SNR}
 \end{SCfigure}
 
-Atomic hydrogen in clouds can be ionised by UV light from background stars to form HII regions, while shocks (SNRs), X-rays and cosmic rays leads to the ionisation of molecular hydrogen \citep{2011piim.book.....D}. Recombination of HII atoms and electrons may result in the the emission of light in the H$\alpha$ band (corresponding to a decay from the third to the second energy level). Hence, H$\alpha$ emission can be used as a tracer for ionised hydrogen gas (HII gas). Shocks associated with SNRs ionise hydrogen gas, leading to H$\alpha$ rim-like features similar to those towards \mbox{HESS\,J1825-137} (see \autoref{fig:06_1825_SNR}). Both structures are located $\approx 120\,\pc$ from \mbox{PSR\,J1826-1334} which is consistent with the predicted SNR radius ($\approx 130\,\pc$) as suggested by \cite{deJager2009}.
+Atomic hydrogen in clouds can be ionised by UV light from background stars to form HII regions, while shocks (SNRs), X-rays and cosmic rays leads to the ionisation of molecular hydrogen \citep{2011piim.book.....D}. Recombination of HII atoms and electrons may result in the emission of light in the H$\alpha$ band (corresponding to a decay from the third to the second energy level). Hence, H$\alpha$ emission can be used as a tracer for ionised hydrogen gas (HII gas). Shocks associated with SNRs ionise hydrogen gas, leading to H$\alpha$ rim-like features similar to those towards \mbox{HESS\,J1825-137} (see \autoref{fig:06_1825_SNR}). Both structures are located $\approx 120\,\pc$ from \mbox{PSR\,J1826-1334} which is consistent with the predicted SNR radius ($\approx 130\,\pc$) as suggested by \cite{deJager2009}.
 \newpar
 Ionised gas towards \mbox{HESS\,J1825-137} acts as a target for cosmic rays escaping from the PWN/SNR to undergo hadronic/leptonic interactions and emit gamma radiation. The following describes two different methods to trace the ionised hydrogen within molecular clouds.
 
@@ -459,7 +457,7 @@ Assuming that hydrogen atoms in the $n=3$ state emit mainly H$\alpha$ light; $\p
 
 \subsection{Nanten2 Observatory} \label{sec:NANTEN}
 
-\begin{figure} [h]
+\begin{figure} [b!]
     \centering
     \includegraphics[width=0.7\textwidth]{06_Interstellar_Medium/Images/Observatories/Nanten2.pdf}
     \caption{Nanten2 telescope. Image courtesy of \cite{2006IAUSS...1E..21F}.}
