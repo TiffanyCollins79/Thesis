@@ -8,8 +8,7 @@ This code was applied to investigate the origin of the $\GeV$ gamma-ray emission
 
 \section{Radiation Losses} \label{sec:chapter_7_cr_SED_evol} 
 
-First consider cosmic rays being injected by a homogeneous source into a region of interest at rate $S\qty(\gamma,t)$ and escaping at rate $v_\text{esc}$. The time evolution of the cosmic-ray energy density distribution, $n\qty(\gamma,t)$, can be described by \citep{1980gbs..bookR....M}:
-%The time evolution of the cosmic ray energy distribution, $n\qty(\gamma,t)$ for a homogeneous source injecting particles at rate $S\qty(\gamma,t)$ and escape rate $v_\text{esc}$ can be described by \citep{1980gbs..bookR....M}:
+First, consider cosmic rays being injected by a homogeneous source into a region of interest at rate $S\qty(\gamma,t)$ and escaping at rate $v_\text{esc}$. The time evolution of the cosmic-ray energy density distribution, $n\qty(\gamma,t)$, can be described by \citep{1980gbs..bookR....M}:
 
 \begin{equation}
     \begin{aligned}
@@ -18,7 +17,7 @@ First consider cosmic rays being injected by a homogeneous source into a region 
 \end{equation}
 \noindent where cosmic rays with Lorentz Factor $\gamma$ continuously lose energy at rate $\dv{\gamma}{t}\equiv \dot{\gamma}$ and have probability $v_\text{esc}\dd{t}$ of escaping the system in time $\dd{t}$. Physically, $\dot{\gamma}\qty(\gamma)n\qty(\gamma,t)$ is the number of cosmic rays per unit time that cool at Lorentz factor $\gamma$ for a cosmic-ray density $n$. The following will describe the solution of \autoref{eq:chapter_7_cr_energy_distribution} using Laplace transformations.
 \newpar
-Laplace transformations are used to reduce differential equations conveniently into an algebraic equation. The Laplace Transform for the function $f\qty(t)$ is given by:
+Laplace transformation's are used to reduce differential equations conveniently into an algebraic equation. The Laplace Transform for the function $f\qty(t)$ is given by:
 
 \begin{equation}
     \begin{aligned}
@@ -235,7 +234,7 @@ Assuming synchrotron losses are dominant (valid for high-energy electrons and/or
 
 \subsection{Continuous Source of Cosmic Rays}
 
-A continuous source is a source that injects cosmic rays into the ISM at a constant rate over a significant time frame. For simplicity, it's assumed that source has a constant injection luminosity; i.e. no outbursts or `dormant' stages. Examples of continuous sources include pulsars and massive stellar clusters which typically inject cosmic rays for over $10^5\,\si{yr}$. At $t=0\,\si{yr}$ the initial cosmic-ray density, $n\qty(\gamma_0,0)$, is zero. Assuming that no cosmic rays escape the system ($\lambda=0$), \autoref{eq:chapter_7_cr_energy_distribution_transform_sol} becomes:
+A continuous source is a source that injects cosmic rays into the ISM at a constant rate over a significant time frame. For simplicity, it's assumed that source has a constant injection luminosity; i.e. no outbursts or `dormant' stages. Examples of continuous sources include pulsars and massive stellar clusters which typically inject cosmic rays for over $10^5\,\si{yr}$. At $t=0\,\si{yr}$, the initial cosmic-ray density, $n\qty(\gamma_0,0)$, is zero. Assuming that no cosmic rays escape the system ($\lambda=0$), \autoref{eq:chapter_7_cr_energy_distribution_transform_sol} becomes:
 
 \begin{equation}
     \begin{aligned}
@@ -341,7 +340,7 @@ Again, synchrotron radiation is assumed to be the dominant cause of electron ene
 
 \subsection{Propagation of Cosmic Rays}
 
-We will take the simple example of an impulsive cosmic-ray source injecting particles with power law spectrum ($n\qty(\gamma,r=0,t=0)=A\gamma^{-\Gamma}$) into the centre of a uniform cloud at $t=0$. The cosmic rays are then allowed to propagate outwards. \cite{1995PhRvD..52.3265A} gives the Green's function solution of \autoref{eq:chapter_7_cr_energy_distribution_sol} at a distance $r$ from an impulsive source:
+We will take the simple example of an impulsive cosmic-ray source injecting particles with power law spectrum ($n\qty(\gamma,r=0,t=0)=A\gamma^{-\Gamma}$) into the centre of a uniform cloud at $t=0$. Cosmic rays are then allowed to propagate outwards. \cite{1995PhRvD..52.3265A} gives the Green's function solution of \autoref{eq:chapter_7_cr_energy_distribution_sol} at a distance $r$ from an impulsive source:
 
 \begin{subequations}
 	\begin{align}
@@ -377,7 +376,7 @@ The time evolution of the cosmic-ray density distribution can be found by combin
 	\caption{The cosmic-ray energy density distribution for an impulsive (top panel) and continuous (bottom panel) source of protons after $10\,\kiloyear$ as described by \autoref{eq:chapter_7_crpropev_hadronic_impulsive} and \autoref{eq:chapter_7_crpropev_hadronic_continuous} respectively. The solid blue line shows the shape of the injected proton energy distribution ($\propto E^{-\Gamma}$). For reference, the diffusion distance (\autoref{eq:chapter_7_Rdiff_hadronic_impulsive}) is represented by the dashed-dotted line.}
 	\label{fig:chapter_7_propagation_hadron_cr_spectrum}
 \end{figure}
-\noindent The top panel of \autoref{fig:chapter_7_propagation_hadron_cr_spectrum} shows the hadronic cosmic-ray energy density distribution at different distances $r$ from an impulsive accelerator $10\,\kiloyear$ after injecting cosmic rays with spectrum $n\qty(\gamma_0,0)=A\gamma^{-\Gamma}$ in a medium with number density and magnetic field $n=100\,\si{\per\centi\meter\cubed}$ and $B=10\,\si{\micro G}$ respectively. A diffusion suppression coefficient of $\chi=0.01$ was chosen to demonstrate the transport of cosmic rays in molecular clouds (see \autoref{chapter_1_cr_propagation}). \autoref{eq:chapter_7_Rdiff_hadronic_impulsive} and \autoref{fig:chapter_7_propagation_hadron_cr_spectrum} show that higher energy protons are able to diffuse further from the source than their lower energy counterparts. For distances far from the source, only the highest energy protons (e.g. $E\gtrapprox 30\,\TeV$ for a distance of $20\,\pc$) are able to reach this region for a given time. Hence, for distances greater than the diffusion length ($r>R_\text{diff}$), the proton energy spectra is steeper than the initial injected spectra. For distances close to the source, high-energy protons escape this region faster than low energy protons (e.g. a $1\,\TeV$ and a $100\,\TeV$ proton takes $\approx 14\,\kiloyear$ and $\approx1.4\,\kiloyear$ respectively to travel $5\,\pc$). Therefore, for distances within the diffusion length ($r<R_\text{diff}$), the cosmic-energy density distribution is shallower than the injected spectrum. 
+\noindent The top panel of \autoref{fig:chapter_7_propagation_hadron_cr_spectrum} shows the hadronic cosmic-ray energy density distribution at different distances $r$ from an impulsive accelerator $10\,\kiloyear$ after injecting cosmic rays with spectrum $n\qty(\gamma_0,0)=A\gamma^{-\Gamma}$ in a medium with number density and magnetic field $n=100\,\si{\per\centi\meter\cubed}$ and $B=10\,\si{\micro G}$ respectively. A diffusion suppression coefficient of $\chi=0.01$ was chosen to demonstrate the transport of cosmic rays in molecular clouds (see \autoref{chapter_1_cr_propagation}). \autoref{eq:chapter_7_Rdiff_hadronic_impulsive} and \autoref{fig:chapter_7_propagation_hadron_cr_spectrum} show that higher energy protons are able to diffuse further from the source than their lower energy counterparts. For distances far from the source, only the highest energy protons (e.g. $E\gtrapprox 30\,\TeV$ for a distance of $20\,\pc$) are able to reach this region for a given time. Hence, for distances greater than the diffusion length ($r>R_\text{diff}$), the proton energy spectra is steeper than the initial injected spectra. For distances close to the source, high-energy protons escape this region faster than low-energy protons (e.g. a $1\,\TeV$ and a $100\,\TeV$ proton takes $\approx 14\,\kiloyear$ and $\approx1.4\,\kiloyear$ respectively to travel $5\,\pc$). Therefore, for distances within the diffusion length ($r<R_\text{diff}$), the cosmic-energy density distribution is shallower than the injected spectrum. 
 \newpar
 A continuous source can be treated as a series of impulsive injectors and \autoref{eq:chapter_7_cr_energy_distribution_sol} must be solved numerically. However, for a case when $t\ll \tau_{pp}$, the cosmic-ray energy density distribution can be described by \citep{1996A&A...309..917A}:
 
@@ -422,7 +421,7 @@ For an accelerator injecting electrons, combining \autoref{eq:diffusion},  \auto
 \end{figure}
 The top panel of \autoref{fig:chapter_7_propagation_leptonic_cr_spectrum} describes the leptonic energy density distribution at a distance $r$ from an impulsive injector $10\,\kiloyear$ after injecting electrons with power law spectrum, $n\qty(\gamma,r=0,t=0)=A\gamma^{-\Gamma}$, into a medium with number density $1\,\si{\per\centi\meter\cubed}$ and magnetic field $B=10\,\si{\micro G}$. As with protons, high-energy electrons are able to diffuse to further than lower energy electrons. Therefore, for distances greater than the diffusion length ($r>R_\text{diff}$), the electron energy spectra is steeper than the injected spectra. For distances close to the source ($r<R_\text{diff}$), the electron energy spectra is shallower than the injected spectra. Unlike protons, a maximum electron energy can be seen corresponding to the critical Lorentz factor described by \autoref{eq:chapter_7_imp_lep_critical_lorentz}.
 \newpar
-For a continuous source of electrons, \autoref{eq:chapter_7_cr_energy_distribution_sol} must be solved numerically. However, for a source injecting electrons constantly with a simple power law (and assuming synchrotron losses are dominant), \cite{1995PhRvD..52.3265A} gives the electron energy spectrum as:
+For a continuous source of electrons, \autoref{eq:chapter_7_cr_energy_distribution_sol} must be solved numerically. However, for a source injecting electrons continously with a simple power law (and assuming synchrotron losses are dominant), \cite{1995PhRvD..52.3265A} gives the electron energy spectrum as:
 
 \begin{equation}
     \begin{aligned}
@@ -460,7 +459,7 @@ Similarly to protons, for distances close to the source ($R\ll R_\text{diff}$), 
     \label{fig:chapter_7_manolakou_verification}
 \end{figure}
 
-{\tt Newsedprod} is a software originally developed by \citep{fabien} that injects cosmic rays into a uniform region of ISM (constant number density and magnetic field) with injection luminosity $W\,\qty[\si{ergs\per\second}]$ (continuous source) or energy budget $L\,\qty[\ergs]$  (impulsive source). The energy spectrum of cosmic-ray protons and electrons can be desribed by:
+{\tt Newsedprod} is a software originally developed by \citep{fabien} that injects cosmic rays into a uniform region of ISM (constant number density and magnetic field) with injection luminosity $W\,\qty[\si{ergs\per\second}]$ (continuous source) or energy budget $L\,\qty[\ergs]$  (impulsive source). The energy spectrum of cosmic-ray protons and electrons can be described by:
 
 \begin{equation}
     \begin{aligned}
@@ -528,7 +527,7 @@ After injection, cosmic rays radiate their energy and cool to lower Lorentz fact
 \end{equation}
 \noindent for $\gamma_\text{min}>\gamma_1$.
 \newpar
-\autoref{fig:chapter_7_manolakou_verification} shows the comparison of the electron energy density distribution predicted by {\tt Newsedprod} to the results published by \cite{2007A&A...474..689M}. Assuming that there is no escape, i.e. ($\nu_\text{esc}=0$), electrons are continuously injected with an exponential cutoff power law spectrum ($\Gamma^{2.0}$) into a uniform cloud with number density $n=1\,\si{\per\centi\meter\cubed}$ and magnetic field $B=10\,\si{\micro G}$. The top panel of \autoref{fig:chapter_7_manolakou_verification} shows the time evolution of electrons against a soft photon field with temperature and energy density $T=30000\,\si{K}$ and $u_0=500\,\si{\electronvolt\per\centi\meter\cubed}$ (in line with the parameters chosen by \cite{2007A&A...474..689M}) at times $10^5\,\si{yr}$ ($\gamma_1=2.5\times 10^6$), $8\times 10^5\,\si{yr}$ ($\gamma_1=5\times 10^4$), $2\times 10^6\,\si{yr}$ ($\gamma_1=1.6\times 10^3$). Synchrotron losses are dominant for electrons with Lorentz factor $\gamma>\gamma_s = 6\times 10^5$ (see \autoref{sec:chapter1_non_thermal_emission}). The bottom panel of \autoref{fig:chapter_7_manolakou_verification} investigates how the change in the photon field energy density affects the electron energy density distribution at time $10^6\,\si{yr}$. Synchrotron losses are dominant for $\gamma>\gamma_s=3.8\times 10^5$ ($u_0=250\,\si{\electronvolt\per\centi\meter\cubed}$) and $\gamma>\gamma_s=1.8\times 10^6$ ($u_0=2500\,\si{\electronvolt\per\centi\meter\cubed}$).  \cite{2007A&A...474..689M} injects electrons between $\gamma_\text{min}=10^4$ and $\gamma_\text{min}=10^9$ while {\tt Newsedprod} injects electrons between $\gamma_\text{min}=10^{-2}$ and $\gamma_\text{min}=10^9$. The threshold Lorentz factor seen in the \cite{2007A&A...474..689M} corresponds to $\gamma=10^4$ at $t=0$ after being cooled, i.e. $\gamma_1$.
+\autoref{fig:chapter_7_manolakou_verification} shows the comparison of the electron energy density distribution predicted by {\tt Newsedprod} to the results published by \cite{2007A&A...474..689M}. Assuming that there is no escape, i.e. $\nu_\text{esc}=0$, electrons are continuously injected with an exponential cutoff power law spectrum ($\Gamma^{2.0}$) into a uniform cloud with number density $n=1\,\si{\per\centi\meter\cubed}$ and magnetic field $B=10\,\si{\micro G}$. The top panel of \autoref{fig:chapter_7_manolakou_verification} shows the time evolution of electrons against a soft photon field with temperature and energy density $T=30000\,\si{K}$ and $u_0=500\,\si{\electronvolt\per\centi\meter\cubed}$ (in line with the parameters chosen by \cite{2007A&A...474..689M}) at times $10^5\,\si{yr}$ ($\gamma_1=2.5\times 10^6$), $8\times 10^5\,\si{yr}$ ($\gamma_1=5\times 10^4$), $2\times 10^6\,\si{yr}$ ($\gamma_1=1.6\times 10^3$). Synchrotron losses are dominant for electrons with Lorentz factor $\gamma>\gamma_s = 6\times 10^5$ (see \autoref{sec:chapter1_non_thermal_emission}). The bottom panel of \autoref{fig:chapter_7_manolakou_verification} investigates how the change in the photon field energy density affects the electron energy density distribution at time $10^6\,\si{yr}$. Synchrotron losses are dominant for $\gamma>\gamma_s=3.8\times 10^5$ ($u_0=250\,\si{\electronvolt\per\centi\meter\cubed}$) and $\gamma>\gamma_s=1.8\times 10^6$ ($u_0=2500\,\si{\electronvolt\per\centi\meter\cubed}$).  \cite{2007A&A...474..689M} injects electrons between $\gamma_\text{min}=10^4$ and $\gamma_\text{min}=10^9$ while {\tt Newsedprod} injects electrons between $\gamma_\text{min}=10^{-2}$ and $\gamma_\text{min}=10^9$. The threshold Lorentz factor seen in the \cite{2007A&A...474..689M} corresponds to $\gamma=10^4$ at $t=0$ after being cooled, i.e. $\gamma_1$.
 
 \newpar
 \begin{figure}[hbtp]
@@ -541,7 +540,7 @@ After injection, cosmic rays radiate their energy and cool to lower Lorentz fact
 
 \subsection{Including Particle Escape in {\tt Newsedprod}}
 
-\begin{SCfigure}[0.5][htbt]
+\begin{SCfigure}[0.5][b!]
     \centering
     \includegraphics[width=0.6\textwidth]{07_Particle_Evolution/Images/Code/code_example.pdf}
     \caption{An accelerator inside a uniform region of ISM with number density $n$ and magnetic field $B$. After injection, cosmic rays scatter off magnetic field turbulence resulting in net diffusion from the accelerator. The probability that a cosmic ray escapes the region while cooling from Lorentz factor $\gamma'\rightarrow\gamma$ is $1-\exp(-\lambda(\gamma',\gamma))$ (see \autoref{eq:chapter_7_lambda_escape_rate})}
@@ -579,7 +578,7 @@ Cosmic rays scatter of magnetic field turbulence, randomising their direction (s
     \end{aligned} \label{eq:chapter_7_escape_rate_2}
 \end{equation}
 
-\begin{figure}[htbt]
+\begin{figure}[b!]
     \centering
     \includegraphics[width=\textwidth]{07_Particle_Evolution/Images/Code/manolakou_ecape.pdf}
     \caption{Comparison of {\tt Newsedprod} (solid lines) to results by \cite{2007A&A...474..689M} where electrons are allowed to escape the system at rate $\nu_\text{esc}= b_\text{es}\gamma$ (see \autoref{eq:chapter_7_escape_rate_2}), i.e. Bohm diffusion regime. Electrons are injected with a power-law spectrum $\Gamma=2.0$. The position of $\gamma_1$ is represented by the vertical dotted line.}
@@ -627,13 +626,13 @@ For simplicity, synchrotron losses will be assumed to be dominant ($\dot{\gamma}
 
 The rate at which cosmic rays escape a sphere of radius $R$ depends on the diffusion properties which, in turn, depend on the power spectrum of the magnetic field turbulence (see \autoref{eq:diffusion}). Using {\tt Newsedprod}, the effects of the different magnetic field regimes (Kolmogrov $\delta=\frac{1}{3}$, Kraichan $\delta=0.5$ and Bohm $\delta=1$) on the electron energy spectra and subsequent SED can be seen in \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive} and \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous} for an impulsive and continuous electron accelerator respectively.
 \newpar 
-For both accelerators types, as the power spectrum of the magnetic field turbulence ($\delta$) increases, the rate of diffusion increases for electrons $>E_\text{cr}$ and decreases for electrons $<E_\text{cr}$, where $E_\text{cr}$ is the crossover energy corresponding to $D=\chi D_0$ (see \autoref{eq:diffusion}):
+For both impulsive and continuous accelerators, as the power spectrum of the magnetic field turbulence ($\delta$) increases, the rate of diffusion increases for electrons $>E_\text{cr}$ and decreases for electrons $<E_\text{cr}$, where $E_\text{cr}$ is the crossover energy corresponding to $D=\chi D_0$ (see \autoref{eq:diffusion}):
 \begin{equation}
     \begin{aligned}
         E_\text{cr}&=\frac{B}{3\,\si{\micro G}}\quad\qty[\GeV]\text{ .}
     \end{aligned}
 \end{equation}
-\noindent For a magnetic field of $10\,\si{\micro G}$, the cross-over energy is $0.3\,\GeV$ as seen in the top panel of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive}. As the magnetic field increases, the crossover energy migrates to higher energies as seen in the left hand panels of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous}. The subsequent inverse Compton and synchrotron SED then follows the electron energy density distribution as shown in the bottom panel of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive} and right hand panels of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous} (see \autoref{sec:chapter_1_leptonic_gre}).
+\noindent For a magnetic field of $10\,\si{\micro G}$, the cross-over energy is $0.3\,\GeV$ as seen in the top panel of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive}. As the magnetic field increases, the crossover energy migrates to higher energies as seen in the left-hand panels of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous}. The subsequent inverse Compton and synchrotron SED then follows the electron energy density distribution as shown in the bottom panel of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive} and right hand panels of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous} (see \autoref{sec:chapter_1_leptonic_gre}).
 \newpar 
 Electrons will cool to a lower energy before escaping the system when their cooling time ($\tau$) is less than the time it takes for a particle to diffuse distance $R$ (see \autoref{eq:chapter_7_6Dt}). Therefore, for a continuous source, electrons with high energy reach a steady state where radiative losses and escape loses are balanced by the injected electrons (e.g. $E\gtrsim 10\,\TeV$ for $B=50\,\si{\micro G}$)
 
