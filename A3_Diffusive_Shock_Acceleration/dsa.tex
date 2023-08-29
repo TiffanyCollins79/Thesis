@@ -4,14 +4,14 @@ At Earth, the energy spectrum of cosmic rays have been measured up to $10^{20}\,
 
 \section{Fermi's Original Theory}
 
-In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM gas cloud (travelling at velocity $v_c$ in the lab frame) at angle $\theta_1$ (see \autoref{fig:A3_DSA_fermi_orig_frames}) and exits the cloud with energy $E_2$ and angle $\theta_2$. Using Lorentz transformations, the original energy in the cloud frame (primed frame) is given by:
-
-\begin{figure}[h!]
+\begin{figure}[b!]
     \centering
     \includegraphics{A3_Diffusive_Shock_Acceleration/Images/fermi_original_theory_frames.pdf}
     \caption{In the lab frame (\textit{left}), a cosmic ray with energy $E_1$ enters an ISM cloud (travelling at speed $v_c$) at angle $\theta_1$ and scatters off magnetic field turbulence and exits the cloud with energy $E_2$ and angle $\theta_2$. The same process is shown in the right, but in the reference frame of the cloud (labeled as primed).}
     \label{fig:A3_DSA_fermi_orig_frames}
 \end{figure}
+
+In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM gas cloud (travelling at velocity $v_c$ in the lab frame) at angle $\theta_1$ (see \autoref{fig:A3_DSA_fermi_orig_frames}) and exits the cloud with energy $E_2$ and angle $\theta_2$. Using Lorentz transformations, the original energy in the cloud frame (primed frame) is given by:
 
 \begin{equation}
     \begin{aligned}
@@ -34,7 +34,7 @@ In Fermi's original theory, a cosmic ray with energy $E_1$  scatters of a ISM ga
         &=\frac{1-\beta_c\cos\theta_1+\beta_c\cos\theta_1+\beta_c^2\cos\theta_1\cos\theta_2'}{\qty(1-\beta_c^2)}-1\text{ .}
     \end{aligned} \label{eq:A3_DSA_fermi_orig_frac_energy}
 \end{equation}
-\noindent Considering the average fractional energy gain ($\langle \Delta E/E \rangle$), the outgoing direction of the cosmic ray in the clouds reference frame is randomised. Therefore, $\langle \cos\theta_2'=0 \rangle$. To calculate the average original cosmic-ray angle ($\langle \cos\theta_1 \rangle$), consider the ISM cloud traveling a distance $v_ct$ in a `sea' of cosmic rays travelling at speed $v_\text{CR}$ (see \autoref{fig:A3_fermi_origin_theta1}). In time $t$, all cosmic rays in length $L$ will enter the cloud. For relativistic cosmic rays ($v_\text{cr}>>v_c$),
+\noindent Considering the average fractional energy gain ($\langle \Delta E/E \rangle$), the outgoing direction of the cosmic ray in the clouds reference frame is randomised. Therefore, $\langle \cos\theta_2'=0 \rangle$. To calculate the average original cosmic-ray angle ($\langle \cos\theta_1 \rangle$), consider the ISM cloud traveling a distance $v_ct$ in a `sea' of cosmic rays travelling at speed $v_\text{CR}$ (see \autoref{fig:A3_fermi_origin_theta1}). In time $t$, all cosmic rays in length $L$ will enter the cloud. For relativistic cosmic rays ($v_\text{cr}\gg v_c$),
 \begin{SCfigure}[2.3][b!]
     \centering
     \includegraphics[width=0.3\textwidth]{A3_Diffusive_Shock_Acceleration/Images/fermi_original_theta1.pdf}
@@ -134,7 +134,7 @@ From \autoref{eq:A3_velocity_ratios}, the velocity of the downstream material (i
     \end{aligned} \label{eq:down_upstream_v_ratio}
 \end{equation}
 \noindent For non-relativistic particles ${v_c}/{v_s}=3/4$.
-\begin{SCfigure}[0.5][h]
+\begin{SCfigure}[0.5][h!]
 	\centering
 	\includegraphics[width=0.65\textwidth]{A3_Diffusive_Shock_Acceleration/Images/dsa.pdf}
 	\caption{Aa cosmic ray of energy $E_1$ travels upstream to downstream of the shock with no change of energy. The cosmic ray scatters off magnetic field tubulence in a cloud downstream of the shock and passes back upstream of the shock with energy $E_2$. This process can repeat or the cosmic ray can escape the system.}
