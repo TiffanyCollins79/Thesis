@@ -1724,9 +1724,6 @@ INPUT ./04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf
 INPUT 04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf
 INPUT ./04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf
 INPUT ./04_Introduction/Images/pulsar_wind_nebula/hess_j1825_image.pdf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/newtx/ntxmia.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT ./04_Introduction/Images/pulsar_wind_nebula/1826_energy_flux.png
 INPUT ./04_Introduction/Images/pulsar_wind_nebula/1826_energy_flux.png
 INPUT 04_Introduction/Images/pulsar_wind_nebula/1826_energy_flux.png
@@ -1748,6 +1745,9 @@ INPUT ./04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg
 INPUT 04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg
 INPUT ./04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg
 INPUT ./04_Introduction/Images/pulsar_wind_nebula/hess_j1826_130_xray.jpg
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/newtx/ntxmia.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT ./04_Introduction/Images/History/hess_balloon_flight.jpg
 INPUT ./04_Introduction/Images/History/hess_balloon_flight.jpg
 INPUT 04_Introduction/Images/History/hess_balloon_flight.jpg
