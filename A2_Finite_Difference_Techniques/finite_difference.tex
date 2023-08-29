@@ -144,10 +144,10 @@ Applying Von Newmann stability analysis to the transport equation, \autoref{eq:A
 \begin{equation}
     \begin{aligned}
     \mathcal{D}=D\frac{\Delta t}{\Delta i^2}&\leq \frac{1}{2} \\
-    D&\leq \frac{1}{2}\frac{\Delta i^2}{\Delta t}\text{ .} 
+    \Delta t\leq \frac{\Delta i^2}{2D}\bigg|_\text{min}\text{ .} 
     \end{aligned}
 \end{equation}
-\noindent i.e. finite difference techniques can be applied to the transport equation when the diffusion coefficient, $D$, is less than or equal to half of the `maximum' diffusion coefficient implied by the relation $\Delta i^2/\Delta t$.
+\noindent where $\Delta t$ considers the minimum time step across the three Cartesian axes.
 
 \section{Advection}
 

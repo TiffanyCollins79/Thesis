@@ -2861,7 +2861,6 @@ INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb
@@ -2896,14 +2895,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathabx-type1/mathb8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/stxscr.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txbmiaX.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb
