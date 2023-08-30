@@ -81,10 +81,10 @@ The diffusive component of the transport equation (see \autoref{eq:chapter_9_ful
 Von Neumann stability analysis (or Fourier stability analysis) can be used to check the numerical stability of finite difference techniques \citep{alma9929637001811}. For a general solution:
 \begin{equation}
     \begin{aligned}
-        U\qty(t+\Delta t, i)&=\sum_{m=-n}^n C_m U\qty(t,i+m\Delta i)\text{ ,} 
+        U^{t+\Delta t}_i&=\sum_{m=-n}^n C_m U^t_{i+m\Delta i}\text{ ,} 
     \end{aligned} \label{eq:A3_von_newmann_example}
 \end{equation}
-\noindent where there are $2n+1$ points to calculate $U\qty(t+\Delta t, i)$, the error, $\epsilon_m^t$, with respect to the analytical solution is:
+\noindent where there are $2n+1$ points to calculate $U_{t+\Delta t}^i$, the error, $\epsilon_m^t$, with respect to the analytical solution is:
 
 \begin{equation}
     \begin{aligned}
@@ -95,14 +95,14 @@ Von Neumann stability analysis (or Fourier stability analysis) can be used to ch
 
 \begin{equation}
     \begin{aligned}
-        \epsilon \qty(t+\Delta t, i)&=\sum_{m=-n}^n C_m \epsilon\qty(t,i+m\Delta i)\text{ ,} 
+        \epsilon_{t+\Delta t}^i&=\sum_{m=-n}^n C_m \epsilon_t^{i+m\Delta i}\text{ ,} 
     \end{aligned}
 \end{equation}
 \noindent For linear differential equations with periodic boundary conditions, the error can be treated as a time-dependent Fourier expansion with wave number $k$ \citep{cdi_wiley_ebooks_10_1002_9783527683147_ch11_ch11}.:
 
 \begin{equation}
     \begin{aligned}
-    \epsilon\qty(x,t)&=A\qty(t)e^{jki}=A^te^{jki}\text{ ,} 
+    \epsilon\qty(x,t)&=A^te^{jki}\text{ ,} 
     \end{aligned} \label{eq:A2_diffusion_finite_trial_sol}
 \end{equation}
 \noindent where $j$ is the complex number and \autoref{eq:A2_diffusion_finite_trial_sol} is the time-dependent spatial Fourier expansion with wave number $k$. For the solution to be stable:
