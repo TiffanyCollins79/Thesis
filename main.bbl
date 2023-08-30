@@ -23117,6 +23117,81 @@
     \field{year}{1985}
   \endentry
 
+  \entry{2021MNRAS.504.1840C}{article}{}
+    \name{author}{8}{}{%
+      {{hash=CT}{%
+         family={{Collins}},
+         familyi={C\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RG}{%
+         family={{Rowell}},
+         familyi={R\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MAMW}{%
+         family={{Mitchell}},
+         familyi={M\bibinitperiod},
+         given={A.\bibnamedelima M.\bibnamedelima W.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=VF}{%
+         family={{Voisin}},
+         familyi={V\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FY}{%
+         family={{Fukui}},
+         familyi={F\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={{Sano}},
+         familyi={S\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=AR}{%
+         family={{Alsulami}},
+         familyi={A\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ES}{%
+         family={{Einecke}},
+         familyi={E\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CT+1}
+    \strng{fullhash}{CTRGMAMWVFFYSHARES1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1093/mnras/stab983
+    \endverb
+    \verb{eprint}
+    \verb 2104.05953
+    \endverb
+    \field{number}{2}
+    \field{pages}{1840\bibrangedash 1853}
+    \field{title}{{Explaining the extended GeV gamma-ray emission adjacent to HESS J1825-137}}
+    \field{volume}{504}
+    \field{journaltitle}{MNRAS}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.HE}
+    \field{year}{2021}
+  \endentry
+
   \entry{10.1093/mnras/sty1589}{article}{}
     \name{author}{4}{}{%
       {{hash=CP}{%

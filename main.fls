@@ -1595,6 +1595,7 @@ INPUT ./02_Declaration/declaration.tex
 INPUT 02_Declaration/declaration.tex
 INPUT ./02_Declaration/declaration.tex
 INPUT 02_Declaration/declaration.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT ./03_Acknowlegments/acknowlegments.tex
 INPUT ./03_Acknowlegments/acknowlegments.tex
 INPUT ./03_Acknowlegments/acknowlegments.tex
@@ -2804,7 +2805,6 @@ INPUT ./A6_misc/misc.tex
 INPUT A6_misc/misc.tex
 INPUT ./A6_misc/misc.tex
 INPUT A6_misc/misc.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT main.aux
 INPUT ./01_Abstract/abstract.aux
 INPUT 01_Abstract/abstract.aux
