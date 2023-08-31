@@ -93,23 +93,23 @@
 \contentsline {section}{\numberline {7.3}Summary and Application}{119}{section.7.3}%
 \contentsline {chapter}{\numberline {8}A 3D Diffusive and Advective Model of Electron Transport Applied to the Pulsar Wind Nebula HESS J1825-137}{122}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Conclusion and Future Work}{145}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Supernova Remnants}{148}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The Supernova}{148}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Stages of a Supernova Remnant}{149}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Free Expansion Phase}{149}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Sedov-Taylor Phase}{149}{subsection.A.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}Snow-Plough Phase}{150}{subsection.A.2.3}%
-\contentsline {subsubsection}{Merging with the Interstellar Medium}{150}{subsubsection*.100}%
-\contentsline {chapter}{\numberline {B}Diffusive Shock Acceleration}{151}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Fermi's Original Theory}{151}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{153}{section.B.2}%
-\contentsline {subsection}{\numberline {B.2.1}Cosmic-Ray Energy Spectrum}{155}{subsection.B.2.1}%
-\contentsline {chapter}{\numberline {C}Finite Difference Techniques}{157}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Diffusion}{157}{section.C.1}%
-\contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{158}{subsection.C.1.1}%
-\contentsline {section}{\numberline {C.2}Advection}{160}{section.C.2}%
-\contentsline {chapter}{\numberline {D}Variance of diffusion in $n$ dimensions}{162}{appendix.D}%
-\contentsline {section}{\numberline {D.1}1D Diffusion}{162}{section.D.1}%
-\contentsline {section}{\numberline {D.2}2D Diffusion}{163}{section.D.2}%
-\contentsline {section}{\numberline {D.3}3D Diffusion}{163}{section.D.3}%
-\contentsline {chapter}{\numberline {E}Miscellaneous Tables}{165}{appendix.E}%
+\contentsline {chapter}{\numberline {A}Supernova Remnants}{149}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The Supernova}{149}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Stages of a Supernova Remnant}{150}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Free Expansion Phase}{150}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Sedov-Taylor Phase}{150}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Snow-Plough Phase}{151}{subsection.A.2.3}%
+\contentsline {subsubsection}{Merging with the Interstellar Medium}{151}{subsubsection*.100}%
+\contentsline {chapter}{\numberline {B}Diffusive Shock Acceleration}{152}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Fermi's Original Theory}{152}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Diffusive Shock Acceleration}{154}{section.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}Cosmic-Ray Energy Spectrum}{156}{subsection.B.2.1}%
+\contentsline {chapter}{\numberline {C}Finite Difference Techniques}{158}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Diffusion}{158}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Stability of the Finite Difference}{159}{subsection.C.1.1}%
+\contentsline {section}{\numberline {C.2}Advection}{161}{section.C.2}%
+\contentsline {chapter}{\numberline {D}Variance of diffusion in $n$ dimensions}{163}{appendix.D}%
+\contentsline {section}{\numberline {D.1}1D Diffusion}{163}{section.D.1}%
+\contentsline {section}{\numberline {D.2}2D Diffusion}{164}{section.D.2}%
+\contentsline {section}{\numberline {D.3}3D Diffusion}{164}{section.D.3}%
+\contentsline {chapter}{\numberline {E}Miscellaneous Tables}{166}{appendix.E}%
