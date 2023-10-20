@@ -71,14 +71,14 @@ The cloud contains $n\dd{V}$ particles with each particle having an absorption c
 \begin{equation}
     \begin{aligned}
         f_\text{absorbed}&=n\dd{s}\dd{A}\sigma_\nu/\dd{A} \\
-        &=n\dd{s}\sigma \text{ .}
+        &=n\dd{s}\sigma_\nu \text{ .}
     \end{aligned}
 \end{equation}
 \noindent Therefore, the change in intensity due to absorption is:
 
 \begin{equation}
     \begin{aligned}
-        \dd{I_{\nu,\text{absorbed}}}&=- \frac{n\dd{V}\sigma_\nu}{\dd{A}} \\
+        \dd{I_{\nu,\text{absorbed}}}&=- I_\nu n\sigma_\nu \dd{s}\\
         &= - \alpha_\nu I_\nu \dd{s}\text{ ,}
     \end{aligned}
 \end{equation}
@@ -227,10 +227,10 @@ Atoms populate their electrons in orbitals, from low to high energy levels. The 
 
 \begin{equation}
 	\begin{aligned}
-		j_\nu&=\frac{n_ih\nu_{if}A_{if}}{4\pi}\Phi\qty(\nu)\text{ .}
+		j_\nu&=\frac{n_ih\nu_{if}A_{if}}{4\pi}\Phi\qty(\nu)\text{ ,}
 	\end{aligned} \label{eq:interstellar_medium_emission_coefficient}
 \end{equation}
-\noindent For example, H$\alpha$ emission occurs when the electron in an excited hydrogen atom decays from the third to second energy level. As a result H$\alpha$ emission is used as a tracer for ionised gas. In its neutral state, a hydrogen atom consists of one electron-proton pair with their spins either parallel or antiparallel. The hydrogen atom may spontaneously switch the spin of its electron from parallel to antiparallel to the proton spin and release radiation with a wavelength of $21\,\cm$ known as the HI line. This HI line can be used to probe neutral hydrogen gas in the Galaxy and beyond.
+\noindent where $\Phi\qty(\nu)$ is the spectral line shape. For example, H$\alpha$ emission occurs when the electron in an excited hydrogen atom decays from the third to second energy level. As a result H$\alpha$ emission is used as a tracer for ionised gas. In its neutral state, a hydrogen atom consists of one electron-proton pair with their spins either parallel or antiparallel. The hydrogen atom may spontaneously switch the spin of its electron from parallel to antiparallel to the proton spin and release radiation with a wavelength of $21\,\cm$ known as the HI line. This HI line can be used to probe neutral hydrogen gas in the Galaxy and beyond.
 \newpar
 Stimulated emission occurs when an external photon interacts with an excited atom causing an emission of a photon with the same wavelength, polarisation and direction as the initial photon (see \autoref{fig:absorption_emission}). The initial photon must have energy equal to the energy difference between the levels for stimulated emission to occur.
 
@@ -410,7 +410,7 @@ For a spherical shell of gas located at distance $d$ from the Earth with thickne
         \dd{N}&=L\dd{t}\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent where the luminosity of the region of interest with solid angle $\omega$ is:
+\noindent where the luminosity of the region of interest with solid angle $\Omega$ is:
 \begin{equation}
     \begin{aligned}
         L&=\frac{d^2}{10^{-10}}\Omega I\quad \qty[\text{photon/s}]\text{ ,}

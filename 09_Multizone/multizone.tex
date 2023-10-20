@@ -84,7 +84,7 @@ Errors in finite difference methods arise due to the discretization of the grid 
     \Delta t \leq \frac{\Delta i^2}{2D\qty(i)}\bigg|_\text{min}\text{ .} 
     \end{aligned} \label{eq:09_finite_difference_diff_stable}
 \end{equation}
-\noindent where $\Delta t$ considers the minimum timestep across the three Cartesian axes. If this condition is not met, electrons are transported across more than voxel. As \autoref{eq:chapter_8_multizone_diff_numerical_sol} only considers neighbouring voxels, there will be a net loss of electrons in the 3D grid.
+\noindent where $\Delta t$ considers the minimum timestep across the three Cartesian axes. If this condition is not met, electrons are transported across more than one voxel. As \autoref{eq:chapter_8_multizone_diff_numerical_sol} only considers neighbouring voxels, there will be a net loss of electrons in the 3D grid.
 
 \subsection{{\tt Multizone}} \label{sec:09_multizone_steps}
 
@@ -356,7 +356,7 @@ Consider 1D advection, the analytical solution to \autoref{eq:09_multizone_adv} 
     \end{aligned}
 \end{equation}
 
-\noindent i.e. by assuming $v_A$ is constant, advection is simply a translation in space. However, the discetization of space can lead to dispersion in the numerical solution. If $\Delta t = \Delta x/v$, electrons are translated exactly one voxel for each time step as shown in the upper panels of \autoref{fig:09_multizone_smearing}. But when $\Delta t < \Delta x/v$, electrons are transported less than the voxel width and the numerical solution effectively begins to `disperse' particles as shown in the lower panels of \autoref{fig:09_multizone_smearing}.
+\noindent i.e. by assuming $v_A$ is constant, advection is simply a translation in space. However, the discretization of space can lead to dispersion in the numerical solution. If $\Delta t = \Delta x/v$, electrons are translated exactly one voxel for each time step as shown in the upper panels of \autoref{fig:09_multizone_smearing}. But when $\Delta t < \Delta x/v$, electrons are transported less than the voxel width and the numerical solution effectively begins to `disperse' particles as shown in the lower panels of \autoref{fig:09_multizone_smearing}.
 \begin{figure}[t!]
     \centering
     \includegraphics[width=\textwidth]{09_Multizone/Images/advection/advection_smearing.pdf}
@@ -461,7 +461,7 @@ Finite difference methods will now be applied to 2D advection with parameters si
         n_\text{diff+adv}\qty(E,t,\vec{r},\vec{v})&=n_\text{diff}\qty(E,t,\vec{r}-\vec{v}t)\text{ ,} 
     \end{aligned} \label{eq:09_multizone_adv_2D_analytical}
 \end{equation}
-\noindent where $\vec{r}=\qty[x,y,z=50]$, The numerical solution is able to match adequatly the analytical solution as shown in the top panels of \autoref{fig:09_multizone_adv_2D}.
+\noindent where $\vec{r}=\qty[x,y,z=50]$, The numerical solution is able to match adequately the analytical solution as shown in the bottom panels of \autoref{fig:09_multizone_adv_2D}.
 
 
 \section{Summary and Application}

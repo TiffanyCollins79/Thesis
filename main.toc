@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {3.1.2}Cosmic-Ray Air Showers}{40}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Cherenkov Light and Cherenkov Telescopes}{42}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}TeV Gamma-Ray Observatories}{44}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}The High Energy Stereoscopic System}{45}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}The High Energy Stereoscopic System}{44}{subsection.3.2.1}%
 \contentsline {subsubsection}{The H.E.S.S. Galactic Plane Survey}{46}{subsubsection*.54}%
 \contentsline {subsection}{\numberline {3.2.2}\textit {Fermi}-LAT}{46}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}LHAASO}{47}{subsection.3.2.3}%
