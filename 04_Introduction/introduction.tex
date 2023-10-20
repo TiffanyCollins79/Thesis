@@ -72,7 +72,7 @@ The braking index typically takes values between $2\text{ to }3$, where $n=3$ re
     \tau&=\frac{P}{(n-1)\dot{P}} \text{ ,}
     \end{aligned} \label{eq:chapter1_characteristic_age}
 \end{equation}
-\noindent where $P$ and $\dot{P}$ are the period and period derivative of the pulsar. If the pulsar has a companion star, the extreme gravitational force of the pulsar can strip the companion of its mass and its angular rotation increases. Therefore, the characteristic age may not reflect the true age of the pulsar. The accretion of matter onto the pulsar is believed to be the origin for millisecond pulsars; pulsars with a period less than $10\si{\milli\second}$ \citep{1982Natur.300..728A}.
+\noindent where $P$ and $\dot{P}$ are the period and period derivative of the pulsar. However, the characteristic age of the pulsar may not reflect the true age of the pulsar. For example, if the pulsar has a companion star, the extreme gravitational force of the pulsar can strip the companion of its mass and its angular rotation increases. The accretion of matter onto the pulsar is believed to be the origin for millisecond pulsars; pulsars with a period less than $10\si{\milli\second}$ \citep{1982Natur.300..728A}.
 \newpar
 At the surface of the pulsar, the magnetic field depends on the period and spin down period (\cite{2012hpa..book.....L} and references within):
 
@@ -83,7 +83,7 @@ At the surface of the pulsar, the magnetic field depends on the period and spin 
 \end{equation}
 \noindent Pulsars with extremely strong magnetic fields are known as magnetars and may be linked to the origin of short gamma-ray bursts and soft gamma-ray repeaters \citep{1992ApJ...392L...9D}. For `regular' pulsars, the surface magnetic field has strength $B=10^{11-13}\,\si{G}$ while magnetars have magnetic fields up to $10^{14-15}\,\si{G}$ \citep{2007ASSL..326.....H}. Possible theories for the extreme magnetic field of a magnetar include; conservation of magnetic field flux of a star with an extreme magnetic field, collapse of a highly magnetized white dwarf or the magnetic field amplification during the birth of the neutron through a dynamo mechanism (the mechanism where a magnetic field is produced by charged plasma in a rotating celestial body) \citep{1992ApJ...392L...9D, 1993_magnetar, 1996AIPC..366..111D}.
 \newpar
-The distance to a pulsar can be determined by considering the line of sight ISM. For ISM with electron density $n_e$, electrons naturally oscillate at plasma frequency, $\omega_p$:
+The distance to a pulsar can be determined by considering the line of sight ISM. For ISM with electron density, $n_e$, the plasma frequency, $\omega_p$ is given by:
 
 \begin{equation}
     \begin{aligned}
@@ -149,7 +149,7 @@ At the edge of the PWN, $r_\text{PWN}$, the pressure is balanced with that of th
 
 \begin{equation}
     \begin{aligned}
-        r_\text{PWN}\propto t^{\frac{1}{3}} r_\text{SNR} = t^{11/15}\text{ .}
+        r_\text{PWN}\propto t^{\frac{1}{3}} r_\text{SNR} \propto t^{11/15}\text{ .}
     \end{aligned}
 \end{equation}
 \newpar
@@ -177,9 +177,9 @@ The magnetic field evolves with the PWN. The average magnetic field of the PWN, 
     \begin{aligned}
     V_\text{PWN}\frac{B^2_\text{PWN}\qty(t)}{8\pi}&=\int_0^t\eta L\qty(t')\dd{t'} \\
     &=\eta E_\text{spin}\qty(t)\text{ ,}
-    \end{aligned} \label{eq:chapter_1_magnetic_conservation_energy}
+    \end{aligned} \label{eq:chapter_1_mag  fnetic_conservation_energy}
 \end{equation}
-\noindent where $V_\text{PWN}$ is the volume of the PWN, $L$ is the injection luminosity (of particles) of the PWN, $\eta$ ($0\leq\eta\leq 1$) is the ratio of the magnetic energy and the pulsars' spin down power and $E_\text{spin}$ is the time-integrated spin down energy. The resulting magnetic field is then:
+\noindent where $V_\text{PWN}$ is the volume of the PWN, $L$ is the injection luminosity (of particles) of the associated pulsar, $\eta$ ($0\leq\eta\leq 1$) is the ratio of the magnetic energy and the pulsars' spin down power and $E_\text{spin}$ is the time-integrated spin down energy. The resulting magnetic field is then:
 
 \begin{equation}
     \begin{aligned}
@@ -250,7 +250,7 @@ Even though multiple PWNe have been observed and studies such as \cite{2018A&A..
 
 Electrons released by a pulsar are subject to varying transportation processes and energy losses. In a non-uniform environment (due to gas and magnetic field turbulence), electrons scatter off the ISM atoms and magnetic field turbulence resulting in diffusive motion outwards from the acceleration site (see \autoref{chapter_1_cr_propagation}). Electrons in PWNe may also experience an overlying bulk transport in a particular direction, i.e. advection. It has been proposed that advection dominates the particle transport close to the pulsar while diffusion dominates the outer reaches of the nebula \citep{2020A&A...636A.113G, 2021PhRvD.104l3017R}. Electrons undergo energy losses through inverse Compton, synchrotron and Bremsstrahlung emission (see section \autoref{sec:chapter_1_leptonic_gre}). The rate at which an electron loses energy depends heavily on the surrounding environment.
 \newpar
-A challenge in modelling PWN will be balancing the transportation of electrons and energy losses with respect to the surrounding environment to order to explain the multi-wavelength emission.
+A challenge in modelling PWN will be balancing the transportation of electrons and energy losses with respect to the surrounding environment in order to explain the multi-wavelength emission.
 
 \subsubsection{Can pulsar wind nebula accelerate particles up to $\PeV$ energies?}
 
@@ -262,7 +262,7 @@ In 2021, the LHAASO facility identified 12 gamma-ray sources with the detection 
 
 \subsubsection{Is there a hadronic component to the pulsar wind nebula?}
 
-Spectral and spatial analysis of known PWNe indicate that leptonic emission is the main source of gamma-ray emission. With the detection of $\PeV$ emission towards known PWNe \citep{doi:10.1126/science.abg5137}, further studies suggest that PWN may have an additional hadronic component \citep{10.1111/j.1745-3933.2010.00934.x, Xin_2019, 2021ApJ...922..221L}. The majority of literature consider the winds of the PWN to consist of electrons and positrons (e.g. \cite{2018A&A...612A...2H}). However, in the polar cap model (see \autoref{fig:chapter1_magnetosphere_structure}) electrons, positrons and protons are stripped from the surface of the pulsar. \cite{1994ApJ...435..230G} proposed that a fraction of the spin-down power of the pulsar is converted into a wind of protons. These protons undergo proton-proton collisions to produce pions (see \autoref{sec:chapter1_hadronic_gr_emission}). Charged pions decay into muons, which subsequently decay into electrons and positrons. \cite{2003A&A...402..827A} suggested that signatures of these `secondary' electrons/positrons can be found in the production of $\TeV$ gamma rays and neutrinos. Moreover, the SNR reverse shock can re-introduce protons into the PWN and accelerate protons greater than $1\,\PeV$ \citep{1992MNRAS.257..493B,2018MNRAS.478..926O}.
+Spectral and spatial analysis of known PWNe indicate that leptonic emission is the main source of gamma-ray emission. With the detection of $\PeV$ emission towards known PWNe \citep{doi:10.1126/science.abg5137}, further studies suggest that PWN may have an additional hadronic component \citep{10.1111/j.1745-3933.2010.00934.x, Xin_2019, 2021ApJ...922..221L}. The majority of literature consider the winds of the PWN to consist of electrons and positrons (e.g. \cite{2018A&A...612A...2H}). However, in the polar cap model (see \autoref{fig:chapter1_magnetosphere_structure}) electrons, positrons and protons are stripped from the surface of the pulsar. \cite{1994ApJ...435..230G} proposed that a fraction of the spin-down power of the pulsar is converted into a wind of protons. These protons undergo proton-proton collisions to produce pions (see \autoref{sec:chapter1_hadronic_gr_emission}). Charged pions decay into muons, which subsequently decay into electrons and positrons. \cite{2003A&A...402..827A} suggested that signatures of these `secondary' electrons/positrons can be found in the production of $\TeV$ gamma rays and neutrinos. Moreover, the SNR reverse shock can re-introduce protons into the PWN and accelerate protons to greater than $1\,\PeV$ \citep{1992MNRAS.257..493B,2018MNRAS.478..926O}.
 
 
 \subsection{HESS J1825-137 and HESS J1826-130} \label{sec:01_1825_1826}
@@ -288,7 +288,7 @@ This thesis will focus on the PWN associated with $\TeV$ source \mbox{HESS\,J182
 
 
 \begin{table}[h!]
-    \caption{Fit parameters to the spectrum of \mbox{HESS\,J1825-137} and equivalent \textit{Fermi}-Lat and HAWC sources. Power law (PL): $\dv{N}{E}\propto \qty(\frac{E_p}{E_0})^{-\Gamma}$. Exponential Cutoff Power Law (ECPL): $\dv{N}{E}\propto \qty(\frac{E_p}{E_0})^{-\Gamma}\exp(-\frac{E}{E_c})$. Log Parabola (LP): $\dv{N}{E}\propto \qty(\frac{E_p}{E_0})^{-\Gamma+\beta\log(E/E_0)}$. Broken Power Law (BPL: $\dv{N}{E}\propto \qty(\frac{E_p}{E_b})^{-\Gamma}$ where $\Gamma=\Gamma_1$ if $E<E_b$ and $\Gamma=\Gamma_2$ otherwise. $E_0=1\,\TeV$ unless specified.}
+    \caption{Fit parameters to the spectrum of \mbox{HESS\,J1825-137} and equivalent \textit{Fermi}-Lat and HAWC sources. Power law (PL): $\dv{N}{E}\propto \qty(\frac{E_p}{E_0})^{-\Gamma}$. Exponential Cutoff Power Law (ECPL): $\dv{N}{E}\propto \qty(\frac{E_p}{E_0})^{-\Gamma}\exp(-\frac{E}{E_c})$. Log Parabola (LP): $\dv{N}{E}\propto \qty(\frac{E_p}{E_0})^{-\qty[\Gamma+\beta\log(E/E_0)]}$. Broken Power Law (BPL: $\dv{N}{E}\propto \qty(\frac{E_p}{E_b})^{-\Gamma}$ where $\Gamma=\Gamma_1$ if $E<E_b$ and $\Gamma=\Gamma_2$ otherwise. $E_0=1\,\TeV$ unless specified.}
     \resizebox{\textwidth}{!}{
     \begin{threeparttable}
     \centering
@@ -394,7 +394,7 @@ In 1896 Henri Becquerel discovered that uranium salts emitted a form of invisibl
 \newpar
 Cosmic rays comprise of protons, electrons, nuclei, neutrinos and anti-matter. Within this thesis, cosmic rays will be referred to as protons and electrons. Protons consist of three quarks (two up and one down-quark) and are classified as hadrons, a composite subatomic particle made of two or more quarks held together by the strong force. Meanwhile, electrons are elementary particles that belong in the lepton `family' in the standard model of particle physics. Hence, hadronic cosmic rays refer to protons while leptonic cosmic rays refer to electrons.
 \newpar 
-Supernovae were proposed as a source for cosmic rays by \cite{1934PNAS...20..259B} in the 1930s. In his 1949 paper, Enrico Fermi provided a method where shock fronts (including those generated by SNRs) accelerate cosmic-ray protons up to ultra-high energies \citep{1949PhRv...75.1169F}. SNRs also accelerate cosmic-ray electrons up to high energies as indicated by X-ray emission produced through synchrotron interactions at the rims of SNRS such as \mbox{SN\,1006} \citep{1995Natur.378..255K}.
+Supernovae were proposed as a source for cosmic rays by \cite{1934PNAS...20..259B} in the 1930s. In his 1949 paper, Enrico Fermi provided a method where shock fronts (including those generated by SNRs) accelerate cosmic-ray protons up to ultra-high energies \citep{1949PhRv...75.1169F}. SNRs also accelerate cosmic-ray electrons up to high energies as indicated by X-ray emission from synchrotron radiation at the rims of SNRS such as \mbox{SN\,1006} \citep{1995Natur.378..255K}.
 \newpar
 Other sources that have been proposed as accelerators of cosmic rays include PWN (as discussed in \autoref{sec:01_PWN}), star clusters, binary systems and active Galactic nuclei.
 
@@ -496,7 +496,7 @@ Neglecting any electric fields, the Lorentz equation (\autoref{eq:chapter_1_lore
     r_g&=\frac{mv_\perp}{qB}=\frac{p}{qB}\text{ ,}
     \end{aligned} \label{eq:chapter_1_gyro-radius}
 \end{equation}
-\noindent where $p$ is the momentum of the charged particle. For relativistic cosmic rays $p\approx E/c$. If the charged particle has velocity at an angle $\theta$ to a magnetic field, it will spiral around the magnetic field direction as shown in the left panel of \autoref{fig:01_CR_in_Bfield}.
+\noindent where $p$ is the relativistic momentum of the charged particle. For relativistic cosmic rays $p\approx E/c$. If the charged particle has velocity at an angle $\theta$ to a magnetic field, it will spiral around the magnetic field direction as shown in the left panel of \autoref{fig:01_CR_in_Bfield}.
 \newpar 
 The magnetic field around PWNe and within dense gas clouds (see \autoref{eq:sec_Bfield_gas}) is not uniform and will affect the propagation of charged particles. The presence of magnetic field turbulence of length $\Delta x$ in an otherwise uniform field will affect the propagation of charged particles (see the right panel of \autoref{fig:01_CR_in_Bfield}). For charged particles, where the gyro-radius is much less than the magnetic turbulence ($r_g\ll \Delta x$), the particle will follow the magnetic field lines with no change to its pitch angle. When the gyro-radius is much greater than the turbulence ($r_g\gg \Delta x$), the propagation will be unaffected. For charged particles, where the gyro-radius is similar in scale to the perturbation ($r_g\approx \Delta x$), the pitch angle $\theta$ changes and alters the direction of travel. In other words, charged particles scatter on the magnetic field turbulence that is of similar scale as the gyro-radius.
 \newpar
@@ -534,7 +534,7 @@ The diffusion coefficient, $D\,\qty[\si{\centi\meter\squared\per\second}]$, desc
 \end{equation}
 \noindent where $D_B=r_gv/3$ is known as the Bohm diffusion coefficient representing the case when $\lambda\approx r_g$.
 \newpar 
-Three different regimes of turbulence are considered: Bohm ($\Gamma=1$), Kraichnan ($\Gamma=\frac{3}{2}$) and Kolomogrov ($\Gamma=\frac{5}{3}$). Quasi-linear theory states that diffusion perpendicular to the magnetic field lines is negligible (\cite{2016MNRAS.461.3552N} and references within). As $r_g\propto E$ and $k\propto 1/E$, \autoref{eq:01_diff_parallel} becomes:
+Three different regimes of turbulence are considered: Bohm ($\Gamma=1$), Kraichnan ($\Gamma=\frac{3}{2}$) and Kolmogrov ($\Gamma=\frac{5}{3}$). Quasi-linear theory states that diffusion perpendicular to the magnetic field lines is negligible (\cite{2016MNRAS.461.3552N} and references within). As $r_g\propto E$ and $k\propto 1/E$, \autoref{eq:01_diff_parallel} becomes:
 
 \begin{equation}
     \begin{aligned}
@@ -590,7 +590,7 @@ Below $10\,\GeV$, the cosmic-ray energy spectrum is dominantly composed of high-
 \subsection{PeVatrons} \label{sec:chapter_1_PeVatrons}
 \begin{table}[h!]
     \caption{Observed HAWC and LHAASO sources with significant gamma-ray emission greater than $100\,\TeV$
-    \citep{PhysRevLett.124.021102,2021Natur.594...33C}. The sources equivalent to \mbox{HESS\,J1825-137} are highlighted in blue.}
+    \citep{PhysRevLett.124.021102,2021Natur.594...33C}. The sources associated with \mbox{HESS\,J1825-137} are highlighted in blue.}
     \label{tab:chapter1_peVatron_candidates}
     \resizebox{\textwidth}{!}{
     \begin{threeparttable}
@@ -629,15 +629,15 @@ Below $10\,\GeV$, the cosmic-ray energy spectrum is dominantly composed of high-
     \end{threeparttable}
     }
 \end{table}
-The transition from Galactic to extra-Galactic cosmic rays in the cosmic-ray spectrum occurs between $10^{15}\,\eV$ and $10^{18}\,\eV$ with Galactic cosmic rays expected to contribute up to $10^{17}\,\eV=100\,\PeV$ \citep{2016A&A...595A..33T}. Sources capable of accelerating particles up to and beyond $1\,\PeV=10^{15}\,\eV$ are known as PeVatrons. Finding Galactic PeVatrons are key to understanding the mechanism of accelerating particles up to $\PeV$ energies.
+The transition from Galactic to extra-Galactic cosmic rays in the cosmic-ray spectrum occurs between $10^{15}\,\eV$ and $10^{18}\,\eV$ with Galactic cosmic rays expected to contribute up to $10^{17}\,\eV=100\,\PeV$ \citep{2016A&A...595A..33T}. Sources capable of accelerating particles up to and beyond $1\,\PeV=10^{15}\,\eV$ are known as PeVatrons. Finding Galactic PeVatrons is key to understanding the mechanism of accelerating particles up to $\PeV$ energies.
 \newpar
 Cosmic rays with energies $1\,\PeV$ and $100\,\PeV$ have gyro-radii of $\approx 0.4\,\pc$ and $40\,\pc$ respectively, making their direct origin impossible to determine. However, cosmic rays interact with interstellar gas and magnetic fields near their birthplace to produce gamma rays with energies greater than $100\,\TeV$ (see \autoref{sec:chapter1_non_thermal_emission}). Therefore, any gamma-ray source with significant gamma-ray emission above $100\,\TeV$ is an indicator of a PeVatron
 \newpar 
-The High-Altitude Water Cherenkov Gamma-ray observatory (HAWC) and the Large High Altitude Air Shower observatory (LHAASO) are observatories that detect air showers triggered by gamma rays \citep{LHAASO_website, HAWC}. \autoref{tab:chapter1_peVatron_candidates} lists observed HAWC and LHAASO sources with significant gamma-ray emission above $100\,\TeV$ with possible counterparts and accelerator type \citep{PhysRevLett.124.021102,2021Natur.594...33C}. In the past, SNRs have been regarded as the most likely source capable of accelerating protons up to $\PeV$ energies. However, there has been no firm identification of a SNR PeVatron and their suitability as a PeVatron has been called into question \citep{10.1093/mnras/sty1589,2019IJMPD..2830022G,2021Univ....7..324C,2022MNRAS.516..492B}. However, both the Crab Nebula and \mbox{HESS\,J1825-137} are the confirmed $\TeV$ PWN counterparts of \mbox{LHAASO\,J0534+2202} and \mbox{LHAASO\,J1825-1326} respectively. Out of the remaining LHAASO candidates, at least eight have possible PWN counterparts. PWN are now being considered as possible candidates to accelerate electrons up to $\PeV$ energies \citep{2021ApJ...908L..49B,de_O_a_Wilhelmi_2022}. \cite{2022ApJ...928...19V} suggests that unresolved PWNe provides significant contribution to the diffuse gamma-ray emission above $100\,\TeV$.
+The High-Altitude Water Cherenkov Gamma-ray observatory (HAWC) and the Large High Altitude Air Shower observatory (LHAASO) are observatories that detect particle showers triggered by gamma rays \citep{LHAASO_website, HAWC}. \autoref{tab:chapter1_peVatron_candidates} lists observed HAWC and LHAASO sources with significant gamma-ray emission above $100\,\TeV$ with possible counterparts and accelerator type \citep{PhysRevLett.124.021102,2021Natur.594...33C}. In the past, SNRs have been regarded as the most likely source capable of accelerating protons up to $\PeV$ energies. However, there has been no firm identification of a SNR PeVatron and their suitability as a PeVatron has been called into question \citep{10.1093/mnras/sty1589,2019IJMPD..2830022G,2021Univ....7..324C,2022MNRAS.516..492B}. However, both the Crab Nebula and \mbox{HESS\,J1825-137} are the confirmed $\TeV$ PWN counterparts of \mbox{LHAASO\,J0534+2202} and \mbox{LHAASO\,J1825-1326} respectively. Out of the remaining LHAASO candidates, at least eight have possible PWN counterparts. PWN are now being considered as possible candidates to accelerate electrons up to $\PeV$ energies \citep{2021ApJ...908L..49B,de_O_a_Wilhelmi_2022}. \cite{2022ApJ...928...19V} suggests that unresolved PWNe provides significant contribution to the diffuse gamma-ray emission above $100\,\TeV$.
 \newpar
 H.E.S.S. has only discovered one PeVatron that is postulated to be associated with the black hole in the Galactic Center during an active phase \citep{2016Natur.531..476H}. They highlighted that the current rate of its particle acceleration is not powerful enough to explain the cosmic-ray flux at Earth.  Alternatively, superbubbles and massive stellar clusters have been proposed as PeVatron candidates. Stellar clusters form within dense molecular clouds, creating an expanding `bubble' of low density ISM \citep{1998LNP...506..399I}. It has been suggested that turbulent plasma within superbubbles confine cosmic rays, allowing multiple shock fronts to accelerate them to high energies (e.g. see \cite{2022MNRAS.515.2256V} and references within).
 \newpar 
-The \mbox{Tibet AS$\gamma$} collaboration revealed the detection of diffuse gamma rays with energies between $100\,\TeV$ to $10^3\,\TeV=1\,\PeV$ in the Galactic disk, indicating the presence of PeVatrons in the Galaxy \citep{PhysRevLett.126.141101}. Similarly, LHAASO reported measurements of the diffusive gamma-ray emission up to $1000\,\PeV$ and suggests that $\TeV$ halos (see \autoref{sec:01_intro_time_ev_PWN}) significantly contribute to the diffusive emission up to the ultra-high energy band \citep{2023arXiv230505372C}.
+The \mbox{Tibet AS$\gamma$} collaboration revealed the detection of diffuse gamma rays with energies between $100\,\TeV$ to $10^3\,\TeV=1\,\PeV$ in the Galactic disk, indicating the presence of PeVatrons in the Galaxy \citep{PhysRevLett.126.141101}. Similarly, LHAASO reported measurements of the diffuse gamma-ray emission up to $1000\,\PeV$ and suggests that $\TeV$ halos (see \autoref{sec:01_intro_time_ev_PWN}) significantly contribute to the diffuse emission up to the ultra-high energy band \citep{2023arXiv230505372C}.
 
 \section{Gamma rays: Messengers of Cosmic Rays} \label
 {sec:chapter1_non_thermal_emission}
