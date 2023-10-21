@@ -34,7 +34,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 37200 items from 5000.
+Reallocated field_info (elt_size=4) to 37480 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: Bibliography/mybiblio.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
@@ -122,45 +122,45 @@ Warning--you've exceeded 500, the entry-string-size, for entry 2010ApJS..187..46
 while executing--line 2727 of file biblatex.bst
 *Please notify the bibstyle designer*
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 230 entries,
+You've used 232 entries,
             6399 wiz_defined-function locations,
-            3061 strings with 184875 characters,
-and the built_in function-call counts, 14331161 in all, are:
-= -- 1456585
-> -- 73080
-< -- 6287
-+ -- 550701
-- -- 40445
-* -- 1081978
-:= -- 2031859
+            3078 strings with 185706 characters,
+and the built_in function-call counts, 14347443 in all, are:
+= -- 1457836
+> -- 73313
+< -- 6340
++ -- 551147
+- -- 40547
+* -- 1083308
+:= -- 2033676
 add.period$ -- 0
-call.type$ -- 230
-change.case$ -- 3043
+call.type$ -- 232
+change.case$ -- 3065
 chr.to.int$ -- 42
-cite$ -- 458
-duplicate$ -- 1461401
-empty$ -- 1090703
-format.name$ -- 82924
-if$ -- 2652155
+cite$ -- 462
+duplicate$ -- 1463099
+empty$ -- 1092157
+format.name$ -- 83071
+if$ -- 2655446
 int.to.chr$ -- 0
-int.to.str$ -- 546
+int.to.str$ -- 551
 missing$ -- 0
-newline$ -- 45855
-num.names$ -- 9837
-pop$ -- 204728
+newline$ -- 45942
+num.names$ -- 9922
+pop$ -- 205433
 preamble$ -- 1
-purify$ -- 16474
+purify$ -- 16507
 quote$ -- 0
-skip$ -- 70765
+skip$ -- 71124
 stack$ -- 0
-substring$ -- 3013347
-swap$ -- 126364
-text.length$ -- 12235
-text.prefix$ -- 233
+substring$ -- 3015692
+swap$ -- 126747
+text.length$ -- 12291
+text.prefix$ -- 235
 top$ -- 1
-type$ -- 7806
+type$ -- 7874
 warning$ -- 0
-while$ -- 245452
+while$ -- 245671
 width$ -- 0
-write$ -- 45626
+write$ -- 45711
 (There were 27 warnings)

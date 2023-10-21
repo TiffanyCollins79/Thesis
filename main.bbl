@@ -22979,6 +22979,46 @@
     \field{year}{2014}
   \endentry
 
+  \entry{2020A&A...642A.123C}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CB}{%
+         family={{Cerutti}},
+         familyi={C\bibinitperiod},
+         given={Beno{\^\i}t},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={{Giacinti}},
+         familyi={G\bibinitperiod},
+         given={Gwenael},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{acceleration of particles, magnetic reconnection, radiation mechanisms: non-thermal, methods: numerical, pulsars: general, stars: winds, outflows, Astrophysics - High Energy Astrophysical Phenomena, Physics - Plasma Physics}
+    \strng{namehash}{CBGG1}
+    \strng{fullhash}{CBGG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1051/0004-6361/202038883
+    \endverb
+    \field{eid}{A123}
+    \verb{eprint}
+    \verb 2008.07253
+    \endverb
+    \field{pages}{A123}
+    \field{title}{{A global model of particle acceleration at pulsar wind termination shocks}}
+    \field{volume}{642}
+    \field{journaltitle}{A\&A}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.HE}
+    \field{year}{2020}
+  \endentry
+
   \entry{1978A&A....70..367C}{article}{}
     \name{author}{2}{}{%
       {{hash=CCJ}{%
@@ -40329,6 +40369,53 @@
     \field{eprinttype}{arXiv}
     \field{eprintclass}{astro-ph.HE}
     \field{year}{2015}
+  \endentry
+
+  \entry{2021ApJ...907L..44S}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SL}{%
+         family={{Sironi}},
+         familyi={S\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RME}{%
+         family={{Rowan}},
+         familyi={R\bibinitperiod},
+         given={Michael\bibnamedelima E.},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={{Narayan}},
+         familyi={N\bibinitperiod},
+         given={Ramesh},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Relativistic jets, Plasma astrophysics, Non-thermal radiation sources, High energy astrophysics, 1390, 1261, 1119, 739, Astrophysics - High Energy Astrophysical Phenomena, Physics - Plasma Physics}
+    \strng{namehash}{SL+2}
+    \strng{fullhash}{SLRMENR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.3847/2041-8213/abd9bc
+    \endverb
+    \field{eid}{L44}
+    \verb{eprint}
+    \verb 2009.11877
+    \endverb
+    \field{number}{2}
+    \field{pages}{L44}
+    \field{title}{{Reconnection-driven Particle Acceleration in Relativistic Shear Flows}}
+    \field{volume}{907}
+    \field{journaltitle}{ApJ}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.HE}
+    \field{year}{2021}
   \endentry
 
   \entry{1975MNRAS.172..557S}{article}{}

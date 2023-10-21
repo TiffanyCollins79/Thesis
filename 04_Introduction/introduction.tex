@@ -459,7 +459,7 @@ where $0<\zeta<1$ is an "acceleration rate parameter" that depends on the accele
 
 \subsubsection{Acceleration by the pulsar wind nebula termination shock}
 
-A termination shock forms where the internal pressure of the PWN counteracts the ram pressure of the interstellar wind at approximately $r_\text{ts}=0.1\,\pc$ (see \autoref{sec:01_intro_time_ev_PWN}). Particles can be accelerated by the TS through diffusive shock acceleration (DSA), where a particle can scatter back and forth a shock due to magnetic field irregularities, resulting in an overall gain of energy (see \autoref{A3_DSA}).
+A termination shock forms where the internal pressure of the PWN is balanced the ram pressure of the interstellar wind at approximately $r_\text{ts}=0.1\,\pc$ (see \autoref{sec:01_intro_time_ev_PWN}). This relativistic shock front can accelerate particles through the shear-flow acceleration mechanism \citep{2020A&A...642A.123C,2021ApJ...907L..44S}.
 \newpar
 The magnetic field of the PWNe is toroidal in nature where the magnetic field lines are perpendicular to the propagation of the shock. For a pulsar injecting electrons/positrons, the structure of the shock depends on the ratio, $\sigma$, of the upstream magnetic energy and plasma energy \citep{1992ApJ...391...73G}:
 
@@ -468,7 +468,7 @@ The magnetic field of the PWNe is toroidal in nature where the magnetic field li
         \sigma&=\frac{B^2/4\pi}{nm\gamma c^2}\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent where $B$ and $n$ is the upstream magnetic field and electron energy density respectively and $\gamma$ is the Lorentz factor of the electrons. Models of PWN suggest that the magnetization parameter takes values $10^{-3}-10^{-2}$ \citep{1974MNRAS.167....1R,1984ApJ...283..694K,2004MNRAS.349..779K}. The magnetic field turbulence is too weak for particles to scatter back and forth across the termination shock and DSA is suppressed \citep{2010MNRAS.402..321L,2015SSRv..191..519S}. In general, DSA for magnetic fields perpendicular to the shock propagation is too suppressed to accelerate electrons up the energies required to explain PWN emission \citep{2003APh....19..649M, 2014ApJ...783...91C}. It has been suggested pre-acceleration of particles driven by magnetic reconnection at the shock front \citep{2001ApJ...547..437L,2003MNRAS.345..153L,2016JPlPh..82d6301L}, or resonant cyclotron absorption of electrons/positrons \cite{2001ApJ...547..437L}  followed by DSA may overcome these issues.
+\noindent where $B$ and $n$ are the upstream magnetic field and electron energy density respectively and $\gamma$ is the bulk Lorentz factor of the electrons. Models of PWN suggest that the magnetization parameter takes values $10^{-3}-10^{-2}$ \citep{1974MNRAS.167....1R,1984ApJ...283..694K,2004MNRAS.349..779K}. The magnetic field turbulence is too weak for particles to scatter back and forth across the termination shock and DSA is suppressed \citep{2010MNRAS.402..321L,2015SSRv..191..519S}. In general, DSA for magnetic fields perpendicular to the shock propagation is too suppressed to accelerate electrons up the energies required to explain PWN emission \citep{2003APh....19..649M, 2014ApJ...783...91C}. It has been suggested pre-acceleration of particles driven by magnetic reconnection at the shock front \citep{2001ApJ...547..437L,2003MNRAS.345..153L,2016JPlPh..82d6301L}, or resonant cyclotron absorption of electrons/positrons \cite{2001ApJ...547..437L}  followed by DSA may overcome these issues.
 \newpar
 Any modelling conducted in this thesis will assume an injection of accelerated electrons.
 
@@ -497,7 +497,7 @@ Neglecting any electric fields, the Lorentz equation (\autoref{eq:chapter_1_lore
 \end{equation}
 \noindent where $p$ is the relativistic momentum of the charged particle. For relativistic cosmic rays $p\approx E/c$. If the charged particle has velocity at an angle $\theta$ to a magnetic field, it will spiral around the magnetic field direction as shown in the left panel of \autoref{fig:01_CR_in_Bfield}.
 \newpar 
-The magnetic field around PWNe and within dense gas clouds (see \autoref{eq:sec_Bfield_gas}) is not uniform and will affect the propagation of charged particles. The presence of magnetic field turbulence of length $\Delta x$ in an otherwise uniform field will affect the propagation of charged particles (see the right panel of \autoref{fig:01_CR_in_Bfield}). For charged particles, where the gyro-radius is much less than the magnetic turbulence ($r_g\ll \Delta x$), the particle will follow the magnetic field lines with no change to its pitch angle. When the gyro-radius is much greater than the turbulence ($r_g\gg \Delta x$), the propagation will be unaffected. For charged particles, where the gyro-radius is similar in scale to the perturbation ($r_g\approx \Delta x$), the pitch angle $\theta$ changes and alters the direction of travel. In other words, charged particles scatter on the magnetic field turbulence that is of similar scale as the gyro-radius.
+The magnetic field around PWNe and within dense gas clouds (see \autoref{eq:sec_Bfield_gas}) is not uniform and will affect the propagation of charged particles. The perturbation of size $\Delta X$ in an otherwise uniform magnetic field will affect the propagation of charged particles (see the right panel of \autoref{fig:01_CR_in_Bfield}). For charged particles, where the gyro-radius is much less than the perturbation ($r_g\ll \Delta x$), the particle will follow the magnetic field lines with no change to its pitch angle. When the gyro-radius is much greater than the perturbation ($r_g\gg \Delta x$), the propagation will be unaffected. For charged particles, where the gyro-radius is similar in scale to the perturbation ($r_g\approx \Delta x$), the pitch angle $\theta$ changes and alters the direction of travel. In other words, charged particles scatter on the magnetic field turbulence that is of similar scale as the gyro-radius.
 \newpar
 The gyro-radius of ultra-high energy particles ($r_g=3.6\,\kpc$ at $10^{19}\,\eV$ and $B=3\,\si{\micro G}$) is so large that they tend to travel in a ballistic manner (for distances less than $r_g$) and thus point back to their place of origin. Lower energy particles (e.g. $r_g\approx 10^{-4}\,\pc$ at $1\,\TeV$ and $B=3\,\si{\micro G}$) scatter multiple times and their trajectory tends to follow a random walk, i.e. diffusion.
 
@@ -510,14 +510,14 @@ The diffusion coefficient, $D\,\qty[\si{\centi\meter\squared\per\second}]$, desc
         \int I\qty(k) \dd{\ln k}&= \qty(\frac{\delta B}{B_0})^2\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent where $k\propto 1/r_g$ is the wave number. As the charged particle spirals around the magnetic field lines (see \autoref{fig:01_CR_in_Bfield}), the pitch angle of the particle is changed by order $\delta B$. The pitch angle is randomised after approximately $N=B_0^2/kI\qty(k)$ rotations such that the mean free path parallel to the field is given by $\lambda_\parallel=Nr_g$. Therefore, the diffusion coefficient parallel to the magnetic field lines:
+\noindent where $k\propto 1/r_g$ is the wave number  The pitch angle is randomised (see \autoref{fig:01_CR_in_Bfield}) after approximately $N=B_0^2/kI\qty(k)$ rotations such that the mean free path parallel to the field is given by $\lambda_\parallel=Nr_g$. Therefore, the diffusion coefficient parallel to the magnetic field lines:
 
 \begin{equation}
     \begin{aligned}
         D_\parallel&=\frac{r_gv}{3}\frac{B_0^2}{kI\qty(k)}\text{ ,}
     \end{aligned} \label{eq:01_diff_parallel}
 \end{equation}
-\noindent where $v$ is the velocity of the particle. The mean free path perpendicular to the field lines takes values $\lambda_\perp\approx r_g$ such that the perpendicular diffusion coefficient becomes:
+\noindent where $v$ is the velocity of the particle. The mean free path perpendicular to the field lines takes values $\lambda_\perp\approx r_g$ such that the diffusion coefficient perpindicular to the magnetic field becomes:
 
 \begin{equation}
     \begin{aligned}
@@ -533,7 +533,7 @@ The diffusion coefficient, $D\,\qty[\si{\centi\meter\squared\per\second}]$, desc
 \end{equation}
 \noindent where $D_B=r_gv/3$ is known as the Bohm diffusion coefficient representing the case when $\lambda\approx r_g$.
 \newpar 
-Three different regimes of turbulence are considered: Bohm ($\Gamma=1$), Kraichnan ($\Gamma=\frac{3}{2}$) and Kolmogrov ($\Gamma=\frac{5}{3}$). Quasi-linear theory states that diffusion perpendicular to the magnetic field lines is negligible (\cite{2016MNRAS.461.3552N} and references within). As $r_g\propto E$ and $k\propto 1/E$, \autoref{eq:01_diff_parallel} becomes:
+Three different regimes of turbulence are considered: Bohm ($\Gamma=1$), Kraichnan ($\Gamma=\frac{3}{2}$) and Kolmogrov ($\Gamma=\frac{5}{3}$). As $r_g\propto E$ and $k\propto 1/E$, \autoref{eq:01_diff_parallel} becomes:
 
 \begin{equation}
     \begin{aligned}
@@ -559,14 +559,14 @@ Magnetic fields affect the propagation of charged particles through the Galaxy. 
 \end{equation}
 \noindent where $B_\parallel$ is the magnetic field component along the line of sight, RM is the rotation measure due to Faraday rotation and DM (see \autoref{eq:chapter_1_dispersion_measurement} is the dispersion measurement of the pulsar. Magnetic fields are also measured through observations of synchrotron emission, where the intensity is proportional to the magnetic field strength and electron energy density (see \cite{2013pss5.book..641B} and references within).
 \newpar 
-The magnetic field in the `local' vicinity takes value $1-6\,\si{\micro G}$ based on both rotation measure and synchrotron measurements  \citep{1989ApJ...343..760R,2001SSRv...99..243B}.  Using the rotation measures from $223$ pulsars, \cite{2006ApJ...642..868H} found the magnetic field strength in the Galactic disk was found to depend on the distance to the Galactic centre:
+The magnetic field in the `local' vicinity takes value $1-6\,\si{\micro G}$ based on both rotation measure and synchrotron measurements  \citep{1989ApJ...343..760R,2001SSRv...99..243B}.  Using the rotation measures from $223$ pulsars, \cite{2006ApJ...642..868H} found that the magnetic field strength in the Galactic  depends on the distance to the Galactic centre:
 
 \begin{equation}
     \begin{aligned}
         B=B_0\exp[-\frac{R-R\odot}{R_B }]\text{ ,}
     \end{aligned}
 \end{equation}
-where $B_0=2.1\pm 0.3\,\si{\micro G}$ and $R_B=8.5\pm 4.7\,\kpc$. This gives the average Galactic magnetic field to be approximately $ 3\,\si{\micro G}$. Local sources such as PWN (see \autoref{sec:01_PWN}), SNRs (see \citep{2012SSRv..166..231R} and references within) and turbulent molecular clouds \citep{2010ApJ...725..466C} provide an `additional' magnetic field component to their surrounding environment.
+where $B_0=2.1\pm 0.3\,\si{\micro G}$, $R_\odot=8.5\,\kpc$ and $R_B=8.5\pm 4.7\,\kpc$. This gives the average Galactic magnetic field to be approximately $ 3\,\si{\micro G}$. Local sources such as PWN (see \autoref{sec:01_PWN}), SNRs (see \citep{2012SSRv..166..231R} and references within) and turbulent molecular clouds \citep{2010ApJ...725..466C} provide an `additional' magnetic field component to their surrounding environment.
 
 \subsection{Cosmic-Ray Spectrum} \label{sec:chapter_1_cr_spectrum}
 \begin{SCfigure}[0.4][b!]
@@ -584,10 +584,10 @@ The energy spectrum of cosmic rays (see \autoref{fig:chapter1_cosmic_ray_flux}) 
     \end{aligned}
 \end{equation}
 
-Below $10\,\GeV$, the cosmic-ray energy spectrum is dominantly composed of high-energy particles originating from the Sun. Below this energy, there are few cosmic rays that originate from outside the solar system due to "frozen in" magnetic fields carried by the solar wind. Cosmic rays below $10\,\GeV$ have a gyro-radius (see \autoref{eq:chapter_1_gyro-radius}) smaller than the magnetic irregularities within this structure and are scattered out of the solar system \citep{2002cra..book.....S}. The cosmic-ray spectrum broadly follows a power law with spectral index $\Gamma\approx 2.7$ until the `knee' at $10^{15}\,\eV=1\,\PeV$ when it steepens to an index of $3$. Ground-based cosmic-ray detectors have reported a second knee at $10^{17}\,\eV$ where the spectrum steepens further to $3.3$ until it flattens out to $\approx 2.6$ at the ankle ($10^{18}\,\eV=1\,\si{E\electronvolt}$) \citep{2008ApJ...678.1165A,2010PhLB..685..239A, 2013PhRvD..87h1101A, 2013PhRvD..88d2004A,2013ApJ...768L...1A}. The knee and ankle feature is believed to be created due to the transition of Galactic cosmic rays (from sources such as SNRs and PWNe) to extra-Galactic cosmic rays, possibly originating from AGN \citep{2016A&A...595A..33T}. The cosmic-ray spectrum then experiences a sharp cutoff at $29\times10^{18}\,\eV = 29\,\si{E\electronvolt}$ due to the GKZ cutoff, where cosmic-ray protons and nuclei interact with the CMB and rapidly lose their energy \citep{1966PhRvL..16..748G,1966JETPL...4...78Z}. 
+Below $10\,\GeV$, the cosmic-ray energy spectrum is dominantly composed of high-energy particles originating from the Sun. Below this energy, there are few cosmic rays that originate from outside the solar system due to "frozen in" magnetic fields carried by the solar wind. Cosmic rays below $10\,\GeV$ have a gyro-radius (see \autoref{eq:chapter_1_gyro-radius}) smaller than the magnetic irregularities within this structure and are scattered out of the solar system \citep{2002cra..book.....S}. The cosmic-ray spectrum broadly follows a power law with spectral index $\Gamma\approx 2.7$ until the `knee' at $10^{15}\,\eV=1\,\PeV$ when it steepens to an index of $3$. Ground-based cosmic-ray detectors have reported a second knee at $10^{17}\,\eV$ where the spectrum steepens further to $3.3$ until it flattens out to $\approx 2.6$ at the ankle ($10^{18}\,\eV=1\,\si{E\electronvolt}$) \citep{2008ApJ...678.1165A,2010PhLB..685..239A, 2013PhRvD..87h1101A, 2013PhRvD..88d2004A,2013ApJ...768L...1A}. The knee and ankle feature is believed to be created due to the transition of Galactic cosmic rays (from sources such as SNRs and PWNe) to extra-Galactic cosmic rays, possibly orgriginating from AGN \citep{2016A&A...595A..33T}. The cosmic-ray spectrum then experiences a sharp cutoff at $29\times10^{18}\,\eV = 29\,\si{E\electronvolt}$ due to the GZK cutoff, where cosmic-ray protons and nuclei interact with the CMB and rapidly lose their energy \citep{1966PhRvL..16..748G,1966JETPL...4...78Z}, or a limit to the energies that sources can accelerate cosmic rays up to.
 
 \subsection{PeVatrons} \label{sec:chapter_1_PeVatrons}
-\begin{table}[h!]
+\begin{table}[b!]
     \caption{Observed HAWC and LHAASO sources with significant gamma-ray emission greater than $100\,\TeV$
     \citep{PhysRevLett.124.021102,2021Natur.594...33C}. The sources associated with \mbox{HESS\,J1825-137} are highlighted in blue.}
     \label{tab:chapter1_peVatron_candidates}
@@ -630,7 +630,7 @@ Below $10\,\GeV$, the cosmic-ray energy spectrum is dominantly composed of high-
 \end{table}
 The transition from Galactic to extra-Galactic cosmic rays in the cosmic-ray spectrum occurs between $10^{15}\,\eV$ and $10^{18}\,\eV$ with Galactic cosmic rays expected to contribute up to $10^{17}\,\eV=100\,\PeV$ \citep{2016A&A...595A..33T}. Sources capable of accelerating particles up to and beyond $1\,\PeV=10^{15}\,\eV$ are known as PeVatrons. Finding Galactic PeVatrons is key to understanding the mechanism of accelerating particles up to $\PeV$ energies.
 \newpar
-Cosmic rays with energies $1\,\PeV$ and $100\,\PeV$ have gyro-radii of $\approx 0.4\,\pc$ and $40\,\pc$ respectively, making their direct origin impossible to determine. However, cosmic rays interact with interstellar gas and magnetic fields near their birthplace to produce gamma rays with energies greater than $100\,\TeV$ (see \autoref{sec:chapter1_non_thermal_emission}). Therefore, any gamma-ray source with significant gamma-ray emission above $100\,\TeV$ is an indicator of a PeVatron
+Cosmic rays with energies $1\,\PeV$ and $100\,\PeV$ have gyro-radii of $\approx 0.4\,\pc$ and $40\,\pc$ respectively (for the average Galactic magnetic field of $3\,\si{\micro G}$, see \autoref{chapter_1_cr_propagation}), making their direct origin impossible to determine. However, cosmic rays interact with interstellar gas and magnetic fields near their birthplace to produce gamma rays with energies greater than $100\,\TeV$ (see \autoref{sec:chapter1_non_thermal_emission}). Therefore, any gamma-ray source with significant gamma-ray emission above $100\,\TeV$ is an indicator of a PeVatron
 \newpar 
 The High-Altitude Water Cherenkov Gamma-ray observatory (HAWC) and the Large High Altitude Air Shower observatory (LHAASO) are observatories that detect particle showers triggered by gamma rays \citep{LHAASO_website, HAWC}. \autoref{tab:chapter1_peVatron_candidates} lists observed HAWC and LHAASO sources with significant gamma-ray emission above $100\,\TeV$ with possible counterparts and accelerator type \citep{PhysRevLett.124.021102,2021Natur.594...33C}. In the past, SNRs have been regarded as the most likely source capable of accelerating protons up to $\PeV$ energies. However, there has been no firm identification of a SNR PeVatron and their suitability as a PeVatron has been called into question \citep{10.1093/mnras/sty1589,2019IJMPD..2830022G,2021Univ....7..324C,2022MNRAS.516..492B}. However, both the Crab Nebula and \mbox{HESS\,J1825-137} are the confirmed $\TeV$ PWN counterparts of \mbox{LHAASO\,J0534+2202} and \mbox{LHAASO\,J1825-1326} respectively. Out of the remaining LHAASO candidates, at least eight have possible PWN counterparts. PWN are now being considered as possible candidates to accelerate electrons up to $\PeV$ energies \citep{2021ApJ...908L..49B,de_O_a_Wilhelmi_2022}. \cite{2022ApJ...928...19V} suggests that unresolved PWNe provides significant contribution to the diffuse gamma-ray emission above $100\,\TeV$.
 \newpar
@@ -715,11 +715,10 @@ The time it takes for a proton to lose its energy (or `cool' to a lower energy) 
 
 \begin{equation}
     \begin{aligned}
-	\tau_{pp} &= \frac{1}{nc\kappa\sigma_{pp}\qty(E)} \\
-	&\approx 5.3\times 10^7\qty(n/\centimeterminusthree)^{-1}\quad\qty[\si{yr}]\text{ .}
+	\tau_{pp} &= \frac{1}{nc\kappa\sigma_{pp}\qty(E)} \approx 5.3\times 10^7\qty(n/\centimeterminusthree)^{-1}\quad\qty[\si{yr}]\text{ ,}
 \end{aligned} \label{eq:chapter_1_pp_cooling time}
 \end{equation}
-\noindent \autoref{eq:chapter_1_pp_cooling time} shows that the cooling rate of protons is inversely proportional to the density of interstellar gas and approximately independent of the proton energy. Therefore, the brightness of gamma rays towards a source of cosmic-ray protons will correlate with the density morphology of the surrounding ISM gas.
+\noindent where the cross section is weakly dependent on energy ($\sigma_\text{pp}\approx 35\,\si{\milli\barn}$) at $\TeV$ energies.  \autoref{eq:chapter_1_pp_cooling time} shows that the cooling rate of protons is inversely proportional to the density of interstellar gas and approximately independent of the proton energy. Therefore, the brightness of gamma rays towards a source of cosmic-ray protons will correlate with the density morphology of the surrounding ISM gas.
 \newpar 
 Using GEANT4 models, \cite{2014PhRvD..90l3014K} parameterized the spectra of gamma rays of energy ($E_\gamma$) from a single proton with kinetic energy $T_p$ to be:
 
@@ -849,7 +848,7 @@ The spectrum, $P\qty(\nu)$, of synchrotron emission emitted by a single electron
     \frac{E_\gamma}{\eV}&=0.087 \qty(\frac{E_e}{\TeV})^2 \frac{B}{\si{\micro G}}\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent where $E_e$ is the energy of the initial electron. Therefore, observations of synchrotron emission $\gtrsim 300\,\keV$ is a strong indicator of a source accelerating electrons up to $\PeV$ energies.
+\noindent where $E_e$ is the energy of the initial electron. Therefore, observations of synchrotron emission $\gtrsim 300\,\keV$ is a strong indicator of a $1\,\PeV$ electron (assuming the average magnetic field strength of $3\,\si{\micro G}$, see \autoref{chapter_1_cr_propagation}).
 
 \subsubsection{Inverse Compton emission}
 
