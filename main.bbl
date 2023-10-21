@@ -36602,6 +36602,58 @@
     \field{year}{2009}
   \endentry
 
+  \entry{2006A&A...451L..51H}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HD}{%
+         family={{Horns}},
+         familyi={H\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AF}{%
+         family={{Aharonian}},
+         familyi={A\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={{Santangelo}},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HAID}{%
+         family={{Hoffmann}},
+         familyi={H\bibinitperiod},
+         given={A.\bibnamedelima I.\bibnamedelima D.},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={{Masterson}},
+         familyi={M\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HD+1}
+    \strng{fullhash}{HDAFSAHAIDMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1051/0004-6361:20065116
+    \endverb
+    \field{number}{3}
+    \field{pages}{L51\bibrangedash L54}
+    \field{title}{{Nucleonic gamma-ray production in <ASTROBJ>Vela X</ASTROBJ>}}
+    \field{volume}{451}
+    \field{journaltitle}{A\&A}
+    \field{year}{2006}
+  \endentry
+
   \entry{1998LNP...506..399I}{incollection}{}
     \name{author}{1}{}{%
       {{hash=IS}{%
@@ -38973,6 +39025,59 @@
     \field{volume}{9}
     \field{journaltitle}{Journal of Physics G: Nuclear Physics}
     \field{year}{1983}
+  \endentry
+
+  \entry{2022ApJ...926....7P}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PQY}{%
+         family={{Peng}},
+         familyi={P\bibinitperiod},
+         given={Qi-Yong},
+         giveni={Q\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=BBW}{%
+         family={{Bao}},
+         familyi={B\bibinitperiod},
+         given={Bi-Wen},
+         giveni={B\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=LFW}{%
+         family={{Lu}},
+         familyi={L\bibinitperiod},
+         given={Fang-Wu},
+         giveni={F\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={{Zhang}},
+         familyi={Z\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{1667, 1119, 1306, Astrophysics - High Energy Astrophysical Phenomena}
+    \strng{namehash}{PQY+1}
+    \strng{fullhash}{PQYBBWLFWZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.3847/1538-4357/ac4161
+    \endverb
+    \field{eid}{7}
+    \verb{eprint}
+    \verb 2112.14939
+    \endverb
+    \field{number}{1}
+    \field{pages}{7}
+    \field{title}{{Multiband Emission up to PeV Energy from the Crab Nebula in a Spatially Dependent Lepto-hadronic Model}}
+    \field{volume}{926}
+    \field{journaltitle}{ApJ}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.HE}
+    \field{year}{2022}
   \endentry
 
   \entry{1996MNRAS.281...27P}{article}{}

@@ -254,7 +254,7 @@ A challenge in modelling PWN will be balancing the transport of electrons and en
 
 \subsubsection{Can pulsar wind nebula accelerate particles up to $\PeV$ energies?}
 
-The break between the knee ($1\,\PeV=10^{15}\,\eV$) and the ankle ($10^{18}\,\si{\exa\electronvolt}$) in the cosmic-ray proton and nuclei spectrum at Earth suggests the transition from Galactic to extra-Galactic cosmic rays (see \autoref{sec:chapter_1_cr_spectrum}). Thus, what type of Galactic source is capable of accelerating cosmic rays up to PeV energies, i.e. a PeVatron?
+The steepening of the cosmic-ray proton and nuclei spectrum at earth between the knee ($1\,\PeV=10^{15}\,\eV$) and the ankle ($10^{18}\,\si{\exa\electronvolt}$) from $E^{-2.7}$ to $E^{-3}$ suggests the transition from Galactic to extra-Galactic cosmic rays occurs between (see \autoref{sec:chapter_1_cr_spectrum}). Additionaly, the confinement time of cosmic rays within the galaxy suggests that sources must provide $10^{41}\,\ergspersec$ to explain the observed cosmic ray intensity. Thus, what type of Galactic source is capable of accelerating cosmic rays up to PeV energies, i.e. a PeVatron (see \autoref{sec:chapter_1_PeVatrons})?
 \newpar
 Due to their large energy budget ($\approx 10^{51}\,\ergs$ of kinetic energy) and production rate ($\approx 2-3$ supernova occur in the Milky Way per century), SNRs have been the most likely candidates for Galactic PeVatrons \citep{1983A&A...125..249L, 1984ARA&A..22..425H,2004MNRAS.353..550B,10.1093/mnras/sty1589}. Recently, the suitability of SNRs by themselves as PeVatrons has been called into question \citep{CRISTOFARI2020102492} and PWNe are now being considered as additional candidates \citep{2018MNRAS.478..926O, Xin_2019, de_O_a_Wilhelmi_2022,2022A&A...660A...8B}.
 \newpar
@@ -262,8 +262,7 @@ In 2021, the LHAASO facility identified 12 gamma-ray sources with the detection 
 
 \subsubsection{Is there a hadronic component to the pulsar wind nebula?}
 
-Spectral and spatial analysis of known PWNe indicate that leptonic emission is the main source of gamma-ray emission. With the detection of $\PeV$ emission towards known PWNe \citep{doi:10.1126/science.abg5137}, further studies suggest that PWN may have an additional hadronic component \citep{10.1111/j.1745-3933.2010.00934.x, Xin_2019, 2021ApJ...922..221L}. The majority of literature consider the winds of the PWN to consist of electrons and positrons (e.g. \cite{2018A&A...612A...2H}). However, in the polar cap model (see \autoref{fig:chapter1_magnetosphere_structure}) electrons, positrons and protons are stripped from the surface of the pulsar. \cite{1994ApJ...435..230G} proposed that a fraction of the spin-down power of the pulsar is converted into a wind of protons. These protons undergo proton-proton collisions to produce pions (see \autoref{sec:chapter1_hadronic_gr_emission}). Charged pions decay into muons, which subsequently decay into electrons and positrons. \cite{2003A&A...402..827A} suggested that signatures of these `secondary' electrons/positrons can be found in the production of $\TeV$ gamma rays and neutrinos. Moreover, the SNR reverse shock can re-introduce protons into the PWN and accelerate protons to greater than $1\,\PeV$ \citep{1992MNRAS.257..493B,2018MNRAS.478..926O}.
-
+Spectral and spatial analysis of known PWNe indicate that leptonic emission is the main source of gamma-ray emission. With the detection of $\PeV$ emission towards known PWNe \citep{doi:10.1126/science.abg5137}, further studies suggest that PWN may have an additional hadronic component \citep{2006A&A...451L..51H, 10.1111/j.1745-3933.2010.00934.x, Xin_2019, 2021ApJ...922..221L}. The majority of literature consider the winds of the PWN to consist of electrons and positrons (e.g. \cite{2018A&A...612A...2H}). However, in the polar cap model (see \autoref{fig:chapter1_magnetosphere_structure}) electrons, positrons and protons are stripped from the surface of the pulsar. \cite{1994ApJ...435..230G} proposed that a fraction of the spin-down power of the pulsar is converted into a wind of protons. These protons undergo proton-proton collisions to produce pions (see \autoref{sec:chapter1_hadronic_gr_emission}). Charged pions decay into muons, which subsequently decay into electrons and positrons. \cite{2003A&A...402..827A} suggested that signatures of these `secondary' electrons/positrons can be found in the production of $\TeV$ gamma rays and neutrinos. Moreover, the SNR reverse shock can re-introduce protons into the PWN and accelerate protons to greater than $1\,\PeV$ \citep{1992MNRAS.257..493B,2018MNRAS.478..926O}. The observation of neutrino emission from PWN through the decay of charged muons acts as a signature of hadronic gamma-ray production \citep{2006A&A...451L..51H}. However, leptonic-hadronic modelling towards the Crab PWN suggests that the resulting neutrino flux would be below the sensitivities of current neutrino observatories \citep{2022ApJ...926....7P}.
 
 \subsection{HESS J1825-137 and HESS J1826-130} \label{sec:01_1825_1826}
 
@@ -410,7 +409,7 @@ As discussed in \autoref{sec:01_PWN_pulsar}, pulsars are the highly dense, magne
     \end{aligned} \label{eq:chapter_1_lorentz_force}
 \end{equation}
 
-\noindent shows that a magnetic field of strength $\vec{B}$ applies a perpendicular force, $\vec{F}$, on a particle with charge $q$. In other words, a uniform magnetic field does not change the energy of the particle. However, the rotation of a pulsar coupled with its strong magnetic field generates an electric field, $\vec{E}$. This is described by Faraday's law:
+\noindent shows that a magnetic field of strength $\vec{B}$ applies a perpendicular force, $\vec{F}$, on a particle with charge $q$ and velocity $\vec{v}$. In other words, a uniform magnetic field does not change the energy of the particle. However, the rotation of a pulsar coupled with its strong magnetic field generates an electric field, $\vec{E}$. This is described by Faraday's law:
  
  \begin{equation}
     \begin{aligned}
@@ -426,11 +425,11 @@ As discussed in \autoref{sec:01_PWN_pulsar}, pulsars are the highly dense, magne
     \end{aligned} \label{eq:01_intro_alven_eq}
 \end{equation}
 
-\noindent Where the cross sectional area is the area swept up by expanding surface $S$ in segment $\dd{\vec{\ell}}$ with velocity $\vec{v}_s$ over time $\dd{t}$ ($\dd{\vec{A}}=\dd{\vec{\ell}}\times \vec{v}\dd{t}$). \autoref{eq:01_intro_alven_eq} becomes: 
+\noindent Where the cross sectional area is the area swept up by expanding surface $S$ in segment $\dd{\vec{\ell}}$ with velocity $\vec{v}_p$ over time $\dd{t}$ ($\dd{\vec{A}}=\dd{\vec{\ell}}\times \vec{v}\dd{t}$). \autoref{eq:01_intro_alven_eq} becomes: 
 
 \begin{equation}
     \begin{aligned}
-    \oint_S \vec{E}\cdot \dd{\vec{l}}&=-\int_S \vec{v}_s\times \vec{B}\cdot \dd{\vec{\ell}}\text{ .}
+    \oint_S \vec{E}\cdot \dd{\vec{l}}&=-\int_S \vec{v}_p\times \vec{B}\cdot \dd{\vec{\ell}}\text{ .}
     \end{aligned} \label{eq:chapter_1_maxwell_faraday_law_p2}
 \end{equation}
 
@@ -443,13 +442,13 @@ The change in energy, $\mathcal{E}$, of particles in the presence of an electric
     \dv{\mathcal{E}}{t}&=\dv{}{t} \qty(\half m\vec{v}^2) = m \vec{v} \cdot \dv{\vec{v}}{t} = \vec{v} \cdot \vec{F} = q\vec{v} \cdot \vec{E}\text{ .}
     \end{aligned} \label{eq:chapter_1_gain_energy_fields}
 \end{equation}
-\noindent Therefore, the electric field generated by the pulsar strips particles from its surface and accelerates them up to high energies. The maximum electric field strength produced by a fluctuating magnetic field is described by $E_\text{max}=v_\text{plasma}B$, giving the maximum energy gain rate:
+\noindent Therefore, the electric field generated by the pulsar strips particles from its surface and accelerates them up to high energies. The maximum electric field strength produced by plasma tied to fixed magnetic field at velocity $\vec{v}_p$ is described by $E_\text{max}=v_{p}B$, giving the maximum energy gain rate:
 \begin{equation}
     \begin{aligned}
-    \dv{\mathcal{E}}{t}_\text{max}&=qv^2B\text{ .}
+    \dv{\mathcal{E}}{t}_\text{max}&=qvv_{p}B<qc^2B\text{ ,}
     \end{aligned}
 \end{equation}
-\noindent For relativistic particles:
+\noindent where the particle velocity $v$ and plasma velocity $v_p$. Hence:
 
 \begin{equation}
     \begin{aligned}
