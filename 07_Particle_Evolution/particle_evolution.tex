@@ -1,6 +1,6 @@
 \chapter[Time evolution of CR particles]{Time evolution of cosmic ray particles from an accelerator} \label{sec:07_particle_ev}
 
-Cosmic Rays (electrons and protons) are accelerated by sources such as PWNe and SNRs. Cosmic rays then escape the acceleration regions and subsequently propagate through the interstellar medium, losing energy through various processes such as radiative cooling, adiabatic expansion and ionisation as discussed in \autoref{sec:chapter1_non_thermal_emission}. By modelling the transport of cosmic-ray particles from an accelerator, the subsequent gamma-ray distribution can be predicted (see \autoref{sec:chapter1_non_thermal_emission}) and compared to observations.
+Cosmic Rays are accelerated by sources such as PWNe and SNRs. Cosmic rays then escape the acceleration regions and subsequently propagate through the interstellar medium, losing energy through various processes such as radiative cooling, adiabatic expansion and ionisation as discussed in \autoref{sec:chapter1_non_thermal_emission}. By modelling the transport of cosmic-ray particles from an accelerator, the subsequent gamma-ray distribution can be predicted (see \autoref{sec:chapter1_non_thermal_emission}) and compared to observations.
 \newpar
 This section first discusses how the energy distribution of cosmic rays evolves in time due to radiation losses and predicts the subsequent gamma-ray emission. This will then be expanded to include the escape of cosmic rays out of the region of interest due to diffusion (see \autoref{chapter_1_cr_propagation}). Finally, this section describes the numerical code developed by \cite{fabien}, which can be used for systems where the cosmic-ray energy distribution and the gamma-ray SED cannot be solved analytically.
 \newpar
@@ -140,7 +140,7 @@ Hadronic cosmic rays lose their energies through proton-proton interactions with
     \dot{\gamma}&=-\frac{\gamma}{\tau_{pp}} \text{ ,}
     \end{aligned} \label{eq:chaper_7_hadron_loss_rate}
 \end{equation}
-\noindent where $\tau_{pp}$ is the p-p cooling time (\autoref{eq:chapter_1_pp_cooling time}). The cooling time is inversely proportional to the p-p cross section, $\sigma_{pp}$, where the p-p cross section is weakly dependent on the proton energy (see \autoref{eq:chapter1_non_thermal_pp_cross_section}). The solution to \autoref{eq:chaper_7_hadron_loss_rate} is:
+\noindent where $\tau_{pp}$ is the p-p cooling time (\autoref{eq:chapter_1_pp_cooling time}). The cooling time is inversely proportional to the p-p cross section, $\sigma_{pp}$, where the p-p cross section is weakly dependent on the proton energy and will be assumed to be constant (see \autoref{eq:chapter1_non_thermal_pp_cross_section}). The solution to \autoref{eq:chaper_7_hadron_loss_rate} is:
 
 \begin{equation}
     \begin{aligned}
@@ -441,14 +441,14 @@ Similarly to protons, for distances close to the source ($R\ll R_\text{diff}$), 
 
 \section{Modelling the Energy Density Distribution of Cosmic Rays}
 
-\autoref{sec:chapter_7_cr_SED_evol} and \autoref{sec:chapter_7_cr_SED_trans} assumed simple scenarios in order to solve \autoref{eq:chapter_7_cr_energy_distribution_sol}. Such scenarios included the type of accelerator (impulsive or continuous) and whether the time of interest is less than the cooling time of the particle (e.g. \autoref{eq:chapter_7_crpropev_hadronic_continuous} and \autoref{eq:chapter_7_crpropev_leptonic_continuous}). It was also assumed that no particles escape the system (i.e. $v_\text{esc}=0$ in \autoref{eq:chapter_7_cr_energy_distribution}. For scenarios that do not make these assumptions, \autoref{eq:chapter_7_cr_energy_distribution_sol} must be solved analytically. A Reimann sum can be used to approximate the integral in \autoref{eq:chapter_7_cr_energy_distribution_sol} with:
+\autoref{sec:chapter_7_cr_SED_evol} and \autoref{sec:chapter_7_cr_SED_trans} assumed simple scenarios in order to solve \autoref{eq:chapter_7_cr_energy_distribution_sol}. Such scenarios included the type of accelerator (impulsive or continuous) and whether the time of interest is less than the cooling time of the particle (e.g. \autoref{eq:chapter_7_crpropev_hadronic_continuous} and \autoref{eq:chapter_7_crpropev_leptonic_continuous}). It was also assumed that no particles escape the system (i.e. $v_\text{esc}=0$ in \autoref{eq:chapter_7_cr_energy_distribution}. For scenarios that do not make these assumptions, \autoref{eq:chapter_7_cr_energy_distribution_sol} must be solved numerically. A Riemann sum can be used to approximate the integral in \autoref{eq:chapter_7_cr_energy_distribution_sol} with:
 
 \begin{equation}
     \begin{aligned}
 	    n\qty(\gamma,t)&=\frac{1}{\dot{\gamma}\qty(\gamma)}\sum_{\gamma'=\gamma}^{\gamma_0} 	e^{-\lambda\qty(\gamma',\gamma)}S\qty(\gamma')\Delta \gamma' + 	\frac{\dot{\gamma_0}}{\dot{\gamma}}n\qty(\gamma_0,0)e^{-\lambda\qty(\gamma_0,\gamma)} 
     \end{aligned} \label{eq:chapter_7_single_zone_numerical}\text{ ,}
 \end{equation}
-\noindent where $\sum_{\gamma'=\gamma}^{\gamma_0}$ sums the function $e^{-\lambda\qty(\gamma',\gamma)}S\qty(\gamma')$ over Lorentz factor $\gamma'=\gamma\rightarrow \gamma_0$ in intervals of width $\Delta \gamma'$. The radiation loss rate, $\dot{\gamma}$, for cosmic-ray protons and electrons is calculated via \autoref{eq:chapter_1_pp_cooling time} and \autoref{eq:chapter_1_non_thermal_leptonic_cooling_rate2} respectively. This section will describe the software {\tt Newsedprod} which analytically solves \autoref{eq:chapter_7_cr_energy_distribution_sol}.
+\noindent where $\sum_{\gamma'=\gamma}^{\gamma_0}$ sums the function $e^{-\lambda\qty(\gamma',\gamma)}S\qty(\gamma')$ over Lorentz factor $\gamma'=\gamma\rightarrow \gamma_0$ in intervals of width $\Delta \gamma'$. The radiation loss rate, $\dot{\gamma}$, for cosmic-ray protons and electrons is calculated via \autoref{eq:chapter_1_pp_cooling time} and \autoref{eq:chapter_1_non_thermal_leptonic_cooling_rate2} respectively. This section will describe the software {\tt Newsedprod} which numerically solves \autoref{eq:chapter_7_cr_energy_distribution_sol}.
 
 \subsection{{\tt Newsedprod}} \label{sec_chapter_7_newsedprod}
 
@@ -547,11 +547,11 @@ After injection, cosmic rays radiate their energy and cool to lower Lorentz fact
     \label{fig:chapter_7_code_example}
 \end{SCfigure}
 
-Cosmic rays scatter of magnetic field turbulence, randomising their direction (see \autoref{chapter_1_cr_propagation}). The net transport of cosmic rays can be described by diffusion. After time $t$, the 3D distance that approximately $68\%$ of cosmic rays have `diffused' from the accelerator is given by:
+Cosmic rays scatter off magnetic field turbulence, randomising their direction (see \autoref{chapter_1_cr_propagation}). The net transport of cosmic rays can be described by diffusion. After time $t$, the 3D distance that approximately $68\%$ of cosmic rays have `diffused' from the accelerator is given by:
 
 \begin{equation}
     \begin{aligned}
-        R_{68\%}=6\qty(\gamma,B)Dt\text{ ,}
+        R_{68\%}=\sqrt{6\qty(\gamma,B)Dt}\text{ ,}
     \end{aligned} \label{eq:chapter_7_6Dt}
 \end{equation}
 \noindent where $D$ is the diffusion coefficient described in \autoref{eq:diffusion} \citep{1996A&A...309..917A}. Therefore, cosmic rays can escape the system as shown in \autoref{fig:chapter_7_code_example}. For a spherical region with radius $R$, the escape rate (particles/s) is defined to be:
@@ -566,7 +566,7 @@ Cosmic rays scatter of magnetic field turbulence, randomising their direction (s
 \begin{equation}
     \begin{aligned}
     D\qty(\gamma,B)&=\frac{r_gc}{3} \\
-    &=\frac{\gamma m_e c}{e B}\text{ .}
+    &=\frac{\gamma m_e c}{3e B}\text{ .}
     \end{aligned}
 \end{equation}
 \noindent Combining \autoref{eq:diffusion} and \autoref{eq:chapter_7_escape_rate} gives:
@@ -608,7 +608,7 @@ For simplicity, synchrotron losses will be assumed to be dominant ($\dot{\gamma}
 \newpar
 \autoref{fig:chapter_7_manolakou_escape} shows the comparison of the electron energy density distribution of {\tt Newsedprod} to the results  by \cite{2007A&A...474..689M} for different values of $b_\text{es}$ assuming Bohm diffusion ($\delta=1$). There is negligible escape when $b_\text{es}=0.1$, but escape losses become significant when $b_\text{es}=100$ and $1000$. Electrons with Lorentz factor $\gamma_1$, the maximum Lorentz factor that electrons injected at $t=0$ can take, is the least affected by escape losses. Electrons with Lorentz factor $>\gamma_1$ represent the population of electrons injected after $t=0$. As the Lorentz factor increases beyond $\gamma_1$, electrons rapidly escape the region and only recently injected electrons contribute to the energy spectrum. Below $\gamma_1$, the electron cooling rate rapidly decreases and the probability that an electron escapes before cooling increases. 
 
-\subsection{Investigation of Magnetic Field Turbulence Regimes}
+\subsection{Investigation of Magnetic Field Turbulence Regimes with {\tt Newsedprod}}
 
 \begin{figure}[hbtp]
     \centering
@@ -632,12 +632,12 @@ For both impulsive and continuous accelerators, as the power spectrum of the mag
         E_\text{cr}&=\frac{B}{3\,\si{\micro G}}\quad\qty[\GeV]\text{ .}
     \end{aligned}
 \end{equation}
-\noindent For a magnetic field of $10\,\si{\micro G}$, the cross-over energy is $0.3\,\GeV$ as seen in the top panel of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive}. As the magnetic field increases, the crossover energy migrates to higher energies as seen in the left-hand panels of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous}. The subsequent inverse Compton and synchrotron SED then follows the electron energy density distribution as shown in the bottom panel of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive} and right hand panels of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous} (see \autoref{sec:chapter_1_leptonic_gre}).
+\noindent For a magnetic field of $10\,\si{\micro G}$, the cross-over energy is $0.3\,\TeV$ as seen in the top panel of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive}. As the magnetic field increases, the crossover energy migrates to higher energies as seen in the left-hand panels of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous}. The subsequent inverse Compton and synchrotron SED then follows the electron energy density distribution as shown in the bottom panel of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_impulsive} and right hand panels of \autoref{fig:chapter_7_newsedprod_diffusion_regimes_continuous} (see \autoref{sec:chapter_1_leptonic_gre}).
 \newpar 
-Electrons will cool to a lower energy before escaping the system when their cooling time ($\tau$) is less than the time it takes for a particle to diffuse distance $R$ (see \autoref{eq:chapter_7_6Dt}). Therefore, for a continuous source, electrons with high energy reach a steady state where radiative losses and escape loses are balanced by the injected electrons (e.g. $E\gtrsim 10\,\TeV$ for $B=50\,\si{\micro G}$)
+Electrons will cool to a lower energy before escaping the system when their cooling time ($\tau$) is less than the time it takes for a particle to diffuse distance $R$ (see \autoref{eq:chapter_7_6Dt}). Therefore, for a continuous source, electrons with high energy reach a steady state where radiative losses and escape losses are balanced by the injected electrons (e.g. $E\gtrsim 10\,\TeV$ for $B=50\,\si{\micro G}$)
 
 \subsection{Applications of {\tt Newsedprod}}
 
-In summary, {\tt} Newsedprod numerically solves the energy density distribution of cosmic rays (protons and electrons) for an accelerator (impulsive or continuous) injecting cosmic rays into a region of constant number density, magnetic field and photon field (e.g. CMB, infra-red fields and optical photons). {\tt Newsedprod} can then be tuned (e.g. changing the injected spectra or age of the system) to sources such as PWNe and SNRs to compare the predicted SED to observations from instruments such as HE.S.S. and \textit{Fermi}-LAT (see \autoref{sec:02_TeV_observatories}). Observatories such as Nanten (see \autoref{sec:NANTEN}) can be used to obtain information about the number density of hydrogen towards the object of interest and estimate the magnetic field strength through Crutcher's relation (see \autoref{eq:ISM_crutchers} and \cite{2010ApJ...725..466C}). Once the model `matches' the observed emission from the source, the input parameter space can be examined to see if the model is reasonable or not.
+In summary, {\tt} Newsedprod numerically solves the energy density distribution of cosmic rays (protons and electrons) for an accelerator (impulsive or continuous) injecting cosmic rays into a region of constant number density, magnetic field and photon field (e.g. CMB, infra-red fields and optical photons). {\tt Newsedprod} can then be tuned (e.g. changing the injected spectra or age of the system) to sources such as PWNe and SNRs to compare the predicted SED to observations from instruments such as H.E.S.S. and \textit{Fermi}-LAT (see \autoref{sec:02_TeV_observatories}). Observatories such as Nanten (see \autoref{sec:NANTEN}) can be used to obtain information about the number density of hydrogen towards the object of interest and estimate the magnetic field strength through Crutcher's relation (see \autoref{eq:ISM_crutchers} and \cite{2010ApJ...725..466C}). Once the model `matches' the observed emission from the source, the input parameter space can be examined to see if the model is reasonable or not.
 \newpar
 \autoref{sec:08} applies {\tt Newsedprod} to a region south of the PWNe \mbox{HESS\,J1825-137} in order to determine the origin of cosmic rays resulting in the $\GeV$ emission seen towards this region. It was postulated that either an accelerator associated with \mbox{HESS\,J1825-137} (PWN or the progenitor SNR) or with nearby binary system \mbox{LS\,5039} (accretion onto associated compact object or progenitor SNR) powered the $\GeV$ emission. Using {\tt Newsedprod}, it was found that neither source provided sufficient energetics to account for this emission, but did not rule out a combination of both sources.

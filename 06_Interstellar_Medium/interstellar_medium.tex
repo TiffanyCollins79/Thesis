@@ -19,7 +19,7 @@ The ISM gas towards \mbox{HESS\,J1825-137} influences the rate at which cosmic r
 
 Firstly, this section will define fundamental concepts.
 \newpar 
-\noindent Let a telescope with detecting area $\dd{A}$ observe photons (in frequency range $\nu + \dd{\nu}$ and energy range $E+\dd{E}$) from a source within solid angle $\dd{\Omega}$ at orientation $\theta$ in time $\dd{t}$ (see \autoref{fig:telescope_basic_diagram2}).
+\noindent Let a telescope with detecting area $\dd{A}$ recieves $dE$ of energy (in frequency range $\nu + \dd{\nu}$) from a source within solid angle $\dd{\Omega}$ at orientation $\theta$ in time $\dd{t}$ (see \autoref{fig:telescope_basic_diagram2}).
 \begin{SCfigure}[0.42][b!]
 	\centering
 	\includegraphics[width=0.7\textwidth]{06_Interstellar_Medium/Images/Theory/intensity.pdf}
@@ -35,14 +35,14 @@ The amount of photons arriving within solid angle $\dd{\Omega}$ is described by 
 \end{equation}
 % \noindent Alternative units for specific intensity are $\si{\erg\per\second\per\centi\meter\squared\per\hertz\per\steradian}$.
 \newpar 
-\noindent The net specific flux, $F_\nu$, is obtained by integrating the specific intensity over the entire source:
+\noindent The net specific flux, $F_\nu$, through a surface:
 
 \begin{equation}
 	\begin{aligned}
 		F_\nu &=\oint I_\nu\qty(\hat{\Omega})\cos\theta\dd{\Omega}\quad\qty[\si{\watt\per\meter\squared\per\hertz}]\text{ .}
 	\end{aligned}
 \end{equation}
-\noindent A common unit for the specific flux in the radio domain is the Janksy ($\si{Jy}$) where $1\,\si{Jy}=10^{-26}\,\si{\watt\per\meter\squared\per\hertz} = 10^{-23}\,\si{\erg\per\centi\meter\squared\per\second\per\hertz}$. If the specific intensity is isotropic ($I_\nu\qty(\hat{\Omega})\equiv I_\nu$) then $\oint \cos\theta\dd{\Omega}=0$ and the specific flux is zero. If the telescope is pointed towards the source ($\cos\theta=1$) and the source is uniformly bright ($I_\nu\qty(\hat{\Omega})\equiv I_\nu$), then the specific flux is simply:
+\noindent A common unit for the specific flux in the radio domain is the Janksy ($\si{Jy}$) where $1\,\si{Jy}=10^{-26}\,\si{\watt\per\meter\squared\per\hertz} = 10^{-23}\,\si{\erg\per\centi\meter\squared\per\second\per\hertz}$. If the specific intensity is isotropic ($I_\nu\qty(\hat{\Omega})\equiv I_\nu$) then $\oint \cos\theta\dd{\Omega}=0$ and the specific flux is zero. If the telescope is pointed towards a point source ($\cos\theta=1$) and the source is uniformly bright ($I_\nu\qty(\hat{\Omega})\equiv I_\nu$), then the specific flux is simply:
 \begin{equation}
 	\begin{aligned}
 		F_\nu&=I_\nu\Delta\Omega\text{ .}
@@ -180,7 +180,7 @@ Thermal radiation is the emitted radiation due to the random motion/kinetic ener
 
 \begin{equation}
     \begin{aligned}
-    	\therefore S_\nu\qty(T) &= B_\nu\qty(T)=\frac{j_\nu\qty(T)}{\alpha_\nu\qty(T)}\text{ .}
+    	S_\nu\qty(T) &= B_\nu\qty(T)=\frac{j_\nu\qty(T)}{\alpha_\nu\qty(T)}\text{ .}
     \end{aligned} \label{eq:kirchoffs_law}
     \end{equation}
 \noindent \autoref{eq:kirchoffs_law} is known as Kirchoff's law of radiation. Hence, the emission of a black body can be described by:
@@ -238,7 +238,7 @@ Stimulated emission occurs when an external photon interacts with an excited ato
 
 \subsection{Molecular Tracers} \label{sec:06_molecular_tracers}
 
-H$_2$ is the most abundant molecule in the Galaxy, consisting of two bound hydrogen atoms. Molecular hydrogen has 14 vibration energy levels that require high temperatures ($>5000\,\si{\kelvin}$) for excitation \citep{2011piim.book.....D}. However, observed molecular clouds have temperatures $\approx 10-20\,\si{\kelvin}$ \citep{2001RvMP...73.1031F} and the transition rate to higher energy levels are quite low. Moreover, the symmetry of H$_2$ molecules makes dipole radiation `forbidden' while electric quadruple radiation is possible with very low probability \citep{2011piim.book.....D}.
+H$_2$ is the most abundant molecule in the Galaxy, consisting of two bound hydrogen atoms. Molecular hydrogen has 14 vibration energy levels that require high temperatures ($>5000\,\si{\kelvin}$) for excitation \citep{2011piim.book.....D}. However, observed molecular clouds have temperatures $\approx 10-20\,\si{\kelvin}$ \citep{2001RvMP...73.1031F} and the transition rate to higher energy levels are quite low. Moreover, the symmetry of H$_2$ molecules makes dipole radiation `forbidden' while electric quadropole radiation is possible with very low probability \citep{2011piim.book.....D}.
 \newpar 
 The two nuclei in $H_2$ molecules rotate around their centre of mass with angular momentum components $J_x$, $J_y$ and $J_z$ \citep{alma99117570501811} and total rotational energy:
 
@@ -247,7 +247,7 @@ The two nuclei in $H_2$ molecules rotate around their centre of mass with angula
         E_\text{rot}&=\frac{J_x^2}{2I_x}+\frac{J_y^2}{2I_y}+\frac{J_z^2}{2I_z}\text{ ,}
     \end{aligned} \label{eq:chapter_6_molecular_rotation_energy}
 \end{equation}
-\noindent where $I_{i}$ is the moment of inertia in the ith axis ($i=x,y,z$). For linear rotors (e.g. H$_2$, CO)  $I_x\ll I_y=I_z$ where $I_x$ can be treated as zero \citep{alma9928060792901811}. \autoref{eq:chapter_6_molecular_rotation_energy} becomes:
+\noindent where $I_{i}$ is the moment of inertia in the ith axis ($i=x,y,z$). For linear rotors (e.g. H$_2$, CO)  $I_x\ll I_y=I_z$ where the moment of inertial in one axes (e.g. $I_x$) can be treated as zero \citep{alma9928060792901811}. \autoref{eq:chapter_6_molecular_rotation_energy} becomes:
 
 \begin{equation}
     \begin{aligned}
@@ -360,7 +360,7 @@ The velocity in \autoref{eq:chapter_6_brand_blitz_velocity} describes the circul
 \begin{figure}[b!]
     \centering
     \includegraphics[width=1.0\textwidth]{06_Interstellar_Medium/Images/Theory/gas_distance_example.pdf}
-    \caption{(\textit{Left}) Four spherical gas clouds located $4\,\kpc$ from the Earth at distances $d$ along the line of sight (z-axis runs in/out of page) from a source of electrons (red cross). (\textit{Right}) Subsequent gamma-ray flux $40\,\kiloyear$ after electron injection commences.}
+    \caption{(\textit{Left}) Four spherical gas clouds located $4\,\kpc$ from the Earth at distances $d$ along the line of sight (z-axis runs in/out of page) from a source of electrons (red cross). (\textit{Right}) Total gamma-ray flux (inverse Compton and Bremsstrahlung) $40\,\kiloyear$ after electron injection commences.}
     \label{fig:06_gas_distance_Example}
 \end{figure}
 The large uncertainties in distances to gas clouds (see \autoref{sec:06_galactic_rotation}) leads to a caveat in modelling the gas and magnetic field distribution (see \autoref{eq:sec_Bfield_gas}) around a cosmic-ray source. For example, consider a crude estimation in which the cosmic-ray intensity is described by an inverse square law $I\propto d^{-2}$ where $d$ is the distance from the accelerator. The cosmic-ray flux decreases with distance from a source, decreasing the subsequent gamma-ray energy flux from non-thermal emission (see \autoref{sec:chapter1_non_thermal_emission}). This can be seen in \autoref{fig:06_gas_distance_Example}, where four spherical gas clouds of number density $600\,\centimeterminusthree$ ($B\approx 25\,\si{\micro G}$) are located at different distances along the line of sight (z-axis) from a continuous source of electrons. The gamma-ray flux through inverse Compton interactions at $40\,\kiloyear$ (suggested age of PWN \mbox{HESS\,J1925-137}, \cite{2011ApJ...742...62V}) decreases with increasing distance from the accelerator. Therefore, large uncertainties in distances to gas clouds will influence the modelled multi-wavelength emission towards an accelerator.
