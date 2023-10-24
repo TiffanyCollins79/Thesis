@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {3.1.2}Cosmic-Ray Air Showers}{41}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Cherenkov Light and Cherenkov Telescopes}{43}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}TeV Gamma-Ray Observatories}{45}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}The High Energy Stereoscopic System}{45}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}The High Energy Stereoscopic System}{46}{subsection.3.2.1}%
 \contentsline {subsubsection}{The H.E.S.S. Galactic Plane Survey}{47}{subsubsection*.54}%
 \contentsline {subsection}{\numberline {3.2.2}\textit {Fermi}-LAT}{47}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}LHAASO}{48}{subsection.3.2.3}%
@@ -83,14 +83,14 @@
 \contentsline {chapter}{\numberline {7}Modelling the 3D environment around Pulsar Wind Nebulae}{106}{chapter.7}%
 \contentsline {section}{\numberline {7.1}The Transport Equation}{106}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}Particle Transport Literature Review}{107}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Numerical Solution of the Transport Equation}{107}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.2}Numerical Solution of the Transport Equation}{108}{subsection.7.1.2}%
 \contentsline {subsection}{\numberline {7.1.3}{\tt Multizone}}{109}{subsection.7.1.3}%
 \contentsline {subsection}{\numberline {7.1.4}Analytical Solution: Diffusion-only}{111}{subsection.7.1.4}%
-\contentsline {subsection}{\numberline {7.1.5}Diffusion and Radiative Energy Losses: Analytical and Numerical Solution Comparison}{112}{subsection.7.1.5}%
-\contentsline {section}{\numberline {7.2}Advection}{115}{section.7.2}%
+\contentsline {subsection}{\numberline {7.1.5}Diffusion and Radiative Energy Losses: Analytical and Numerical Solution Comparison}{113}{subsection.7.1.5}%
+\contentsline {section}{\numberline {7.2}Advection}{116}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Numerical Solution}{117}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}Analytical Solution}{117}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Summary and Application}{120}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Summary and Application}{121}{section.7.3}%
 \contentsline {chapter}{\numberline {8}A 3D Diffusive and Advective Model of Electron Transport Applied to the Pulsar Wind Nebula HESS J1825-137}{123}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Conclusion and Future Work}{146}{chapter.9}%
 \contentsline {chapter}{\numberline {A}Supernova Remnants}{150}{appendix.A}%

@@ -124,43 +124,43 @@ while executing--line 2727 of file biblatex.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 232 entries,
             6399 wiz_defined-function locations,
-            3078 strings with 185706 characters,
-and the built_in function-call counts, 14347443 in all, are:
-= -- 1457836
+            3077 strings with 185722 characters,
+and the built_in function-call counts, 14348945 in all, are:
+= -- 1458012
 > -- 73313
-< -- 6340
-+ -- 551147
-- -- 40547
-* -- 1083308
-:= -- 2033676
+< -- 6339
++ -- 551149
+- -- 40545
+* -- 1083465
+:= -- 2033849
 add.period$ -- 0
 call.type$ -- 232
 change.case$ -- 3065
 chr.to.int$ -- 42
 cite$ -- 462
-duplicate$ -- 1463099
-empty$ -- 1092157
+duplicate$ -- 1463090
+empty$ -- 1092322
 format.name$ -- 83071
-if$ -- 2655446
+if$ -- 2655786
 int.to.chr$ -- 0
 int.to.str$ -- 551
 missing$ -- 0
-newline$ -- 45942
+newline$ -- 45938
 num.names$ -- 9922
-pop$ -- 205433
+pop$ -- 205439
 preamble$ -- 1
 purify$ -- 16507
 quote$ -- 0
-skip$ -- 71124
+skip$ -- 71123
 stack$ -- 0
-substring$ -- 3015692
-swap$ -- 126747
-text.length$ -- 12291
+substring$ -- 3016213
+swap$ -- 126731
+text.length$ -- 12290
 text.prefix$ -- 235
 top$ -- 1
 type$ -- 7874
 warning$ -- 0
 while$ -- 245671
 width$ -- 0
-write$ -- 45711
+write$ -- 45707
 (There were 27 warnings)

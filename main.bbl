@@ -27539,6 +27539,47 @@
     \field{year}{2017}
   \endentry
 
+  \entry{2007Ap&SS.308..225F}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FJ}{%
+         family={{Faherty}},
+         familyi={F\bibinitperiod},
+         given={Jacqueline},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WFM}{%
+         family={{Walter}},
+         familyi={W\bibinitperiod},
+         given={Frederick\bibnamedelima M.},
+         giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={{Anderson}},
+         familyi={A\bibinitperiod},
+         given={Jay},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Astrometry, Geminga, Parallax, Neutron star}
+    \strng{namehash}{FJ+1}
+    \strng{fullhash}{FJWFMAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1007/s10509-007-9368-0
+    \endverb
+    \field{number}{1-4}
+    \field{pages}{225\bibrangedash 230}
+    \field{title}{{The trigonometric parallax of the neutron star Geminga}}
+    \field{volume}{308}
+    \field{journaltitle}{Ap\&SS}
+    \field{year}{2007}
+  \endentry
+
   \entry{1846RSPT..136....1F}{article}{}
     \name{author}{1}{}{%
       {{hash=FM}{%
@@ -37406,51 +37447,6 @@
     \field{volume}{125}
     \field{journaltitle}{A\&A}
     \field{year}{1983}
-  \endentry
-
-  \entry{2023arXiv230402684L}{article}{}
-    \name{author}{3}{}{%
-      {{hash=LA}{%
-         family={{Lazarian}},
-         familyi={L\bibinitperiod},
-         given={Alex},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=XS}{%
-         family={{Xu}},
-         familyi={X\bibinitperiod},
-         given={Siyao},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=HY}{%
-         family={{Hu}},
-         familyi={H\bibinitperiod},
-         given={Yue},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LA+1}
-    \strng{fullhash}{LAXSHY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2023}
-    \field{labeldatesource}{}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \verb{doi}
-    \verb 10.3389/fspas.2023.1154760
-    \endverb
-    \field{eid}{1154760}
-    \verb{eprint}
-    \verb 2304.02684
-    \endverb
-    \field{pages}{1154760}
-    \field{title}{{Cosmic ray propagation in turbulent magnetic fields}}
-    \field{volume}{10}
-    \field{journaltitle}{Frontiers in Astronomy and Space Sciences}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{astro-ph.GA}
-    \field{year}{2023}
   \endentry
 
   \entry{2016JPlPh..82d6301L}{article}{}
